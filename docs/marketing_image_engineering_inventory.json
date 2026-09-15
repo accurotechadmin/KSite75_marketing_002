@@ -1,0 +1,2455 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-09-15",
+  "title": "Just One KISS repository image engineering inventory",
+  "purpose": "Machine-readable handoff for expert marketing, design, and coding sessions. Every discovered raster/vector image is indexed; the /proto/public runtime is the visual benchmark, while concepts, screenshots, source photography and third-party references are clearly separated.",
+  "scope": {
+    "repository_root": ".",
+    "extensions": [
+      "png",
+      "jpg",
+      "jpeg",
+      "gif",
+      "webp",
+      "svg",
+      "avif",
+      "ico"
+    ],
+    "file_count": 95,
+    "unique_content_count": 88,
+    "method": [
+      "recursive extension inventory excluding .git",
+      "pixel dimensions and MIME via PHP getimagesize where supported",
+      "SHA-256 exact-duplicate grouping",
+      "direct visual inspection of runtime hero/support assets, performer photography and representative families",
+      "cross-check against runtime templates, CSS, image-generation inventory and existing style report"
+    ],
+    "limitations": [
+      "Descriptions are engineering/creative observations, not legal clearance.",
+      "Opaque layer-upload names have no inferred approval.",
+      "Website screenshots are evidence snapshots, not reusable source artwork."
+    ]
+  },
+  "canonical_standard": {
+    "north_star": "The active /proto/public site: black first, chrome second, fire third, mythic scale always; practical information remains exceptionally clear.",
+    "composition": [
+      "near-black stage void provides negative space",
+      "symmetrical or strongly anchored portal/object silhouette",
+      "hard chrome specular edges and industrial framing",
+      "red/orange fire light supplies urgency; bone-white and yellow support facts",
+      "fog/haze makes beams dimensional without obscuring essential content",
+      "oversized condensed display hierarchy paired with plain readable utility text"
+    ],
+    "content_contract": [
+      "Lead with one dominant idea, one focal silhouette and one next action.",
+      "Separate expressive imagery from live HTML/text facts wherever possible.",
+      "Recompose for each ratio; never blind-crop central figures, hands, instruments, flames or factual panels.",
+      "Preserve a clear dark copy zone and test overlays at mobile and desktop breakpoints.",
+      "Do not imply official affiliation; do not publish exact protected marks, album art, official logos or uncleared likenesses.",
+      "Operational authenticity—truss, road cases, cables, controls, armor construction—must look intentional, controlled and plausible."
+    ],
+    "palette_roles": {
+      "black": "dominant field, depth and anticipation",
+      "chrome": "structure, proof, precision and premium craft",
+      "fire_red_orange": "energy, urgency and CTA emphasis",
+      "bone_white": "primary type and hard highlights",
+      "signal_yellow": "eyebrows, fact chips and wayfinding",
+      "green": "minor live-light counterpoint only, never the core brand color"
+    },
+    "do_not": [
+      "bright generic corporate layouts",
+      "flat clip-art flames",
+      "crowded collages without hierarchy",
+      "unreadable type baked into generated images",
+      "unverified map directions or event facts",
+      "casual workshop/reference backgrounds in finished campaigns",
+      "AI artifacts in faces, hands, instruments, hardware, typography or cables"
+    ]
+  },
+  "images": [
+    {
+      "id": "IMG-001",
+      "path": "Earls/4Earls.png",
+      "filename": "4Earls.png",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1448,
+        "height_px": 1086,
+        "aspect_ratio": 1.3333,
+        "orientation": "landscape",
+        "bytes": 2103833,
+        "sha256": "02a359381f13a0f12de39aaa095159e8825a1d99f7bf667cd40df89b087dde7e",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "White-background concept sheet of four glossy chibi/bobblehead tribute-character figurines: bass pose, blood/tongue gesture, fire breath, and suited skull-holding variant. High-key collectible-toy rendering conflicts with the public site’s dark cinematic finish and closely references protected character/makeup language; concept/reference only.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-002",
+      "path": "Earls/EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg",
+      "filename": "EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 5852877,
+        "sha256": "b3d1ac3d62faddfb0ff6788f491e26d82b01661022af4d80153ae96b1bc53b4b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Live horizontal action photograph at the instant of fire breathing; the flame blooms into a clipped white-hot cloud over the bassist, with sparks, microphones, pavilion structure and a serpent prop visible. Extremely energetic spectacle proof, but highlight recovery, safety context, performer/photographer rights and fire-policy review are mandatory.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity",
+          "pair with accurate safety context; do not imply uncontrolled effects"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-003",
+      "path": "Earls/EARL_FRONT.jpg",
+      "filename": "EARL_FRONT.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3072,
+        "height_px": 4096,
+        "aspect_ratio": 0.75,
+        "orientation": "portrait",
+        "bytes": 6938772,
+        "sha256": "59b1efee8b582a4ad387c4efac4839a1f17b4f609d724fc26ff916ef214043e4",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Casual vertical phone portrait, front view, of a gray-haired, long-goateed man in an orange shirt inside a cluttered workshop/collection space. Flat ambient light and busy background make it identity/reference evidence rather than campaign-ready imagery.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-004",
+      "path": "Earls/EARL_LEFT.jpg",
+      "filename": "EARL_LEFT.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3072,
+        "height_px": 4096,
+        "aspect_ratio": 0.75,
+        "orientation": "portrait",
+        "bytes": 6710150,
+        "sha256": "5396afe620e78ebe85e0db4ddeccb35311deaf9072d211246b83d443159a8965",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Casual vertical left-profile reference of the same man, seated with arms folded in an orange shirt. Collectibles, ladders, fans and workshop objects remain visible; useful for likeness/profile study, not public marketing without cleanup and consent.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-005",
+      "path": "Earls/EARL_PERFORM_001.jpg",
+      "filename": "EARL_PERFORM_001.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 6658475,
+        "sha256": "d8e204ad7ea7332e05fde5e82282eecbba25346a38e913161e797a129a93def7",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Horizontal live performance photograph of an armored, face-painted bassist at a microphone with arms extended. Blue/green/red practical lights, visible rigging and a dark stage give authentic venue texture; the central gesture reads as audience command.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-006",
+      "path": "Earls/EARL_PERFORM_002.jpg",
+      "filename": "EARL_PERFORM_002.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 7004228,
+        "sha256": "043eeb40eeea150f2e78a4db7abe8a64d2ea5b725019bf44595c98b6ad13441d",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Vertical live image of the bassist leaning dramatically backward while lifting a mirrored geometric bass. Pink/blue haze and microphone stands layer the frame; the unusual diagonal pose supplies kinetic proof but requires careful crop and noise/color correction.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-007",
+      "path": "Earls/EARL_PERFORM_003.jpg",
+      "filename": "EARL_PERFORM_003.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 8015624,
+        "sha256": "340a020882ab0c7aecd95856a28e170721ebfe2b5fb3c0912631510724a7910a",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Vertical companion live image of the same deep backward lean, with stronger green beam crossing the performer and colored lamps stacked at left. The bass neck creates a vertical spine; dramatic but visually busy and suited to editorial/social crops.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-008",
+      "path": "Earls/EARL_RIGHT.jpg",
+      "filename": "EARL_RIGHT.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3072,
+        "height_px": 4096,
+        "aspect_ratio": 0.75,
+        "orientation": "portrait",
+        "bytes": 7053161,
+        "sha256": "420f5c20409763c00ebf53b7201c06ed28c0e9e698256b12439deb6da87c0939",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Casual vertical right-profile reference of the same man in the same collection/workshop setting. The profile is readable but the background contains third-party memorabilia and text; isolate only after rights and privacy review.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-009",
+      "path": "Earls/EARL_SAMMY_PERFORM.jpg",
+      "filename": "EARL_SAMMY_PERFORM.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 5751331,
+        "sha256": "baf580af2814e8a5ada25ea4ebf00822e591619a7843e3f625ce2ec15cf679b1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Horizontal live image of the armored bassist singing/playing at a microphone while bright spark effects scatter across the instrument; serpent stage prop sits behind. Dark negative space and warm/cool stage light produce usable authenticity, subject to effect-safety and rights clearance.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-010",
+      "path": "Earls/EARL_SAMMY_PERFORM_001.jpg",
+      "filename": "EARL_SAMMY_PERFORM_001.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 7631656,
+        "sha256": "ab440c42d796b0f8fdbefa90742bdc8896f80e595840ab3f6aa44edf2c5164e7",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Horizontal live close-up of the performer pointing toward the audience while holding a patterned bass, framed by a large illuminated serpent prop and saturated red/green lighting. Strong participatory gesture and recognizable stage-world proof.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-011",
+      "path": "Earls/EARL_SAMMY_PERFORM_002.jpg",
+      "filename": "EARL_SAMMY_PERFORM_002.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 7627142,
+        "sha256": "e2f5047367cd7560fd10625f200cb1d6aecddde6ef6c4163a9a5c9b879f3cb2f",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Horizontal live three-quarter view of the performer actively playing, red cape and textured armor catching magenta/blue light. A microphone and partial serpent prop establish context; expression and hand position make this a strong performance proof frame.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-012",
+      "path": "Earls/EARL_SWORD_SAMMY_PERFORM_001.jpg",
+      "filename": "EARL_SWORD_SAMMY_PERFORM_001.jpg",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 3200,
+        "height_px": 2133,
+        "aspect_ratio": 1.5002,
+        "orientation": "landscape",
+        "bytes": 6929206,
+        "sha256": "1b3e645fd454365822540bd16779fd30356ed6144176ebe50bb62d573e71a62c",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Horizontal live tableau of the bassist holding a flaming fantasy-sword prop upright, bass across the body, serpent prop behind. The black field and small pools of saturated light are visually aligned with the site, but open flame, props, likeness and event safety need explicit review.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity",
+          "pair with accurate safety context; do not imply uncontrolled effects"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-013",
+      "path": "Earls/earl005.png",
+      "filename": "earl005.png",
+      "category": "performer_source_or_concept",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1024,
+        "height_px": 1536,
+        "aspect_ratio": 0.6667,
+        "orientation": "portrait",
+        "bytes": 1253071,
+        "sha256": "bc042a06d14cfbc6de963f91e5f43c34461414985391d0f8917cc4735ebde714",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Transparent-background composite/cutout of a full-body costumed bassist with oversized sculpted boots, purple-black armor and raised rock-hand gesture. The face area appears visibly pasted/retouched and the bass has taped detail; useful as rough compositing reference, not release-quality art.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-014",
+      "path": "canon/Genes/Gene_Paint.png",
+      "filename": "Gene_Paint.png",
+      "category": "third_party_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 419,
+        "height_px": 621,
+        "aspect_ratio": 0.6747,
+        "orientation": "portrait",
+        "bytes": 258910,
+        "sha256": "eebf2298c9ae2fd6d3199f6a34be19ce3edf992a411c9ff1ca9adfecd674bd40",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Transparent/isolated digital portrait study of a Demon-inspired black-and-white painted face. Treat as makeup/likeness reference with elevated trademark and personality-rights risk, not an approved public asset.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-015",
+      "path": "canon/Genes/KISS_BAND_001.jpg",
+      "filename": "KISS_BAND_001.jpg",
+      "category": "third_party_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 1327,
+        "height_px": 2048,
+        "aspect_ratio": 0.6479,
+        "orientation": "portrait",
+        "bytes": 260953,
+        "sha256": "58f7d8666c14c32bc69997e95e66474c98bc8bacc874c4418e7eba3896db86a1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Band reference photograph depicting KISS-associated performers/costuming. Third-party editorial/reference material; do not publish or use as a generative composition source without documented rights.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-016",
+      "path": "canon/Genes/KISS_GENE_001.jpg",
+      "filename": "KISS_GENE_001.jpg",
+      "category": "third_party_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 1125,
+        "height_px": 1703,
+        "aspect_ratio": 0.6606,
+        "orientation": "portrait",
+        "bytes": 389550,
+        "sha256": "ae8e49414b2b0b984f10dd8ca82f70e2c8a1e116849cca978d5060cd3665b260",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Gene Simmons/KISS reference photograph. High-risk third-party likeness, makeup, costume and trademark evidence; research/reference only.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "confirm likeness/performer release",
+          "confirm photographer/source license",
+          "review trademark, makeup and costume similarity"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-017",
+      "path": "canon/prototypes/IMG_3027.PNG",
+      "filename": "IMG_3027.PNG",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1125,
+        "height_px": 2001,
+        "aspect_ratio": 0.5622,
+        "orientation": "portrait",
+        "bytes": 7076796,
+        "sha256": "9acd114fc479d549d80c49e75008083c613d55766763f80654ba793da5b605ee",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Phone screenshot of a third-party double-bill flyer for Black Sabbath/Ozzy tribute acts. Purple smoke, band composites, gothic display type, price boxes, venue branding and a QR code demonstrate dense event-information hierarchy, but all imagery, names, logos and facts are external rights-bearing reference material.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-018",
+      "path": "canon/prototypes/IMG_3028.PNG",
+      "filename": "IMG_3028.PNG",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1125,
+        "height_px": 2001,
+        "aspect_ratio": 0.5622,
+        "orientation": "portrait",
+        "bytes": 8419256,
+        "sha256": "cc99228b1d64c22a95e8350c5f71976c197e2959afd635f62e95966d7a356551",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Phone screenshot of an ornate black-and-gold KISS song-title poster with four costumed figures and an enormous central logo. Useful only as evidence of maximal typography, metal texture and framed-label density; it is trademark-, likeness-, costume- and song-title-sensitive third-party reference.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-019",
+      "path": "canon/prototypes/IMG_3029.PNG",
+      "filename": "IMG_3029.PNG",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1125,
+        "height_px": 2001,
+        "aspect_ratio": 0.5622,
+        "orientation": "portrait",
+        "bytes": 6241763,
+        "sha256": "8570da16a97bfc8b3456ad504191a69cccb9b42dbb56a68bffb951d248165978",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Phone screenshot of a third-party Dressed 2 Kill event flyer using orange/yellow logo type, four live-photo panels, a flame border, venue/ticket strip and guest logo. It shows conventional tribute-flyer information architecture but is not a source for reusable assets or copy.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-020",
+      "path": "canon/prototypes/IMG_3030.PNG",
+      "filename": "IMG_3030.PNG",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1125,
+        "height_px": 2001,
+        "aspect_ratio": 0.5622,
+        "orientation": "portrait",
+        "bytes": 7684298,
+        "sha256": "da4aa7bdd4e3c85279dda3ad7ced598e270faa06760b94139cb147d1fe36b8aa",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Phone screenshot of a Spanish-language KISS tribute event poster: giant official-style logo, arena flames/lasers, four costumed performers, audience, payment marks, venue and sponsor/social logos. It is a clear negative-rights reference and must not be republished or imitated literally.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-021",
+      "path": "canon/prototypes/Poster001.png",
+      "filename": "Poster001.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3274530,
+        "sha256": "d78631c0b8b26117a56a5fa631ae4be417f9f7061824a9d258378574350e0539",
+        "exact_duplicate_of": [
+          "sept26/prototypes/Poster001.png"
+        ]
+      },
+      "engineering_description": "Dense vertical maximalist poster framed in antique-gold scrollwork, chains, stars, skulls, flames and road cases. A pointing, armored bassist and serpent prop dominate a mosaic of live-photo side panels; huge beveled chrome/fire title type creates the main stop, with a September 26, 2026 date panel below. It is more ornate and copy-dense than the active site and its date/copy are not current authority.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-022",
+      "path": "canon/prototypes/Poster002.png",
+      "filename": "Poster002.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3338515,
+        "sha256": "7674f8b5b751f009c15995c0b5b6a60fb2a4d21cd3806238b5af71b71e83b2d4",
+        "exact_duplicate_of": [
+          "sept26/prototypes/Poster002.png"
+        ]
+      },
+      "engineering_description": "Vertical baroque concert-bill variant with symmetrical gold demon ornaments, twin cobra forms and flame urns enclosing a central pointing bassist. Beveled chrome/fire title lettering occupies the lower middle, flanked by live action panels and many slogans; strong spectacle density but limited negative space, high trademark/likeness risk and prototype-only facts.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-023",
+      "path": "canon/prototypes/Poster003.png",
+      "filename": "Poster003.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3255888,
+        "sha256": "2ef4c2621ad0d33b413bdff3558eb846f54cbdb42250e89c8350ba688e8dde47",
+        "exact_duplicate_of": [
+          "sept26/prototypes/Poster003.png"
+        ]
+      },
+      "engineering_description": "Vertical stage-poster variant that places the bassist against red/green live lighting, crowd silhouettes, flame jets, twin serpent props and a bulb-style sign. An enormous metallic fire-filled title divides the performer from a structured date/disclaimer base; road cases and an ornate gold demon crest anchor the bottom. High energy, but extremely busy and rights-sensitive.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-024",
+      "path": "canon/prototypes/Poster004.png",
+      "filename": "Poster004.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3232670,
+        "sha256": "7e6d05a13cab9b908ba69aaad7fb9a0fb959b0121d60ca88a0ddb81d1baa403f",
+        "exact_duplicate_of": [
+          "sept26/prototypes/Poster004.png"
+        ]
+      },
+      "engineering_description": "Surreal tropical-sunset poster: the armored bassist lounges in a beach chair raising a cocktail, surrounded by palms, tiki carving, parrot, gull, crab, castle, road cases and novelty props. Large silver title type sits at the top and handwritten-style jokes compete with a wooden date sign. Playful campaign branch, but intentionally departs from the active site’s disciplined arena darkness.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-025",
+      "path": "canon/prototypes/Poster005.png",
+      "filename": "Poster005.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1024,
+        "height_px": 1536,
+        "aspect_ratio": 0.6667,
+        "orientation": "portrait",
+        "bytes": 3305347,
+        "sha256": "a997f4e653b7231741fb7e9e0581259cc5b37e6f678b4eb43ce8466236ac6f99",
+        "exact_duplicate_of": [
+          "sept26/prototypes/Poster005.png"
+        ]
+      },
+      "engineering_description": "Surreal tropical/motel travel poster with a reclining, cocktail-holding performer, bulldog, hula figure, palm silhouettes, moon, destination signpost, ship and branded cases. A massive fire-textured title crowns the scene and the date sits in oversized chrome type at the bottom. Visually maximal and novelty-led; not the restrained black/chrome/fire runtime benchmark.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-026",
+      "path": "canon/ssot/ARCHWAY_001.png",
+      "filename": "ARCHWAY_001.png",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1536,
+        "height_px": 1024,
+        "aspect_ratio": 1.5,
+        "orientation": "landscape",
+        "bytes": 2750546,
+        "sha256": "0ad42cf5168c39b873aa6898a3c714761a99f4ffef73b2cddb3d6f099698333e",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Design/reference image of a monumental archway/portal structure. Its function is to establish centered threshold geometry, scale and an entrance silhouette for original stage-world development.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-027",
+      "path": "canon/ssot/KISS_SIGN.jpg",
+      "filename": "KISS_SIGN.jpg",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 4096,
+        "height_px": 3072,
+        "aspect_ratio": 1.3333,
+        "orientation": "landscape",
+        "bytes": 1989538,
+        "sha256": "1824b2fb0e62e1e6d20c6d23080da8a638e11c97088dd4071c4b320011a69fe0",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Reference photograph of KISS-branded signage/wordmark. Trademark-bearing source; inventory for provenance and exclusion, not public reuse.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-028",
+      "path": "canon/ssot/PAVILION_001.jpg",
+      "filename": "PAVILION_001.jpg",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 2048,
+        "height_px": 1536,
+        "aspect_ratio": 1.3333,
+        "orientation": "landscape",
+        "bytes": 1341837,
+        "sha256": "d2fbccb486612fb58fda6fa0366c354784a7b14030429e81d90deef6fdc87a35",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Venue/pavilion reference showing the physical setting and overhead structure. Use to ground feasible staging, sightlines and local context rather than as polished hero art.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-029",
+      "path": "canon/ssot/STAGE_001.jpg",
+      "filename": "STAGE_001.jpg",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 2048,
+        "height_px": 1536,
+        "aspect_ratio": 1.3333,
+        "orientation": "landscape",
+        "bytes": 726446,
+        "sha256": "d590866988b05a844057e981b76b5df3d6ea7f0505b4485c905730d29f446d02",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Stage reference view documenting available performance footprint, architecture and/or equipment context; operational source rather than finished marketing creative.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-030",
+      "path": "canon/ssot/STAGE_002.jpg",
+      "filename": "STAGE_002.jpg",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 2048,
+        "height_px": 1536,
+        "aspect_ratio": 1.3333,
+        "orientation": "landscape",
+        "bytes": 961944,
+        "sha256": "8ad04924184480a8fb3fcc3465619fb48659a511cf773005c7b7afd96d1a86e1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Second stage reference angle, useful for spatial cross-checking, placement and sightline planning; maintain as production evidence.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-031",
+      "path": "canon/ssot/STAGE_003.jpg",
+      "filename": "STAGE_003.jpg",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/jpeg",
+        "width_px": 2048,
+        "height_px": 1536,
+        "aspect_ratio": 1.3333,
+        "orientation": "landscape",
+        "bytes": 933975,
+        "sha256": "0152ad9625c6fcda36f630661dce38c4efd1948d373d62bfa1197d9789bc1ba1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Third stage reference angle completing the venue/stage survey; use for engineering plausibility and not as the visual quality benchmark.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-032",
+      "path": "canon/ssot/roadcase001.png",
+      "filename": "roadcase001.png",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1955542,
+        "sha256": "0e5b3797db88b2654818c42f284050eb608fbe806599496a5e5c137e2af7879a",
+        "exact_duplicate_of": [
+          "proto/public/assets/img/layer-upload-20260721-210057-1203f2.png"
+        ]
+      },
+      "engineering_description": "Road-case design/reference image emphasizing black panels and metal hardware. The current site translates this material vocabulary into the more cinematic glowing vault image.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-033",
+      "path": "canon/ssot/spectacle-lighting-rig.webp",
+      "filename": "spectacle-lighting-rig.webp",
+      "category": "canon_source_reference",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1301986,
+        "sha256": "c6f510f5b5541386d630386f36d6dde32aa200d8052b37dddfab9ef11bc3a242",
+        "exact_duplicate_of": [
+          "proto/public/assets/img/spectacle-lighting-rig.webp"
+        ]
+      },
+      "engineering_description": "Empty wide stage with side truss towers, a reflective deck, stairs, and volumetric red, green, and white beams cutting through dense fog. Most detail is held at the edges and lower third, leaving a dark upper field. It supplies live-show proof while preserving copy space and high contrast.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-034",
+      "path": "currsite/Screenshot 2026-09-14 165002.png",
+      "filename": "Screenshot 2026-09-14 165002.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1728,
+        "aspect_ratio": 1.6655,
+        "orientation": "landscape",
+        "bytes": 3649063,
+        "sha256": "908732b502b86420c581794834263f416f7f14602e1499cac32cd6f0e372a8e0",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:50:02 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-035",
+      "path": "currsite/Screenshot 2026-09-14 165022.png",
+      "filename": "Screenshot 2026-09-14 165022.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1732,
+        "aspect_ratio": 1.6617,
+        "orientation": "landscape",
+        "bytes": 3239600,
+        "sha256": "46599f7dee8b14f5cf0bbdd1b4c59e2958328aea9afc578209125ab6a4a4c08f",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:50:22 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-036",
+      "path": "currsite/Screenshot 2026-09-14 165040.png",
+      "filename": "Screenshot 2026-09-14 165040.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1729,
+        "aspect_ratio": 1.6645,
+        "orientation": "landscape",
+        "bytes": 3291782,
+        "sha256": "8e372779183eeb9a603fe9b79e7b12476c676830acfa70ba4273e15d3739863b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:50:40 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-037",
+      "path": "currsite/Screenshot 2026-09-14 165056.png",
+      "filename": "Screenshot 2026-09-14 165056.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1725,
+        "aspect_ratio": 1.6684,
+        "orientation": "landscape",
+        "bytes": 2681085,
+        "sha256": "7b144de6055d239cbe8198e5603d66d85cf91786c9d63e8304dfe391c3074eaf",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:50:56 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-038",
+      "path": "currsite/Screenshot 2026-09-14 165104.png",
+      "filename": "Screenshot 2026-09-14 165104.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1732,
+        "aspect_ratio": 1.6617,
+        "orientation": "landscape",
+        "bytes": 2819872,
+        "sha256": "248615eb0cf9ff44237db1f7e3382eed9107bb29f8d88afbeffae57d668ebb2a",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:51:04 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-039",
+      "path": "currsite/Screenshot 2026-09-14 165111.png",
+      "filename": "Screenshot 2026-09-14 165111.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1725,
+        "aspect_ratio": 1.6684,
+        "orientation": "landscape",
+        "bytes": 2470163,
+        "sha256": "400dfe19058f859973ed9c0dd841dedb35fa00ec2d57078467c7f534b394125c",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:51:11 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-040",
+      "path": "currsite/Screenshot 2026-09-14 165116.png",
+      "filename": "Screenshot 2026-09-14 165116.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1722,
+        "aspect_ratio": 1.6713,
+        "orientation": "landscape",
+        "bytes": 1284388,
+        "sha256": "0aca325ae4ce482a3954c661732aeab10322504a05e47f40f8adcac03501973b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:51:16 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-041",
+      "path": "currsite/Screenshot 2026-09-14 165227.png",
+      "filename": "Screenshot 2026-09-14 165227.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1732,
+        "aspect_ratio": 1.6617,
+        "orientation": "landscape",
+        "bytes": 2801266,
+        "sha256": "42389f58bf22196464af6f61bbcfed1eb723c9241a6c0c01788fd002a04c554b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:52:27 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-042",
+      "path": "currsite/Screenshot 2026-09-14 165240.png",
+      "filename": "Screenshot 2026-09-14 165240.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 2397986,
+        "sha256": "d932a6fc14ae27caee0465344cd64175c5145420da6d6fc222b87ab38516df75",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:52:40 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-043",
+      "path": "currsite/Screenshot 2026-09-14 165250.png",
+      "filename": "Screenshot 2026-09-14 165250.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 923339,
+        "sha256": "a87592afb888a3cae4d33aca2caaedffc4617bb0e0de213182de99cfa143d9ad",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:52:50 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-044",
+      "path": "currsite/Screenshot 2026-09-14 165257.png",
+      "filename": "Screenshot 2026-09-14 165257.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1785,
+        "aspect_ratio": 1.6123,
+        "orientation": "landscape",
+        "bytes": 2063284,
+        "sha256": "7f768bb329cde58162cae03b8907a333e5340fa93b3665ef8999c9edf9f54674",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:52:57 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-045",
+      "path": "currsite/Screenshot 2026-09-14 165303.png",
+      "filename": "Screenshot 2026-09-14 165303.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1780,
+        "aspect_ratio": 1.6169,
+        "orientation": "landscape",
+        "bytes": 1757125,
+        "sha256": "7c6ae1809b6963611156c126fcb5f1bb363562512af11ed0399ee8abeb6aa5d3",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:53:03 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-046",
+      "path": "currsite/Screenshot 2026-09-14 165309.png",
+      "filename": "Screenshot 2026-09-14 165309.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1780,
+        "aspect_ratio": 1.6169,
+        "orientation": "landscape",
+        "bytes": 1211989,
+        "sha256": "458a7faeac9a8042fd941e31e6d726d91524d0c8bfe8b43c4bf52f59e7a3bb0c",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:53:09 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-047",
+      "path": "currsite/Screenshot 2026-09-14 165322.png",
+      "filename": "Screenshot 2026-09-14 165322.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 3115648,
+        "sha256": "1e40ccdc7ec4b257dbca804d8580d819eef8294ea6af0889b70941b41feacb21",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:53:22 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-048",
+      "path": "currsite/Screenshot 2026-09-14 165337.png",
+      "filename": "Screenshot 2026-09-14 165337.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 2713873,
+        "sha256": "91bb8e45e18c06896dcf8c991c7739b7d74c50e36ac3142c6984b012eac47139",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:53:37 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-049",
+      "path": "currsite/Screenshot 2026-09-14 165346.png",
+      "filename": "Screenshot 2026-09-14 165346.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1779,
+        "aspect_ratio": 1.6178,
+        "orientation": "landscape",
+        "bytes": 921114,
+        "sha256": "ebdcae561535a1e3ca8d444a0d660529ea2657486fd644de7a1ea0ae297fc7db",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:53:46 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-050",
+      "path": "currsite/Screenshot 2026-09-14 165353.png",
+      "filename": "Screenshot 2026-09-14 165353.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1780,
+        "aspect_ratio": 1.6169,
+        "orientation": "landscape",
+        "bytes": 2755577,
+        "sha256": "eac339814e13bde6546ba0b3faa32165a0a5f38f5dc3c105e5a27ad1d8e96004",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:53:53 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-051",
+      "path": "currsite/Screenshot 2026-09-14 165400.png",
+      "filename": "Screenshot 2026-09-14 165400.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 1701876,
+        "sha256": "708eebbebe16d9ba4799fbaf8dff240cf6a5882ab88fd842d955bcb817e1dfe0",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:00 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-052",
+      "path": "currsite/Screenshot 2026-09-14 165418.png",
+      "filename": "Screenshot 2026-09-14 165418.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 2813544,
+        "sha256": "b1b05fb3f50cc28b257421786e563515fa9b786dea446e11f3c3bfebc29ad1c4",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:18 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-053",
+      "path": "currsite/Screenshot 2026-09-14 165425.png",
+      "filename": "Screenshot 2026-09-14 165425.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1774,
+        "aspect_ratio": 1.6223,
+        "orientation": "landscape",
+        "bytes": 914357,
+        "sha256": "5720c39426124725f1d713724bc5d0e5eebe9d32f552e0484ac1e71d71a66b4b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:25 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-054",
+      "path": "currsite/Screenshot 2026-09-14 165432.png",
+      "filename": "Screenshot 2026-09-14 165432.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 1696746,
+        "sha256": "bf6b897a219ffda85c68796e65fe9450892d6af3f2c2efbd0b31ac7969e40693",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:32 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-055",
+      "path": "currsite/Screenshot 2026-09-14 165439.png",
+      "filename": "Screenshot 2026-09-14 165439.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1786,
+        "aspect_ratio": 1.6114,
+        "orientation": "landscape",
+        "bytes": 1992331,
+        "sha256": "6ff23862a5b8e23c80b358cb4cb9b795da2817337ae614a474f7d1e03fedbdda",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:39 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-056",
+      "path": "currsite/Screenshot 2026-09-14 165449.png",
+      "filename": "Screenshot 2026-09-14 165449.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1783,
+        "aspect_ratio": 1.6141,
+        "orientation": "landscape",
+        "bytes": 3293232,
+        "sha256": "579f3125b4389ee24c493986824ea908813426a73868838c6f1652d3ee2d81fb",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:49 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-057",
+      "path": "currsite/Screenshot 2026-09-14 165455.png",
+      "filename": "Screenshot 2026-09-14 165455.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1779,
+        "aspect_ratio": 1.6178,
+        "orientation": "landscape",
+        "bytes": 1034640,
+        "sha256": "72409510fdc488cab01fcdb4eb6425bd4ec8608cbbec6fab4476e8d091ac3285",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:54:55 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-058",
+      "path": "currsite/Screenshot 2026-09-14 165504.png",
+      "filename": "Screenshot 2026-09-14 165504.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1780,
+        "aspect_ratio": 1.6169,
+        "orientation": "landscape",
+        "bytes": 1015233,
+        "sha256": "fbc5c5f5d4a03d121952aaf463fbee4ce40db6be4d07cffa17b1e12bbd51ff7b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:04 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-059",
+      "path": "currsite/Screenshot 2026-09-14 165512.png",
+      "filename": "Screenshot 2026-09-14 165512.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1779,
+        "aspect_ratio": 1.6178,
+        "orientation": "landscape",
+        "bytes": 2505231,
+        "sha256": "3da857492e28a9aa2ce0425e7b639e66d04f161b669c3533eedd7109220198a4",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:12 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-060",
+      "path": "currsite/Screenshot 2026-09-14 165521.png",
+      "filename": "Screenshot 2026-09-14 165521.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1782,
+        "aspect_ratio": 1.615,
+        "orientation": "landscape",
+        "bytes": 3141089,
+        "sha256": "7cc51075eb21428076bf5dd219a1d44a5934f129f9858d434a69573766eae0a5",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:21 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-061",
+      "path": "currsite/Screenshot 2026-09-14 165527.png",
+      "filename": "Screenshot 2026-09-14 165527.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1777,
+        "aspect_ratio": 1.6196,
+        "orientation": "landscape",
+        "bytes": 1521307,
+        "sha256": "0cc41ba19a1ef0af3be8606d1e987bfe4629d7af2db95a4323f748f8fb69c38d",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:27 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-062",
+      "path": "currsite/Screenshot 2026-09-14 165534.png",
+      "filename": "Screenshot 2026-09-14 165534.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1782,
+        "aspect_ratio": 1.615,
+        "orientation": "landscape",
+        "bytes": 1495223,
+        "sha256": "a7be98935c7b977323e5c8df7bfad1e265fceca5ec0f1955b9d43f5c0906d9e2",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:34 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-063",
+      "path": "currsite/Screenshot 2026-09-14 165539.png",
+      "filename": "Screenshot 2026-09-14 165539.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1768,
+        "aspect_ratio": 1.6278,
+        "orientation": "landscape",
+        "bytes": 2756095,
+        "sha256": "2c6cdf43805b67d924e4347a24c0d144c5854c7f946c76ca8e1e6e934a1ac1e6",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:39 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-064",
+      "path": "currsite/Screenshot 2026-09-14 165549.png",
+      "filename": "Screenshot 2026-09-14 165549.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1780,
+        "aspect_ratio": 1.6169,
+        "orientation": "landscape",
+        "bytes": 2815768,
+        "sha256": "977dc7f59e88b64e58a7e50ebe2b4480017fd1bcac9f5c107aa8610ba60b3e0a",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:49 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-065",
+      "path": "currsite/Screenshot 2026-09-14 165555.png",
+      "filename": "Screenshot 2026-09-14 165555.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1789,
+        "aspect_ratio": 1.6087,
+        "orientation": "landscape",
+        "bytes": 1075084,
+        "sha256": "2890712ea16da6f195680adc446675135c6f6fa889ab8b8fab0e548694a7bc84",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:55:55 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-066",
+      "path": "currsite/Screenshot 2026-09-14 165603.png",
+      "filename": "Screenshot 2026-09-14 165603.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1773,
+        "aspect_ratio": 1.6232,
+        "orientation": "landscape",
+        "bytes": 1370030,
+        "sha256": "1a14db02b95b82b2786694bce871af4eb4eaeb42731def2d3006b10de085e3e1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:56:03 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-067",
+      "path": "currsite/Screenshot 2026-09-14 165610.png",
+      "filename": "Screenshot 2026-09-14 165610.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1782,
+        "aspect_ratio": 1.615,
+        "orientation": "landscape",
+        "bytes": 944780,
+        "sha256": "da287abddf6d31a993d385fb99b85cd7cef07e3754d8fcd8b78c508eca46fa2b",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:56:10 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-068",
+      "path": "currsite/Screenshot 2026-09-14 165616.png",
+      "filename": "Screenshot 2026-09-14 165616.png",
+      "category": "public_site_screenshot_evidence",
+      "status": "historical_visual_evidence",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 2878,
+        "height_px": 1786,
+        "aspect_ratio": 1.6114,
+        "orientation": "landscape",
+        "bytes": 1399205,
+        "sha256": "edb4f9e53916e2e1933cfe050e9b4cf22b12c05b2d016fdfe6939dc983984d17",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Point-in-time public-site screenshot captured at 16:56:16 on 2026-09-14. It is visual regression/experience evidence for the actual /proto/public presentation—dark near-black canvas, chrome framing, fire-red/orange emphasis, bone-white display type, yellow fact accents, modular cards and clear utility copy—not an independent reusable artwork.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-069",
+      "path": "docs/just_one_kiss_bolt_on_markup.svg",
+      "filename": "just_one_kiss_bolt_on_markup.svg",
+      "category": "documentation_diagram",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 768,
+        "height_px": 3022,
+        "aspect_ratio": 0.2541,
+        "orientation": "portrait",
+        "bytes": 11540,
+        "sha256": "6c861afe8a43c16ebf1aeb8151d660615e36f956a7cfbe3e44f7c10c71efb6b4",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Vector bolt-on website markup diagram showing proposed branded modules/annotations over a site concept. Engineering communication artifact, not marketing output.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-070",
+      "path": "docs/just_one_kiss_bolt_on_markup_upgraded.svg",
+      "filename": "just_one_kiss_bolt_on_markup_upgraded.svg",
+      "category": "documentation_diagram",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 768,
+        "height_px": 3022,
+        "aspect_ratio": 0.2541,
+        "orientation": "portrait",
+        "bytes": 15852,
+        "sha256": "a088deaeb7440c5af9237ca064bcf64338fd6de37803db844752ad88180311f0",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Upgraded vector bolt-on diagram with refined website/module annotations. Use to understand placement and system intent; it is not a campaign image.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-071",
+      "path": "docs/website_bolt_on_screenshot_annotated.svg",
+      "filename": "website_bolt_on_screenshot_annotated.svg",
+      "category": "documentation_diagram",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 768,
+        "height_px": 3022,
+        "aspect_ratio": 0.2541,
+        "orientation": "portrait",
+        "bytes": 15340,
+        "sha256": "26ba6cc85061715f720d72600c751a8747a6eccf12532c6b619ecb100eab69d2",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Annotated vector screenshot/diagram identifying website bolt-on locations. It records implementation guidance and should not set photography or illustration style.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-072",
+      "path": "marketing/assets/social/JOK_AUD-A_S01_C01_STILL_4x5_V01.svg",
+      "filename": "JOK_AUD-A_S01_C01_STILL_4x5_V01.svg",
+      "category": "social_concept_master",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 1080,
+        "height_px": 1350,
+        "aspect_ratio": 0.8,
+        "orientation": "portrait",
+        "bytes": 1983,
+        "sha256": "232f8cba3059327fdf426f0346df4e46a0464c255538a0e4af07901cde22b3bc",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Editable 4:5 social concept master for the aspirational lens: a monumental glowing portal, black field, chrome structure, fire energy and controlled text zones. Original abstraction; concept status, not an approved release.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-073",
+      "path": "marketing/assets/social/JOK_AUD-B_S01_C01_STILL_4x5_V01.svg",
+      "filename": "JOK_AUD-B_S01_C01_STILL_4x5_V01.svg",
+      "category": "social_concept_master",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 1080,
+        "height_px": 1350,
+        "aspect_ratio": 0.8,
+        "orientation": "portrait",
+        "bytes": 2389,
+        "sha256": "fa667c410c1047309b45a2475c429f1150b8dc9abdba103b9f7265cb4b1349e3",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Editable 4:5 social concept master for the rational lens: evidence-grid organization and proof labels translate show credibility into a dark industrial dossier system. Original abstraction; concept status.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-074",
+      "path": "marketing/assets/social/JOK_AUD-C_S01_C01_STILL_4x5_V01.svg",
+      "filename": "JOK_AUD-C_S01_C01_STILL_4x5_V01.svg",
+      "category": "social_concept_master",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 1080,
+        "height_px": 1350,
+        "aspect_ratio": 0.8,
+        "orientation": "portrait",
+        "bytes": 1959,
+        "sha256": "a9ed0335aaf7c990a5d2e430343eed387b025550de8b979b59e3330fe5c3b044",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Editable 4:5 social concept master for the value lens: high-energy three-step utility rail combines spectacle with quickly scanned practical benefits. Original abstraction; concept status.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-075",
+      "path": "marketing/assets/social/JOK_AUD-D_S01_C01_STILL_4x5_V01.svg",
+      "filename": "JOK_AUD-D_S01_C01_STILL_4x5_V01.svg",
+      "category": "social_concept_master",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 1080,
+        "height_px": 1350,
+        "aspect_ratio": 0.8,
+        "orientation": "portrait",
+        "bytes": 2148,
+        "sha256": "f27aef20e0907ca85b22a35798332baf29bdcab2f5642558b6761a04b0b6fe40",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Editable 4:5 social concept master for the community lens: handheld contact-sheet framing and a signal line evoke fan capture, sharing and collective memory. Original abstraction; concept status.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-076",
+      "path": "marketing/assets/social/JOK_AUD-E_S01_C01_STILL_4x5_V01.svg",
+      "filename": "JOK_AUD-E_S01_C01_STILL_4x5_V01.svg",
+      "category": "social_concept_master",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/svg+xml",
+        "width_px": 1080,
+        "height_px": 1350,
+        "aspect_ratio": 0.8,
+        "orientation": "portrait",
+        "bytes": 2055,
+        "sha256": "8542971bb113b49eeba66d52ad92f01243c65d22012e3167165dca96b6fea2ad",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Editable 4:5 social concept master for the authority lens: restrained symmetrical dossier framing makes the show feel controlled, credible and bookable. Original abstraction; concept status.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-077",
+      "path": "proto/public/assets/img/costume-chrome-detail.webp",
+      "filename": "costume-chrome-detail.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1122,
+        "height_px": 1402,
+        "aspect_ratio": 0.8003,
+        "orientation": "portrait",
+        "bytes": 1671696,
+        "sha256": "1359cd50d81de5f82336a582caed2afeba6c017fa7e058892a58e63f96f6191c",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Extreme close-up of original black leather-like armor with stitched seams, straps, buckles, conical studs, and layered chrome panels. Shallow depth of field and red edge reflections turn construction detail into premium tactile proof. No face appears; use as texture/proof, not a full narrative image.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-078",
+      "path": "proto/public/assets/img/fog-strobe-atmosphere.webp",
+      "filename": "fog-strobe-atmosphere.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1217984,
+        "sha256": "0e69ad5ad593cbc233bf413c1cd9210bffd036b0364122723515869253d996e8",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Wide, front-on lighting installation: rectangular side trusses and a circular overhead truss frame red, amber, and green fixtures over low rolling fog. The glossy black floor mirrors the beams. Repetition, bilateral balance, and clean equipment silhouettes communicate controlled spectacle rather than chaos.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-079",
+      "path": "proto/public/assets/img/gear-control-dossier.webp",
+      "filename": "gear-control-dossier.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1507750,
+        "sha256": "aaf0222644f1bedabc8bed76d777acccfeb7798aba50fba618dd3c2bdbfa60c1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Wide backstage/show-control tableau with stacked road cases, a laptop showing an abstract red control interface, fader surface, cables and cue-like tablets beside a loaded truss. Red stage haze is balanced by acidic green fog. It signals planning, infrastructure, and operational seriousness while retaining the site palette.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-080",
+      "path": "proto/public/assets/img/hero-stage-portal.webp",
+      "filename": "hero-stage-portal.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1122,
+        "height_px": 1402,
+        "aspect_ratio": 0.8003,
+        "orientation": "portrait",
+        "bytes": 1572454,
+        "sha256": "86fd89c630378f349ef7321471bcc1c155cc480d9e19c8ec9e3100ce90ca35f4",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Portrait-led, symmetrical arena portal: a backlit armored guitarist stands on steps inside a huge faceted chrome arch. Orange-red flame and smoke provide the only broad color against a black stage and reflective floor; specular white edges make the structure read as monumental metal. Strong central subject, black upper corners, and lower reflection create poster hierarchy and usable headline zones.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-081",
+      "path": "proto/public/assets/img/interlochen-dispatch-map.webp",
+      "filename": "interlochen-dispatch-map.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1655236,
+        "sha256": "b016db5e1c7c21d43f65b9a0268b512edccb2ae5d80416612cb83cb295634ab2",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Wide tactical-map graphic in a riveted black-metal frame. A glowing red US-31 route, target reticle and address callouts identify Interlochen; subdued cartography, compass ornament, condensed industrial labels and fire at the corners integrate directions into the show world. Treat as stylized orientation art, never a substitute for verified navigation.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-082",
+      "path": "proto/public/assets/img/layer-upload-20260721-203128-2acddb.png",
+      "filename": "layer-upload-20260721-203128-2acddb.png",
+      "category": "public_site_runtime_asset",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1024,
+        "height_px": 1536,
+        "aspect_ratio": 0.6667,
+        "orientation": "portrait",
+        "bytes": 2779483,
+        "sha256": "e666a02f7c170d748c1cb98970dbb562dd26f9b65f4c4fe9c3b69a6de235fb11",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "CMS/site-layer uploaded raster retained in the public asset directory. The opaque timestamp name and missing semantic approval record make it provenance evidence only; visually inspect and bind to an approved slot before reuse. Several uploads are exact duplicates of other timestamped files.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "provenance and approval state not evident from filename"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-083",
+      "path": "proto/public/assets/img/layer-upload-20260721-205527-61dd69.png",
+      "filename": "layer-upload-20260721-205527-61dd69.png",
+      "category": "public_site_runtime_asset",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1993222,
+        "sha256": "ba0ee568d2fa87129b39c433e09660615cd48900cca6ea0178a148ad32c736a1",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "CMS/site-layer uploaded raster retained in the public asset directory. The opaque timestamp name and missing semantic approval record make it provenance evidence only; visually inspect and bind to an approved slot before reuse. Several uploads are exact duplicates of other timestamped files.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "provenance and approval state not evident from filename"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-084",
+      "path": "proto/public/assets/img/layer-upload-20260721-210057-1203f2.png",
+      "filename": "layer-upload-20260721-210057-1203f2.png",
+      "category": "public_site_runtime_asset",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1955542,
+        "sha256": "0e5b3797db88b2654818c42f284050eb608fbe806599496a5e5c137e2af7879a",
+        "exact_duplicate_of": [
+          "canon/ssot/roadcase001.png"
+        ]
+      },
+      "engineering_description": "CMS/site-layer uploaded raster retained in the public asset directory. The opaque timestamp name and missing semantic approval record make it provenance evidence only; visually inspect and bind to an approved slot before reuse. Several uploads are exact duplicates of other timestamped files.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "provenance and approval state not evident from filename"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-085",
+      "path": "proto/public/assets/img/layer-upload-20260721-210432-ed187b.png",
+      "filename": "layer-upload-20260721-210432-ed187b.png",
+      "category": "public_site_runtime_asset",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1024,
+        "height_px": 1536,
+        "aspect_ratio": 0.6667,
+        "orientation": "portrait",
+        "bytes": 3710372,
+        "sha256": "5dfa523cc5324f625e4d5f96924b6cdbf32a2e51172416ae55212263e43068eb",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "CMS/site-layer uploaded raster retained in the public asset directory. The opaque timestamp name and missing semantic approval record make it provenance evidence only; visually inspect and bind to an approved slot before reuse. Several uploads are exact duplicates of other timestamped files.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "provenance and approval state not evident from filename"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-086",
+      "path": "proto/public/assets/img/layer-upload-20260721-211403-b05fc5.png",
+      "filename": "layer-upload-20260721-211403-b05fc5.png",
+      "category": "public_site_runtime_asset",
+      "status": "reference_only",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 941,
+        "height_px": 1672,
+        "aspect_ratio": 0.5628,
+        "orientation": "portrait",
+        "bytes": 1839393,
+        "sha256": "e797db2bafc056dd55d3d47779ac6c5e8816afd208ba255d14483581ccc0a29a",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "CMS/site-layer uploaded raster retained in the public asset directory. The opaque timestamp name and missing semantic approval record make it provenance evidence only; visually inspect and bind to an approved slot before reuse. Several uploads are exact duplicates of other timestamped files.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": [
+          "provenance and approval state not evident from filename"
+        ]
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-087",
+      "path": "proto/public/assets/img/press-performer-portrait.webp",
+      "filename": "press-performer-portrait.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1122,
+        "height_px": 1402,
+        "aspect_ratio": 0.8003,
+        "orientation": "portrait",
+        "bytes": 1548972,
+        "sha256": "f042e0d0186a1cb7e18e08764feb9337d5b68572cc5cfba9cf34d60025d1af83",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Vertical studio portrait of a tribute performer in black-and-chrome studded armor and high-contrast black/white face paint, reaching one hand toward camera. Warm red rim light and flames at the lower edge separate the figure from a black field. Powerful press crop, but likeness, makeup, costume and usage rights require explicit clearance.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-088",
+      "path": "proto/public/assets/img/road-case-vault-bg.webp",
+      "filename": "road-case-vault-bg.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1463672,
+        "sha256": "203db2593f967c460fab1f88c4a2a8c7740fc78c4d1cf0f330921f1c62149f6e",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Centered black touring road case with chrome rails, corner guards and latches, opened just enough to emit intense orange firelight and smoke. Low frontal viewpoint, wet black reflections, and red hazard stripes make the utilitarian object feel like a relic vault. Strong object silhouette supports archive/community storytelling.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-089",
+      "path": "proto/public/assets/img/spectacle-lighting-rig.webp",
+      "filename": "spectacle-lighting-rig.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1301986,
+        "sha256": "c6f510f5b5541386d630386f36d6dde32aa200d8052b37dddfab9ef11bc3a242",
+        "exact_duplicate_of": [
+          "canon/ssot/spectacle-lighting-rig.webp"
+        ]
+      },
+      "engineering_description": "Empty wide stage with side truss towers, a reflective deck, stairs, and volumetric red, green, and white beams cutting through dense fog. Most detail is held at the edges and lower third, leaving a dark upper field. It supplies live-show proof while preserving copy space and high contrast.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-090",
+      "path": "proto/public/assets/img/trailer-poster-stage-portal.webp",
+      "filename": "trailer-poster-stage-portal.webp",
+      "category": "public_site_runtime_asset",
+      "status": "runtime_in_use_or_available_review_required",
+      "technical": {
+        "mime_type": "image/webp",
+        "width_px": 1672,
+        "height_px": 941,
+        "aspect_ratio": 1.7768,
+        "orientation": "landscape",
+        "bytes": 1406558,
+        "sha256": "35132c58e04bf596cd5e38c0404b6b48e16b4e0e8c3d4d2bcb4fd7093eea7d57",
+        "exact_duplicate_of": []
+      },
+      "engineering_description": "Empty, wide theatrical portal constructed from mirrored black-chrome shards around a circular opening. Fire and smoke rise behind broad steps; two red spotlights and hard white metal glints reinforce symmetry. The vacant black center is a deliberate title/video aperture and the wide framing is the safest reference for text-overlay backgrounds.",
+      "marketing_fit": {
+        "canonical_visual_standard": true,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-091",
+      "path": "sept26/prototypes/Poster001.png",
+      "filename": "Poster001.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3274530,
+        "sha256": "d78631c0b8b26117a56a5fa631ae4be417f9f7061824a9d258378574350e0539",
+        "exact_duplicate_of": [
+          "canon/prototypes/Poster001.png"
+        ]
+      },
+      "engineering_description": "Dense vertical maximalist poster framed in antique-gold scrollwork, chains, stars, skulls, flames and road cases. A pointing, armored bassist and serpent prop dominate a mosaic of live-photo side panels; huge beveled chrome/fire title type creates the main stop, with a September 26, 2026 date panel below. It is more ornate and copy-dense than the active site and its date/copy are not current authority.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-092",
+      "path": "sept26/prototypes/Poster002.png",
+      "filename": "Poster002.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3338515,
+        "sha256": "7674f8b5b751f009c15995c0b5b6a60fb2a4d21cd3806238b5af71b71e83b2d4",
+        "exact_duplicate_of": [
+          "canon/prototypes/Poster002.png"
+        ]
+      },
+      "engineering_description": "Vertical baroque concert-bill variant with symmetrical gold demon ornaments, twin cobra forms and flame urns enclosing a central pointing bassist. Beveled chrome/fire title lettering occupies the lower middle, flanked by live action panels and many slogans; strong spectacle density but limited negative space, high trademark/likeness risk and prototype-only facts.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-093",
+      "path": "sept26/prototypes/Poster003.png",
+      "filename": "Poster003.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3255888,
+        "sha256": "2ef4c2621ad0d33b413bdff3558eb846f54cbdb42250e89c8350ba688e8dde47",
+        "exact_duplicate_of": [
+          "canon/prototypes/Poster003.png"
+        ]
+      },
+      "engineering_description": "Vertical stage-poster variant that places the bassist against red/green live lighting, crowd silhouettes, flame jets, twin serpent props and a bulb-style sign. An enormous metallic fire-filled title divides the performer from a structured date/disclaimer base; road cases and an ornate gold demon crest anchor the bottom. High energy, but extremely busy and rights-sensitive.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-094",
+      "path": "sept26/prototypes/Poster004.png",
+      "filename": "Poster004.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1009,
+        "height_px": 1559,
+        "aspect_ratio": 0.6472,
+        "orientation": "portrait",
+        "bytes": 3232670,
+        "sha256": "7e6d05a13cab9b908ba69aaad7fb9a0fb959b0121d60ca88a0ddb81d1baa403f",
+        "exact_duplicate_of": [
+          "canon/prototypes/Poster004.png"
+        ]
+      },
+      "engineering_description": "Surreal tropical-sunset poster: the armored bassist lounges in a beach chair raising a cocktail, surrounded by palms, tiki carving, parrot, gull, crab, castle, road cases and novelty props. Large silver title type sits at the top and handwritten-style jokes compete with a wooden date sign. Playful campaign branch, but intentionally departs from the active site’s disciplined arena darkness.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    },
+    {
+      "id": "IMG-095",
+      "path": "sept26/prototypes/Poster005.png",
+      "filename": "Poster005.png",
+      "category": "poster_prototype",
+      "status": "concept_not_approved_release",
+      "technical": {
+        "mime_type": "image/png",
+        "width_px": 1024,
+        "height_px": 1536,
+        "aspect_ratio": 0.6667,
+        "orientation": "portrait",
+        "bytes": 3305347,
+        "sha256": "a997f4e653b7231741fb7e9e0581259cc5b37e6f678b4eb43ce8466236ac6f99",
+        "exact_duplicate_of": [
+          "canon/prototypes/Poster005.png"
+        ]
+      },
+      "engineering_description": "Surreal tropical/motel travel poster with a reclining, cocktail-holding performer, bulldog, hula figure, palm silhouettes, moon, destination signpost, ship and branded cases. A massive fire-textured title crowns the scene and the date sits in oversized chrome type at the bottom. Visually maximal and novelty-led; not the restrained black/chrome/fire runtime benchmark.",
+      "marketing_fit": {
+        "canonical_visual_standard": false,
+        "recommended_role": "reference/evidence until slot, copy, rights, accessibility and release approval are recorded",
+        "risks": []
+      },
+      "accessibility_note": "Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text."
+    }
+  ]
+}
