@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-14",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "change_control_register",
+  "document_class": "record",
+  "title": "Change Control Register",
+  "description": "Change request; impacted documents/records; risk; approvals; propagation checklist; closure",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CTRL-01 and controlled-document minimum fields, lifecycle, synchronization, readiness and reporting sections",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Normative controlled change, revision, distribution, synchronization, and review triggers"
+    },
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "document-control rules, safety precedence, readiness checklist, and performance closeout",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Show-control revision precedence, distribution, and event-triggered review"
+    },
+    {
+      "source_id": "source:docs_current_documentation_groundwork_plan_md",
+      "path": "docs/current_documentation_groundwork_plan.md",
+      "sha256": "82d2299c32d8fe270ac35f42f84c85f89be80abbd13a8f8e9f6177ebb01974a7",
+      "locator": "authority domains, migration sequence, acceptance criteria",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Current documentation migration and propagation controls"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_compendium_manifest_json",
+      "path": "extract/compendium/00_control_and_governance/compendium_manifest.json",
+      "sha256": "a9a63f58c929c53273eff95967a3e51a02804e9ef2f2eba2b0bbff9386ed459d",
+      "locator": "control envelope, generation contract, document catalog at session start",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Starting catalog and dependency evidence"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_provenance_ledger_json",
+      "path": "extract/compendium/00_control_and_governance/provenance_ledger.json",
+      "sha256": "261a412c9fceaa3dc150daf9a8c76730d3689f88de09f1ebe450d85cffcf6e77",
+      "locator": "Section 90 and Section 00 batch records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Authored-batch provenance evidence"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_decision_register_json",
+      "path": "extract/compendium/00_control_and_governance/decision_register.json",
+      "sha256": "cc1251627157afbebe9ed0a69ab6a460dd667d63c7fbd1e7f6ba269fdb979d88",
+      "locator": "provisional local-schema and review-boundary decisions",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Decision and approval-boundary evidence"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_open_questions_register_json",
+      "path": "extract/compendium/00_control_and_governance/open_questions_register.json",
+      "sha256": "75733f1e0cb78c78db5f218d0e1561fa539b1390294d8e26ebee3e563bdc8422",
+      "locator": "controlled approval and jsonschema availability questions",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Open blocker and validation limitation evidence"
+    },
+    {
+      "source_id": "source:extract_work_sessions_2026_08_13_section_90_foundation_md",
+      "path": "extract/work_sessions/2026-08-13_section-90-foundation.md",
+      "sha256": "3aa8185e8796c497be4b6fa9968a95c20aa9c400141c5d821f67d26aa79baefa",
+      "locator": "verified transitions, sources, findings, and checks",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Operational evidence for Section 90 authored batch"
+    },
+    {
+      "source_id": "source:extract_work_sessions_2026_08_14_section_00_governance_foundation_md",
+      "path": "extract/work_sessions/2026-08-14_section-00-governance-foundation.md",
+      "sha256": "04abf92d7d3f185be002d1a28f830e6e96fc42eb02ba0a7c629b7a02ee37cae7",
+      "locator": "verified transitions, sources, decisions, and checks",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Operational evidence for Section 00 governance batch"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "rules": [
+      "A change is not effective until approved, propagated, distributed, and verified.",
+      "Safety HOLD, ABORT, or STOP authority overrides planned execution; resulting changes enter controlled propagation.",
+      "Operational handoffs and Git commits are evidence, not approval signatures.",
+      "Pending propagation and validation limitations remain visible until resolved."
+    ],
+    "records": [
+      {
+        "change_id": "change:section90-foundation-20260813",
+        "change_type": "major",
+        "status": "implemented_pending_approval",
+        "requested_by_role": "role:production_manager",
+        "approval_state": "pending controlled approval",
+        "approval_evidence_ref": null,
+        "revision_reason": "Establish reusable schemas and vocabularies before business-domain extraction.",
+        "revision_refs": [
+          "revision:section90-foundation-1.0.0"
+        ],
+        "impacted_document_ids": [
+          "section:90_schemas_and_vocabularies"
+        ],
+        "impact": {
+          "authority": "Adds validation contracts without approving business facts.",
+          "safety": "Preserves safety and publication evidence gates.",
+          "privacy": "Forbids raw form payload, mail body, and secrets in unrestricted records.",
+          "downstream": [
+            "00_control_and_governance",
+            "all future business leaves"
+          ]
+        },
+        "propagation": {
+          "completed": [
+            "Section 90 leaves authored at review",
+            "manifest synchronized",
+            "Section 90 README and extract README synchronized",
+            "structural validator extended"
+          ],
+          "pending": [
+            "controlled role-owner approval",
+            "full Draft 2020-12 metaschema and format assertions when jsonschema is available"
+          ]
+        },
+        "distribution": {
+          "audience_roles": [
+            "role:production_manager",
+            "role:owner_performer",
+            "role:department_lead"
+          ],
+          "method": "repository commit and operational handoff",
+          "acknowledgement_required_before_operational_use": true,
+          "withdrawal_required": false
+        },
+        "supersession": {
+          "supersedes": [],
+          "superseded_by": null,
+          "obsolete_copy_withdrawal": "not applicable; initial compendium batch"
+        },
+        "evidence_refs": [
+          "source:extract_work_sessions_2026_08_13_section_90_foundation_md",
+          "decision:section90-local-schema-ids-001",
+          "question:jsonschema-availability-001"
+        ]
+      },
+      {
+        "change_id": "change:section00-governance-foundation-20260814",
+        "change_type": "major",
+        "status": "implemented_pending_approval",
+        "requested_by_role": "role:production_manager",
+        "approval_state": "pending controlled approval",
+        "approval_evidence_ref": null,
+        "revision_reason": "Establish governance policies and evidence/issue registers before domain extraction.",
+        "revision_refs": [
+          "revision:section00-governance-foundation-1.0.0"
+        ],
+        "impacted_document_ids": [
+          "compendium_manifest",
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry",
+          "provenance_ledger",
+          "conflict_register",
+          "open_questions_register",
+          "decision_register"
+        ],
+        "impact": {
+          "authority": "Defines review-stage controls without claiming effective approval.",
+          "safety": "Makes safety restrictions override planned timing and release.",
+          "privacy": "Requires restricted references rather than copied PII or secret values.",
+          "downstream": [
+            "remaining Section 00 leaves",
+            "Section 01 and later extraction"
+          ]
+        },
+        "propagation": {
+          "completed": [
+            "nine Section 00 leaves authored at review",
+            "manifest synchronized",
+            "Section 00 README and extract README synchronized",
+            "governance validator checks added"
+          ],
+          "pending": [
+            "remaining four Section 00 leaves",
+            "controlled role-owner approval",
+            "full Draft 2020-12 metaschema and format assertions when jsonschema is available"
+          ]
+        },
+        "distribution": {
+          "audience_roles": [
+            "role:production_manager",
+            "role:owner_performer",
+            "role:department_lead"
+          ],
+          "method": "repository commit and operational handoff",
+          "acknowledgement_required_before_operational_use": true,
+          "withdrawal_required": false
+        },
+        "supersession": {
+          "supersedes": [],
+          "superseded_by": null,
+          "obsolete_copy_withdrawal": "not applicable; initial governance batch"
+        },
+        "evidence_refs": [
+          "source:extract_work_sessions_2026_08_14_section_00_governance_foundation_md",
+          "decision:review-boundary-001",
+          "question:controlled-approval-evidence-001"
+        ]
+      }
+    ],
+    "record_count": 2
+  }
+}

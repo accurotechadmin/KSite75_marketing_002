@@ -1,0 +1,1868 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "department_cue_crosswalk",
+  "document_class": "registry",
+  "title": "Department Cue Crosswalk",
+  "description": "Department ownership and pending cue allocations for controlled PGM/TECH/FIN relationships",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "Sections 2-5; controlled document families and common cue fields",
+      "extraction_method": "SHA-256 plus WordprocessingML text/table extraction and targeted manual reconciliation",
+      "stated_use": "Department ownership, cue-field, concurrence, and safety requirements"
+    },
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 6-8; department responsibility and controlled event tables",
+      "extraction_method": "SHA-256 plus WordprocessingML text/table extraction and targeted manual reconciliation",
+      "stated_use": "Controlled event relationships and department responsibility evidence"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_program_timeline_crosswalk_json",
+      "path": "extract/compendium/02_show_program_and_timeline/program_timeline_crosswalk.json",
+      "sha256": "08dbb52b0dc1b4d9825fd1458c3df35da0026f268f72fc57d465d021aca8a551",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Resolvable event-to-Timeline relationships"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "allocation_rule": "Department cue IDs and exact triggers remain null until allocated in the responsible controlled department document and concurred by required roles.",
+    "safety_rule": "TECH and FIN relationships cannot execute from this crosswalk; controlled approval, department concurrence, readiness evidence, and applicable safety authority are mandatory. HOLD, ABORT, and STOP override timing.",
+    "records": [
+      {
+        "crosswalk_id": "DC-PGM-001",
+        "controlled_event_ref": "PGM-001",
+        "timeline_moment_ref": "timeline:song-001",
+        "program_timeline_crosswalk_ref": "XW-PGM-001",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-002",
+        "controlled_event_ref": "PGM-002",
+        "timeline_moment_ref": "timeline:song-002",
+        "program_timeline_crosswalk_ref": "XW-PGM-002",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-003",
+        "controlled_event_ref": "PGM-003",
+        "timeline_moment_ref": "timeline:song-003",
+        "program_timeline_crosswalk_ref": "XW-PGM-003",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-004",
+        "controlled_event_ref": "PGM-004",
+        "timeline_moment_ref": "timeline:song-004",
+        "program_timeline_crosswalk_ref": "XW-PGM-004",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-005",
+        "controlled_event_ref": "PGM-005",
+        "timeline_moment_ref": "timeline:song-005",
+        "program_timeline_crosswalk_ref": "XW-PGM-005",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-006",
+        "controlled_event_ref": "PGM-006",
+        "timeline_moment_ref": "timeline:song-006",
+        "program_timeline_crosswalk_ref": "XW-PGM-006",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-007",
+        "controlled_event_ref": "PGM-007",
+        "timeline_moment_ref": "timeline:song-007",
+        "program_timeline_crosswalk_ref": "XW-PGM-007",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-008",
+        "controlled_event_ref": "PGM-008",
+        "timeline_moment_ref": "timeline:song-008",
+        "program_timeline_crosswalk_ref": "XW-PGM-008",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-009",
+        "controlled_event_ref": "PGM-009",
+        "timeline_moment_ref": "timeline:song-009",
+        "program_timeline_crosswalk_ref": "XW-PGM-009",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-010",
+        "controlled_event_ref": "PGM-010",
+        "timeline_moment_ref": "timeline:song-010",
+        "program_timeline_crosswalk_ref": "XW-PGM-010",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-011",
+        "controlled_event_ref": "PGM-011",
+        "timeline_moment_ref": "timeline:song-011",
+        "program_timeline_crosswalk_ref": "XW-PGM-011",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-012",
+        "controlled_event_ref": "PGM-012",
+        "timeline_moment_ref": "timeline:song-012",
+        "program_timeline_crosswalk_ref": "XW-PGM-012",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-013",
+        "controlled_event_ref": "PGM-013",
+        "timeline_moment_ref": "timeline:song-013",
+        "program_timeline_crosswalk_ref": "XW-PGM-013",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-014",
+        "controlled_event_ref": "PGM-014",
+        "timeline_moment_ref": "timeline:song-014",
+        "program_timeline_crosswalk_ref": "XW-PGM-014",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-015",
+        "controlled_event_ref": "PGM-015",
+        "timeline_moment_ref": "timeline:song-015",
+        "program_timeline_crosswalk_ref": "XW-PGM-015",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-016",
+        "controlled_event_ref": "PGM-016",
+        "timeline_moment_ref": "timeline:song-016",
+        "program_timeline_crosswalk_ref": "XW-PGM-016",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-017",
+        "controlled_event_ref": "PGM-017",
+        "timeline_moment_ref": "timeline:song-017",
+        "program_timeline_crosswalk_ref": "XW-PGM-017",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-018",
+        "controlled_event_ref": "PGM-018",
+        "timeline_moment_ref": "timeline:song-018",
+        "program_timeline_crosswalk_ref": "XW-PGM-018",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-019",
+        "controlled_event_ref": "PGM-019",
+        "timeline_moment_ref": "timeline:song-019",
+        "program_timeline_crosswalk_ref": "XW-PGM-019",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-020",
+        "controlled_event_ref": "PGM-020",
+        "timeline_moment_ref": "timeline:song-020",
+        "program_timeline_crosswalk_ref": "XW-PGM-020",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-021",
+        "controlled_event_ref": "PGM-021",
+        "timeline_moment_ref": "timeline:song-021",
+        "program_timeline_crosswalk_ref": "XW-PGM-021",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-022",
+        "controlled_event_ref": "PGM-022",
+        "timeline_moment_ref": "timeline:song-022",
+        "program_timeline_crosswalk_ref": "XW-PGM-022",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-023",
+        "controlled_event_ref": "PGM-023",
+        "timeline_moment_ref": "timeline:song-023",
+        "program_timeline_crosswalk_ref": "XW-PGM-023",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-024",
+        "controlled_event_ref": "PGM-024",
+        "timeline_moment_ref": "timeline:song-024",
+        "program_timeline_crosswalk_ref": "XW-PGM-024",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-025",
+        "controlled_event_ref": "PGM-025",
+        "timeline_moment_ref": "timeline:song-025",
+        "program_timeline_crosswalk_ref": "XW-PGM-025",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-026",
+        "controlled_event_ref": "PGM-026",
+        "timeline_moment_ref": "timeline:song-026",
+        "program_timeline_crosswalk_ref": "XW-PGM-026",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-027",
+        "controlled_event_ref": "PGM-027",
+        "timeline_moment_ref": "timeline:song-027",
+        "program_timeline_crosswalk_ref": "XW-PGM-027",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-028",
+        "controlled_event_ref": "PGM-028",
+        "timeline_moment_ref": "timeline:song-028",
+        "program_timeline_crosswalk_ref": "XW-PGM-028",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-029",
+        "controlled_event_ref": "PGM-029",
+        "timeline_moment_ref": "timeline:song-029",
+        "program_timeline_crosswalk_ref": "XW-PGM-029",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-PGM-030",
+        "controlled_event_ref": "PGM-030",
+        "timeline_moment_ref": "timeline:song-030",
+        "program_timeline_crosswalk_ref": "XW-PGM-030",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": false,
+        "execution_state": "withheld_pending_approval",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-TECH-001",
+        "controlled_event_ref": "TECH-001",
+        "timeline_moment_ref": "timeline:trn-001",
+        "program_timeline_crosswalk_ref": "XW-TECH-001",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUTO",
+            "controlled_document_family": "AUTO-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:automation_rigging_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-TECH-002",
+        "controlled_event_ref": "TECH-002",
+        "timeline_moment_ref": "timeline:cst-001",
+        "program_timeline_crosswalk_ref": "XW-TECH-002",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "WARD",
+            "controlled_document_family": "WARD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:wardrobe_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-TECH-003",
+        "controlled_event_ref": "TECH-003",
+        "timeline_moment_ref": "timeline:vid-001",
+        "program_timeline_crosswalk_ref": "XW-TECH-003",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUTO",
+            "controlled_document_family": "AUTO-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:automation_rigging_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-FIN-001",
+        "controlled_event_ref": "FIN-001",
+        "timeline_moment_ref": "timeline:fin-001",
+        "program_timeline_crosswalk_ref": "XW-FIN-001",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "FOH",
+            "controlled_document_family": "SAFE-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:front_of_house_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-FIN-002",
+        "controlled_event_ref": "FIN-002",
+        "timeline_moment_ref": "timeline:fin-002",
+        "program_timeline_crosswalk_ref": "XW-FIN-002",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "FOH",
+            "controlled_document_family": "SAFE-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:front_of_house_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-FIN-003",
+        "controlled_event_ref": "FIN-003",
+        "timeline_moment_ref": "timeline:fin-003",
+        "program_timeline_crosswalk_ref": "XW-FIN-003",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "FOH",
+            "controlled_document_family": "SAFE-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:front_of_house_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      },
+      {
+        "crosswalk_id": "DC-FIN-004",
+        "controlled_event_ref": "FIN-004",
+        "timeline_moment_ref": "timeline:fin-004",
+        "program_timeline_crosswalk_ref": "XW-FIN-004",
+        "mapping_state": "pending_department_allocation",
+        "safety_critical": true,
+        "execution_state": "blocked_pending_approval_and_readiness",
+        "department_allocations": [
+          {
+            "department": "SM",
+            "controlled_document_family": "SM-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:stage_manager",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "AUD",
+            "controlled_document_family": "AUD-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:audio_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "LX",
+            "controlled_document_family": "LX-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:lighting_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "VID",
+            "controlled_document_family": "VID-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:video_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          },
+          {
+            "department": "FOH",
+            "controlled_document_family": "SAFE-01",
+            "department_cue_id": null,
+            "trigger": null,
+            "owner_role": "role:front_of_house_lead",
+            "concurrence_state": "pending",
+            "completion_signal": null
+          }
+        ],
+        "approval_state": "withheld",
+        "notes": "Null cue IDs and triggers are intentional; department plans must allocate and approve them."
+      }
+    ]
+  }
+}

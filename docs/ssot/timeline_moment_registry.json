@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.timeline_moment_registry",
+  "source_document": {
+    "path": "docs/timeline_moment_registry.md",
+    "title": "Just One KISS - Timeline Moment Registry",
+    "format": "markdown",
+    "category": "timeline",
+    "role": "Central registry for assigning, reserving, and governing Timeline Moment IDs.",
+    "source_size_bytes": 12209
+  },
+  "timeline_classification": "MIXED",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "two_person_execution_model": {
+      "performer": "single performer",
+      "crew_operator": "single show-control system"
+    },
+    "rights_posture": "Public outputs must be public-ready, original, reviewed, and focused on the event experience.",
+    "ambiguous_timeline_classification": {
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "needs_timeline_review",
+      "deprecated_marker": "GEN-PENDING-REVIEW",
+      "rule": "Do not introduce GEN-PENDING-REVIEW in active app/data contracts; use GEN plus status=needs_timeline_review for ambiguous records."
+    }
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "timeline",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as stable structured source data; prototype layouts may vary but should not fork facts away from this SSOT record."
+  },
+  "content_summary": "Central registry for assigning, reserving, and governing Timeline Moment IDs.",
+  "canonical_records": [
+    {
+      "record_id": "timeline.rule.classification",
+      "title": "Timeline or GENERAL classification rule",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active"
+    },
+    {
+      "record_id": "timeline.id_families",
+      "title": "Timeline Moment ID families",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "families": [
+        "PRE-###",
+        "OPEN-###",
+        "SET-###",
+        "SONG-###",
+        "TRN-###",
+        "CST-###",
+        "VID-###",
+        "LGT-###",
+        "FOG-###",
+        "STR-###",
+        "SPK-###",
+        "FIN-###",
+        "ENC-###",
+        "POST-###",
+        "GEN"
+      ]
+    },
+    {
+      "record_id": "timeline.rule.ambiguous_classification",
+      "title": "Ambiguous timeline classification rule",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "ambiguous_record_status": "needs_timeline_review",
+      "deprecated_marker": "GEN-PENDING-REVIEW"
+    }
+  ],
+  "relationships": {
+    "source_path": "docs/timeline_moment_registry.md",
+    "related_ssot_documents": [],
+    "related_human_documents": []
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-20",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and docs/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-20",
+    "ssot_companion_purpose": "Machine-readable seed for website prototypes, owner-admin views, generated materials, and future production data files."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "jok.marketing-expression.campaign-system",
+  "status": "draft_internal",
+  "canon": "../canon/BRAND_CANON.json",
+  "trace_order": ["brand_truth", "narrative", "audience_lens", "funnel_stage", "message_proposition", "proof", "creative_concept", "asset", "placement", "cta", "landing_destination", "measurement_event"],
+  "shared": {
+    "brand_truth_id": "BT-01",
+    "brand_truth": "Just One KISS is an independent theatrical rock tribute that turns disciplined original craft into a reachable, arena-scale communal experience.",
+    "required_disclaimer": "Just One KISS is an independent theatrical rock tribute. No official affiliation, sponsorship, authorization, or endorsement is implied.",
+    "landing_page": "../site/index.html",
+    "release_status": "demonstration_not_approved_public"
+  },
+  "stages": {
+    "S01": {"name": "awareness", "job": "distinctive recognition"},
+    "S02": {"name": "consideration", "job": "explain difference with proof"},
+    "S03": {"name": "interaction", "job": "earn a low-risk behavior"},
+    "S04": {"name": "conversion", "job": "fulfill the approved objective"},
+    "S05": {"name": "post_conversion_wom", "job": "provide value and request permissioned advocacy"}
+  },
+  "campaigns": [
+    {
+      "id": "AUD-A", "slug": "aspirational", "title": "Enter the Larger Night", "question": "Who could I become inside this night?", "narrative_id": "NAR-01", "expression": "cinematic_editorial", "proposition": "Step out of the ordinary and into a night built at mythic scale.", "proof": "cleared original portal or stage-craft image", "concept": "chrome threshold in black space", "accent": "ember", "cta": "ENTER THE STORY", "destination": "?lens=A#story", "primary_event": "view_story", "asset": "../assets/social/JOK_AUD-A_S01_C01_STILL_4x5_V01.svg",
+      "funnel": [
+        {"stage":"S01","message":"Enter something larger.","asset":"hero_reveal","cta":"WATCH","event":"watch_hero"},
+        {"stage":"S02","message":"See shadow become spectacle.","asset":"editorial_story","cta":"VIEW STORY","event":"view_story"},
+        {"stage":"S03","message":"Choose the chapter that calls you.","asset":"lens_prompt","cta":"CHOOSE","event":"start_lens_prompt"},
+        {"stage":"S04","message":"Receive the next verified chapter.","asset":"signal_panel","cta":"JOIN UPDATES","event":"start_signal_form"},
+        {"stage":"S05","message":"Carry a cleared artifact forward.","asset":"share_card","cta":"SHARE","event":"share_story"}
+      ]
+    },
+    {
+      "id": "AUD-B", "slug": "rational", "title": "The Craft Behind the Heat", "question": "Why should I believe the promise?", "narrative_id": "NAR-03", "expression": "evidence_information", "proposition": "Look closer: every convincing moment begins with intent.", "proof": "reviewed annotated craft record", "concept": "numbered chrome specimen board", "accent": "signal_yellow", "cta": "SEE THE PROOF", "destination": "?lens=B#proof", "primary_event": "open_proof_card", "asset": "../assets/social/JOK_AUD-B_S01_C01_STILL_4x5_V01.svg",
+      "funnel": [
+        {"stage":"S01","message":"One observable detail earns attention.","asset":"detail_still","cta":"LOOK CLOSER","event":"view_proof"},
+        {"stage":"S02","message":"Original choices make the world credible.","asset":"proof_carousel","cta":"SEE HOW","event":"open_proof_card"},
+        {"stage":"S03","message":"Ask a precise question.","asset":"question_card","cta":"ASK","event":"start_question"},
+        {"stage":"S04","message":"Get sourced production notes.","asset":"signal_panel","cta":"JOIN UPDATES","event":"start_signal_form"},
+        {"stage":"S05","message":"Record a permissioned review.","asset":"review_form","cta":"REVIEW","event":"start_review"}
+      ]
+    },
+    {
+      "id": "AUD-C", "slug": "value", "title": "Big Night. Clear Next Step.", "question": "Is this worth my attention, and is it easy to approach?", "narrative_id": "NAR-01", "expression": "direct_response_utility", "proposition": "Big feeling. No maze. Get only the verified details you need.", "proof": "current fact card and tested destination", "concept": "oversized headline plus three-step utility rail", "accent": "hot_orange", "cta": "GET THE SIGNAL", "destination": "?lens=C#signal", "primary_event": "start_signal_form", "asset": "../assets/social/JOK_AUD-C_S01_C01_STILL_4x5_V01.svg",
+      "funnel": [
+        {"stage":"S01","message":"Arena-scale imagination. Reachable connection.","asset":"benefit_still","cta":"LEARN","event":"view_details"},
+        {"stage":"S02","message":"Know what it is and what comes next.","asset":"three_step_card","cta":"SEE DETAILS","event":"open_plan"},
+        {"stage":"S03","message":"Save the current practical card.","asset":"save_card","cta":"SAVE","event":"save_plan"},
+        {"stage":"S04","message":"Request verified updates only.","asset":"signal_panel","cta":"GET THE SIGNAL","event":"start_signal_form"},
+        {"stage":"S05","message":"Share the accurate source.","asset":"locked_share_card","cta":"COPY LINK","event":"copy_share_link"}
+      ]
+    },
+    {
+      "id": "AUD-D", "slug": "community", "title": "We Complete the Ritual", "question": "Do people like me belong here?", "narrative_id": "NAR-04", "expression": "creator_native_documentary", "proposition": "The stage starts the signal. The crowd makes it live.", "proof": "permissioned first-person story or community artifact", "concept": "contact sheet joined by a red signal thread", "accent": "signal_red", "cta": "JOIN THE SIGNAL", "destination": "?lens=D#community", "primary_event": "start_signal_form", "asset": "../assets/social/JOK_AUD-D_S01_C01_STILL_4x5_V01.svg",
+      "funnel": [
+        {"stage":"S01","message":"You are part of this.","asset":"creator_hook","cta":"WATCH","event":"watch_community"},
+        {"stage":"S02","message":"Hear a cleared first-person story.","asset":"story_sequence","cta":"OPEN STORY","event":"open_story"},
+        {"stage":"S03","message":"Add a question to the signal.","asset":"qa_card","cta":"ASK","event":"start_question"},
+        {"stage":"S04","message":"Join with an exact value exchange.","asset":"signal_panel","cta":"JOIN","event":"start_signal_form"},
+        {"stage":"S05","message":"Contribute under explicit rights.","asset":"contribution_brief","cta":"CONTRIBUTE","event":"start_contribution"}
+      ]
+    },
+    {
+      "id": "AUD-E", "slug": "authority", "title": "Built With Intent", "question": "Is this a thoughtful, credible choice?", "narrative_id": "NAR-03", "expression": "premium_authority", "proposition": "Spectacle earns trust when every visible choice has a purpose.", "proof": "approved public-safe preparation overview", "concept": "restrained black and chrome dossier", "accent": "chrome", "cta": "OPEN THE DOSSIER", "destination": "?lens=E#proof", "primary_event": "open_dossier", "asset": "../assets/social/JOK_AUD-E_S01_C01_STILL_4x5_V01.svg",
+      "funnel": [
+        {"stage":"S01","message":"Intent before impact.","asset":"authority_film","cta":"WATCH","event":"watch_authority"},
+        {"stage":"S02","message":"Preparation is part of the promise.","asset":"public_dossier","cta":"OPEN DOSSIER","event":"open_dossier"},
+        {"stage":"S03","message":"Request the right overview.","asset":"inquiry_guide","cta":"REQUEST","event":"start_inquiry"},
+        {"stage":"S04","message":"Start a qualified conversation.","asset":"inquiry_form","cta":"INQUIRE","event":"submit_inquiry"},
+        {"stage":"S05","message":"Document an approved case story.","asset":"case_study_brief","cta":"DISCUSS","event":"start_case_study"}
+      ]
+    }
+  ]
+}

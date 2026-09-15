@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "document_control": {
+    "title": "Just One KISS Page Section Layout Inventory",
+    "classification": "GEN",
+    "status": "Current prototype admin-editable page section schema",
+    "last_updated": "2026-07-20"
+  },
+  "usage_policy": {
+    "prototype_only": true,
+    "source_file": "proto/docs/page_sections.json",
+    "public_rendering": "Published records render through proto/app/page_sections.php at explicit route slots only.",
+    "guardrail": "Use original rights-safe public-ready copy and approved image filenames only; keep safety/disclaimer facts intact."
+  },
+  "routes": {
+    "home": {
+      "label": "Homepage",
+      "public_path": "../public/index.php",
+      "slots": {
+        "before_hero": "Before hero",
+        "after_hero": "Between hero and event details",
+        "after_event": "Between event details and about",
+        "after_about": "Between about and updates",
+        "after_updates": "Between updates and final CTA",
+        "after_final": "Between final CTA and Fan Vault",
+        "after_vault": "After Fan Vault"
+      }
+    }
+  },
+  "sections": []
+}

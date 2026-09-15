@@ -1,0 +1,83 @@
+{
+  "schema_version": "2.0.0",
+  "document_id": "jok.marketing_lab.manifest",
+  "timeline_scope": "GEN",
+  "status": "draft_internal_laboratory",
+  "title": "Just One KISS Marketing Campaign Laboratory",
+  "entrypoint": "marketing/README.md",
+  "authority_notice": "Portable standalone marketing authority. Historical source paths are provenance only.",
+  "sections": {
+    "charter": [
+      "marketing/LAB_CHARTER.md"
+    ],
+    "canon": [
+      "marketing/canon/BRAND_CANON.md",
+      "marketing/canon/BRAND_CANON.json",
+      "marketing/canon/CAMPAIGN_CANON.md",
+      "marketing/canon/NINE_FAMILY_PLAYBOOK.md"
+    ],
+    "strategy": [
+      "marketing/strategy/AUDIENCES_AND_JOURNEYS.md",
+      "marketing/strategy/CAMPAIGN_ARCHITECTURE.md",
+      "marketing/strategy/CHANNEL_PLAYBOOK.md",
+      "marketing/strategy/CURRENT_EVENT_STARTER_CAMPAIGN.md",
+      "marketing/strategy/MEDIA_SPEC_APPENDIX.md"
+    ],
+    "production": [
+      "marketing/production/CONTENT_AND_ASSET_SYSTEM.md",
+      "marketing/production/CREATIVE_REVIEW_SCORECARD.md",
+      "marketing/production/ASSET_NAMING_AND_MASTERS.md"
+    ],
+    "operations": [
+      "marketing/operations/PRODUCTION_AND_RELEASE.md",
+      "marketing/operations/MEASUREMENT_AND_EXPERIMENTATION.md"
+    ],
+    "templates": [
+      "marketing/templates/CAMPAIGN_BRIEF_TEMPLATE.md",
+      "marketing/templates/CAMPAIGN_PIECE_TEMPLATE.md",
+      "marketing/templates/CONTENT_CALENDAR_TEMPLATE.md",
+      "marketing/templates/EXPERIMENT_CARD_TEMPLATE.md",
+      "marketing/templates/RELEASE_RECORD_TEMPLATE.md",
+      "marketing/templates/ASSET_RIGHTS_RECORD_TEMPLATE.md"
+    ],
+    "registers": [
+      "marketing/registers/campaign_registry.json",
+      "marketing/registers/experiment_registry.json",
+      "marketing/registers/release_registry.json"
+    ],
+    "source_library": [
+      "marketing/source_library/SOURCE_CATALOG.md",
+      "marketing/source_library/ALL_SOURCE_PATHS.md"
+    ],
+    "expression": [
+      "marketing/expression/MARKETING_EXPRESSION_LAYER.md",
+      "marketing/expression/FUNNEL_MATRIX.md"
+    ],
+    "campaigns": [
+      "marketing/campaigns/README.md",
+      "marketing/campaigns/campaign_system.json",
+      "marketing/campaigns/COPY_BANK.md",
+      "marketing/campaigns/CAMPAIGN_A_ASPIRATIONAL.md",
+      "marketing/campaigns/CAMPAIGN_B_RATIONAL.md",
+      "marketing/campaigns/CAMPAIGN_C_VALUE.md",
+      "marketing/campaigns/CAMPAIGN_D_COMMUNITY.md",
+      "marketing/campaigns/CAMPAIGN_E_AUTHORITY.md"
+    ],
+    "site": [
+      "marketing/site/index.html",
+      "marketing/site/styles.css",
+      "marketing/site/app.js",
+      "marketing/site/README.md"
+    ],
+    "assets": [
+      "marketing/assets/social/JOK_AUD-A_S01_C01_STILL_4x5_V01.svg",
+      "marketing/assets/social/JOK_AUD-B_S01_C01_STILL_4x5_V01.svg",
+      "marketing/assets/social/JOK_AUD-C_S01_C01_STILL_4x5_V01.svg",
+      "marketing/assets/social/JOK_AUD-D_S01_C01_STILL_4x5_V01.svg",
+      "marketing/assets/social/JOK_AUD-E_S01_C01_STILL_4x5_V01.svg"
+    ],
+    "portability": [
+      "marketing/PORTABILITY.md"
+    ]
+  }
+}

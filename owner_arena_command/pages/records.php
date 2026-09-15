@@ -1,0 +1,1 @@
+<?php ac_hero('Master browser','Records','Searchable, filterable normalized record table across SSOT-derived records and owner-managed JSON overlays.'); ?><p><a class="button" href="?page=record-detail&new=1">Add owner-managed record</a></p><?php ac_filters(); ac_record_table($records); ?>

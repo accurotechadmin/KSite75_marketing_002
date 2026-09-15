@@ -1,0 +1,472 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "status_vocabularies",
+  "document_class": "authority",
+  "title": "Status Vocabularies",
+  "description": "Controlled lifecycle, readiness, rights, safety, visibility, maintenance, decision, and release states.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "document.schema.json",
+  "source_refs": [
+    {
+      "source_id": "source:cue_book",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:content_model",
+      "path": "docs/ssot/settings/content_model.json",
+      "sha256": "0f3d926acea8b8e67dc4dff1f9b40368f6bce75feeb466ea73e9dcec62719e26",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:center_schema",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:release_gates",
+      "path": "center/data/release_gate_matrix.php",
+      "sha256": "5290ffadba42d1fcabc25ca9dd4eea3ee68710526545a72e433620f507ff9f63",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "governance": {
+      "authority_scope": "Controlled lifecycle, readiness, rights, safety, visibility, maintenance, decision, and release states.",
+      "change_rule": "Add, deprecate, or change meanings only through controlled review; preserve stable IDs and map legacy values.",
+      "approval_required_for_effective_use": true
+    },
+    "source_mapping": [
+      "Formal DOCX controls take precedence within their domains.",
+      "Settings and center contracts were normalized without treating prototype labels as approved canon.",
+      "Records remain REVIEW until a named authorized approver supplies controlled evidence."
+    ],
+    "vocabularies": [
+      {
+        "vocabulary_id": "document_status",
+        "values": [
+          {
+            "record_id": "status:document_status:scaffold",
+            "label": "Scaffold",
+            "definition": "Structure only; no extracted claims.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:draft",
+            "label": "Draft",
+            "definition": "Content may exist but is not ready for controlled review.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:working",
+            "label": "Working",
+            "definition": "Active extraction or reconciliation remains.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:conflict",
+            "label": "Conflict",
+            "definition": "An unresolved material authority or candidate-value conflict affects assertions.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:blocked",
+            "label": "Blocked",
+            "definition": "External evidence, permission, decision, rights, or safety authority prevents progress.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:review",
+            "label": "Review",
+            "definition": "Content, provenance, and validation are complete; controlled approval is pending.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:approved",
+            "label": "Approved",
+            "definition": "Approval evidence is present and all release conditions pass.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:generated",
+            "label": "Generated",
+            "definition": "Reproducible derivative tied to identified upstream revisions.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:superseded",
+            "label": "Superseded",
+            "definition": "Retained non-current authority with coherent replacement metadata.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:document_status:archived",
+            "label": "Archived",
+            "definition": "Retained history not active for operations.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "confidence_status",
+        "values": [
+          {
+            "record_id": "status:confidence_status:verified",
+            "label": "Verified",
+            "definition": "Confirmed by adequate authoritative evidence.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:confidence_status:provisional",
+            "label": "Provisional",
+            "definition": "Supported but awaiting a defined confirmation.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:confidence_status:estimated",
+            "label": "Estimated",
+            "definition": "Calculated or approximated; not a measurement.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:confidence_status:unverified",
+            "label": "Unverified",
+            "definition": "Claim captured without sufficient verification.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:confidence_status:not_applicable",
+            "label": "Not Applicable",
+            "definition": "The field does not apply to this record.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "readiness_status",
+        "values": [
+          {
+            "record_id": "status:readiness_status:draft",
+            "label": "Draft",
+            "definition": "Not ready for operational reliance.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:readiness_status:internal_ready",
+            "label": "Internal Ready",
+            "definition": "Fit for controlled internal use only.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:readiness_status:venue_ready",
+            "label": "Venue Ready",
+            "definition": "Fit for venue review; not necessarily public or show ready.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:readiness_status:public_ready",
+            "label": "Public Ready",
+            "definition": "All factual, rights, privacy, accessibility, and publication gates pass.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:readiness_status:show_ready",
+            "label": "Show Ready",
+            "definition": "A separate evidence-bearing checklist result; never inferred from content status.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "rights_status",
+        "values": [
+          {
+            "record_id": "status:rights_status:owned",
+            "label": "Owned",
+            "definition": "Ownership evidence is recorded.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:rights_status:licensed",
+            "label": "Licensed",
+            "definition": "Applicable license evidence and permitted use are recorded.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:rights_status:consented",
+            "label": "Consented",
+            "definition": "Required consent evidence is recorded.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:rights_status:needs_review",
+            "label": "Needs Review",
+            "definition": "Rights evidence or permitted scope remains incomplete.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:rights_status:reference_only",
+            "label": "Reference Only",
+            "definition": "May inform work but is not cleared for publication.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:rights_status:prohibited",
+            "label": "Prohibited",
+            "definition": "Use is expressly disallowed.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:rights_status:expired",
+            "label": "Expired",
+            "definition": "Prior clearance is outside its term.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "safety_status",
+        "values": [
+          {
+            "record_id": "status:safety_status:not_reviewed",
+            "label": "Not Reviewed",
+            "definition": "No responsible safety review is recorded.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:needs_review",
+            "label": "Needs Review",
+            "definition": "A defined safety review remains.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:venue_review_required",
+            "label": "Venue Review Required",
+            "definition": "Venue-specific authority or constraints are required.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:operator_only",
+            "label": "Operator Only",
+            "definition": "Information is restricted to qualified operational users.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:cleared_with_controls",
+            "label": "Cleared With Controls",
+            "definition": "Approved controls and limitations are recorded.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:hold",
+            "label": "Hold",
+            "definition": "Operation must not proceed pending stated condition.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:stop",
+            "label": "Stop",
+            "definition": "Operation must cease under controlling authority.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:safety_status:prohibited",
+            "label": "Prohibited",
+            "definition": "Operation is not permitted.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "visibility",
+        "values": [
+          {
+            "record_id": "status:visibility:public",
+            "label": "Public",
+            "definition": "Approved for unrestricted distribution.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:visibility:internal",
+            "label": "Internal",
+            "definition": "Project-team information without raw private data.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:visibility:restricted",
+            "label": "Restricted",
+            "definition": "Access-limited information such as contacts or submissions.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:visibility:safety_sensitive",
+            "label": "Safety Sensitive",
+            "definition": "Access-limited operational safety information.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "decision_status",
+        "values": [
+          {
+            "record_id": "status:decision_status:open",
+            "label": "Open",
+            "definition": "Decision remains unmade.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:decision_status:under_review",
+            "label": "Under Review",
+            "definition": "Authorized decision process is active.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:decision_status:decided",
+            "label": "Decided",
+            "definition": "Decision and authority evidence are recorded.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:decision_status:implemented",
+            "label": "Implemented",
+            "definition": "Approved decision has been propagated and verified.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:decision_status:reversed",
+            "label": "Reversed",
+            "definition": "A later controlled decision reverses this decision.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "maintenance_status",
+        "values": [
+          {
+            "record_id": "status:maintenance_status:unknown",
+            "label": "Unknown",
+            "definition": "No current inspection evidence.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:maintenance_status:serviceable",
+            "label": "Serviceable",
+            "definition": "Inspection supports intended use.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:maintenance_status:restricted_use",
+            "label": "Restricted Use",
+            "definition": "Use only within recorded constraints.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:maintenance_status:out_of_service",
+            "label": "Out Of Service",
+            "definition": "Must not be used.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:maintenance_status:repair_pending",
+            "label": "Repair Pending",
+            "definition": "Corrective work remains.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:maintenance_status:retired",
+            "label": "Retired",
+            "definition": "Removed permanently from active use.",
+            "status": "review"
+          }
+        ]
+      },
+      {
+        "vocabulary_id": "release_status",
+        "values": [
+          {
+            "record_id": "status:release_status:draft",
+            "label": "Draft",
+            "definition": "Release assembly remains editable.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:release_status:in_review",
+            "label": "In Review",
+            "definition": "Release package is under controlled review.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:release_status:blocked",
+            "label": "Blocked",
+            "definition": "At least one required gate cannot pass.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:release_status:approved",
+            "label": "Approved",
+            "definition": "Approval evidence exists; release may take effect as declared.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:release_status:published",
+            "label": "Published",
+            "definition": "Approved release was distributed or deployed.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:release_status:superseded",
+            "label": "Superseded",
+            "definition": "A newer controlled release replaces it.",
+            "status": "review"
+          },
+          {
+            "record_id": "status:release_status:withdrawn",
+            "label": "Withdrawn",
+            "definition": "Release was actively removed from use.",
+            "status": "review"
+          }
+        ]
+      }
+    ],
+    "record_count": 9
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "id_namespace_registry",
+  "document_class": "authority",
+  "title": "ID Namespace Registry",
+  "description": "Stable namespaces for controlled documents, program and technical events, Timeline moments, entities, sources, decisions, conflicts, and releases.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "document.schema.json",
+  "source_refs": [
+    {
+      "source_id": "source:cue_book",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:master_index",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:timeline",
+      "path": "docs/timeline_moment_registry.md",
+      "sha256": "237c6bc843edb1de78c3e1699fccfc04871998fea8f649f5822928bce22b1fe7",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:center_schema",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "governance": {
+      "authority_scope": "Stable namespaces for controlled documents, program and technical events, Timeline moments, entities, sources, decisions, conflicts, and releases.",
+      "change_rule": "Add, deprecate, or change meanings only through controlled review; preserve stable IDs and map legacy values.",
+      "approval_required_for_effective_use": true
+    },
+    "source_mapping": [
+      "Formal DOCX controls take precedence within their domains.",
+      "Settings and center contracts were normalized without treating prototype labels as approved canon.",
+      "Records remain REVIEW until a named authorized approver supplies controlled evidence."
+    ],
+    "records": [
+      {
+        "record_id": "namespace:document",
+        "label": "Compendium document",
+        "definition": "Lowercase stable document identifier matching the manifest and filename stem.",
+        "status": "review",
+        "pattern": "^[a-z0-9][a-z0-9._-]*$",
+        "example": "document.schema"
+      },
+      {
+        "record_id": "namespace:pgm",
+        "label": "Program event",
+        "definition": "Immutable Cue Book program-event identity.",
+        "status": "review",
+        "pattern": "^PGM-[0-9]{3}$",
+        "example": "PGM-001"
+      },
+      {
+        "record_id": "namespace:tech",
+        "label": "Special technical event",
+        "definition": "Immutable Cue Book technical-event identity.",
+        "status": "review",
+        "pattern": "^TECH-[0-9]{3}$",
+        "example": "TECH-001"
+      },
+      {
+        "record_id": "namespace:fin",
+        "label": "Finale event",
+        "definition": "Immutable Cue Book finale identity.",
+        "status": "review",
+        "pattern": "^FIN-[0-9]{3}$",
+        "example": "FIN-001"
+      },
+      {
+        "record_id": "namespace:timeline",
+        "label": "Timeline moment",
+        "definition": "Governed moment family or GEN for non-timeline-specific records.",
+        "status": "review",
+        "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$",
+        "example": "SONG-001"
+      },
+      {
+        "record_id": "namespace:cue",
+        "label": "Department cue",
+        "definition": "Department code plus stable sequence; each cue references PGM, TECH, or FIN authority.",
+        "status": "review",
+        "pattern": "^(SM|AUD|LX|VID|SCN|AUTO|DECK|WARD|PERF|PROP|FX|FOH|COMMS|PWR|SAFE)-[0-9]{3}$",
+        "example": "LX-001"
+      },
+      {
+        "record_id": "namespace:fixture",
+        "label": "Equipment instance",
+        "definition": "Stable physical or logical equipment-instance identity.",
+        "status": "review",
+        "pattern": "^FIX-[A-Z0-9-]+$",
+        "example": "FIX-PAR-001"
+      },
+      {
+        "record_id": "namespace:asset",
+        "label": "Asset",
+        "definition": "Stable physical or digital asset identity.",
+        "status": "review",
+        "pattern": "^AST-[A-Z0-9-]+$",
+        "example": "AST-PHOTO-001"
+      },
+      {
+        "record_id": "namespace:event",
+        "label": "Event",
+        "definition": "Stable production event identity.",
+        "status": "review",
+        "pattern": "^EVT-[A-Z0-9-]+$",
+        "example": "EVT-2026-001"
+      },
+      {
+        "record_id": "namespace:person",
+        "label": "Person",
+        "definition": "Restricted-safe pseudonymous person identifier; never embeds contact data.",
+        "status": "review",
+        "pattern": "^PER-[0-9]{3,}$",
+        "example": "PER-001"
+      },
+      {
+        "record_id": "namespace:source",
+        "label": "Source",
+        "definition": "Stable evidence-source identity.",
+        "status": "review",
+        "pattern": "^SRC-[A-Z0-9-]+$",
+        "example": "SRC-GEN-001"
+      },
+      {
+        "record_id": "namespace:decision",
+        "label": "Decision",
+        "definition": "Controlled decision-log identity.",
+        "status": "review",
+        "pattern": "^DEC-[A-Z0-9-]+$",
+        "example": "DEC-GEN-001"
+      },
+      {
+        "record_id": "namespace:conflict",
+        "label": "Conflict",
+        "definition": "Material conflict-register identity.",
+        "status": "review",
+        "pattern": "^CONFLICT-[0-9]{3,}$",
+        "example": "CONFLICT-001"
+      },
+      {
+        "record_id": "namespace:release",
+        "label": "Release",
+        "definition": "Immutable controlled release identity.",
+        "status": "review",
+        "pattern": "^REL-[A-Z0-9-]+$",
+        "example": "REL-COMPENDIUM-001"
+      }
+    ],
+    "record_count": 14
+  }
+}

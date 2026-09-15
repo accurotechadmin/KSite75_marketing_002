@@ -1,0 +1,515 @@
+{
+  "schema_version": "1.0.0",
+  "generated_by": "scripts/build_website_pipeline_inventory.py",
+  "timeline_moment_id_or_gen": "GEN",
+  "active_application": "proto",
+  "active_document_root": "proto/public",
+  "records": [
+    {
+      "id": "loader.view",
+      "path": "proto/app/view.php",
+      "classification": "implementation",
+      "role": "shared renderer",
+      "sha256": "f284f47c407611bba2e6d1273e9608cb89f04ecb26b446ddec20832b16a32863"
+    },
+    {
+      "id": "loader.language",
+      "path": "proto/app/language.php",
+      "classification": "implementation",
+      "role": "language loader",
+      "sha256": "2e2818e1f709a05b2ef32dd94cb0664dea1df9d232addf830e9fbb06e2a5d849"
+    },
+    {
+      "id": "loader.data",
+      "path": "proto/app/site_data.php",
+      "classification": "implementation",
+      "role": "route and asset registry",
+      "sha256": "2978c1566dab24f742088e7448cafa24d665e43d4a175905fca4dad7fe7f2b5c"
+    },
+    {
+      "id": "loader.sections",
+      "path": "proto/app/page_sections.php",
+      "classification": "implementation",
+      "role": "managed-section loader",
+      "sha256": "97b73b964f2851e3d7e3498a45690919e5192b666d6b4cf06c41cdd4e3713554"
+    },
+    {
+      "id": "runtime.layers",
+      "path": "proto/app/layer_runtime.php",
+      "classification": "runtime",
+      "role": "public render-time layer state adapter",
+      "sha256": "9722d6c320e2b575f266e4fd7e74cc2bd5cf0f3a1af994065c7e1e7626c8ca53"
+    },
+    {
+      "id": "content.language",
+      "path": "proto/docs/language.json",
+      "classification": "derived",
+      "role": "runtime copy token store",
+      "sha256": "5253a6dd21ec9270940307da8be664f5e5f4cbe9687ebf8d7facb1ae9f955933"
+    },
+    {
+      "id": "content.sections",
+      "path": "proto/docs/page_sections.json",
+      "classification": "derived",
+      "role": "managed-section prototype store",
+      "sha256": "c12ef72d65a7b888ad29267913d961d6c415ce0fc1abe798ede69db2a29cbfa9"
+    },
+    {
+      "id": "style.public",
+      "path": "proto/public/assets/css/site.css",
+      "classification": "implementation",
+      "role": "active public stylesheet",
+      "sha256": "75acfd10a36b0ac7d6c1e5824abbf3f923262763bf21427004b06181d1bb3533"
+    },
+    {
+      "id": "script.public",
+      "path": "proto/public/assets/js/site.js",
+      "classification": "implementation",
+      "role": "active progressive enhancement",
+      "sha256": "c0015ef7529fcb205bc424f40c5cb0c1532ba4371c28d1b5b6f1946dbf06c3bb"
+    },
+    {
+      "id": "form.lead",
+      "path": "proto/app/forms/lead_submit.php",
+      "classification": "implementation",
+      "role": "lead form handler",
+      "sha256": "1f4685bc9a112a02574044d314351cadb07c07db1ccb8995891ea4d0fabf04ba"
+    },
+    {
+      "id": "form.inquiry",
+      "path": "proto/app/forms/inquiry_submit.php",
+      "classification": "implementation",
+      "role": "inquiry handler",
+      "sha256": "4f29359bbf2aefbb69e93aee6bd2cf5d9f762c757c6fd30a857bd0e7dd523461"
+    },
+    {
+      "id": "storage.contract",
+      "path": "proto/storage/README.md",
+      "classification": "implementation",
+      "role": "restricted runtime storage boundary",
+      "sha256": "47dd151e186d3ade1ceb6cac039120f432ac7c5d4329cf940366638f13b1fc4d"
+    },
+    {
+      "id": "database.schema",
+      "path": "proto/database/schema.sql",
+      "classification": "implementation",
+      "role": "optional persistence schema",
+      "sha256": "b492e141815a041abc43e6884a0a887d7fe052b88486207605fc4a33fd51cc56"
+    },
+    {
+      "id": "authority.website",
+      "path": "proto/docs/website_ssot.md",
+      "classification": "authority",
+      "role": "current website canon",
+      "sha256": "fb671462fb8a692c3debffbdabfb6c1f48f6df29556bf9b7c80151742ab91bbe"
+    },
+    {
+      "id": "authority.style",
+      "path": "docs/styleguide.md",
+      "classification": "authority",
+      "role": "public presentation authority",
+      "sha256": "a2f208dd7367c0de1e0b53088fd8244e14bdb1e8bab46a64eac3660382878484"
+    },
+    {
+      "id": "settings.architecture",
+      "path": "docs/ssot/settings/site_architecture.json",
+      "classification": "authority_companion",
+      "role": "architecture settings",
+      "sha256": "09cdf9b7c22517cf58436704f20456596c02cecc2614081dc4c060729de21e09"
+    },
+    {
+      "id": "release.matrix",
+      "path": "center/data/release_gate_matrix.php",
+      "classification": "review",
+      "role": "read-only release gate candidates",
+      "sha256": "5290ffadba42d1fcabc25ca9dd4eea3ee68710526545a72e433620f507ff9f63"
+    },
+    {
+      "id": "validator.center",
+      "path": "center/scripts/validate.php",
+      "classification": "validation",
+      "role": "center integrity validator",
+      "sha256": "10d20651066f8d7b4c4a756c47b6c4dd53a40c6a017eee5bd8aecdba7455a50c"
+    },
+    {
+      "id": "validator.compendium",
+      "path": "extract/scripts/validate_compendium.py",
+      "classification": "validation",
+      "role": "compendium validator",
+      "sha256": "0a08e0ca43351ea2266460141b21811c8c1d0e1dad740c6ac138009c3c66ed66"
+    },
+    {
+      "id": "history.pipeline_boot",
+      "path": "website_editing_pipeline_boot.md",
+      "classification": "history",
+      "role": "rolling pipeline handoff",
+      "sha256": "d03bac680ae835c4bfe22d9c341edad9276b3d467dde601cb16d3ac688c47dc4"
+    },
+    {
+      "id": "entry.contact",
+      "path": "proto/public/contact/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "5c4f2e1567e45231ee085e13e3b366f7da654dec78b4ed173d6bfdb637b184a8"
+    },
+    {
+      "id": "entry.contact-press",
+      "path": "proto/public/contact-press/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "ad009060a7f1f9f3d86c66c709822192d20ee7bed0a0c3def67cf5267b99653a"
+    },
+    {
+      "id": "entry.directions",
+      "path": "proto/public/directions/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "f0aa835d62471f83b96096130c3af93cedfd74ae7e7e757577fe315f1ec3d3c2"
+    },
+    {
+      "id": "entry.faq-disclaimer",
+      "path": "proto/public/faq-disclaimer/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "6d81c8fbe7eb526d7b8a6f7a6722dc342db10bb630edc953a426dd854df98601"
+    },
+    {
+      "id": "entry.home",
+      "path": "proto/public/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "5e0de2044f537c7879b6c56ee05d93c2a55c48d1a361c9124ce05153853ab971"
+    },
+    {
+      "id": "entry.preserve-backup",
+      "path": "proto/public/preserve-backup/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "426ec935841a250bfe0024167590fd53134771a2b726695e6826c3bf63488099"
+    },
+    {
+      "id": "entry.september-26-2026",
+      "path": "proto/public/september-26-2026/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "d9c646d7c519b372f0ba682a430ebba1421a086f498bfd902b61ac3afc632c0e"
+    },
+    {
+      "id": "entry.site-layers.behavior",
+      "path": "proto/public/site-layers/behavior/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "82e31e44341f87280d6ae35b3cdc721c5e372d8e6f7341c4316b5d5901125d2a"
+    },
+    {
+      "id": "entry.site-layers.copy",
+      "path": "proto/public/site-layers/copy/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "9c648240e1c839595dd165520d7c2b9c94781c8a9799bb96ca6c76176835a6fa"
+    },
+    {
+      "id": "entry.site-layers",
+      "path": "proto/public/site-layers/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "d50f372a699e6aec66804dc366d89a1f9ca1600a813412efa0df15498bbb943c"
+    },
+    {
+      "id": "entry.site-layers.media",
+      "path": "proto/public/site-layers/media/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "077505f5b9130b47a5b9dfac719a3bab93373d5d216bdfa79723edd57f31459d"
+    },
+    {
+      "id": "entry.site-layers.review",
+      "path": "proto/public/site-layers/review/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "f8cf0f6b5586652e6a2a5aad61fda50d39f524d963588082dabdf6327d588c27"
+    },
+    {
+      "id": "entry.site-layers.structure",
+      "path": "proto/public/site-layers/structure/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "de62fe9c952bb24737526bff97f42294ecdf90479f1f3a54ef1d976e3def502f"
+    },
+    {
+      "id": "entry.site-layers.style",
+      "path": "proto/public/site-layers/style/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "951e6b5dddac600b8218e62aeebffa7a88f3bb94abd634ffeda39dad113b43c3"
+    },
+    {
+      "id": "entry.spectacle",
+      "path": "proto/public/spectacle/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "4cbead83e09ba2726b952b1aa248ffcffff2d568b09021eb81d4750f6110c38e"
+    },
+    {
+      "id": "entry.technical",
+      "path": "proto/public/technical/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "69481b16cf1d53f8bb0193204eb07755fbe9b26c4ae9b0a5c2164b9a17e731d3"
+    },
+    {
+      "id": "entry.vault",
+      "path": "proto/public/vault/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "b7cd24b99968fb923bbf0740e1e83e5974a39a71137714b26062294fe2a6bb18"
+    },
+    {
+      "id": "entry.video",
+      "path": "proto/public/video/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "377f7909b6af5176068dee2c7e9fc31bf5162599b372cb16ebf1260e2c465bb3"
+    },
+    {
+      "id": "entry.what-is-just-one-kiss",
+      "path": "proto/public/what-is-just-one-kiss/index.php",
+      "classification": "implementation",
+      "role": "route entrypoint",
+      "sha256": "cd67ccd251a9d4e4484d66b519d0f2fe53f9bacdcc8a6548a6a29d5d5a323710"
+    },
+    {
+      "id": "asset.README_md",
+      "path": "proto/public/assets/img/README.md",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "7bea53efb9a4c731770fe7c3f1450702e2e54cdc83c415895dd450bc359c4f0d"
+    },
+    {
+      "id": "asset.costume-chrome-detail_webp",
+      "path": "proto/public/assets/img/costume-chrome-detail.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "1359cd50d81de5f82336a582caed2afeba6c017fa7e058892a58e63f96f6191c"
+    },
+    {
+      "id": "asset.fog-strobe-atmosphere_webp",
+      "path": "proto/public/assets/img/fog-strobe-atmosphere.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "0e69ad5ad593cbc233bf413c1cd9210bffd036b0364122723515869253d996e8"
+    },
+    {
+      "id": "asset.gear-control-dossier_webp",
+      "path": "proto/public/assets/img/gear-control-dossier.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "aaf0222644f1bedabc8bed76d777acccfeb7798aba50fba618dd3c2bdbfa60c1"
+    },
+    {
+      "id": "asset.hero-stage-portal_webp",
+      "path": "proto/public/assets/img/hero-stage-portal.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "86fd89c630378f349ef7321471bcc1c155cc480d9e19c8ec9e3100ce90ca35f4"
+    },
+    {
+      "id": "asset.interlochen-dispatch-map_webp",
+      "path": "proto/public/assets/img/interlochen-dispatch-map.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "b016db5e1c7c21d43f65b9a0268b512edccb2ae5d80416612cb83cb295634ab2"
+    },
+    {
+      "id": "asset.layer-upload-20260721-203128-2acddb_png",
+      "path": "proto/public/assets/img/layer-upload-20260721-203128-2acddb.png",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "e666a02f7c170d748c1cb98970dbb562dd26f9b65f4c4fe9c3b69a6de235fb11"
+    },
+    {
+      "id": "asset.layer-upload-20260721-205527-61dd69_png",
+      "path": "proto/public/assets/img/layer-upload-20260721-205527-61dd69.png",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "ba0ee568d2fa87129b39c433e09660615cd48900cca6ea0178a148ad32c736a1"
+    },
+    {
+      "id": "asset.layer-upload-20260721-210057-1203f2_png",
+      "path": "proto/public/assets/img/layer-upload-20260721-210057-1203f2.png",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "0e5b3797db88b2654818c42f284050eb608fbe806599496a5e5c137e2af7879a"
+    },
+    {
+      "id": "asset.layer-upload-20260721-210432-ed187b_png",
+      "path": "proto/public/assets/img/layer-upload-20260721-210432-ed187b.png",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "5dfa523cc5324f625e4d5f96924b6cdbf32a2e51172416ae55212263e43068eb"
+    },
+    {
+      "id": "asset.layer-upload-20260721-211403-b05fc5_png",
+      "path": "proto/public/assets/img/layer-upload-20260721-211403-b05fc5.png",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "e797db2bafc056dd55d3d47779ac6c5e8816afd208ba255d14483581ccc0a29a"
+    },
+    {
+      "id": "asset.press-performer-portrait_webp",
+      "path": "proto/public/assets/img/press-performer-portrait.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "f042e0d0186a1cb7e18e08764feb9337d5b68572cc5cfba9cf34d60025d1af83"
+    },
+    {
+      "id": "asset.road-case-vault-bg_webp",
+      "path": "proto/public/assets/img/road-case-vault-bg.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "203db2593f967c460fab1f88c4a2a8c7740fc78c4d1cf0f330921f1c62149f6e"
+    },
+    {
+      "id": "asset.spectacle-lighting-rig_webp",
+      "path": "proto/public/assets/img/spectacle-lighting-rig.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "c6f510f5b5541386d630386f36d6dde32aa200d8052b37dddfab9ef11bc3a242"
+    },
+    {
+      "id": "asset.trailer-poster-stage-portal_webp",
+      "path": "proto/public/assets/img/trailer-poster-stage-portal.webp",
+      "classification": "implementation",
+      "role": "public image asset",
+      "sha256": "35132c58e04bf596cd5e38c0404b6b48e16b4e0e8c3d4d2bcb4fd7093eea7d57"
+    }
+  ],
+  "routes": [
+    {
+      "id": "route.contact",
+      "url": "/contact/",
+      "entrypoint": "proto/public/contact/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.contact-press",
+      "url": "/contact-press/",
+      "entrypoint": "proto/public/contact-press/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.directions",
+      "url": "/directions/",
+      "entrypoint": "proto/public/directions/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.faq-disclaimer",
+      "url": "/faq-disclaimer/",
+      "entrypoint": "proto/public/faq-disclaimer/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.home",
+      "url": "/",
+      "entrypoint": "proto/public/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.preserve-backup",
+      "url": "/preserve-backup/",
+      "entrypoint": "proto/public/preserve-backup/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.september-26-2026",
+      "url": "/september-26-2026/",
+      "entrypoint": "proto/public/september-26-2026/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.site-layers.behavior",
+      "url": "/site-layers/behavior/",
+      "entrypoint": "proto/public/site-layers/behavior/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.site-layers.copy",
+      "url": "/site-layers/copy/",
+      "entrypoint": "proto/public/site-layers/copy/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.site-layers",
+      "url": "/site-layers/",
+      "entrypoint": "proto/public/site-layers/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.site-layers.media",
+      "url": "/site-layers/media/",
+      "entrypoint": "proto/public/site-layers/media/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.site-layers.review",
+      "url": "/site-layers/review/",
+      "entrypoint": "proto/public/site-layers/review/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.site-layers.structure",
+      "url": "/site-layers/structure/",
+      "entrypoint": "proto/public/site-layers/structure/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.site-layers.style",
+      "url": "/site-layers/style/",
+      "entrypoint": "proto/public/site-layers/style/index.php",
+      "surface": "owner_tool"
+    },
+    {
+      "id": "route.spectacle",
+      "url": "/spectacle/",
+      "entrypoint": "proto/public/spectacle/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.technical",
+      "url": "/technical/",
+      "entrypoint": "proto/public/technical/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.vault",
+      "url": "/vault/",
+      "entrypoint": "proto/public/vault/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.video",
+      "url": "/video/",
+      "entrypoint": "proto/public/video/index.php",
+      "surface": "public"
+    },
+    {
+      "id": "route.what-is-just-one-kiss",
+      "url": "/what-is-just-one-kiss/",
+      "entrypoint": "proto/public/what-is-just-one-kiss/index.php",
+      "surface": "public"
+    }
+  ],
+  "excluded_sensitive_patterns": [
+    "proto/app/config.php",
+    "proto/storage/leads/**",
+    "proto/storage/mail-failures/**",
+    "**/site_layer_controls_state.json"
+  ],
+  "known_boundaries": [
+    "Top-level proto route copies are historical compatibility context, not active entrypoints.",
+    "Center is read-mostly and supplies review contracts, not approval or publishing authority.",
+    "Runtime submissions, mail diagnostics, configuration values, and layer state are excluded.",
+    "Compendium Sections 05, 06, and 08-11 remain scaffold contracts, not approved canon."
+  ]
+}

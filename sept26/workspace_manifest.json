@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "workspace_id": "JOK-SEP26",
+  "status": "internal_foundation",
+  "entrypoint": "README.md",
+  "boot_prompt": "MARKETING_EXPERT_BOOT_PROMPT.md",
+  "expert_index": "EXPERT_INDEX.md",
+  "authorities": ["MARKETING_CAMPAIGN_CANON.md", "campaign_facts.json"],
+  "controls": ["SOURCE_MAP.md", "PRODUCTION_AND_LAUNCH_CHECKLIST.md", "THEME_SYSTEM.md"],
+  "intake": "SESSION_INTAKE.md",
+  "templates": {
+    "brief": "briefs/CAMPAIGN_BRIEF_TEMPLATE.md",
+    "copy": "copy/COPY_DECK_TEMPLATE.md",
+    "rights": "rights/ASSET_RIGHTS_REGISTER.csv",
+    "tracking": "tracking/TRACKING_PLAN_TEMPLATE.md",
+    "release": "releases/RELEASE_MANIFEST_TEMPLATE.json",
+    "report": "reports/PERFORMANCE_REPORT_TEMPLATE.csv",
+    "decision": "decisions/DECISION_RECORD_TEMPLATE.md"
+  },
+  "production_directories": ["briefs", "copy", "creative", "masters", "exports", "video", "audio", "captions", "rights", "tracking", "decisions", "research", "reviews", "releases", "reports"],
+  "release_gate_source": "MARKETING_CAMPAIGN_CANON.md#19-release-gates"
+}

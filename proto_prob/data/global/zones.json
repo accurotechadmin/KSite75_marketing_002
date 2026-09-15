@@ -1,0 +1,74 @@
+[
+  {
+    "id": "P-USC",
+    "name": "Rear Platform Center",
+    "center": {
+      "x": 0,
+      "y": 2.5,
+      "z": 3.2
+    }
+  },
+  {
+    "id": "P-CS",
+    "name": "Main Stage Center",
+    "center": {
+      "x": 0,
+      "y": 8,
+      "z": 1.7
+    }
+  },
+  {
+    "id": "P-OCT",
+    "name": "Octagonal Thrust",
+    "center": {
+      "x": 0,
+      "y": 18,
+      "z": 1.7
+    }
+  },
+  {
+    "id": "P-SL",
+    "name": "Stage Left",
+    "center": {
+      "x": 10,
+      "y": 8,
+      "z": 1.7
+    }
+  },
+  {
+    "id": "P-SR",
+    "name": "Stage Right",
+    "center": {
+      "x": -10,
+      "y": 8,
+      "z": 1.7
+    }
+  },
+  {
+    "id": "S-KISS",
+    "name": "KISS Sign",
+    "center": {
+      "x": 0,
+      "y": 0.6,
+      "z": 7.3
+    }
+  },
+  {
+    "id": "DB",
+    "name": "Disco Ball",
+    "center": {
+      "x": 0,
+      "y": 6,
+      "z": 13.5
+    }
+  },
+  {
+    "id": "FOG-LOW",
+    "name": "Low Fog Volume",
+    "center": {
+      "x": 0,
+      "y": 9,
+      "z": 2.5
+    }
+  }
+]

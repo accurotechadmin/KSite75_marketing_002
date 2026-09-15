@@ -1,0 +1,8 @@
+{
+  "schema_version": "0.1.0-lab",
+  "document_id": "jok.marketing_lab.experiment_registry",
+  "status": "draft",
+  "visibility": "internal",
+  "authority_notice": "Working experiment ledger; experiments may not weaken fact, rights, safety, privacy, consent, accessibility, or destination controls.",
+  "experiments": []
+}

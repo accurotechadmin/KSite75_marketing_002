@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.technical_show_control",
+  "title": "Technical Show Control",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "rig_families": [
+      "COLORstrip Mini Bright channels",
+      "AC DMX plug controller",
+      "Honeycomb RGB PAR fixtures",
+      "KISS sign elements",
+      "Freedom Par RGBA uplights",
+      "YZ-7LYTYK moving-head Rotator fixtures"
+    ],
+    "normal_operation": "DMX-controlled show operation",
+    "avoid_by_default": [
+      "standalone mode",
+      "sound-active mode",
+      "master/slave mode",
+      "IR remote behavior",
+      "accidental fixture macros"
+    ],
+    "emergency_states": [
+      "visual blackout",
+      "static safe work light",
+      "projection black screen",
+      "fog off",
+      "strobes off",
+      "music stop",
+      "system reset",
+      "performer safe look"
+    ]
+  }
+}

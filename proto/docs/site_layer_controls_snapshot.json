@@ -1,0 +1,60 @@
+{
+  "purpose": "Second-draft enabled MVP controls for the piecemeal proto/public website.",
+  "status": "enabled_mvp_control_snapshot",
+  "scope_included_from_user_list": [
+    "Save edits.",
+    "Publish changes.",
+    "Reorder sections.",
+    "Hide/show sections.",
+    "Edit language.json.",
+    "Upload images.",
+    "Replace image handles.",
+    "Change CSS.",
+    "Change templates.",
+    "Write files.",
+    "change assets",
+    "Add/move/remove decorative section-corner image overlays.",
+    "Name/label uploaded and displayed image assets for readable dropdown selection."
+  ],
+  "scope_not_in_user_list": [
+    "Authentication and roles.",
+    "Database-backed publishing.",
+    "Approval workflow automation.",
+    "Visual drag/drop page builder.",
+    "Framework or build-step migration."
+  ],
+  "do_not_copy_as_pattern": [
+    "proto/app/page_sections.php",
+    "proto/editor/index.php"
+  ],
+  "control_layers": [
+    "structure",
+    "copy",
+    "media",
+    "style",
+    "behavior",
+    "review"
+  ],
+  "initial_pages": [
+    "proto/public/site-layers/index.php",
+    "proto/public/site-layers/structure/index.php",
+    "proto/public/site-layers/copy/index.php",
+    "proto/public/site-layers/media/index.php",
+    "proto/public/site-layers/style/index.php",
+    "proto/public/site-layers/behavior/index.php",
+    "proto/public/site-layers/review/index.php"
+  ],
+  "runtime_helper": "proto/app/layer_controls.php",
+  "operation_endpoint": "proto/public/site-layer-save.php",
+  "draft_state_file": "proto/docs/site_layer_controls_state.json",
+  "published_state_file": "proto/docs/site_layer_controls_published.json",
+  "custom_write_directory": "proto/docs/site_layer_writes/",
+  "notes": [
+    "The v2 UI enables basic MVP file writes for only the user-requested operations.",
+    "The public architecture model is still plain PHP and no framework or build step is introduced.",
+    "language.json archive files are intentionally out of scope, except new backups generated when edited files are written.",
+    "Template changes are conservative MVP writes: notes can be appended and image handles can be patched in selected route templates.",
+    "Section-corner overlays are decorative GEN media controls pinned by image center to a selected primary section corner with X/Y offsets.",
+    "Image labels are stored in draft/published state under image_labels and are display labels only; filenames remain the saved asset values."
+  ]
+}

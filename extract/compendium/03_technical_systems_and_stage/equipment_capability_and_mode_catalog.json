@@ -1,0 +1,678 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "equipment_capability_and_mode_catalog",
+  "document_class": "registry",
+  "title": "Equipment Capability And Mode Catalog",
+  "description": "Candidate capability and channel-mode evidence separated from verified modes, active configuration, patch, and safety approval",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_fixture-types_json",
+      "path": "proto_prob/data/global/fixture-types.json",
+      "sha256": "c9fa23bbda2b94acfcdd04b82e61373d8efbd3ec86be303ad5cd8ccef483d113",
+      "locator": "all type mode definitions and channels",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Candidate channel modes, offsets, counts and capability labels"
+    },
+    {
+      "source_id": "source:docs_inventory_reference_md",
+      "path": "docs/inventory_reference.md",
+      "sha256": "20380ccad4db027357e1aaefd26701bc9697f451d18131b7933b6d18492786d8",
+      "locator": "channel maps, working/avoided behavior, and verification cautions",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Reconciliation and fail-closed safety constraints"
+    },
+    {
+      "source_id": "source:docs_rig_md",
+      "path": "docs/rig.md",
+      "sha256": "af32084d9b27d8d9f8b1cff0b4a47141a6fe5bbe5cba0de76e39fe212149141c",
+      "locator": "fixture behavior summaries and operating cautions",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Secondary digest; cannot override inventory/manual evidence"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_vendor_document_registry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/vendor_document_registry.json",
+      "sha256": "dd888fb948fb1c522502928c08503b9286e321668b2631e12588c2aca6513acb",
+      "locator": "all manual identities and applicability states",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Manual cross-links and unresolved revision/applicability"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "active_configuration": false,
+    "record_count": 9,
+    "mode_selection_rule": "Candidate and verified modes are separate. No working or avoided mode is selected until manual applicability and physical behavior are verified.",
+    "default_rule": "Unknown defaults, home values, and parameter ranges remain null/empty rather than inferred.",
+    "records": [
+      {
+        "record_id": "equipment_capability:honeycomb",
+        "equipment_type_ref": "equipment_type:honeycomb",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Blue",
+          "Dimmer",
+          "Green",
+          "Macro",
+          "Macro Speed",
+          "Red",
+          "Strobe"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "7ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 7,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Dimmer",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 2,
+                "function_candidate": "Red",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 3,
+                "function_candidate": "Green",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 4,
+                "function_candidate": "Blue",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 5,
+                "function_candidate": "Strobe",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 6,
+                "function_candidate": "Macro",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 7,
+                "function_candidate": "Macro Speed",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type HONEYCOMB mode 7ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": "manual:uking_zq01082",
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:ptr",
+        "equipment_type_ref": "equipment_type:ptr",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Blue",
+          "Dimmer",
+          "Green",
+          "Macro",
+          "Movement Speed",
+          "Pan",
+          "Pan Fine",
+          "Red",
+          "Strobe",
+          "Tilt",
+          "Tilt Fine",
+          "White"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "12ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 12,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Pan",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 2,
+                "function_candidate": "Pan Fine",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 3,
+                "function_candidate": "Tilt",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 4,
+                "function_candidate": "Tilt Fine",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 5,
+                "function_candidate": "Movement Speed",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 6,
+                "function_candidate": "Dimmer",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 7,
+                "function_candidate": "Red",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 8,
+                "function_candidate": "Green",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 9,
+                "function_candidate": "Blue",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 10,
+                "function_candidate": "White",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 11,
+                "function_candidate": "Strobe",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 12,
+                "function_candidate": "Macro",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type PTR mode 12ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:single_dimmer",
+        "equipment_type_ref": "equipment_type:single_dimmer",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Dimmer"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "1ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Dimmer",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type SINGLE_DIMMER mode 1ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:fixed_accent",
+        "equipment_type_ref": "equipment_type:fixed_accent",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Dimmer"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "1ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Dimmer",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type FIXED_ACCENT mode 1ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:cube_uplight",
+        "equipment_type_ref": "equipment_type:cube_uplight",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Blue",
+          "Dimmer",
+          "Green",
+          "Red",
+          "Strobe"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "5ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 5,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Dimmer",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 2,
+                "function_candidate": "Red",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 3,
+                "function_candidate": "Green",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 4,
+                "function_candidate": "Blue",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 5,
+                "function_candidate": "Strobe",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type CUBE_UPLIGHT mode 5ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": "manual:chauvet_freedom_par_rgba",
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:dimmer_pack",
+        "equipment_type_ref": "equipment_type:dimmer_pack",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Output Pair 1",
+          "Output Pair 2",
+          "Output Pair 3",
+          "Output Pair 4"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "4ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 4,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Output Pair 1",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 2,
+                "function_candidate": "Output Pair 2",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 3,
+                "function_candidate": "Output Pair 3",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 4,
+                "function_candidate": "Output Pair 4",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type DIMMER_PACK mode 4ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:kiss_circuit",
+        "equipment_type_ref": "equipment_type:kiss_circuit",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Circuit Dimmer"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "1ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Circuit Dimmer",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type KISS_CIRCUIT mode 1ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:disco_ball",
+        "equipment_type_ref": "equipment_type:disco_ball",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Illumination",
+          "Motor Speed"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "2ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 2,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Motor Speed",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              },
+              {
+                "offset": 2,
+                "function_candidate": "Illumination",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type DISCO_BALL mode 2ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      },
+      {
+        "record_id": "equipment_capability:fog_machine",
+        "equipment_type_ref": "equipment_type:fog_machine",
+        "timeline_scope": "GEN",
+        "capability_candidates": [
+          "Fog Output"
+        ],
+        "verified_capabilities": [],
+        "candidate_modes": [
+          {
+            "mode_id": "1ch",
+            "mode_state": "candidate_unverified",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function_candidate": "Fog Output",
+                "default_value": null,
+                "home_value": null,
+                "range_claims": []
+              }
+            ],
+            "evidence": {
+              "source_path": "proto_prob/data/global/fixture-types.json",
+              "locator": "fixture type FOG_MACHINE mode 1ch",
+              "claim_class": "prototype_configuration_candidate",
+              "vendor_manual_ref": null,
+              "vendor_revision_applicability": "unresolved"
+            },
+            "safe_constraints": [
+              "Do not activate or patch this mode until physical identity, manual applicability, channel map, and defaults/home are verified."
+            ],
+            "working_mode_selected": false,
+            "avoided_mode_selected": false
+          }
+        ],
+        "verified_modes": [],
+        "active_mode_ref": null,
+        "active_configuration": false,
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Reconcile channel functions/ranges/defaults/home and standalone/sound-active behavior against the applicable versioned manual and physical unit."
+        ]
+      }
+    ],
+    "dependencies": [
+      "equipment_type_catalog.json",
+      "vendor_document_registry.json"
+    ],
+    "unresolved_conflicts": [
+      "Prototype channel candidates are not reconciled to version-applicable vendor claims.",
+      "Inventory working/avoid guidance remains evidence for later verification, not an activated selection."
+    ]
+  }
+}

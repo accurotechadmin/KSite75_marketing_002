@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0-scaffold",
+  "document_id": "integrity_rule_catalog",
+  "document_class": "schema",
+  "title": "Integrity Rule Catalog",
+  "description": "Duplicate IDs; required fields; timeline syntax; links; sources; status combinations; release checks",
+  "status": "draft",
+  "revision": "0.1.0",
+  "effective_date": null,
+  "owner_role": "TBD",
+  "approver_role": "TBD",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "scaffold_notice": "Structure only. No source facts have been extracted or approved.",
+  "data": {
+    "scaffold_state": "empty",
+    "components_and_subcomponents": "Duplicate IDs; required fields; timeline syntax; links; sources; status combinations; release checks",
+    "source_family_notes": "Second/third integrity code; center integrity seeds/schema",
+    "records": [],
+    "schema_target": "integrity_rule_catalog",
+    "definitions": {}
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+<title id="title">Campaign A: Enter The Larger Night</title><desc id="desc">Original black, chrome, and fire-colored campaign master for the cinematic / aspiration audience lens.</desc>
+<defs><radialGradient id="bg"><stop stop-color="#242429"/><stop offset="1" stop-color="#050506"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1080" height="1350" fill="url(#bg)"/><path d="M0 0H1080V18H0Z" fill="#ef3b18"/><ellipse cx="540" cy="570" rx="245" ry="390" fill="none" stroke="#b8bec5" stroke-width="3"/><ellipse cx="540" cy="570" rx="175" ry="300" fill="none" stroke="#ef3b18" stroke-width="12" filter="url(#glow)"/>
+<path d="M470 900L495 510L450 410L540 330L630 410L585 510L610 900Z" fill="#050506" stroke="#34343a" stroke-width="3"/>
+<text x="70" y="90" fill="#ef3b18" font-family="monospace" font-size="20" font-weight="700" letter-spacing="4">CAMPAIGN A / CINEMATIC / ASPIRATION</text>
+<text x="70" y="1010" fill="#f0eadf" font-family="Impact, Arial Narrow, sans-serif" font-size="116" font-weight="900" letter-spacing="-2">ENTER THE</text>
+<text x="70" y="1120" fill="#ef3b18" font-family="Impact, Arial Narrow, sans-serif" font-size="108" font-weight="900" letter-spacing="-2">LARGER NIGHT</text>
+<text x="70" y="1195" fill="#b8bec5" font-family="Arial, sans-serif" font-size="24" letter-spacing="4">A LOVE LETTER WITH VOLUME.</text>
+<line x1="70" y1="1240" x2="1010" y2="1240" stroke="#b8bec5" stroke-opacity=".5"/>
+<text x="70" y="1295" fill="#f0eadf" font-family="Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="5">JUST ONE KISS</text><text x="1010" y="1295" text-anchor="end" fill="#96969e" font-family="Arial, sans-serif" font-size="16">INDEPENDENT THEATRICAL ROCK TRIBUTE</text>
+</svg>

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "relationship_type_registry",
+  "document_class": "authority",
+  "title": "Relationship Type Registry",
+  "description": "Directional relationship semantics for cross-document links and dependency validation.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "document.schema.json",
+  "source_refs": [
+    {
+      "source_id": "source:master_index",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:center_schema",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:provenance",
+      "path": "center/data/source_provenance_schema.php",
+      "sha256": "9c5a3777592b96fef4fab11f13115296abdbdfb0fef48fde4a4e4cd104d12a51",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "governance": {
+      "authority_scope": "Directional relationship semantics for cross-document links and dependency validation.",
+      "change_rule": "Add, deprecate, or change meanings only through controlled review; preserve stable IDs and map legacy values.",
+      "approval_required_for_effective_use": true
+    },
+    "source_mapping": [
+      "Formal DOCX controls take precedence within their domains.",
+      "Settings and center contracts were normalized without treating prototype labels as approved canon.",
+      "Records remain REVIEW until a named authorized approver supplies controlled evidence."
+    ],
+    "records": [
+      {
+        "record_id": "relationship:references",
+        "label": "References",
+        "definition": "Source record cites target without transferring authority.",
+        "status": "review",
+        "inverse": "referenced_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:contains",
+        "label": "Contains",
+        "definition": "Source is a controlled container of target.",
+        "status": "review",
+        "inverse": "contained_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:derived_from",
+        "label": "Derived From",
+        "definition": "Source was transformed or generated from target.",
+        "status": "review",
+        "inverse": "derives",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:supersedes",
+        "label": "Supersedes",
+        "definition": "Source replaces target as current authority.",
+        "status": "review",
+        "inverse": "superseded_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:blocks",
+        "label": "Blocks",
+        "definition": "Source prevents target readiness until disposition.",
+        "status": "review",
+        "inverse": "blocked_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:depends_on",
+        "label": "Depends On",
+        "definition": "Source requires target at a declared readiness.",
+        "status": "review",
+        "inverse": "required_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:used_by",
+        "label": "Used By",
+        "definition": "Source is consumed by target.",
+        "status": "review",
+        "inverse": "uses",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:evidence_for",
+        "label": "Evidence For",
+        "definition": "Source supports a claim or decision in target.",
+        "status": "review",
+        "inverse": "supported_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:synchronized_with",
+        "label": "Synchronized With",
+        "definition": "Source and target require controlled propagation without equal authority.",
+        "status": "review",
+        "inverse": "synchronized_with",
+        "transitive": true
+      },
+      {
+        "record_id": "relationship:requires_review",
+        "label": "Requires Review",
+        "definition": "Source requires review represented by target.",
+        "status": "review",
+        "inverse": "review_required_by",
+        "transitive": false
+      },
+      {
+        "record_id": "relationship:outputs_to",
+        "label": "Outputs To",
+        "definition": "Source produces or publishes target.",
+        "status": "review",
+        "inverse": "output_of",
+        "transitive": false
+      }
+    ],
+    "record_count": 11
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "document_control_policy",
+  "document_class": "authority",
+  "title": "Document Control Policy",
+  "description": "Required envelope; statuses; revision semantics; filenames; approval; distribution; supersession; archival",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "whole file",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:docs_current_documentation_groundwork_plan_md",
+      "path": "docs/current_documentation_groundwork_plan.md",
+      "sha256": "82d2299c32d8fe270ac35f42f84c85f89be80abbd13a8f8e9f6177ebb01974a7",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_canon_sync_policy_md",
+      "path": "center/docs/canon_sync_policy.md",
+      "sha256": "2d235c911ac4153aafb9122d01a176a3aa6e35c68fcc67a330280f6f1c5cbfea",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:extract_ssot_compendium_sequential_build_plan_md",
+      "path": "extract/ssot_compendium_sequential_build_plan.md",
+      "sha256": "c912db3f48ebdbc429a3808089be9fc26e0962e16c1615f8fcbde9f01a8cc107",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "required_envelope": [
+      "schema_version",
+      "document_id",
+      "document_class",
+      "title",
+      "description",
+      "status",
+      "revision",
+      "effective_date",
+      "owner_role",
+      "approver_role",
+      "visibility",
+      "timeline_scope",
+      "schema_ref",
+      "source_refs",
+      "conflict_refs",
+      "supersedes",
+      "superseded_by",
+      "created_at",
+      "updated_at",
+      "review_due_at",
+      "data"
+    ],
+    "state_model": [
+      {
+        "code": "S",
+        "meaning": "explicit empty scaffold"
+      },
+      {
+        "code": "W",
+        "meaning": "substantive but incomplete"
+      },
+      {
+        "code": "C",
+        "meaning": "material disagreement or unresolved authority"
+      },
+      {
+        "code": "B",
+        "meaning": "evidence, permission, or human decision blocks progress"
+      },
+      {
+        "code": "R",
+        "meaning": "authored and validated; approval pending"
+      },
+      {
+        "code": "A",
+        "meaning": "controlled approval evidence validates"
+      },
+      {
+        "code": "G",
+        "meaning": "reproducible derivative current to identified inputs"
+      },
+      {
+        "code": "X",
+        "meaning": "superseded"
+      },
+      {
+        "code": "!",
+        "meaning": "invalid"
+      }
+    ],
+    "rules": [
+      "Stable document IDs and paths require controlled change records; semantic revisions describe content changes and Git hashes identify repository snapshots.",
+      "Review never implies approval. Approval requires approver identity/role, scope, timestamp, revision/hash, and auditable evidence; effective_date stays null before approval.",
+      "Supersession identifies both predecessor and successor, preserves immutable history, and never deletes evidence required for audit.",
+      "Generated artifacts name inputs and method and are not directly edited.",
+      "Changes propagate through registered dependencies and validation before release."
+    ]
+  }
+}

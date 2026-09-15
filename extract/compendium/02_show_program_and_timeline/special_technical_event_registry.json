@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "special_technical_event_registry",
+  "document_class": "registry",
+  "title": "Special Technical Event Registry",
+  "description": "Controlled TECH identities, unresolved triggers, program relationships, and safety/readiness gates",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 6–8; special technical, finale/audience-release, and unresolved-decision registers",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled TECH/FIN identities, relationships, triggers, requirements, and unresolved decisions"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "AUTO-01, WARD-01, SAFE-01, SM-01 synchronization and completion criteria",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Department ownership, concurrence, inspection, rehearsal, safety, and recovery requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_program_event_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/program_event_registry.json",
+      "sha256": "e69b71ebee1918b533efe216480983edce51e460a7695ace6df4d9a46dbc1193",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Resolvable controlled PGM relationships"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_responsibility_matrix_json",
+      "path": "extract/compendium/01_project_event_and_people/responsibility_matrix.json",
+      "sha256": "40fa70ce7447a19887d4c922ecb633ab664dc454b2eedfb346a6b0504d6ee09c",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Role accountability, specialist concurrence, and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "identity_rule": "TECH identities are distinct technical-event identities; they reference but never replace PGM or Timeline Moment identities.",
+    "execution_gate": "No technical event may execute until its trigger is selected and approved and all applicable inspection, operator, spotter, performer-clear, interlock, emergency-stop, rehearsal, and recovery evidence is positive.",
+    "records": [
+      {
+        "authorization_state": "pending controlled approval",
+        "execution_state": "withheld",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "rehearsal_state": "required_not_evidenced",
+        "safety_override": true,
+        "technical_event_id": "TECH-001",
+        "legacy_source_relation": "A-S01 / embedded in SM-002",
+        "technical_event": "Platform drop",
+        "program_event_refs": [
+          "PGM-002",
+          "PGM-003"
+        ],
+        "relationship": "Associated with PGM-002 and transition into PGM-003",
+        "trigger_candidates": [
+          "during PGM-002 at an exact lyric/count/action/timecode",
+          "at the end of PGM-002"
+        ],
+        "selected_trigger": null,
+        "trigger_state": "conflicting_candidates_unresolved",
+        "departments": [
+          "SM",
+          "SCN/AUTO",
+          "DECK",
+          "LX",
+          "AUD",
+          "PERF",
+          "SAFE"
+        ],
+        "qualified_concurrence_required": [
+          "Stage Manager",
+          "automation/rigging qualified person",
+          "deck/spotter",
+          "performer-clear confirmation",
+          "safety authority"
+        ],
+        "inspection_requirements": [
+          "starting and ending positions",
+          "movement path/direction/speed/travel limits",
+          "load rating and safe zone",
+          "interlocks and emergency stop"
+        ],
+        "recovery_requirements": [
+          "abort call",
+          "stopped-move recovery",
+          "confirmation signal"
+        ],
+        "source_locator": "Cue Book Section 6 TECH-001; PGM-002 control note"
+      },
+      {
+        "authorization_state": "pending controlled approval",
+        "execution_state": "withheld",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "rehearsal_state": "required_not_evidenced",
+        "safety_override": true,
+        "technical_event_id": "TECH-002",
+        "legacy_source_relation": "A-W01 / embedded in SM-006",
+        "technical_event": "Costume change associated with Psycho Circus",
+        "program_event_refs": [
+          "PGM-006",
+          "PGM-007"
+        ],
+        "relationship": "Associated with PGM-006 and transition into PGM-007",
+        "trigger_candidates": [
+          "during PGM-006",
+          "after PGM-006"
+        ],
+        "selected_trigger": null,
+        "trigger_state": "candidates_unresolved",
+        "departments": [
+          "SM",
+          "WARD",
+          "PERF",
+          "DECK"
+        ],
+        "qualified_concurrence_required": [
+          "Stage Manager",
+          "wardrobe lead",
+          "affected performers",
+          "deck route clearance"
+        ],
+        "inspection_requirements": [
+          "performers and pieces identified",
+          "exit route and quick-change location clear",
+          "dressers and fastener preparation confirmed",
+          "available time and re-entry positions verified"
+        ],
+        "recovery_requirements": [
+          "completion check",
+          "late-change contingency",
+          "hold or alternate re-entry plan"
+        ],
+        "source_locator": "Cue Book Section 6 TECH-002; PGM-006 control note"
+      },
+      {
+        "authorization_state": "pending controlled approval",
+        "execution_state": "withheld",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "rehearsal_state": "required_not_evidenced",
+        "safety_override": true,
+        "technical_event_id": "TECH-003",
+        "legacy_source_relation": "L-S01 / embedded in SM-014",
+        "technical_event": "Screen drop",
+        "program_event_refs": [
+          "PGM-014",
+          "PGM-015"
+        ],
+        "relationship": "Associated with PGM-014 and transition into PGM-015",
+        "trigger_candidates": [
+          "during PGM-014 at an exact lyric/count/action/timecode",
+          "at the end of PGM-014"
+        ],
+        "selected_trigger": null,
+        "trigger_state": "conflicting_candidates_unresolved",
+        "departments": [
+          "SM",
+          "SCN/AUTO",
+          "DECK",
+          "VID",
+          "LX",
+          "PERF",
+          "SAFE"
+        ],
+        "qualified_concurrence_required": [
+          "Stage Manager",
+          "automation/rigging qualified person",
+          "deck/spotter",
+          "video/lighting readiness",
+          "performer-clear confirmation",
+          "safety authority"
+        ],
+        "inspection_requirements": [
+          "screen dimensions and rigging method",
+          "starting/landing positions and direction",
+          "speed, travel distance, limits, clearance zone",
+          "interlocks and emergency stop"
+        ],
+        "recovery_requirements": [
+          "abort procedure",
+          "failure recovery",
+          "safe-clear confirmation"
+        ],
+        "source_locator": "Cue Book Section 6 TECH-003; PGM-014 control note"
+      }
+    ],
+    "record_count": 3,
+    "dependencies": [
+      "program_event_registry.json",
+      "../01_project_event_and_people/responsibility_matrix.json",
+      "../03_technical_systems_and_stage/automation_rigging_cue_and_safety_plan.json",
+      "../04_operations_safety_and_readiness/safety_control_and_approval_register.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "TECH-Q-001",
+        "question": "Which exact trigger candidate is approved for TECH-001 and TECH-003?",
+        "state": "human_decision_and_rehearsal_evidence_required"
+      },
+      {
+        "question_id": "TECH-Q-002",
+        "question": "Does TECH-002 begin during or after PGM-006, and what verified change duration/re-entry deadline applies?",
+        "state": "human_decision_and_rehearsal_evidence_required"
+      }
+    ]
+  }
+}

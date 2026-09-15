@@ -1,0 +1,185 @@
+Just One KISS — Image Generation Request List
+Classification: GEN
+Last updated: 2026-07-09
+Purpose: plain-text working list for generating public-ready .webp images for the active thesite/ website.
+
+SCREENSHOT IDENTIFICATION
+1. Screenshot 1: /what-is-just-one-kiss/ — The Ritual page.
+2. Screenshot 2: /july-25-2026/ — Free Show page.
+3. Screenshot 3: / — Homepage, current long-page direction with hero, event details, about, updates, final CTA, and Fan Vault.
+4. Screenshot 4: / — Homepage variant of the same current direction, with the update drawer expanded.
+5. Screenshot 5: /contact/ — Contact page.
+6. Screenshot 6: /spectacle/ — The Spectacle page.
+7. Screenshot 7: /spectacle/ — Cropped top/desktop view of The Spectacle page.
+
+GLOBAL IMAGE-GENERATION RULES FOR EVERY IMAGE
+- Output file format: .webp.
+- No text baked into the image. The website supplies all text.
+- No official KISS logos, album art, outside photos, exact restricted makeup designs, outside costumes, official fonts, or restricted media.
+- Keep the public vibe: black first, chrome second, fire third; mythic scale always; ordinary never.
+- Make images usable as responsive section backgrounds: strong subject, but leave safe dark negative space for big white page text.
+- Prefer cinematic, high-contrast, dark-stage imagery with red/orange/gold fire light, chrome highlights, fog/haze, and road-case/pavilion/show-control textures.
+- Avoid gore, weapons, political symbols, platform logos, readable private data, or anything that implies outside partnership.
+- Recommended master aspect ratio: 16:9 landscape at 2400x1350 unless noted. Also keep the subject readable when cropped center/left/right by CSS.
+
+HOMEPAGE IMAGES — KEEP ACTIVE ON HOMEPAGE
+These are the only pages that should display generated images immediately. Supporting pages should show placeholder filename/prompt notes until images are generated and deliberately approved for those routes.
+
+1. Filename: trailer-poster-stage-portal.webp
+   Page/placement: Homepage hero/top.
+   Description: Fire-rimmed chrome stage portal for the first impression.
+   Prompt: Create a cinematic dark theatrical rock stage portal: black void, jagged chrome arc or portal ring, red-orange fire rim light, low smoke, subtle sparks, arena-scale drama, strong dark negative space on the left for oversized white headline text, no text, no logos, no faces, no official KISS makeup, no outside media.
+
+2. Filename: spectacle-lighting-rig.webp
+   Page/placement: Homepage event/details section.
+   Description: Lighting-rig atmosphere behind event facts.
+   Prompt: Create a dramatic pavilion lighting rig scene at night: compact truss, red and amber beams, chrome hardware, light haze, hints of an outdoor campground pavilion, powerful but controlled theatrical rock energy, dark readable area for text, no text, no outside logos, no restricted stage imagery.
+
+3. Filename: costume-chrome-detail.webp
+   Page/placement: Homepage about/proof section.
+   Description: Original chrome/black costume detail suggesting transformation without copying restricted designs.
+   Prompt: Create a close-up original black-and-chrome theatrical rock costume detail: leather-like black texture, chrome armor edges, red/gold rim light, smoke and hard shadow, abstract enough to avoid exact restricted makeup or official costume replication, no face, no logos, no text.
+
+4. Filename: gear-control-dossier.webp
+   Page/placement: Homepage update/signup section.
+   Description: One-show-control desk and road-case dossier mood.
+   Prompt: Create a cinematic show-control table: laptop or control surface glow, cue sheets with unreadable marks, DMX-style cables, road-case hardware, red and amber light reflecting on black surfaces, foggy background, no readable private data, no presentation logos, no text.
+
+5. Filename: fog-strobe-atmosphere.webp
+   Page/placement: Homepage final CTA/effects section.
+   Description: Safety-aware fog and strobe-style atmosphere.
+   Prompt: Create a dramatic fog and strobe-style stage atmosphere: red, gold, and white beams cutting through haze, black background, controlled theatrical energy, no visible audience faces, no unsafe panic feeling, no text, no logos, no outside media.
+
+6. Filename: road-case-vault-bg.webp
+   Page/placement: Homepage Fan Vault section.
+   Description: Road-case fan vault texture.
+   Prompt: Create a black touring road case close-up with chrome latches and rivets, smoky red fire glow leaking from seams, subtle worn texture, fan-relic mystery, dark negative space for cards and text, no official memorabilia, no logos, no text.
+
+7. Filename: button-fire-flare.webp
+   Page/placement: Global button texture used by CSS.
+   Description: Small reusable fire/chrome flare texture for buttons.
+   Prompt: Create an abstract small-scale fire flare and chrome spark texture: red-orange gradient, hot gold highlights, black edges, suitable as a cropped button background, no text, no symbols, no logos. Aspect ratio may be 3:1 or 1200x400.
+
+SUPPORTING PAGE IMAGES — PLACEHOLDER NOW, GENERATE NEXT
+These should be generated as distinct route-specific images, then intentionally approved before replacing placeholder filename/prompt reminders on non-homepage routes.
+
+8. Filename: free-show-hero-pavilion-arrival.webp
+   Page/placement: /july-25-2026/ hero.
+   Description: Free show arrival and pavilion promise.
+   Prompt: Create a public-ready black chrome and fire public event hero for a free July 25 outdoor pavilion show: US 31 roadside arrival mood, campground glow, distant pavilion stage light, red/gold haze, readable dark space for headline, no text, no logos, no exact makeup, no outside media.
+
+9. Filename: free-show-family-blast.webp
+   Page/placement: /july-25-2026/ “What to expect” section.
+   Description: Family-friendly blast with theatrical teeth.
+   Prompt: Create an outdoor family-friendly pavilion concert atmosphere with fog, warm red and gold light, controlled flashing-light mood, silhouettes only, welcoming but dramatic, no identifiable children/faces, no text, no outside logos, no restricted media.
+
+10. Filename: free-show-update-control-table.webp
+    Page/placement: /july-25-2026/ update-list form section.
+    Description: Event-update command table.
+    Prompt: Create a close cinematic show-control table for event updates: laptop glow, road-case surface, cue notes, campground arrival checklist vibe, red and gold reflections, no readable private data, no logos, no text.
+
+11. Filename: ritual-hero-fan-smoke-armor.webp
+    Page/placement: /what-is-just-one-kiss/ hero.
+    Description: Fan devotion transforming into stage ritual.
+    Prompt: Create an original public-ready performer silhouette stepping into smoke: black leather attitude, chrome highlights, red-gold stage light, fan-love intensity, arena myth without copying any official makeup or costume, no logos, no text, no outside media.
+
+12. Filename: public-ready-mythology-beast.webp
+    Page/placement: /what-is-just-one-kiss/ public-ready mythology section.
+    Description: Inspired-by-mythology visual without official marks.
+    Prompt: Create an abstract black-chrome theatrical rock mythology image: original beast-like chrome silhouette or armor shape, smoke, red/gold fire glow, dramatic scale, no outside logos, no exact makeup, no album art, no text.
+
+13. Filename: spectacle-hero-pavilion-light-machine.webp
+    Page/placement: /spectacle/ hero.
+    Description: Compact theatrical rock machine.
+    Prompt: Create a compact theatrical rock light-machine hero: truss, beams, fog, chrome reflections, red and amber atmosphere, disciplined show-control feel, no performer face, no outside logos, no text, no outside media.
+
+14. Filename: spectacle-cycle-moore-pavilion-crowd.webp
+    Page/placement: /spectacle/ Cycle Moore glow section.
+    Description: Pavilion, grass, campers, bikes, and close crowd energy.
+    Prompt: Create an outdoor campground pavilion scene at dusk with grass foreground, campers and motorcycles hinted as silhouettes, warm fire-colored stage glow, approachable fan crowd mood, chrome and dust texture, no readable signage, no logos, no text.
+
+15. Filename: spectacle-visual-lighting-rig.webp
+    Page/placement: /spectacle/ visual proof card.
+    Description: Cue-driven lighting rig card.
+    Prompt: Create a square/4:3 image of a cue-driven lighting rig: chrome truss, red/gold beams, fog reveal, black stage space, professional and portable, no text, no logos.
+
+16. Filename: spectacle-visual-fog-strobe.webp
+    Page/placement: /spectacle/ visual proof card.
+    Description: Fog and strobe atmosphere card.
+    Prompt: Create a square/4:3 safety-aware fog and strobe-style atmosphere image: white beam bursts through red haze, controlled dramatic look, no audience panic, no text, no logos.
+
+17. Filename: spectacle-visual-costume-chrome.webp
+    Page/placement: /spectacle/ visual proof card.
+    Description: Costume chrome detail card.
+    Prompt: Create a square/4:3 original costume chrome detail: black leather-like material, chrome ridges, red rim light, smoke, no face, no official costume replication, no text, no logos.
+
+18. Filename: spectacle-visual-control-dossier.webp
+    Page/placement: /spectacle/ visual proof card.
+    Description: Show-control dossier card.
+    Prompt: Create a square/4:3 show-control dossier image: road case, cue sheet with unreadable marks, controller lights, cables, red amber glow, no readable data, no logos, no text.
+
+19. Filename: contact-hero-signal-flame.webp
+    Page/placement: /contact/ hero.
+    Description: Route-the-question signal image.
+    Prompt: Create an abstract contact/routing image: dark road-case desk, glowing signal line, red-orange flame edge, chrome hardware, professional show-contact energy, no platform logos, no envelopes or generic corporate icons, no text.
+
+20. Filename: contact-update-list-control.webp
+    Page/placement: /contact/ update-list section.
+    Description: Fan update list image.
+    Prompt: Create a consent-aware fan update desk image: signup mood, show notes with unreadable marks, low red control lights, road-case texture, no readable private information, no text, no logos.
+
+21. Filename: contact-show-portrait-placeholder.webp
+    Page/placement: /contact/ contact form section.
+    Description: Original performer/contact portrait mood.
+    Prompt: Create a public-ready original performer portrait mood: figure in smoke, chrome rim light, black stage background, red/gold edge light, no exact restricted makeup, no official costume copy, no text, no logos.
+
+22. Filename: directions-hero-us31-arrival-map.webp
+    Page/placement: /directions/ hero/map area.
+    Description: Original US 31 arrival-map texture.
+    Prompt: Create an original dark northern Michigan arrival-map style image for US 31 and Cycle Moore Legacy mood: abstract road lines, campground signal, chrome and fire accents, no Google tiles, no restricted map data, no text, no logos.
+
+23. Filename: directions-parking-grass-pavilion.webp
+    Page/placement: /directions/ parking/arrival notes.
+    Description: Parking outside the gate with overflow and handicap parking available.
+    Prompt: Create an outdoor gate parking and pavilion arrival image: parking outside the gate, overflow parking availability suggested with generic signs, warm stage glow in distance, campground texture, safe practical arrival feeling, no readable signs, no clearance plates, no text, no logos.
+
+24. Filename: faq-safety-content-fireline.webp
+    Page/placement: /faq-disclaimer/ hero.
+    Description: Safety and content guardrail image.
+    Prompt: Create an abstract safety-and-content guardrail image: fog, bright stage warning glow, chrome boundary line, fire edge, black negative space, no outside logos, no outside media, no text.
+
+25. Filename: faq-independent-tribute-boundary.webp
+    Page/placement: /faq-disclaimer/ independent tribute section.
+    Description: Boundary between fan devotion and official ownership.
+    Prompt: Create a subtle independent-tribute boundary visual: black stage floor, chrome line, warm fan-fire glow beyond it, original theatrical shapes only, no official names or marks in the image, no text.
+
+26. Filename: vault-hero-road-case-relic.webp
+    Page/placement: /vault/ hero.
+    Description: Fan Vault road-case relic.
+    Prompt: Create a road-case vault image: black touring case, chrome latches, smoky red fire glow from seams, fan relic energy, no official memorabilia, no album art, no logos, no text.
+
+27. Filename: vault-fan-media-drop-table.webp
+    Page/placement: /vault/ approved media plan.
+    Description: Fan media drops and road-case archive table.
+    Prompt: Create an original fan-media drop table: road case open with blank photo sleeves, camera/phone silhouettes without presentation logos, red-gold fire glow, chrome corners, no readable text, no official memorabilia.
+
+28. Filename: video-hero-trailer-portal.webp
+    Page/placement: /video/ hero.
+    Description: Trailer/clips portal.
+    Prompt: Create an original trailer-poster style stage portal: black void, chrome ring, smoke, fire rim light, sparks, cinematic clip-launch energy, no text, no outside logos, no borrowed album art.
+
+29. Filename: video-original-clips-stage-monitor.webp
+    Page/placement: /video/ media plan.
+    Description: Approved original clips/media staging.
+    Prompt: Create a stage-monitor and camera-ready clips image: dark monitor glow, red stage reflections, blank screen shapes, road-case surface, no readable video frames, no official footage, no logos, no text.
+
+30. Filename: technical-hero-dmx-control-rig.webp
+    Page/placement: /technical/ hero.
+    Description: One-show-control DMX/control rig.
+    Prompt: Create a one-show-control technical control image: QLC/DMX-inspired control surface, cue sheets with unreadable marks, cables, stage monitor glow, red and amber lights, professional safety-aware setup, no readable software screens, no private data, no logos, no text.
+
+31. Filename: technical-emergency-states-panel.webp
+    Page/placement: /technical/ emergency states section.
+    Description: Blackout/safe-work/control-state visual.
+    Prompt: Create an abstract emergency-state control panel image: black stage, safe work light glow, projection black screen silhouette, fog-off/strobe-off mood represented visually without text labels, professional calm, no logos, no text.
+

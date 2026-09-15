@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.brand_voice",
+  "title": "Brand Voice",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "voice_principles": [
+      "black first, chrome second, fire third",
+      "mythic scale always",
+      "ordinary never",
+      "sell the audience experience before mechanics"
+    ],
+    "approved_terms": [
+      "theatrical tribute",
+      "stage spectacle",
+      "Demon-inspired energy",
+      "arena-style night",
+      "fire-and-chrome atmosphere"
+    ],
+    "avoid_terms": [
+      "official KISS show",
+      "authorized Gene Simmons event",
+      "cheap impersonator",
+      "local band night"
+    ],
+    "cta_patterns": [
+      "Step into the spectacle",
+      "Join the night",
+      "Bring the arena energy closer"
+    ],
+    "copy_rule": "Use bold, public-safe language without claiming endorsement or revealing internal cue mechanics."
+  }
+}

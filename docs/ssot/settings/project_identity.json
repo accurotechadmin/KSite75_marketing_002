@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.project_identity",
+  "title": "Project Identity",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "project_name": "Just One KISS",
+    "show_type": "Gene Simmons tribute theatrical stage event",
+    "current_public_focus": "Interlochen, Michigan-area event on July 25, 2026",
+    "positioning": [
+      "theatrical tribute event",
+      "arena-scaled local spectacle",
+      "public-ready original presentation"
+    ],
+    "public_guardrails": [
+      "Do not imply official endorsement by KISS or Gene Simmons unless written approval exists.",
+      "Keep internal production mechanics out of fan-facing copy.",
+      "Route uncertain facts through owner review before publishing."
+    ],
+    "roles": {
+      "owner": "final canon approval",
+      "developer": "load settings from SSOT JSON",
+      "show_operator": "execute technical runbooks"
+    }
+  }
+}

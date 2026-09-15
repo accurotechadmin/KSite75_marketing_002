@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "profile.schema.json",
+  "title": "Stage Profile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "name",
+    "type",
+    "fixture_values",
+    "revision"
+  ]
+}

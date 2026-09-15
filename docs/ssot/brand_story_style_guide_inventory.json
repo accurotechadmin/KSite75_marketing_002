@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.brand_story_style_guide_inventory",
+  "source_document": {
+    "path": "docs/brand_story_style_guide_inventory.md",
+    "title": "Just One KISS - Brand Story Style Guide Inventory",
+    "format": "markdown",
+    "category": "brand_style",
+    "role": "Pre-style-guide engineering/development inventory of current public-site brand story, language, visual system, facts, rights guardrails, safety posture, and implementation hooks.",
+    "source_size_bytes": 33349
+  },
+  "timeline_classification": "GEN",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "rights_posture": "Public outputs must remain original, independent-tribute framed, rights-aware, safety-aware, and centered on the Just One KISS event experience.",
+    "inventory_only": true
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "brand_style",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as the machine-readable companion for the inventory document only; do not treat it as the finished brand story style guide."
+  },
+  "content_summary": "Inventory-only seed document for future brand story style guide work, preserving the current approved public-site look, copy, event facts, voice, visual system, rights guardrails, safety posture, component patterns, and developer token strategy.",
+  "canonical_records": [
+    {
+      "record_id": "BRAND-STORY-INV-GEN-001",
+      "title": "Preserve current public-site look and language",
+      "section": "Preserve-Exactly Baseline",
+      "category": "brand_style",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "current",
+      "priority": "high",
+      "owner_or_responsible_role": "Owner / public experience",
+      "public_private_flag": "internal",
+      "content_status": "inventory source",
+      "safety_status": "not safety-specific",
+      "description": "Owner-approved baseline: current visual styling, wording, colors, typography, section rhythm, cards, CTAs, and theatrical presentation should be codified rather than redesigned.",
+      "linked_files": [
+        "proto/docs/language.json",
+        "proto/public/assets/css/site.css",
+        "proto/public/index.php"
+      ],
+      "linked_records": [],
+      "last_updated": "2026-07-15"
+    },
+    {
+      "record_id": "BRAND-STORY-INV-GEN-002",
+      "title": "Public facts and claims inventory",
+      "section": "Event Fact Inventory",
+      "category": "public_claims",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "current",
+      "priority": "high",
+      "owner_or_responsible_role": "Owner / public experience",
+      "public_private_flag": "internal",
+      "content_status": "verified/current facts inventory",
+      "safety_status": "safety-related facts included",
+      "description": "Captures current public facts including July 25, 2026, free admission, RSVP/update-list, Cycle Moore Legacy address, camping cost distinction, parking wording, and hazard notices.",
+      "linked_files": [
+        "proto/docs/language.json",
+        "proto/docs/website_ssot.md"
+      ],
+      "linked_records": [],
+      "last_updated": "2026-07-15"
+    },
+    {
+      "record_id": "BRAND-STORY-INV-GEN-003",
+      "title": "Rights-aware independent tribute guardrails",
+      "section": "Rights, Tribute, and KISS-Related Guardrail Inventory",
+      "category": "rights_review",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "current",
+      "priority": "high",
+      "owner_or_responsible_role": "Owner / rights review",
+      "public_private_flag": "internal",
+      "content_status": "review guidance",
+      "safety_status": "not safety-specific",
+      "description": "Captures independent-tribute disclaimer families, allowed inspiration categories, and restricted KISS-adjacent assets/claims requiring review before public use.",
+      "linked_files": [
+        "docs/styleguide.md",
+        "proto/docs/language.json"
+      ],
+      "linked_records": [],
+      "last_updated": "2026-07-15"
+    }
+  ],
+  "relationships": {
+    "source_path": "docs/brand_story_style_guide_inventory.md",
+    "related_ssot_documents": [
+      "docs/ssot/styleguide.json",
+      "docs/ssot/knowledge.json",
+      "docs/ssot/readme.json"
+    ],
+    "related_human_documents": [
+      "docs/styleguide.md",
+      "docs/knowledge.md",
+      "README.md",
+      "proto/docs/website_ssot.md",
+      "proto/docs/language_map.md"
+    ]
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-15",
+    "update_rule": "When the human-readable inventory changes, update this SSOT JSON and docs/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-15",
+    "ssot_companion_purpose": "Machine-readable seed for owner-admin views, generated guide scaffolds, documentation planning, and future brand story style guide production."
+  }
+}

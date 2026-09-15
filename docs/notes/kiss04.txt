@@ -1,0 +1,47 @@
+Create a 10-second 1080p cinematic video clip using the provided seed images as visual reference.
+
+The scene begins in complete darkness. A black burning sun slowly fades into view from the center of the frame. The sun is a perfectly round, solid, matte-black sphere/disc, surrounded by a realistic fiery corona. The corona should look like actual fire/plasma burning in space: natural orange, yellow, and deep red flames, turbulent but not stringy, not lightning-like, not algorithmic, and not overly sharp. The background remains pure black space with no stars, no visible environment, and no distractions.
+
+Use the seed image without letters as the primary reference for the black sun, flame shape, fire texture, and overall composition. Use the seed image with letters as the reference for the centered white text layout.
+
+Video timing and action:
+
+0.0–1.5 seconds:
+Start from a completely black screen. The black burning sun slowly fades into view. The fire around the sun gradually becomes visible, glowing from dim orange to bright realistic flame. The camera is locked off, centered, and stable. The sun should be centered in a 16:9 frame with comfortable empty black space around it.
+
+1.5–3.0 seconds:
+The white text fades into view on the surface of the black sun. The text should read exactly:
+JUST ONE
+KISS
+
+“JUST ONE” appears above “KISS.” Treat the two lines as one centered text block. Keep the lettering crisp, bright white, and readable. “JUST ONE” should have a bold angular rock-logo style, and “KISS” should appear as a clean dot-matrix light-bulb style similar to the reference image. The letters should not move, warp, flicker randomly, or change spelling.
+
+3.0–5.5 seconds:
+The completed logo holds on screen. The black sun burns intensely but naturally, with the flames subtly moving and breathing around the edge. The sun itself remains black, solid, matte, and circular. The fiery rim glows with a soft red/orange/yellow gradient rather than a hard yellow outline. The camera remains mostly still with only a very subtle cinematic push-in. The flames should feel powerful and realistic, like a black star burning in deep space.
+
+5.5–7.0 seconds:
+The sun begins to destabilize. The fiery corona grows brighter and more violent. A faint radial shockwave begins forming around the sun. The black center starts to glow slightly around the edges, as if immense pressure is building behind it. The text remains visible for a brief moment, then becomes overwhelmed by the brightness of the explosion.
+
+7.0–8.3 seconds:
+The sun explodes into a dramatic supernova. The explosion should burst outward from the center in a powerful circular blast of fire, plasma, and glowing debris. The screen rapidly fills with orange, yellow, red, and white-hot flame. The explosion should feel massive, cinematic, and physically powerful, but still elegant and logo-like rather than chaotic or messy. Avoid cartoon effects, cheap particle effects, lightning strands, or artificial-looking fractal flames.
+
+8.3–9.3 seconds:
+The entire screen is engulfed in realistic flames and glowing plasma. The original sun and text are no longer visible. The fire fills the frame with turbulent motion, heat shimmer, and bright glowing layers. The center is brightest, with darker smoky reds and oranges toward the edges.
+
+9.3–10.0 seconds:
+The flames rapidly dim and fade away into complete black. End on a fully black screen with no text, no logo, and no remaining glow.
+
+Style requirements:
+Ultra-realistic cinematic fire, high contrast, deep black background, dramatic lighting, polished professional logo reveal style, clean centered composition, smooth motion, no jitter, no camera shake except a subtle impact feel during the supernova. The video should feel like a premium animated intro for a rock show or stage production.
+
+Technical requirements:
+Duration: exactly 10 seconds.
+Resolution: 1920x1080, 16:9.
+Frame rate: 24 or 30 fps.
+No borders, no watermarks, no subtitles, no extra text.
+Keep the phrase exactly as shown: “JUST ONE” above “KISS.”
+Do not misspell, morph, or distort the letters.
+Do not add stars, planets, smoke clouds, people, instruments, stage lights, reflections, or extra objects.
+
+Negative prompt:
+cartoon, anime, illustration, low resolution, blurry text, misspelled text, warped letters, extra letters, extra words, bad typography, unstable logo, shaky camera, fake CGI flames, lightning, electrical arcs, stringy algorithmic flame patterns, hard yellow outline, plastic reflections, glossy reflections, lens flare, stars, planets, smoke covering the text, cluttered background, watermark, subtitles, border, frame, overexposed for too long, cheap particle effect, pixelated fire, unrealistic explosion.

@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "asset_taxonomy",
+  "document_class": "authority",
+  "title": "Asset Taxonomy",
+  "description": "Controlled asset forms, categories, lifecycle, rights posture, and intended uses.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "document.schema.json",
+  "source_refs": [
+    {
+      "source_id": "source:master_index",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:asset_settings",
+      "path": "docs/ssot/settings/asset_taxonomy.json",
+      "sha256": "91006616b332c7d73dbc95ed9d7b220c0be4a908bfafde31b4785b42493ed2b3",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "governance": {
+      "authority_scope": "Controlled asset forms, categories, lifecycle, rights posture, and intended uses.",
+      "change_rule": "Add, deprecate, or change meanings only through controlled review; preserve stable IDs and map legacy values.",
+      "approval_required_for_effective_use": true
+    },
+    "source_mapping": [
+      "Formal DOCX controls take precedence within their domains.",
+      "Settings and center contracts were normalized without treating prototype labels as approved canon.",
+      "Records remain REVIEW until a named authorized approver supplies controlled evidence."
+    ],
+    "physicality": [
+      {
+        "record_id": "physicality:physical",
+        "label": "Physical",
+        "definition": "Tangible item requiring location, custody, condition, and maintenance metadata.",
+        "status": "review"
+      },
+      {
+        "record_id": "physicality:digital",
+        "label": "Digital",
+        "definition": "File or dataset requiring checksum, version, storage, backup, and rights metadata.",
+        "status": "review"
+      },
+      {
+        "record_id": "physicality:hybrid",
+        "label": "Hybrid",
+        "definition": "Linked physical and digital manifestations tracked separately and related.",
+        "status": "review"
+      }
+    ],
+    "asset_types": [
+      {
+        "record_id": "asset_type:photo",
+        "label": "Photo",
+        "definition": "Still photographic media.",
+        "status": "review",
+        "physicality": "digital"
+      },
+      {
+        "record_id": "asset_type:video",
+        "label": "Video",
+        "definition": "Moving-image media.",
+        "status": "review",
+        "physicality": "digital"
+      },
+      {
+        "record_id": "asset_type:audio",
+        "label": "Audio",
+        "definition": "Playback, recording, or sound media.",
+        "status": "review",
+        "physicality": "digital"
+      },
+      {
+        "record_id": "asset_type:graphic",
+        "label": "Graphic",
+        "definition": "Original graphic, layout, or artwork.",
+        "status": "review",
+        "physicality": "digital"
+      },
+      {
+        "record_id": "asset_type:document",
+        "label": "Document",
+        "definition": "Controlled or reference document.",
+        "status": "review",
+        "physicality": "digital_or_physical"
+      },
+      {
+        "record_id": "asset_type:configuration",
+        "label": "Configuration",
+        "definition": "Console, QLC+, patch, or system configuration.",
+        "status": "review",
+        "physicality": "digital"
+      },
+      {
+        "record_id": "asset_type:prop",
+        "label": "Prop",
+        "definition": "Performance prop or performer equipment.",
+        "status": "review",
+        "physicality": "physical"
+      },
+      {
+        "record_id": "asset_type:costume",
+        "label": "Costume",
+        "definition": "Wardrobe item or costume assembly.",
+        "status": "review",
+        "physicality": "physical"
+      },
+      {
+        "record_id": "asset_type:fixture",
+        "label": "Fixture",
+        "definition": "Lighting, effects, audio, video, or control equipment.",
+        "status": "review",
+        "physicality": "physical"
+      },
+      {
+        "record_id": "asset_type:scenery",
+        "label": "Scenery",
+        "definition": "Scenic or structural element.",
+        "status": "review",
+        "physicality": "physical"
+      },
+      {
+        "record_id": "asset_type:venue_media",
+        "label": "Venue Media",
+        "definition": "Venue-supplied media or plan.",
+        "status": "review",
+        "physicality": "digital_or_physical"
+      },
+      {
+        "record_id": "asset_type:ad_creative",
+        "label": "Ad Creative",
+        "definition": "Channel-specific campaign creative.",
+        "status": "review",
+        "physicality": "digital_or_physical"
+      }
+    ],
+    "categories": [
+      {
+        "record_id": "asset_category:show_control",
+        "label": "Show Control",
+        "definition": "Operational show-control asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:technical",
+        "label": "Technical",
+        "definition": "Technical equipment, configuration, or reference.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:performance",
+        "label": "Performance",
+        "definition": "Costume, prop, instrument, or performer-use asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:marketing",
+        "label": "Marketing",
+        "definition": "Campaign or promotional asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:website",
+        "label": "Website",
+        "definition": "Public-site content or implementation asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:booking_press",
+        "label": "Booking Press",
+        "definition": "Buyer- or press-facing package asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:venue",
+        "label": "Venue",
+        "definition": "Venue evidence or coordination asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:safety",
+        "label": "Safety",
+        "definition": "Safety-critical plan, evidence, equipment, or control.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_category:archive",
+        "label": "Archive",
+        "definition": "Historical, superseded, or reference-only asset.",
+        "status": "review"
+      }
+    ],
+    "lifecycle": [
+      {
+        "record_id": "asset_lifecycle:proposed",
+        "label": "Proposed",
+        "definition": "Need identified; existence not asserted.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:intake",
+        "label": "Intake",
+        "definition": "Asset received but not fully verified.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:quarantined",
+        "label": "Quarantined",
+        "definition": "Restricted pending safety, malware, privacy, or rights review.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:active",
+        "label": "Active",
+        "definition": "Verified asset available within recorded controls.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:restricted_use",
+        "label": "Restricted Use",
+        "definition": "Active only for explicitly permitted uses.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:out_of_service",
+        "label": "Out Of Service",
+        "definition": "Physical asset unavailable for use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:superseded",
+        "label": "Superseded",
+        "definition": "Replaced by a controlled successor.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:archived",
+        "label": "Archived",
+        "definition": "Retained history or evidence.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_lifecycle:disposed",
+        "label": "Disposed",
+        "definition": "Disposition evidence recorded; no longer held.",
+        "status": "review"
+      }
+    ],
+    "uses": [
+      {
+        "record_id": "asset_use:timeline_cue",
+        "label": "Timeline Cue",
+        "definition": "Used at a governed Timeline Moment.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:general_project",
+        "label": "General Project",
+        "definition": "GENERAL, not tied to one exact show moment.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:public_web",
+        "label": "Public Web",
+        "definition": "Cleared public website use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:paid_media",
+        "label": "Paid Media",
+        "definition": "Cleared paid campaign use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:organic_social",
+        "label": "Organic Social",
+        "definition": "Cleared organic social use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:booking",
+        "label": "Booking",
+        "definition": "Cleared buyer-facing use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:press",
+        "label": "Press",
+        "definition": "Cleared press use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:operator",
+        "label": "Operator",
+        "definition": "Restricted operator use.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:venue_share",
+        "label": "Venue Share",
+        "definition": "Controlled venue sharing.",
+        "status": "review"
+      },
+      {
+        "record_id": "asset_use:reference_only",
+        "label": "Reference Only",
+        "definition": "Study only; no publication or performance use.",
+        "status": "review"
+      }
+    ],
+    "record_count": 43
+  }
+}

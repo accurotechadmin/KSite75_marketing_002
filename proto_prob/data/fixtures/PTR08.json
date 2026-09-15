@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "PTR08",
+  "fixture_type_id": "ptr",
+  "display_name": "PTR Moving Head 08",
+  "local_name": "PTR08",
+  "asset_tag": "PTR08",
+  "serial_number": null,
+  "category": "PTR moving fixture",
+  "status": "active",
+  "canonical": false,
+  "stage_layer": "lighting",
+  "zone_id": "P-CS",
+  "position": {
+    "x": 6,
+    "y": 6,
+    "z": 10.5
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "scale": 1.0,
+  "mounting": {
+    "point_id": null,
+    "description": "Estimated position",
+    "safety_cable": true
+  },
+  "focus_target_id": "P-CS",
+  "position_confidence": "estimated",
+  "position_verified_at": null,
+  "dmx": {
+    "enabled": true,
+    "universe": 1,
+    "start_address": 183,
+    "mode_id": "12ch",
+    "channel_count": 12,
+    "end_address": 194,
+    "preview_values": [
+      128,
+      0,
+      128,
+      0,
+      128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "default_values": [
+      128,
+      0,
+      128,
+      0,
+      128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "home_values": [
+      128,
+      0,
+      128,
+      0,
+      128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pan_invert": false,
+    "tilt_invert": false,
+    "wireless_receiver_id": null
+  },
+  "connections": {
+    "dmx_in_from": "PTR07",
+    "dmx_out_to": "BL01",
+    "power_from": null
+  },
+  "power": {
+    "voltage": 120,
+    "watts": 90,
+    "current": null,
+    "circuit_id": null,
+    "source_device_id": null,
+    "output_number": null,
+    "paired_output": null,
+    "dimmable": false,
+    "clean_power_required": true,
+    "connector": "Edison"
+  },
+  "simulation": {
+    "model_asset": null,
+    "material_profile": "default",
+    "fixed_color": null,
+    "shadow_enabled": false,
+    "pick_proxy": true,
+    "visible": true
+  },
+  "photos": [],
+  "manuals": [],
+  "documents": [],
+  "source_evidence": [],
+  "open_questions": [
+    "Verify manufacturer/model, physical position, power and DMX settings."
+  ],
+  "maintenance": {
+    "last_tested": null,
+    "test_status": "not-tested",
+    "next_due": null,
+    "open_faults": [],
+    "service_record_ids": [],
+    "out_of_service_reason": null,
+    "notes": ""
+  },
+  "revision": 1,
+  "created_at": "2026-07-24T21:36:58.802624+00:00",
+  "created_by": "system",
+  "updated_at": "2026-07-24T21:36:58.802624+00:00",
+  "updated_by": "system",
+  "change_reason": "Initial generated MVP record"
+}

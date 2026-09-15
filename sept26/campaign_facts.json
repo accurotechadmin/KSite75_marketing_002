@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "JOK-SEP26",
+  "status": "draft_held_for_fact_lock",
+  "updated_at": "2026-09-15",
+  "authority_note": "Explicit owner statements control owner_confirmed fields. No July 25 event-specific value is inherited without fresh confirmation.",
+  "event": {
+    "brand_name": {"value": "Just One KISS", "state": "controlled_evergreen", "source": "marketing/canon/BRAND_CANON.md"},
+    "category": {"value": "independent theatrical rock tribute", "state": "controlled_evergreen", "source": "marketing/canon/BRAND_CANON.md"},
+    "date_display": {"value": "September 26", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "year": {"value": 2026, "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "start_time_display": {"value": "7:30 PM", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "time_zone": {"value": "America/Detroit", "state": "confirmed_from_unchanged_venue", "source": "owner confirmed existing venue remains true 2026-09-15"},
+    "doors_time": {"value": null, "state": "unknown"},
+    "end_time": {"value": null, "state": "unknown"},
+    "venue_name": {"value": "Cycle Moore Legacy", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "city_region": {"value": "Interlochen, MI", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "street_address": {"value": "11075 US 31 South, Interlochen, MI 49643", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "virtual_indicator": {"value": null, "state": "not_determined"},
+    "admission_or_offer": {"value": "Free show; no ticket required; RSVP appreciated", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "age_or_access_policy": {"value": null, "state": "confirmation_required"},
+    "parking_camping_access": {"value": "Existing published camping and parking details remain valid", "state": "owner_confirmed", "source": "owner instruction 2026-09-15"},
+    "weather_cancellation_policy": {"value": null, "state": "confirmation_required"}
+  },
+  "conversion": {
+    "primary_action": {"value": null, "state": "decision_required"},
+    "primary_cta": {"value": null, "state": "decision_required"},
+    "registration_url": {"value": null, "state": "required_before_launch"},
+    "registration_type": {"value": null, "state": "decision_required", "allowed_examples": ["ticket_purchase", "free_registration", "rsvp", "update_list", "event_details"]},
+    "conversion_event": {"value": null, "state": "decision_required"},
+    "monetary_value": {"value": null, "state": "not_applicable_unless_verified"}
+  },
+  "creative_inputs": {
+    "event_logo_or_wordmark": {"value": null, "state": "select_or_create"},
+    "event_title_lockup": {"value": null, "state": "create_after_fact_lock"},
+    "performer_billing": {"value": null, "state": "approval_required"},
+    "performer_assets": {"value": [], "state": "rights_review_required"},
+    "sponsor_logos": {"value": [], "state": "none_confirmed"},
+    "testimonials": {"value": [], "state": "none_verified"},
+    "b_roll": {"value": [], "state": "inventory_required"},
+    "music": {"value": [], "state": "license_required"}
+  },
+  "mandatory_controls": {
+    "independence": "Just One KISS is an independent theatrical rock tribute. No official affiliation, sponsorship, authorization, or endorsement is implied.",
+    "rights": "Use only original or cleared marks, imagery, likenesses, fonts, music, footage, testimonials, and community media.",
+    "effects": "Fire language is metaphorical unless a literal effect is separately verified and approved.",
+    "accessibility": "Critical facts must remain available as readable text; provide alt text, captions/transcripts, adequate contrast, non-color cues, and reduced-motion/static alternatives where relevant."
+  },
+  "release_state": {
+    "fact_lock": false,
+    "rights_lock": false,
+    "destination_lock": false,
+    "tracking_lock": false,
+    "creative_lock": false,
+    "final_approval": false
+  }
+}

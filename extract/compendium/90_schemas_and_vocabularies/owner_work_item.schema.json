@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "owner_work_item.schema",
+  "document_class": "schema",
+  "title": "Owner Work Item Schema",
+  "description": "Owner task, priority, gate, decision, evidence, dependency, authority, and completion controls.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "project_owner",
+  "approver_role": "project_owner",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:docs_owner_admin_build_readiness_md",
+      "path": "docs/owner_admin_build_readiness.md",
+      "sha256": "26ea34113b0060427818d6dc2c802a70f004e9d600b6de5be483edfc1584061b",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "owner module and record contract"
+    },
+    {
+      "source_id": "source:docs_owner_site_boot_plan_md",
+      "path": "docs/owner_site_boot_plan.md",
+      "sha256": "809e593081f3758578f7efd815ed67cd533a6e29221c9aaeba937baf544d06df",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "owner permissions and launch gates"
+    },
+    {
+      "source_id": "source:docs_owner_project_manager_surface_blueprint_md",
+      "path": "docs/owner_project_manager_surface_blueprint.md",
+      "sha256": "d4e38c6c0062496b331939a18357497ce7ad828dbbe618121927249f3be22e3a",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "work-item and dependency surface"
+    },
+    {
+      "source_id": "source:center_data_schema_php",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "implemented universal owner record"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "owner_work_item.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "owner_work_item.schema.json",
+      "title": "Owner Work Item",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "work_item_id",
+        "work_type",
+        "priority",
+        "responsible_role",
+        "permission_state",
+        "dependencies",
+        "evidence_refs",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "work_item_id": {
+          "type": "string",
+          "pattern": "^(TASK|GATE|DEC|FIND)-[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "work_type": {
+          "enum": [
+            "task",
+            "gate",
+            "decision",
+            "finding",
+            "launch_item"
+          ]
+        },
+        "priority": {
+          "enum": [
+            "critical",
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "responsible_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "permission_state": {
+          "enum": [
+            "authorized",
+            "approval_required",
+            "restricted",
+            "blocked",
+            "unknown"
+          ]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "decision_required": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "due_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "completion_state": {
+          "enum": [
+            "not_started",
+            "in_progress",
+            "blocked",
+            "ready_for_review",
+            "approved_with_evidence",
+            "closed",
+            "cancelled"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "completion_state": {
+                "enum": [
+                  "approved_with_evidence",
+                  "closed"
+                ]
+              }
+            },
+            "required": [
+              "completion_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "evidence_refs"
+            ]
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "program_event.schema",
+  "document_class": "schema",
+  "title": "Program Event Schema",
+  "description": "Immutable PGM/TECH/FIN event identity, ordering, supplied/planned timing, uncertainty, and provenance.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:01_Authoritative_Show_Control_and_Performance_Cue_Book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "revision_or_date": null,
+      "locator": "sections 1-7 and program-event tables",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing program identity, order, timing, and uncertainty"
+    },
+    {
+      "source_id": "source:docs_cue_txt",
+      "path": "docs/cue.txt",
+      "sha256": "479a2484bc4fbb0e180c556b8794198b0cd01c3fd6f2dc76083cf02aba1c8b21",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "working cue/source comparison"
+    },
+    {
+      "source_id": "source:docs_mastergameplan_md",
+      "path": "docs/mastergameplan.md",
+      "sha256": "29d9e47f6e22dc5c159f3fd8837013afd065860dd4d2d698e8dd4ec389e53f82",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "program context"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "program_event.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "program_event.schema.json",
+      "title": "Program Event",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "event_id",
+        "event_family",
+        "order",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "event_id": {
+          "type": "string",
+          "pattern": "^(PGM|TECH|FIN)-[0-9]{3}$"
+        },
+        "event_family": {
+          "enum": [
+            "PGM",
+            "TECH",
+            "FIN"
+          ]
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duration": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "basis",
+            "verification_state"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{2,}:[0-5][0-9]:[0-5][0-9]$"
+            },
+            "basis": {
+              "enum": [
+                "supplied",
+                "calculated",
+                "estimated",
+                "unknown"
+              ]
+            },
+            "verification_state": {
+              "enum": [
+                "verified",
+                "provisional",
+                "estimated",
+                "unverified"
+              ]
+            }
+          }
+        },
+        "predecessor_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(PGM|TECH|FIN)-[0-9]{3}$"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "properties": {
+            "event_id": {
+              "pattern": "^(PGM|TECH|FIN)-[0-9]{3}$"
+            }
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

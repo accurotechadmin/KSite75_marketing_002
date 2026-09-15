@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.integrations",
+  "title": "Integrations",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "placeholders": {
+      "cms_adapter": "not selected",
+      "forms": "not selected",
+      "analytics": "not selected",
+      "email_capture": "not selected",
+      "ad_pixels": "not selected",
+      "media_storage": "not selected",
+      "local_ai_workflow": "Qwen routing documented separately"
+    },
+    "rule": "Do not hard-code secrets or live credentials in SSOT JSON."
+  }
+}

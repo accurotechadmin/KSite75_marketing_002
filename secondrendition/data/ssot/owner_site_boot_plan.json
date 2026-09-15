@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.owner_site_boot_plan",
+  "source_document": {
+    "path": "docs/owner_site_boot_plan.md",
+    "title": "Just One KISS - Owner Site Boot Plan",
+    "format": "markdown",
+    "category": "website_admin",
+    "role": "Ready-to-build preparation plan for the private owner-facing site and downstream public-site spokes.",
+    "source_size_bytes": 6961
+  },
+  "timeline_classification": "GEN",
+  "content_summary": "Defines the owner-site boot target, initial modules, minimum record schema, implementation boot sequence, public-site spokes, and readiness questions.",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "two_person_execution_model_required": true,
+    "public_outputs_gated_by_rights_and_safety": true,
+    "cue_txt_is_working_draft_not_final_setlist": true
+  },
+  "initial_application_modules": [
+    {
+      "build_order": 1,
+      "module": "Dashboard",
+      "primary_outcome": "Readiness, red flags, next actions, and July 25, 2026 launch focus.",
+      "timeline_rule": "GEN cards; linked records keep their own IDs."
+    },
+    {
+      "build_order": 2,
+      "module": "Timeline Registry",
+      "primary_outcome": "Create and edit all Timeline Moment ID families and GEN records.",
+      "timeline_rule": "Required per record."
+    },
+    {
+      "build_order": 3,
+      "module": "Cue Draft Import",
+      "primary_outcome": "Stage docs/cue.txt as proposed records without finalizing the setlist.",
+      "timeline_rule": "Assign proposed IDs before show-ready use."
+    },
+    {
+      "build_order": 4,
+      "module": "Asset Inventory",
+      "primary_outcome": "Catalog physical and digital evidence with condition, content, and uses.",
+      "timeline_rule": "Required per asset."
+    },
+    {
+      "build_order": 5,
+      "module": "Media Intake",
+      "primary_outcome": "Convert uploads into media and asset records.",
+      "timeline_rule": "Required per media item."
+    },
+    {
+      "build_order": 6,
+      "module": "Content / Safety Queue",
+      "primary_outcome": "Surface unknown, needs-review, venue-dependent, reference-only, unsafe, or prohibited records.",
+      "timeline_rule": "Source records keep their IDs."
+    },
+    {
+      "build_order": 7,
+      "module": "Tasks / Launch",
+      "primary_outcome": "Track build, rehearsal, venue, marketing, booking, and review work.",
+      "timeline_rule": "GEN unless tied to a specific moment."
+    },
+    {
+      "build_order": 8,
+      "module": "Website CMS Drafts",
+      "primary_outcome": "Draft public pages and CTAs from approved data only.",
+      "timeline_rule": "Pages usually GEN; embedded records keep IDs."
+    },
+    {
+      "build_order": 9,
+      "module": "Show-control Outputs",
+      "primary_outcome": "Generate run sheets, emergency sheets, packing lists, and rehearsal checklists.",
+      "timeline_rule": "Rows inherit source IDs."
+    }
+  ],
+  "minimum_record_fields": [
+    "record_id",
+    "title",
+    "section",
+    "category",
+    "timeline_moment_id_or_gen",
+    "status",
+    "priority",
+    "owner_or_responsible_role",
+    "public_private_flag",
+    "content_status",
+    "safety_status",
+    "description",
+    "linked_files",
+    "linked_records",
+    "last_updated"
+  ],
+  "boot_sequence": [
+    "Load data/ssot/master_index.json",
+    "Load data/ssot/prompt.json",
+    "Load data/ssot/owner_admin_build_readiness.json",
+    "Load data/ssot/timeline_moment_registry.json and data/ssot/cue.json",
+    "Load inventory, rig, and vendor-manual SSOT files",
+    "Implement shared record schema first",
+    "Gate public output behind public/private, content, and safety fields"
+  ],
+  "public_site_spokes": [
+    "Main event landing page",
+    "Interlochen travel/local page",
+    "Video/trailer page",
+    "Costume/spectacle page",
+    "Technical spectacle page",
+    "Press/booking page",
+    "FAQ/disclaimer page"
+  ],
+  "relationships": {
+    "source_path": "docs/owner_site_boot_plan.md",
+    "related_ssot_documents": [
+      "data/ssot/master_index.json",
+      "data/ssot/prompt.json",
+      "data/ssot/owner_admin_build_readiness.json",
+      "data/ssot/timeline_moment_registry.json",
+      "data/ssot/cue.json",
+      "data/ssot/inventory_reference.json",
+      "data/ssot/rig.json"
+    ],
+    "related_human_documents": [
+      "docs/prompt.md",
+      "docs/owner_admin_build_readiness.md",
+      "docs/website_system_plan.md"
+    ]
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-13",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and data/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-13"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "organizations_and_partners",
+  "document_class": "registry",
+  "title": "Organizations And Partners",
+  "description": "Venue, production, vendor, platform, and partner entities; relationship type; approval/affiliation status",
+  "source_refs": [
+    {
+      "source_id": "source:docs_current_documentation_groundwork_plan_md",
+      "path": "docs/current_documentation_groundwork_plan.md",
+      "sha256": "82d2299c32d8fe270ac35f42f84c85f89be80abbd13a8f8e9f6177ebb01974a7",
+      "locator": "public presentation rules and current-document architecture",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Affiliation and fact-verification boundary"
+    },
+    {
+      "source_id": "source:docs_brand_story_style_guide_inventory_md",
+      "path": "docs/brand_story_style_guide_inventory.md",
+      "sha256": "2270c92ab93e7986664691500758308487579adc658537da189136b19cce8b9f",
+      "locator": "rights posture; rights-aware guardrails",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Independent-tribute and partnership-claim constraints"
+    },
+    {
+      "source_id": "source:center_docs_answers_md",
+      "path": "center/docs/answers.md",
+      "sha256": "588f1a5bee5d52bdcf34eb2d5ff7dbc18de36055e6a1ecb9b8b0b9309a763019",
+      "locator": "contact/privacy and organization placeholder answers",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Privacy-minimized candidate handling, not authority"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_source_authority_policy_json",
+      "path": "extract/compendium/00_control_and_governance/source_authority_policy.json",
+      "sha256": "8b330f8fa66615067494490bbd17ff7ce210e9f106cce086eb98dbcac9a2741d",
+      "locator": "AUTH-002, AUTH-005, AUTH-006",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Evidence, unresolved relationship, and affiliation rules"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "registry_policy": {
+      "record_threshold": "Create an organization record only from a public-safe or restricted authoritative source with a stable relationship category and evidence reference.",
+      "relationship_states": [
+        "candidate",
+        "contacted",
+        "evidence_pending",
+        "verified",
+        "declined",
+        "ended"
+      ],
+      "affiliation_states": [
+        "not_claimed",
+        "unverified_do_not_claim",
+        "verified_for_stated_scope",
+        "expired_or_withdrawn"
+      ],
+      "public_claim_rule": "No organization may be described as a partner, sponsor, endorser, affiliate, venue, vendor, or platform relationship until scope-specific evidence and required approval are recorded.",
+      "contact_rule": "Store no person name, email, phone, address, mail body, credential, pricing, or private note here; use restricted_contact_directory references after privacy controls exist."
+    },
+    "records": [],
+    "record_count": 0,
+    "verified_empty_scope": {
+      "statement": "No organization or partner relationship was promoted from repository candidates in this slice.",
+      "reason": "The reviewed evidence contains planning candidates and guardrails but no controlled relationship evidence sufficient for a durable claim.",
+      "as_of": "2026-08-14"
+    },
+    "relationship_record_contract": [
+      "organization_id",
+      "public_safe_name_or_restricted_reference",
+      "organization_type",
+      "relationship_type",
+      "relationship_state",
+      "affiliation_state",
+      "evidence_refs",
+      "public_claim_scope",
+      "owner_role",
+      "reviewed_at",
+      "contact_ref"
+    ],
+    "dependencies": [
+      "project_identity.json",
+      "roles_and_authorities.json",
+      "../00_control_and_governance/source_authority_policy.json",
+      "../90_schemas_and_vocabularies/relationship_type_registry.json",
+      "restricted_contact_directory.json"
+    ],
+    "unresolved_relationships": [
+      {
+        "question_id": "ORG-Q-001",
+        "question": "Which venue, vendor, platform, sponsor, or partner relationships have controlled evidence and may be named?",
+        "owner_role": "role:owner_performer",
+        "state": "evidence_required"
+      },
+      {
+        "question_id": "ORG-Q-002",
+        "question": "What scope and expiry apply to any authorized affiliation claim?",
+        "owner_role": "role:rights_reviewer",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

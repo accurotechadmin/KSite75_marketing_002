@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "entity_record.schema",
+  "document_class": "schema",
+  "title": "Entity Record Schema",
+  "description": "Stable record identity, lifecycle, provenance, relationships, confidence, sensitivity, and timestamps.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:master_index",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:content_model",
+      "path": "docs/ssot/settings/content_model.json",
+      "sha256": "0f3d926acea8b8e67dc4dff1f9b40368f6bce75feeb466ea73e9dcec62719e26",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:center_schema",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:timeline",
+      "path": "docs/timeline_moment_registry.md",
+      "sha256": "237c6bc843edb1de78c3e1699fccfc04871998fea8f649f5822928bce22b1fe7",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "entity_record.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "entity_record.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Entity record",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "record_type",
+        "title",
+        "status",
+        "timeline_scope",
+        "visibility",
+        "confidence",
+        "source_refs",
+        "relationships",
+        "created_at",
+        "updated_at"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "record_type": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted",
+            "safety_sensitive"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "owner_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "relationship_type",
+              "target_id"
+            ],
+            "properties": {
+              "relationship_type": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+              },
+              "target_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "review_due_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "supersedes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+          }
+        },
+        "superseded_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "source_mapping": [
+      "The Supporting Production Documentation Standard supplies controlled identity, revision, approval, distribution, and supersession rules.",
+      "Repository settings and owner-center contracts are reconciled as implementation evidence, not promoted over formal authority.",
+      "Approval is represented as evidence-bearing state; review completion alone cannot satisfy approved conditions."
+    ],
+    "validation_notes": [
+      "Formats require a JSON Schema validator with format assertion enabled.",
+      "Domain vocabularies remain external authorities and are intentionally not duplicated as exhaustive enums."
+    ]
+  }
+}

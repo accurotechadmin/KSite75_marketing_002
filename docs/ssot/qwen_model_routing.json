@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.qwen_model_routing",
+  "source_document": {
+    "path": "docs/qwen_model_routing.md",
+    "title": "Qwen / Ollama / AnythingLLM Model Routing Guide",
+    "format": "markdown",
+    "category": "onboarding",
+    "role": "Project-wide policy for choosing Qwen 3.5 versus Qwen 2.5 in local Ollama and AnythingLLM workflows.",
+    "source_size_bytes": 11618
+  },
+  "timeline_classification": "GEN",
+  "model_policy": {
+    "default_quality_family": "Qwen 3.5",
+    "economy_specialist_family": "Qwen 2.5",
+    "qwen_3_5_use_cases": [
+      "cross-document reasoning",
+      "canonical documentation updates",
+      "coding and owner-site maintenance",
+      "public-facing copy",
+      "safety-sensitive show-control guidance",
+      "vision-capable review",
+      "final review"
+    ],
+    "qwen_2_5_use_cases": [
+      "low-cost extraction",
+      "tagging",
+      "short summaries",
+      "table normalization",
+      "inexpensive variants",
+      "legacy specialized workflows"
+    ],
+    "review_rule": "When Qwen 2.5 produces source-of-truth, public, owner-site, or show-control changes, route the result through Qwen 3.5 review before accepting it as final."
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "onboarding",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON to expose local model-routing guidance in owner/admin or AnythingLLM configuration views without copying policy text into app code."
+  },
+  "content_summary": "Project-wide Qwen routing policy for Ollama and AnythingLLM: use Qwen 3.5 for current-generation quality work and Qwen 2.5 for economy or specialized roles.",
+  "canonical_records": [],
+  "relationships": {
+    "source_path": "docs/qwen_model_routing.md",
+    "related_ssot_documents": [
+      "ssot.readme",
+      "ssot.knowledge",
+      "ssot.prompt"
+    ],
+    "related_human_documents": [
+      "README.md",
+      "docs/knowledge.md",
+      "docs/prompt.md",
+      "docs/prompts/*.md"
+    ]
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-16",
+    "update_rule": "When docs/qwen_model_routing.md changes, update this SSOT JSON and docs/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-16",
+    "ssot_companion_purpose": "Machine-readable seed for owner-admin views, AnythingLLM workspace planning, generated boot prompts, and future model-routing configuration."
+  }
+}

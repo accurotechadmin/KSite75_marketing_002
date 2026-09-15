@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "responsibility_matrix",
+  "document_class": "authority",
+  "title": "Responsibility Matrix",
+  "description": "Role-based RACI for documents, systems, cue families, gates, and emergency actions",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CONTACT-01 and controlled supporting-document requirements",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Responsibility, personnel, contact, ownership, dependency, and approval requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_role_vocabulary_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/role_vocabulary.json",
+      "sha256": "722fb2f36d7e91a1f678b473f4210d22c8a5fc4b9982b02024c2e49aebcbdefe",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled stable role vocabulary"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_roles_and_authorities_json",
+      "path": "extract/compendium/01_project_event_and_people/roles_and_authorities.json",
+      "sha256": "4f478fa18202f331e847509d06a841450f9e391479436ab3cbc05d726331dbf4",
+      "locator": "data.records and authority_rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Authority domains and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "assignment_boundary": "Roles only; no named person or unverified holder is assigned.",
+    "raci_rules": [
+      "Each row has exactly one accountable role where source authority supports accountability.",
+      "Specialist concurrence is mandatory in its safety, venue, privacy, rights, or accessibility domain and cannot be replaced by owner or business approval.",
+      "HOLD, STOP, and ABORT override schedule, creative, financial, and publication objectives."
+    ],
+    "records": [
+      {
+        "responsibility_id": "raci:document_control",
+        "scope_type": "document",
+        "scope": "controlled compendium documents",
+        "accountable_role": "role:production_manager",
+        "responsible_roles": [
+          "role:developer"
+        ],
+        "required_specialist_concurrence": [
+          "role:safety_authority",
+          "role:rights_reviewer",
+          "role:privacy_steward",
+          "role:accessibility_reviewer"
+        ],
+        "consulted_roles": [],
+        "informed_roles": [
+          "role:owner_performer"
+        ],
+        "safety_override": true,
+        "assignment_state": "role_defined_holder_unverified",
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "responsibility_id": "raci:show_control",
+        "scope_type": "system",
+        "scope": "show-control system release",
+        "accountable_role": "role:technical_director",
+        "responsible_roles": [
+          "role:stage_manager",
+          "role:developer"
+        ],
+        "required_specialist_concurrence": [
+          "role:safety_authority",
+          "role:venue_representative"
+        ],
+        "consulted_roles": [],
+        "informed_roles": [
+          "role:owner_performer"
+        ],
+        "safety_override": true,
+        "assignment_state": "role_defined_holder_unverified",
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "responsibility_id": "raci:cue_family",
+        "scope_type": "cue_family",
+        "scope": "program and department cue families",
+        "accountable_role": "role:stage_manager",
+        "responsible_roles": [
+          "role:technical_director",
+          "role:director"
+        ],
+        "required_specialist_concurrence": [
+          "role:safety_authority"
+        ],
+        "consulted_roles": [],
+        "informed_roles": [
+          "role:owner_performer"
+        ],
+        "safety_override": true,
+        "assignment_state": "role_defined_holder_unverified",
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "responsibility_id": "raci:readiness_release",
+        "scope_type": "readiness_gate",
+        "scope": "readiness and public release gates",
+        "accountable_role": "role:production_manager",
+        "responsible_roles": [
+          "role:stage_manager",
+          "role:technical_director"
+        ],
+        "required_specialist_concurrence": [
+          "role:safety_authority",
+          "role:rights_reviewer",
+          "role:privacy_steward",
+          "role:accessibility_reviewer",
+          "role:venue_representative"
+        ],
+        "consulted_roles": [],
+        "informed_roles": [
+          "role:owner_performer"
+        ],
+        "safety_override": true,
+        "assignment_state": "role_defined_holder_unverified",
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "responsibility_id": "raci:emergency",
+        "scope_type": "emergency_action",
+        "scope": "HOLD, STOP, ABORT, and emergency response",
+        "accountable_role": "role:safety_authority",
+        "responsible_roles": [
+          "role:stage_manager",
+          "role:technical_director",
+          "role:venue_representative"
+        ],
+        "required_specialist_concurrence": [],
+        "consulted_roles": [],
+        "informed_roles": [
+          "role:owner_performer"
+        ],
+        "safety_override": true,
+        "assignment_state": "role_defined_holder_unverified",
+        "approval_state": "pending controlled approval"
+      }
+    ],
+    "record_count": 5,
+    "dependencies": [
+      "roles_and_authorities.json",
+      "event_registry.json",
+      "venue_advance_and_house_interface.json",
+      "../90_schemas_and_vocabularies/role_vocabulary.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "RACI-Q-001",
+        "question": "Which controlled assignments establish qualified active holders for each accountable and specialist role?",
+        "owner_role": "role:production_manager",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

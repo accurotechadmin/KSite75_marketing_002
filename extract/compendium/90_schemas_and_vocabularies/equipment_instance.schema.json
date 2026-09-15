@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "equipment_instance.schema",
+  "document_class": "schema",
+  "title": "Equipment Instance Schema",
+  "description": "Instance identity, geometry, DMX addressing, power, maintenance, links, and verification.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "technical_director",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "document families, minimum fields, approval and synchronization rules",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing supporting-document, cue, safety, inspection, and approval controls"
+    },
+    {
+      "source_id": "source:docs_inventory_reference_md",
+      "path": "docs/inventory_reference.md",
+      "sha256": "20380ccad4db027357e1aaefd26701bc9697f451d18131b7933b6d18492786d8",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "authoritative patch and instance details"
+    },
+    {
+      "source_id": "source:docs_rig_md",
+      "path": "docs/rig.md",
+      "sha256": "af32084d9b27d8d9f8b1cff0b4a47141a6fe5bbe5cba0de76e39fe212149141c",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "operator digest comparison"
+    },
+    {
+      "source_id": "source:proto_prob_data_indexes_fixtures_json",
+      "path": "proto_prob/data/indexes/fixtures.json",
+      "sha256": "3861ae86092f0e9b2e1990054a60fd8f19dcd31c14837201b0246dd96b4d8a57",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "fixture envelope variants"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AF-B_json",
+      "path": "proto_prob/data/fixtures/AF-B.json",
+      "sha256": "942575e301ce0190bb0ee88dfe8e3f91d5ea5e41c983e6cfb12673fabb366dc2",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "representative fixture record"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "equipment_instance.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "equipment_instance.schema.json",
+      "title": "Equipment Instance",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "instance_id",
+        "equipment_type_ref",
+        "maintenance_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "instance_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "equipment_type_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dmx_patch": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "universe",
+            "start_address",
+            "footprint"
+          ],
+          "properties": {
+            "universe": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "start_address": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 512
+            },
+            "footprint": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 512
+            }
+          },
+          "allOf": [
+            {
+              "properties": {
+                "start_address": {},
+                "footprint": {}
+              }
+            }
+          ]
+        },
+        "geometry": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true,
+          "required": [
+            "verification_state"
+          ],
+          "properties": {
+            "verification_state": {
+              "enum": [
+                "surveyed",
+                "measured",
+                "estimated",
+                "unverified"
+              ]
+            }
+          }
+        },
+        "power_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maintenance_state": {
+          "enum": [
+            "serviceable",
+            "inspection_due",
+            "restricted",
+            "tagged_out",
+            "repair_pending",
+            "unknown"
+          ]
+        },
+        "last_inspected_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "dmx_patch": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "dmx_patch"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dmx_patch": {
+                "properties": {
+                  "start_address": {
+                    "maximum": 512
+                  },
+                  "footprint": {
+                    "maximum": 512
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Address and footprint bounds are checked individually; start_address + footprint - 1 and cross-record universe overlap are enforced by the companion validation suite."
+    ]
+  }
+}

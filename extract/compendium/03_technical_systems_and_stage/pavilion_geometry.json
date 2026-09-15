@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "pavilion_geometry",
+  "document_class": "registry",
+  "title": "Pavilion Geometry",
+  "description": "Evidence-qualified pavilion dimension, roof, cradle, masking, and clearance candidates",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_pavilion_json",
+      "path": "proto_prob/data/global/pavilion.json",
+      "sha256": "dc1e7dbd6fc045e7dc48a684c75526dd28bf10216e95ff123a991f3e16d6157c",
+      "locator": "all records",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype pavilion candidates"
+    },
+    {
+      "source_id": "source:docs_rig_md",
+      "path": "docs/rig.md",
+      "sha256": "af32084d9b27d8d9f8b1cff0b4a47141a6fe5bbe5cba0de76e39fe212149141c",
+      "locator": "stage layout and rig planning narrative",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Secondary planning context; not measurement"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "Stage, scenic, rigging, inspection, and approval requirements",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled requirements; does not verify candidate dimensions"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_coordinate_system_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/coordinate_system.json",
+      "sha256": "ec3a2143d9ef71e85af534c00971c6e5b9fa3eb0f1c3bb235f26d7f906c5c2f7",
+      "locator": "coordinate authority",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Coordinate interpretation and transformation rules"
+    }
+  ],
+  "data": {
+    "extraction_state": "review_ready_unapproved",
+    "approval_state": "controlled_human_approval_required",
+    "verification_boundary": "All numeric and descriptive geometry is a prototype candidate. No value is surveyed, physically measured, venue-confirmed, structurally rated, load-approved, clearance-approved, or safe for execution.",
+    "use_rule": "Planning and visualization only. Field measurement, venue confirmation, technical review, and applicable safety/engineering approval are required before construction, rigging, access, clearance, or cue use.",
+    "pavilion_id": "pavilion:PAV-001",
+    "coordinate_system_ref": "coordinate_system#coordinate:stage_candidate_v1",
+    "record_count": 16,
+    "measurements": [
+      {
+        "measurement_id": "pavilion:width",
+        "feature": "pavilion",
+        "quantity": "width",
+        "candidate_value": 40.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:length",
+        "feature": "pavilion",
+        "quantity": "length",
+        "candidate_value": 58.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:eave_height",
+        "feature": "pavilion",
+        "quantity": "eave_height",
+        "candidate_value": 10.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:ridge_height",
+        "feature": "pavilion",
+        "quantity": "ridge_height",
+        "candidate_value": 18.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:roof_truss_spacing",
+        "feature": "roof",
+        "quantity": "truss_spacing",
+        "candidate_value": 4.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:cradle_width",
+        "feature": "cradle",
+        "quantity": "width",
+        "candidate_value": 5.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:cradle_depth",
+        "feature": "cradle",
+        "quantity": "depth",
+        "candidate_value": 3.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:cradle_height",
+        "feature": "cradle",
+        "quantity": "height",
+        "candidate_value": 2.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:cradle_bottom_elevation",
+        "feature": "cradle",
+        "quantity": "bottom_elevation",
+        "candidate_value": 15.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:cradle_x",
+        "feature": "cradle",
+        "quantity": "x",
+        "candidate_value": 0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:cradle_y",
+        "feature": "cradle",
+        "quantity": "y",
+        "candidate_value": 6.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:masking_rear_width",
+        "feature": "masking",
+        "quantity": "rear_width",
+        "candidate_value": 34.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:masking_rear_height",
+        "feature": "masking",
+        "quantity": "rear_height",
+        "candidate_value": 11.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:masking_side_return_depth",
+        "feature": "masking",
+        "quantity": "side_return_depth",
+        "candidate_value": 7.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:masking_upper_width",
+        "feature": "masking",
+        "quantity": "upper_width",
+        "candidate_value": 17.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "pavilion:masking_upper_height",
+        "feature": "masking",
+        "quantity": "upper_height",
+        "candidate_value": 5.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      }
+    ],
+    "descriptive_candidates": {
+      "roof_type": {
+        "value": "exposed wood gable",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified"
+      },
+      "roof_material": {
+        "value": "pale timber and OSB",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified"
+      }
+    },
+    "bounds_policy": "Width/length/heights describe candidate extents only; they do not establish usable rigging, egress, audience, or equipment-clearance envelopes.",
+    "clearances": [],
+    "clearance_state": "No minimum, working, access, egress, equipment, performer, or rigging clearance is verified.",
+    "conflicts_and_gaps": [
+      "No venue survey, as-built drawing, measurement method, tolerance, or signed venue applicability was located.",
+      "Cradle x/y values lack an explicit z coordinate and are not approved attachment or load points.",
+      "Roof description and truss spacing are prototype assertions, not structural or load-rating evidence.",
+      "No masking flame rating, attachment detail, or verified clearance was located."
+    ],
+    "dependencies": [
+      "coordinate_system",
+      "venue_registry",
+      "source_authority_policy"
+    ]
+  }
+}

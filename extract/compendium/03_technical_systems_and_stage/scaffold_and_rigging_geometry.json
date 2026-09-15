@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "scaffold_and_rigging_geometry",
+  "document_class": "registry",
+  "title": "Scaffold And Rigging Geometry",
+  "description": "Evidence-qualified scaffold, tower, rail, material, position, and rigging-boundary candidates",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_scaffold_json",
+      "path": "proto_prob/data/global/scaffold.json",
+      "sha256": "89947ec77c1ec245f4136ca5610b2a67c8b9c2c62957c8c5f2dfb38d2f2ac917",
+      "locator": "all records",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype scaffold geometry candidates"
+    },
+    {
+      "source_id": "source:01_Authoritative_Show_Control_and_Performance_Cue_Book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "TECH completion requirements for positions, paths, travel limits, loads, clear zones, interlocks, emergency stop, abort, and recovery",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled operational requirements; does not verify scaffold or rigging facts"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "STG-01, AUTO-01, VEN-01, inspection, clearance, and approval requirements",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled supporting-document and qualified-approval requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_coordinate_system_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/coordinate_system.json",
+      "sha256": "ec3a2143d9ef71e85af534c00971c6e5b9fa3eb0f1c3bb235f26d7f906c5c2f7",
+      "locator": "coordinate authority",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Coordinate interpretation and candidate-use boundary"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_stage_geometry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/stage_geometry.json",
+      "sha256": "ab3853db7da34a06e1815f4057dc1d537b0814f731c80a7e7962412052a82756",
+      "locator": "candidate bounds and verification boundary",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Stage relationship context"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_pavilion_geometry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/pavilion_geometry.json",
+      "sha256": "720475f4ce8993c161164ca872fe9d36064097e7490704ff548ff5afd6cfcacd",
+      "locator": "roof and cradle candidates and structural boundary",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Pavilion relationship context"
+    }
+  ],
+  "data": {
+    "extraction_state": "review_ready_unapproved",
+    "approval_state": "controlled_human_approval_required",
+    "verification_boundary": "All scaffold geometry and material descriptions are prototype candidates. Nothing here is surveyed, venue-confirmed, structurally rated, load-approved, attachment-approved, clearance-approved, or safe for construction or rigging.",
+    "use_rule": "Planning and visualization only; qualified field verification, engineered load data, venue review, inspection, and controlled approval are required before construction, attachment, access, loading, or rigging use.",
+    "scaffold_id": "scaffold:SC-MAIN",
+    "source_scaffold_id": "SC-MAIN",
+    "coordinate_system_ref": "coordinate_system#coordinate:stage_candidate_v1",
+    "record_count": 11,
+    "measurements": [
+      {
+        "measurement_id": "scaffold:scaffold:width",
+        "feature": "scaffold",
+        "quantity": "width",
+        "candidate_value": 32.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:scaffold:depth",
+        "feature": "scaffold",
+        "quantity": "depth",
+        "candidate_value": 14.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:scaffold:height",
+        "feature": "scaffold",
+        "quantity": "height",
+        "candidate_value": 15.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:tower:width",
+        "feature": "tower",
+        "quantity": "width",
+        "candidate_value": 3.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:tower:depth",
+        "feature": "tower",
+        "quantity": "depth",
+        "candidate_value": 4.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:rail:lower",
+        "feature": "rail",
+        "quantity": "lower",
+        "candidate_value": 7.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:rail:primary",
+        "feature": "rail",
+        "quantity": "primary",
+        "candidate_value": 11.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:rail:upper",
+        "feature": "rail",
+        "quantity": "upper",
+        "candidate_value": 14.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:position:x",
+        "feature": "position",
+        "quantity": "x",
+        "candidate_value": 0.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:position:y",
+        "feature": "position",
+        "quantity": "y",
+        "candidate_value": 7.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "scaffold:position:z",
+        "feature": "position",
+        "quantity": "z",
+        "candidate_value": 0.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      }
+    ],
+    "material_candidate": {
+      "value": "dull silver steel/aluminum",
+      "evidence_class": "prototype_record",
+      "confidence": "low",
+      "verification_state": "unverified",
+      "structural_claim": false
+    },
+    "candidate_anchor": {
+      "x": 0.0,
+      "y": 7.0,
+      "z": 0.0,
+      "unit": "feet",
+      "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1",
+      "interpretation": "prototype position treated as center in x/y and base elevation in z solely to calculate a reversible visualization envelope",
+      "interpretation_state": "unverified_assumption"
+    },
+    "candidate_bounds": {
+      "x_min": -16.0,
+      "x_max": 16.0,
+      "y_min": 0.0,
+      "y_max": 14.0,
+      "z_min": 0.0,
+      "z_max": 15.0,
+      "unit": "feet",
+      "derivation": "anchor x/y plus or minus one-half prototype width/depth; z base plus height",
+      "operational_authority": false
+    },
+    "coordinate_relationships": {
+      "stage_geometry_ref": "stage_geometry#stage:STAGE-MAIN",
+      "pavilion_geometry_ref": "pavilion_geometry#pavilion:PAV-001",
+      "relationship_state": "candidate_overlap_context_only",
+      "containment_or_clearance_verified": false
+    },
+    "tower_candidates": {
+      "count": null,
+      "positions": [],
+      "dimensions_ref": [
+        "scaffold:tower:width",
+        "scaffold:tower:depth"
+      ],
+      "state": "dimensions_only_count_and_positions_unknown"
+    },
+    "rail_candidates": [
+      {
+        "rail_id": "scaffold:rail:lower",
+        "elevation_ref": "scaffold:rail:lower",
+        "purpose": null,
+        "load_or_guard_rating": null,
+        "verification_state": "unverified"
+      },
+      {
+        "rail_id": "scaffold:rail:primary",
+        "elevation_ref": "scaffold:rail:primary",
+        "purpose": null,
+        "load_or_guard_rating": null,
+        "verification_state": "unverified"
+      },
+      {
+        "rail_id": "scaffold:rail:upper",
+        "elevation_ref": "scaffold:rail:upper",
+        "purpose": null,
+        "load_or_guard_rating": null,
+        "verification_state": "unverified"
+      }
+    ],
+    "structural_and_rigging_facts": {
+      "load_ratings": null,
+      "attachment_points": null,
+      "roof_capacity": null,
+      "clearances": null,
+      "rigging_approval": null,
+      "blocked_reason": "Qualified physical, structural/engineered, manufacturer, venue, clearance, and controlled approval evidence was not located."
+    },
+    "dependencies": [
+      "coordinate_system",
+      "stage_geometry",
+      "pavilion_geometry",
+      "venue_advance_and_house_interface",
+      "source_authority_policy"
+    ],
+    "unresolved_questions": [
+      "Field-measure scaffold dimensions, anchor, tower count/positions, rails, and material/specification.",
+      "Obtain engineered load ratings and approved attachment/rigging-point data.",
+      "Obtain venue roof capacity, clearance, access, inspection, and rigging approval evidence."
+    ]
+  }
+}

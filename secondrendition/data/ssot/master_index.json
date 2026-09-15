@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.master_index",
+  "title": "Just One KISS SSOT Master Index",
+  "purpose": "Categorize and index every SSOT JSON document and the human-readable repository documents they represent so prototype and production owner websites can share one stable data layer.",
+  "generated_date": "2026-07-13",
+  "source_of_truth_policy": {
+    "primary_machine_readable_index": "data/ssot/master_index.json",
+    "ssot_directory": "data/ssot",
+    "human_readable_documents_are_sources": true,
+    "json_documents_are_prototype_data_contracts": true,
+    "update_rule": "When a source document changes, update its paired JSON document and this master index in the same commit.",
+    "timeline_or_gen_required": true,
+    "two_person_execution_model_required": true,
+    "public_branding_requires_rights_review": true,
+    "ssot_companion_purpose": "Each paired JSON file is a seed data contract for website prototypes, owner-admin tools, generated materials, and production data files.",
+    "prototype_rule": "Prototype styles and page structures may vary, but they should load facts from the SSOT JSON layer instead of copying document facts into layout code."
+  },
+  "universal_admin_record_fields": [
+    "record_id",
+    "title",
+    "section",
+    "category",
+    "timeline_moment_id_or_gen",
+    "status",
+    "priority",
+    "owner_or_responsible_role",
+    "public_private_flag",
+    "content_status",
+    "safety_status",
+    "description",
+    "notes",
+    "linked_files",
+    "linked_records",
+    "last_updated"
+  ],
+  "timeline_id_families": [
+    "PRE-###",
+    "OPEN-###",
+    "SET-###",
+    "SONG-###",
+    "TRN-###",
+    "CST-###",
+    "VID-###",
+    "LGT-###",
+    "FOG-###",
+    "STR-###",
+    "SPK-###",
+    "FIN-###",
+    "ENC-###",
+    "POST-###",
+    "GEN"
+  ],
+  "categories": {
+    "repository_orientation": [
+      "readme"
+    ],
+    "onboarding": [
+      "knowledge",
+      "prompt"
+    ],
+    "master_planning": [
+      "mastergameplan"
+    ],
+    "timeline": [
+      "timeline_moment_registry"
+    ],
+    "show_flow": [
+      "cue"
+    ],
+    "website": [
+      "website_system_plan"
+    ],
+    "website_admin": [
+      "owner_admin_build_readiness",
+      "owner_site_boot_plan"
+    ],
+    "brand_style": [
+      "styleguide"
+    ],
+    "technical_inventory": [
+      "inventory_reference"
+    ],
+    "technical_operations": [
+      "rig"
+    ],
+    "vendor_manual": [
+      "colorstrip_manual",
+      "honeycomb_manual",
+      "freedompar_manual"
+    ]
+  },
+  "documents": [
+    {
+      "document_id": "styleguide",
+      "category": "brand_style",
+      "title": "Just One KISS Style Guide",
+      "human_readable_path": "docs/styleguide.md",
+      "ssot_json_path": "data/ssot/styleguide.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Creative, visual, tonal, layout, copy, and public-ready public style guidance.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "mastergameplan",
+      "category": "master_planning",
+      "title": "Just One KISS Master Gameplan",
+      "human_readable_path": "docs/mastergameplan.md",
+      "ssot_json_path": "data/ssot/mastergameplan.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Broad strategic architecture for production, marketing, sales, launch, operations, and documentation.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "knowledge",
+      "category": "onboarding",
+      "title": "Just One KISS Project Knowledge Brief",
+      "human_readable_path": "docs/knowledge.md",
+      "ssot_json_path": "data/ssot/knowledge.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Concise onboarding context for future collaborators and LLM sessions.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "prompt",
+      "category": "onboarding",
+      "title": "Just One KISS LLM Session Prompt",
+      "human_readable_path": "docs/prompt.md",
+      "ssot_json_path": "data/ssot/prompt.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Operating prompt and behavior rules for project-development sessions.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "readme",
+      "category": "repository_orientation",
+      "title": "Just One KISS Documentation Repository",
+      "human_readable_path": "README.md",
+      "ssot_json_path": "data/ssot/readme.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Master repository orientation, source-of-truth hierarchy, collaboration rules, and document map.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "cue",
+      "category": "show_flow",
+      "title": "Just One KISS - Working Cue and Setlist Draft",
+      "human_readable_path": "docs/cue.txt",
+      "ssot_json_path": "data/ssot/cue.json",
+      "format": "text_markdown",
+      "timeline_classification": "TIMELINE_SPECIFIC_DRAFT",
+      "role": "Current working cue and setlist draft for proposed set blocks, songs, durations, and cue seeds.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "inventory_reference",
+      "category": "technical_inventory",
+      "title": "Inventory Reference Manual: QLC+ / DMX Lighting Installation",
+      "human_readable_path": "docs/inventory_reference.md",
+      "ssot_json_path": "data/ssot/inventory_reference.json",
+      "format": "markdown",
+      "timeline_classification": "GEN_WITH_TIMELINE_LINKS",
+      "role": "Authoritative lighting/DMX fixture identity, patch, channel maps, and QLC+ programming reference.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "rig",
+      "category": "technical_operations",
+      "title": "Just One KISS Rig Quick Reference",
+      "human_readable_path": "docs/rig.md",
+      "ssot_json_path": "data/ssot/rig.json",
+      "format": "markdown",
+      "timeline_classification": "GEN_WITH_TIMELINE_LINKS",
+      "role": "Show-control-facing quick reference for rig patch, programming doctrine, tests, and operating reminders.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "timeline_moment_registry",
+      "category": "timeline",
+      "title": "Just One KISS - Timeline Moment Registry",
+      "human_readable_path": "docs/timeline_moment_registry.md",
+      "ssot_json_path": "data/ssot/timeline_moment_registry.json",
+      "format": "markdown",
+      "timeline_classification": "MIXED",
+      "role": "Central registry for assigning, reserving, and governing Timeline Moment IDs.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "colorstrip_manual",
+      "category": "vendor_manual",
+      "title": "Chauvet COLORstrip Mini Manual",
+      "human_readable_path": "docs/612870_Manual_170822.pdf",
+      "ssot_json_path": "data/ssot/colorstrip_manual.json",
+      "format": "pdf",
+      "timeline_classification": "GEN",
+      "role": "Vendor/manual reference for COLORstrip Mini fixture behavior and setup.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "freedompar_manual",
+      "category": "vendor_manual",
+      "title": "Chauvet DJ Freedom Par RGBA Manual",
+      "human_readable_path": "docs/FreedomPAR_StripMini_RGBA_UM_Rev4_ML_WO.pdf",
+      "ssot_json_path": "data/ssot/freedompar_manual.json",
+      "format": "pdf",
+      "timeline_classification": "GEN",
+      "role": "Vendor/manual reference for Freedom Par RGBA portable uplights.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "honeycomb_manual",
+      "category": "vendor_manual",
+      "title": "U'King ZQ01082 / Honeycomb PAR Manual",
+      "human_readable_path": "docs/ZQ01082-36PCS-Par-Light-RGB-with-Wireless-Remote-Control.pdf",
+      "ssot_json_path": "data/ssot/honeycomb_manual.json",
+      "format": "pdf",
+      "timeline_classification": "GEN",
+      "role": "Vendor/manual reference for Honeycomb / U'King RGB PAR fixtures.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "website_system_plan",
+      "category": "website",
+      "title": "Just One KISS - Website System Plan",
+      "human_readable_path": "docs/website_system_plan.md",
+      "ssot_json_path": "data/ssot/website_system_plan.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Blueprint for owner-facing command center and public marketing website system.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "owner_admin_build_readiness",
+      "category": "website_admin",
+      "title": "Just One KISS - Owner Admin Build Readiness Brief",
+      "human_readable_path": "docs/owner_admin_build_readiness.md",
+      "ssot_json_path": "data/ssot/owner_admin_build_readiness.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Implementation starting point for the owner-facing internal admin command center.",
+      "admin_prototype_use": "Load this JSON for stable data; link back to the human-readable source for long-form review."
+    },
+    {
+      "document_id": "owner_site_boot_plan",
+      "category": "website_admin",
+      "title": "Just One KISS - Owner Site Boot Plan",
+      "human_readable_path": "docs/owner_site_boot_plan.md",
+      "ssot_json_path": "data/ssot/owner_site_boot_plan.json",
+      "format": "markdown",
+      "timeline_classification": "GEN",
+      "role": "Ready-to-build preparation plan for the private owner-facing site and downstream public-site spokes.",
+      "admin_prototype_use": "Load this JSON to bootstrap owner-site modules, shared schemas, boot sequence, and public-site gating rules."
+    }
+  ]
+}

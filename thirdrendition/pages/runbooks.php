@@ -1,0 +1,3 @@
+<?php $rows = tr_page_records(tr_runbook_records()); tr_hero('Run books', 'Operator, safety, production, admin, website, and launch records', 'Run books collect the actionable owner/operator procedures and planning records that make the stage production repeatable without weakening rights or safety gates.'); tr_collection_filter('runbooks'); ?>
+<section class="panel"><h2>Run-book records</h2><?php tr_owner_table($rows, 'No run-book records match this filter.'); ?></section>
+<section class="panel"><h2>Run-book cards</h2><div class="cards"><?php foreach ($rows as $r) tr_record_card($r); ?></div></section>

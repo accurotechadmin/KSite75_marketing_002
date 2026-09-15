@@ -1,0 +1,381 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "stage_layer_registry",
+  "document_class": "registry",
+  "title": "Stage Layer Registry",
+  "description": "Stable visualization-layer identities, order, visibility semantics, ownership, upstream references, and generated-view boundaries",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_layers_json",
+      "path": "proto_prob/data/global/layers.json",
+      "sha256": "0ca322b6f9af75402debd0626b5730f1c2598cd9f2a7ab509dfde3c30ec795c5",
+      "locator": "all records",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype layer identities, labels, order, and default visibility"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "STG-01 and media layer/mask requirements",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled plot and layer requirements; does not activate a layer"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_stage_zone_registry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/stage_zone_registry.json",
+      "sha256": "3524c49a9206e05adf0dafa4dfdf41b8b597cdda3294baff645e30424a63bb6e",
+      "locator": "zone candidates and permission boundary",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Zone relationship authority"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_equipment_instance_registry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/equipment_instance_registry.json",
+      "sha256": "0cfb5d56d08d64f528a1e0e3db5e0911f10cbae15f547fecdcc556db0f0ed06e",
+      "locator": "unverified equipment candidates",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Equipment relationship context"
+    }
+  ],
+  "data": {
+    "extraction_state": "review_ready_unapproved",
+    "approval_state": "controlled_human_approval_required",
+    "verification_boundary": "Layer records control visualization organization only. Visibility does not establish physical presence, operational activation, patch/configuration, safety clearance, or approval.",
+    "use_rule": "Use as an unapproved view-organization registry; generated views must cite the registry revision and upstream records and must not convert display state into operational truth.",
+    "record_count": 13,
+    "ordering_semantics": "Ascending display_order preserves prototype source order; it does not define cue, compositing, safety, or execution precedence.",
+    "records": [
+      {
+        "layer_id": "layer:pavilion",
+        "source_layer_id": "pavilion",
+        "name": "Pavilion",
+        "domain": "venue_geometry",
+        "display_order": 1,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "pavilion_geometry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:stage",
+        "source_layer_id": "stage",
+        "name": "Stage Furniture",
+        "domain": "stage_geometry",
+        "display_order": 2,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "stage_geometry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:scaffold",
+        "source_layer_id": "scaffold",
+        "name": "Scaffold",
+        "domain": "rigging_geometry",
+        "display_order": 3,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "scaffold_and_rigging_geometry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:masking",
+        "source_layer_id": "masking",
+        "name": "Masking",
+        "domain": "scenic",
+        "display_order": 4,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:lighting",
+        "source_layer_id": "lighting",
+        "name": "Lighting Fixtures",
+        "domain": "lighting",
+        "display_order": 5,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "equipment_instance_registry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:beams",
+        "source_layer_id": "beams",
+        "name": "Fixture Beams",
+        "domain": "lighting_visualization",
+        "display_order": 6,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "equipment_instance_registry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:kiss-sign",
+        "source_layer_id": "kiss-sign",
+        "name": "KISS Sign",
+        "domain": "scenic",
+        "display_order": 7,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:scenic",
+        "source_layer_id": "scenic",
+        "name": "Scenic Elements",
+        "domain": "scenic",
+        "display_order": 8,
+        "default_visible": false,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:audio",
+        "source_layer_id": "audio",
+        "name": "Audio/Monitors",
+        "domain": "audio",
+        "display_order": 9,
+        "default_visible": false,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:fog",
+        "source_layer_id": "fog",
+        "name": "Fog/Atmosphere",
+        "domain": "effects",
+        "display_order": 10,
+        "default_visible": true,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:labels",
+        "source_layer_id": "labels",
+        "name": "Labels",
+        "domain": "annotation",
+        "display_order": 11,
+        "default_visible": false,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:zones",
+        "source_layer_id": "zones",
+        "name": "Stage Zones",
+        "domain": "planning_control",
+        "display_order": 12,
+        "default_visible": false,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "stage_zone_registry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      },
+      {
+        "layer_id": "layer:measurements",
+        "source_layer_id": "measurements",
+        "name": "Measurements",
+        "domain": "annotation",
+        "display_order": 13,
+        "default_visible": false,
+        "visibility_semantics": "initial visualization preference only",
+        "owner_role": "role:technical_director",
+        "upstream_refs": [
+          "coordinate_system",
+          "pavilion_geometry",
+          "stage_geometry",
+          "scaffold_and_rigging_geometry"
+        ],
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "generated_view_boundary": {
+          "is_generated_view": false,
+          "may_be_consumed_by_generated_views": true,
+          "renderer_or_export": null
+        },
+        "operational_activation": false,
+        "safety_clearance": false,
+        "approval_state": "not_approved"
+      }
+    ],
+    "default_visibility_is_operational_activation": false,
+    "dependencies": [
+      "coordinate_system",
+      "pavilion_geometry",
+      "stage_geometry",
+      "scaffold_and_rigging_geometry",
+      "stage_zone_registry",
+      "equipment_instance_registry"
+    ],
+    "unresolved_questions": [
+      "Assign department ownership and renderer/compositing semantics through controlled review.",
+      "Reconcile scenic, masking, audio, fog, sign, label, and measurement sources before generating an operational plot."
+    ]
+  }
+}

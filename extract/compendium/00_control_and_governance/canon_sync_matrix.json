@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-14",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "canon_sync_matrix",
+  "document_class": "registry",
+  "title": "Canon Synchronization Matrix",
+  "description": "Source-to-SSOT-to-view propagation routes; manual/automated sync; validation command",
+  "source_refs": [
+    {
+      "source_id": "source:center_docs_canon_sync_policy_md",
+      "path": "center/docs/canon_sync_policy.md",
+      "sha256": "2d235c911ac4153aafb9122d01a176a3aa6e35c68fcc67a330280f6f1c5cbfea",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Primary paired-source, read-only seed, overlay, and safe-edit policy"
+    },
+    {
+      "source_id": "source:docs_ssot_master_index_json",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "locator": "source-of-truth policy and document catalog",
+      "extraction_method": "JSON parse and targeted manual reconciliation",
+      "stated_use": "Paired human/JSON discovery and update contract"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_manifest_json",
+      "path": "docs/ssot/settings_manifest.json",
+      "sha256": "2e3da6e597c91a9a983ea7da89b89d16ed879cef1a44ebb23d55b4b83adcb1a9",
+      "locator": "central storage policy, settings inventory, and maintenance",
+      "extraction_method": "JSON parse and targeted manual reconciliation",
+      "stated_use": "Settings discovery, prototype status, and developer workflow"
+    },
+    {
+      "source_id": "source:docs_current_documentation_groundwork_plan_md",
+      "path": "docs/current_documentation_groundwork_plan.md",
+      "sha256": "82d2299c32d8fe270ac35f42f84c85f89be80abbd13a8f8e9f6177ebb01974a7",
+      "locator": "authority domains, migration sequence, acceptance criteria",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Current documentation migration and propagation controls"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_compendium_manifest_json",
+      "path": "extract/compendium/00_control_and_governance/compendium_manifest.json",
+      "sha256": "a9a63f58c929c53273eff95967a3e51a02804e9ef2f2eba2b0bbff9386ed459d",
+      "locator": "control envelope, generation contract, document catalog at session start",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Starting catalog and dependency evidence"
+    },
+    {
+      "source_id": "source:center_docs_public_release_gate_policy_md",
+      "path": "center/docs/public_release_gate_policy.md",
+      "sha256": "acfab8646c82cbf99b7581b4ee38d8e49e577cad75a87ff3c995000d6cff4ec5",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Public release blockers and gate families"
+    },
+    {
+      "source_id": "source:center_docs_future_persistence_and_auth_plan_md",
+      "path": "center/docs/future_persistence_and_auth_plan.md",
+      "sha256": "a052ef2031f4694a207df387e70bf15d50f3015041ecf0cff90e0428d6ba37ad",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Safe-edit boundary and missing persistence/auth controls"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CTRL-01 and controlled-document minimum fields, lifecycle, synchronization, readiness and reporting sections",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Normative controlled change, revision, distribution, synchronization, and review triggers"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "direct_edit_prohibitions": [
+      "Do not edit generated Section 99 views as authority.",
+      "Do not promote prototype PHP seeds, runtime state, backups, or copied SSOT bundles.",
+      "Do not write to center seeds or publish until persistence/auth/release controls exist.",
+      "Do not silently repair a conflict by copying the most convenient value."
+    ],
+    "routes": [
+      {
+        "route_id": "sync:controlled-docx-to-compendium",
+        "authority_family": "controlled production program and supporting documentation",
+        "source_paths": [
+          "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+          "02_Authoritative_Supporting_Production_Documentation_Standard.docx"
+        ],
+        "authority_rule": "Each DOCX governs only its declared domain; supporting documents reference PGM/TECH/FIN identities and never create competing show order or timing.",
+        "target_paths": [
+          "extract/compendium/00_control_and_governance",
+          "extract/compendium/90_schemas_and_vocabularies",
+          "future dependent compendium sections"
+        ],
+        "mode": "manual controlled extraction",
+        "owner_role": "role:production_manager",
+        "steps": [
+          "Extract text/tables to a temporary workspace.",
+          "Record source path, SHA-256, locator, method, and stated use.",
+          "Reconcile conflicts without choosing unsupported facts.",
+          "Update affected leaf, manifest, registers, handoff, and validator."
+        ],
+        "validation_commands": [
+          "sha256sum 01_Authoritative_Show_Control_and_Performance_Cue_Book.docx 02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+          "python3 extract/scripts/validate_compendium.py"
+        ],
+        "failure_behavior": "Stop promotion, retain prior approved revision if one exists, register the conflict/blocker, and preserve safety precedence.",
+        "safe_edit_boundary": "Never modify the controlled DOCX during extraction and never infer approval from repository presence."
+      },
+      {
+        "route_id": "sync:human-doc-to-paired-json",
+        "authority_family": "legacy human-readable repository documentation and paired machine-readable seed contracts",
+        "source_paths": [
+          "README.md",
+          "docs/*.md",
+          "docs/cue.txt"
+        ],
+        "authority_rule": "Update the domain-specific human source, its paired docs/ssot JSON, and docs/ssot/master_index.json together; paired data remains evidence until reconciled into the compendium.",
+        "target_paths": [
+          "docs/ssot/*.json",
+          "docs/ssot/master_index.json"
+        ],
+        "mode": "manual paired update",
+        "owner_role": "role:content_owner",
+        "steps": [
+          "Edit the domain authority first.",
+          "Update its paired JSON without adding unsupported claims.",
+          "Update the master index in the same change.",
+          "Validate JSON and review the diff before derivation."
+        ],
+        "validation_commands": [
+          "python3 -c \"import json, pathlib; [json.loads(p.read_text()) for p in pathlib.Path('docs/ssot').rglob('*.json')]\"",
+          "git diff --check"
+        ],
+        "failure_behavior": "Reject partial propagation; do not derive or publish a view from mismatched inputs.",
+        "safe_edit_boundary": "Do not treat onboarding prompts, copied bundles, or prototype values as automatic canon."
+      },
+      {
+        "route_id": "sync:settings-to-center-seeds",
+        "authority_family": "paired SSOT indexes and settings seeds",
+        "source_paths": [
+          "docs/ssot/master_index.json",
+          "docs/ssot/settings_manifest.json",
+          "docs/ssot/settings/*.json"
+        ],
+        "authority_rule": "Center discovers paired SSOT/settings as read-only seed truth; app-local PHP arrays are prototype scaffolding rather than authority.",
+        "target_paths": [
+          "center read-only adapters",
+          "owner draft overlays",
+          "future generated exports"
+        ],
+        "mode": "manual discovery with implementation-specific loaders",
+        "owner_role": "role:developer",
+        "steps": [
+          "Load the settings manifest and master index.",
+          "Resolve declared paths rather than duplicating facts in templates.",
+          "Keep user changes in a draft overlay.",
+          "Promote only through authenticated, audited, backed-up controlled workflow."
+        ],
+        "validation_commands": [
+          "python3 extract/scripts/validate_compendium.py",
+          "rg -n \"read-only|draft-overlay|prototype\" center/docs/canon_sync_policy.md center/docs/future_persistence_and_auth_plan.md"
+        ],
+        "failure_behavior": "Fall back to read-only display; block writes/publication; record adapter or freshness failure.",
+        "safe_edit_boundary": "No runtime editing, upload, publication, approval stamp, contact storage, or deletion until authentication, permissions, audit, backup, rollback, revision, and export controls exist."
+      },
+      {
+        "route_id": "sync:compendium-to-manifest-validator",
+        "authority_family": "review-stage compendium authority and schema families",
+        "source_paths": [
+          "extract/compendium/**/*.json",
+          "extract/compendium/**/*.md"
+        ],
+        "authority_rule": "Leaves are maintained authorities/records; the manifest catalog and validation report are synchronized derivatives of live leaf identity and state, while the manifest envelope remains controlled.",
+        "target_paths": [
+          "extract/compendium/00_control_and_governance/compendium_manifest.json",
+          "extract/scripts/validate_compendium.py",
+          "section and workspace progress READMEs"
+        ],
+        "mode": "manual authoring plus deterministic catalog synchronization",
+        "owner_role": "role:production_manager",
+        "steps": [
+          "Author a bounded leaf with provenance and pending approval.",
+          "Synchronize manifest identity/status/revision/scaffold state.",
+          "Extend durable invariant checks.",
+          "Re-audit state totals and update progress/handoff prose."
+        ],
+        "validation_commands": [
+          "python3 extract/scripts/validate_compendium.py",
+          "git diff --check"
+        ],
+        "failure_behavior": "Classify mismatches invalid, do not commit stale handoff/catalog state, and repair from audited leaves.",
+        "safe_edit_boundary": "Do not direct-edit generated catalog rows independently of leaf state and do not call review content approved."
+      },
+      {
+        "route_id": "sync:approved-authority-to-public-view",
+        "authority_family": "approved release inputs and disposable public/owner views",
+        "source_paths": [
+          "future approved compendium releases"
+        ],
+        "authority_rule": "Views and exports may be generated only from identified current approved inputs and evidence-cleared release gates.",
+        "target_paths": [
+          "extract/compendium/99_indexes_views_and_exports",
+          "public or owner application views"
+        ],
+        "mode": "automated only after controlled release gates",
+        "owner_role": "role:release_manager",
+        "steps": [
+          "Verify approved revision and immutable input hashes.",
+          "Evaluate rights, safety, privacy, venue, accessibility, copy, media, disclosure, and affiliation gates.",
+          "Generate, validate, and record inputs/method.",
+          "Publish only the approved output scope."
+        ],
+        "validation_commands": [
+          "python3 extract/scripts/validate_compendium.py",
+          "future release-specific gate suite (not yet implemented)"
+        ],
+        "failure_behavior": "Fail closed, preserve the prior approved release, and register the failed gate; never use prototype seeds as fallback canon.",
+        "safe_edit_boundary": "Generated views are disposable and must not be directly edited or used to back-propagate facts."
+      }
+    ],
+    "route_count": 5
+  }
+}

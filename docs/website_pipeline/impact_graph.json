@@ -1,0 +1,1001 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "direction_rule": "Edges point from affected/derived consumer to dependency or governing source.",
+  "nodes": [
+    {
+      "id": "loader.view",
+      "kind": "implementation",
+      "path": "proto/app/view.php"
+    },
+    {
+      "id": "loader.language",
+      "kind": "implementation",
+      "path": "proto/app/language.php"
+    },
+    {
+      "id": "loader.data",
+      "kind": "implementation",
+      "path": "proto/app/site_data.php"
+    },
+    {
+      "id": "loader.sections",
+      "kind": "implementation",
+      "path": "proto/app/page_sections.php"
+    },
+    {
+      "id": "runtime.layers",
+      "kind": "runtime",
+      "path": "proto/app/layer_runtime.php"
+    },
+    {
+      "id": "content.language",
+      "kind": "derived",
+      "path": "proto/docs/language.json"
+    },
+    {
+      "id": "content.sections",
+      "kind": "derived",
+      "path": "proto/docs/page_sections.json"
+    },
+    {
+      "id": "style.public",
+      "kind": "implementation",
+      "path": "proto/public/assets/css/site.css"
+    },
+    {
+      "id": "script.public",
+      "kind": "implementation",
+      "path": "proto/public/assets/js/site.js"
+    },
+    {
+      "id": "form.lead",
+      "kind": "implementation",
+      "path": "proto/app/forms/lead_submit.php"
+    },
+    {
+      "id": "form.inquiry",
+      "kind": "implementation",
+      "path": "proto/app/forms/inquiry_submit.php"
+    },
+    {
+      "id": "storage.contract",
+      "kind": "implementation",
+      "path": "proto/storage/README.md"
+    },
+    {
+      "id": "database.schema",
+      "kind": "implementation",
+      "path": "proto/database/schema.sql"
+    },
+    {
+      "id": "authority.website",
+      "kind": "authority",
+      "path": "proto/docs/website_ssot.md"
+    },
+    {
+      "id": "authority.style",
+      "kind": "authority",
+      "path": "docs/styleguide.md"
+    },
+    {
+      "id": "settings.architecture",
+      "kind": "authority_companion",
+      "path": "docs/ssot/settings/site_architecture.json"
+    },
+    {
+      "id": "release.matrix",
+      "kind": "review",
+      "path": "center/data/release_gate_matrix.php"
+    },
+    {
+      "id": "validator.center",
+      "kind": "validation",
+      "path": "center/scripts/validate.php"
+    },
+    {
+      "id": "validator.compendium",
+      "kind": "validation",
+      "path": "extract/scripts/validate_compendium.py"
+    },
+    {
+      "id": "history.pipeline_boot",
+      "kind": "history",
+      "path": "website_editing_pipeline_boot.md"
+    },
+    {
+      "id": "entry.contact",
+      "kind": "implementation",
+      "path": "proto/public/contact/index.php"
+    },
+    {
+      "id": "entry.contact-press",
+      "kind": "implementation",
+      "path": "proto/public/contact-press/index.php"
+    },
+    {
+      "id": "entry.directions",
+      "kind": "implementation",
+      "path": "proto/public/directions/index.php"
+    },
+    {
+      "id": "entry.faq-disclaimer",
+      "kind": "implementation",
+      "path": "proto/public/faq-disclaimer/index.php"
+    },
+    {
+      "id": "entry.home",
+      "kind": "implementation",
+      "path": "proto/public/index.php"
+    },
+    {
+      "id": "entry.preserve-backup",
+      "kind": "implementation",
+      "path": "proto/public/preserve-backup/index.php"
+    },
+    {
+      "id": "entry.september-26-2026",
+      "kind": "implementation",
+      "path": "proto/public/september-26-2026/index.php"
+    },
+    {
+      "id": "entry.site-layers.behavior",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/behavior/index.php"
+    },
+    {
+      "id": "entry.site-layers.copy",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/copy/index.php"
+    },
+    {
+      "id": "entry.site-layers",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/index.php"
+    },
+    {
+      "id": "entry.site-layers.media",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/media/index.php"
+    },
+    {
+      "id": "entry.site-layers.review",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/review/index.php"
+    },
+    {
+      "id": "entry.site-layers.structure",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/structure/index.php"
+    },
+    {
+      "id": "entry.site-layers.style",
+      "kind": "implementation",
+      "path": "proto/public/site-layers/style/index.php"
+    },
+    {
+      "id": "entry.spectacle",
+      "kind": "implementation",
+      "path": "proto/public/spectacle/index.php"
+    },
+    {
+      "id": "entry.technical",
+      "kind": "implementation",
+      "path": "proto/public/technical/index.php"
+    },
+    {
+      "id": "entry.vault",
+      "kind": "implementation",
+      "path": "proto/public/vault/index.php"
+    },
+    {
+      "id": "entry.video",
+      "kind": "implementation",
+      "path": "proto/public/video/index.php"
+    },
+    {
+      "id": "entry.what-is-just-one-kiss",
+      "kind": "implementation",
+      "path": "proto/public/what-is-just-one-kiss/index.php"
+    },
+    {
+      "id": "asset.README_md",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/README.md"
+    },
+    {
+      "id": "asset.costume-chrome-detail_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/costume-chrome-detail.webp"
+    },
+    {
+      "id": "asset.fog-strobe-atmosphere_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/fog-strobe-atmosphere.webp"
+    },
+    {
+      "id": "asset.gear-control-dossier_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/gear-control-dossier.webp"
+    },
+    {
+      "id": "asset.hero-stage-portal_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/hero-stage-portal.webp"
+    },
+    {
+      "id": "asset.interlochen-dispatch-map_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/interlochen-dispatch-map.webp"
+    },
+    {
+      "id": "asset.layer-upload-20260721-203128-2acddb_png",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/layer-upload-20260721-203128-2acddb.png"
+    },
+    {
+      "id": "asset.layer-upload-20260721-205527-61dd69_png",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/layer-upload-20260721-205527-61dd69.png"
+    },
+    {
+      "id": "asset.layer-upload-20260721-210057-1203f2_png",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/layer-upload-20260721-210057-1203f2.png"
+    },
+    {
+      "id": "asset.layer-upload-20260721-210432-ed187b_png",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/layer-upload-20260721-210432-ed187b.png"
+    },
+    {
+      "id": "asset.layer-upload-20260721-211403-b05fc5_png",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/layer-upload-20260721-211403-b05fc5.png"
+    },
+    {
+      "id": "asset.press-performer-portrait_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/press-performer-portrait.webp"
+    },
+    {
+      "id": "asset.road-case-vault-bg_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/road-case-vault-bg.webp"
+    },
+    {
+      "id": "asset.spectacle-lighting-rig_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/spectacle-lighting-rig.webp"
+    },
+    {
+      "id": "asset.trailer-poster-stage-portal_webp",
+      "kind": "implementation",
+      "path": "proto/public/assets/img/trailer-poster-stage-portal.webp"
+    },
+    {
+      "id": "route.contact",
+      "kind": "surface",
+      "path": "proto/public/contact/index.php"
+    },
+    {
+      "id": "route.contact-press",
+      "kind": "surface",
+      "path": "proto/public/contact-press/index.php"
+    },
+    {
+      "id": "route.directions",
+      "kind": "surface",
+      "path": "proto/public/directions/index.php"
+    },
+    {
+      "id": "route.faq-disclaimer",
+      "kind": "surface",
+      "path": "proto/public/faq-disclaimer/index.php"
+    },
+    {
+      "id": "route.home",
+      "kind": "surface",
+      "path": "proto/public/index.php"
+    },
+    {
+      "id": "route.preserve-backup",
+      "kind": "surface",
+      "path": "proto/public/preserve-backup/index.php"
+    },
+    {
+      "id": "route.september-26-2026",
+      "kind": "surface",
+      "path": "proto/public/september-26-2026/index.php"
+    },
+    {
+      "id": "route.site-layers.behavior",
+      "kind": "surface",
+      "path": "proto/public/site-layers/behavior/index.php"
+    },
+    {
+      "id": "route.site-layers.copy",
+      "kind": "surface",
+      "path": "proto/public/site-layers/copy/index.php"
+    },
+    {
+      "id": "route.site-layers",
+      "kind": "surface",
+      "path": "proto/public/site-layers/index.php"
+    },
+    {
+      "id": "route.site-layers.media",
+      "kind": "surface",
+      "path": "proto/public/site-layers/media/index.php"
+    },
+    {
+      "id": "route.site-layers.review",
+      "kind": "surface",
+      "path": "proto/public/site-layers/review/index.php"
+    },
+    {
+      "id": "route.site-layers.structure",
+      "kind": "surface",
+      "path": "proto/public/site-layers/structure/index.php"
+    },
+    {
+      "id": "route.site-layers.style",
+      "kind": "surface",
+      "path": "proto/public/site-layers/style/index.php"
+    },
+    {
+      "id": "route.spectacle",
+      "kind": "surface",
+      "path": "proto/public/spectacle/index.php"
+    },
+    {
+      "id": "route.technical",
+      "kind": "surface",
+      "path": "proto/public/technical/index.php"
+    },
+    {
+      "id": "route.vault",
+      "kind": "surface",
+      "path": "proto/public/vault/index.php"
+    },
+    {
+      "id": "route.video",
+      "kind": "surface",
+      "path": "proto/public/video/index.php"
+    },
+    {
+      "id": "route.what-is-just-one-kiss",
+      "kind": "surface",
+      "path": "proto/public/what-is-just-one-kiss/index.php"
+    }
+  ],
+  "edges": [
+    {
+      "from": "route.contact",
+      "to": "entry.contact",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.contact",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "entry.contact-press",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.contact-press",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "entry.directions",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.directions",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.directions",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "entry.faq-disclaimer",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.faq-disclaimer",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "entry.home",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.home",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.home",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.preserve-backup",
+      "to": "entry.preserve-backup",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "entry.september-26-2026",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.september-26-2026",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.site-layers.behavior",
+      "to": "entry.site-layers.behavior",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.site-layers.copy",
+      "to": "entry.site-layers.copy",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.site-layers",
+      "to": "entry.site-layers",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.site-layers.media",
+      "to": "entry.site-layers.media",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.site-layers.review",
+      "to": "entry.site-layers.review",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.site-layers.structure",
+      "to": "entry.site-layers.structure",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.site-layers.style",
+      "to": "entry.site-layers.style",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "entry.spectacle",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.spectacle",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "entry.technical",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.technical",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.technical",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "entry.vault",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.vault",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.vault",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "entry.video",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.video",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.video",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "entry.what-is-just-one-kiss",
+      "relation": "implemented_by"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "loader.view",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "loader.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "loader.data",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "loader.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "runtime.layers",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "content.language",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "content.sections",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "style.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "route.what-is-just-one-kiss",
+      "to": "script.public",
+      "relation": "depends_on"
+    },
+    {
+      "from": "content.language",
+      "to": "authority.website",
+      "relation": "derived_from"
+    },
+    {
+      "from": "content.sections",
+      "to": "authority.website",
+      "relation": "governed_by"
+    },
+    {
+      "from": "release.matrix",
+      "to": "authority.website",
+      "relation": "reviews"
+    },
+    {
+      "from": "authority.website",
+      "to": "authority.style",
+      "relation": "constrained_by"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap.fact-token-bindings",
+      "status": "not_started",
+      "reason": "Per-fact and per-token authority bindings require controlled content records."
+    },
+    {
+      "id": "gap.asset-rights",
+      "status": "blocked",
+      "reason": "Compendium rights and asset leaves are scaffolds; no clearance is inferred."
+    },
+    {
+      "id": "gap.release-history",
+      "status": "not_started",
+      "reason": "Immutable edit/release history is an M5/M6 dependency."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+</main><footer class="footer"><p>Owner command center. Reads SSOT JSON as seed data and stores owner edits/uploads in JSON files and upload folders configured outside the SSOT source layer.</p></footer></div></div><script src="assets/js/arena-command.js"></script></body></html>

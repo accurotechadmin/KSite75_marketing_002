@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.mastergameplan",
+  "source_document": {
+    "path": "docs/mastergameplan.md",
+    "title": "Just One KISS Master Gameplan",
+    "format": "markdown",
+    "category": "master_planning",
+    "role": "Broad strategic architecture for production, marketing, sales, launch, operations, and documentation.",
+    "source_size_bytes": 31280
+  },
+  "timeline_classification": "GEN",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "two_person_execution_model": {
+      "performer": "single performer",
+      "crew_operator": "single show-control system"
+    },
+    "rights_posture": "Public outputs must be public-ready, original, reviewed, and focused on the event experience."
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "master_planning",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as stable structured source data; prototype layouts may vary but should not fork facts away from this SSOT record."
+  },
+  "content_summary": "Broad strategic architecture for production, marketing, sales, launch, operations, and documentation.",
+  "canonical_records": [],
+  "relationships": {
+    "source_path": "docs/mastergameplan.md",
+    "related_ssot_documents": [],
+    "related_human_documents": []
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-13",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and data/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-13",
+    "ssot_companion_purpose": "Machine-readable seed for website prototypes, owner-admin views, generated materials, and future production data files."
+  }
+}

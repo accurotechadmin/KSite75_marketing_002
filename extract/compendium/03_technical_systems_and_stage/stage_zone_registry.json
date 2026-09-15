@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "stage_zone_registry",
+  "document_class": "registry",
+  "title": "Stage Zone Registry",
+  "description": "Stable evidence-qualified stage-zone candidates with fail-closed operational permissions",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_zones_json",
+      "path": "proto_prob/data/global/zones.json",
+      "sha256": "8753185a373e3c922fb9d52ac01e6767e075abe4627f61874feb4b4332f56199",
+      "locator": "all records",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype zone identity and center-point candidates"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "STG-01, PERF-01, FX-01, AUTO-01, route, zone, clearance, and egress requirements",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled requirements; does not grant zone permissions"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_coordinate_system_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/coordinate_system.json",
+      "sha256": "ec3a2143d9ef71e85af534c00971c6e5b9fa3eb0f1c3bb235f26d7f906c5c2f7",
+      "locator": "coordinate authority",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Coordinate interpretation"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_stage_geometry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/stage_geometry.json",
+      "sha256": "ab3853db7da34a06e1815f4057dc1d537b0814f731c80a7e7962412052a82756",
+      "locator": "candidate stage geometry and bounds",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Stage relationship context"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_scaffold_and_rigging_geometry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/scaffold_and_rigging_geometry.json",
+      "sha256": "3df1bc5aae998e0415a62f8c54dc12398cdee239389935b7050b1a54fd7690ce",
+      "locator": "candidate scaffold bounds and withheld clearances",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Scaffold relationship context"
+    }
+  ],
+  "data": {
+    "extraction_state": "review_ready_unapproved",
+    "approval_state": "controlled_human_approval_required",
+    "verification_boundary": "Prototype center points identify visualization candidates only. A point supplies no area, volume, access, occupancy, hazard, effect, egress, or clearance permission.",
+    "use_rule": "Planning reference only. Every operational permission fails closed until surveyed bounds, applicable safety/venue evidence, department reconciliation, and controlled approval exist.",
+    "coordinate_system_ref": "coordinate_system#coordinate:stage_candidate_v1",
+    "record_count": 8,
+    "records": [
+      {
+        "zone_id": "zone:P-USC",
+        "source_zone_id": "P-USC",
+        "name": "Rear Platform Center",
+        "domain": "stage",
+        "planning_purpose": "rear-platform planning reference",
+        "candidate_anchor": {
+          "x": 0,
+          "y": 2.5,
+          "z": 3.2,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:P-CS",
+        "source_zone_id": "P-CS",
+        "name": "Main Stage Center",
+        "domain": "stage",
+        "planning_purpose": "main-stage-center planning reference",
+        "candidate_anchor": {
+          "x": 0,
+          "y": 8,
+          "z": 1.7,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:P-OCT",
+        "source_zone_id": "P-OCT",
+        "name": "Octagonal Thrust",
+        "domain": "stage",
+        "planning_purpose": "octagonal-thrust planning reference",
+        "candidate_anchor": {
+          "x": 0,
+          "y": 18,
+          "z": 1.7,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:P-SL",
+        "source_zone_id": "P-SL",
+        "name": "Stage Left",
+        "domain": "stage",
+        "planning_purpose": "stage-left planning reference",
+        "candidate_anchor": {
+          "x": 10,
+          "y": 8,
+          "z": 1.7,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:P-SR",
+        "source_zone_id": "P-SR",
+        "name": "Stage Right",
+        "domain": "stage",
+        "planning_purpose": "stage-right planning reference",
+        "candidate_anchor": {
+          "x": -10,
+          "y": 8,
+          "z": 1.7,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:S-KISS",
+        "source_zone_id": "S-KISS",
+        "name": "KISS Sign",
+        "domain": "overhead_or_scenic",
+        "planning_purpose": "sign visualization reference",
+        "candidate_anchor": {
+          "x": 0,
+          "y": 0.6,
+          "z": 7.3,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:DB",
+        "source_zone_id": "DB",
+        "name": "Disco Ball",
+        "domain": "overhead_or_scenic",
+        "planning_purpose": "overhead object visualization reference",
+        "candidate_anchor": {
+          "x": 0,
+          "y": 6,
+          "z": 13.5,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      },
+      {
+        "zone_id": "zone:FOG-LOW",
+        "source_zone_id": "FOG-LOW",
+        "name": "Low Fog Volume",
+        "domain": "effect",
+        "planning_purpose": "atmosphere-volume visualization reference",
+        "candidate_anchor": {
+          "x": 0,
+          "y": 9,
+          "z": 2.5,
+          "unit": "feet",
+          "coordinate_ref": "coordinate_system#coordinate:stage_candidate_v1"
+        },
+        "candidate_bounds": null,
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "permissions": {
+          "access": null,
+          "performer_occupancy": null,
+          "hazard_use": null,
+          "effect_use": null,
+          "egress": null,
+          "clearance": null,
+          "state": "withheld_pending_qualified_evidence_and_approval"
+        },
+        "operational_activation": false
+      }
+    ],
+    "permission_default": "deny_or_withhold_when_null",
+    "dependencies": [
+      "coordinate_system",
+      "stage_geometry",
+      "scaffold_and_rigging_geometry",
+      "performer_track_registry",
+      "special_technical_event_registry",
+      "venue_advance_and_house_interface"
+    ],
+    "unresolved_questions": [
+      "Survey and approve zone bounds/volumes and their relationship to physical geometry.",
+      "Reconcile performer blocking, access, effects, hazards, egress, and clearance requirements by Timeline."
+    ]
+  }
+}

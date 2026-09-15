@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "provenance_ledger",
+  "document_class": "record",
+  "title": "Provenance Ledger",
+  "description": "Claim/record-to-source edges; extraction method; transformations; verifier; confidence",
+  "source_refs": [
+    {
+      "source_id": "source:readme_md",
+      "path": "README.md",
+      "sha256": "15f8a4423f078145734734d57fcae7fe7130e7a19c1bb63360bd16ff3e46d98d",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "whole file",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "whole file",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:docs_current_documentation_groundwork_plan_md",
+      "path": "docs/current_documentation_groundwork_plan.md",
+      "sha256": "82d2299c32d8fe270ac35f42f84c85f89be80abbd13a8f8e9f6177ebb01974a7",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:docs_ssot_master_index_json",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_manifest_json",
+      "path": "docs/ssot/settings_manifest.json",
+      "sha256": "2e3da6e597c91a9a983ea7da89b89d16ed879cef1a44ebb23d55b4b83adcb1a9",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_canon_sync_policy_md",
+      "path": "center/docs/canon_sync_policy.md",
+      "sha256": "2d235c911ac4153aafb9122d01a176a3aa6e35c68fcc67a330280f6f1c5cbfea",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_public_release_gate_policy_md",
+      "path": "center/docs/public_release_gate_policy.md",
+      "sha256": "acfab8646c82cbf99b7581b4ee38d8e49e577cad75a87ff3c995000d6cff4ec5",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_future_persistence_and_auth_plan_md",
+      "path": "center/docs/future_persistence_and_auth_plan.md",
+      "sha256": "a052ef2031f4694a207df387e70bf15d50f3015041ecf0cff90e0428d6ba37ad",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:extract_ssot_compendium_sequential_build_plan_md",
+      "path": "extract/ssot_compendium_sequential_build_plan.md",
+      "sha256": "c912db3f48ebdbc429a3808089be9fc26e0962e16c1615f8fcbde9f01a8cc107",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:extract_ssot_compendium_document_inventory_md",
+      "path": "extract/ssot_compendium_document_inventory.md",
+      "sha256": "236b1e09b71a92d6b1835fba8f6ff0652744c2ad8181a15c91b67e8932d7df65",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:extract_work_sessions_2026_08_13_section_90_foundation_md",
+      "path": "extract/work_sessions/2026-08-13_section-90-foundation.md",
+      "sha256": "3aa8185e8796c497be4b6fa9968a95c20aa9c400141c5d821f67d26aa79baefa",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:extract_scripts_validate_compendium_py",
+      "path": "extract/scripts/validate_compendium.py",
+      "sha256": "0a08e0ca43351ea2266460141b21811c8c1d0e1dad740c6ac138009c3c66ed66",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "records": [
+      {
+        "edge_id": "prov:20260814-001",
+        "source_id": "source:readme_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-002",
+        "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-003",
+        "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-004",
+        "source_id": "source:docs_current_documentation_groundwork_plan_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-005",
+        "source_id": "source:docs_ssot_master_index_json",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-006",
+        "source_id": "source:docs_ssot_settings_manifest_json",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-007",
+        "source_id": "source:center_docs_canon_sync_policy_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-008",
+        "source_id": "source:center_docs_public_release_gate_policy_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-009",
+        "source_id": "source:center_docs_future_persistence_and_auth_plan_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-010",
+        "source_id": "source:extract_ssot_compendium_sequential_build_plan_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-011",
+        "source_id": "source:extract_ssot_compendium_document_inventory_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-012",
+        "source_id": "source:extract_work_sessions_2026_08_13_section_90_foundation_md",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      },
+      {
+        "edge_id": "prov:20260814-013",
+        "source_id": "source:extract_scripts_validate_compendium_py",
+        "target_document_ids": [
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry"
+        ],
+        "relationship": "evidence-for",
+        "locator": "whole file",
+        "method": "UTF-8 parse and targeted manual reconciliation",
+        "confidence": "high for source content; policy synthesis pending approval"
+      }
+    ],
+    "record_count": 13
+  }
+}

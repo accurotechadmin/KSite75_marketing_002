@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0-scaffold",
+  "document_id": "universal_owner_record_model",
+  "document_class": "schema",
+  "title": "Universal Owner Record Model",
+  "description": "Required fields; statuses; roles; visibility; rights/safety; readiness; links; provenance; timeline rules",
+  "status": "draft",
+  "revision": "0.1.0",
+  "effective_date": null,
+  "owner_role": "TBD",
+  "approver_role": "TBD",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "scaffold_notice": "Structure only. No source facts have been extracted or approved.",
+  "data": {
+    "scaffold_state": "empty",
+    "components_and_subcomponents": "Required fields; statuses; roles; visibility; rights/safety; readiness; links; provenance; timeline rules",
+    "source_family_notes": "Existing master index; owner schemas; center schema",
+    "records": [],
+    "schema_target": "universal_owner_record_model",
+    "definitions": {}
+  }
+}

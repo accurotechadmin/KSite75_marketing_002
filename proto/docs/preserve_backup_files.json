@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "User-preserved Just One KISS website files and directories for one-click backup before website updates.",
+  "items": [
+    {"path": "proto/docs/language.json", "label": "Core public copy tokens", "enabled": true},
+    {"path": "proto/docs/language_map.md", "label": "Human-readable language map", "enabled": true},
+    {"path": "proto/docs/site_layer_controls_state.json", "label": "Draft Site Layer Controls state", "enabled": true},
+    {"path": "proto/docs/site_layer_controls_published.json", "label": "Published Site Layer Controls state", "enabled": true},
+    {"path": "proto/docs/site_layer_controls_snapshot.json", "label": "Site Layer Controls snapshot", "enabled": true},
+    {"path": "proto/docs/page_sections.json", "label": "Legacy managed page sections", "enabled": true},
+    {"path": "proto/public/assets/css/site.css", "label": "Active website stylesheet", "enabled": true},
+    {"path": "proto/public/assets/js/site.js", "label": "Active website JavaScript", "enabled": true},
+    {"path": "proto/public/assets/img", "label": "Approved website images", "enabled": true},
+    {"path": "proto/app/site_data.php", "label": "Routes and approved image registry", "enabled": true},
+    {"path": "proto/app/config.php", "label": "Private runtime config if present", "enabled": true},
+    {"path": "proto/storage", "label": "Runtime lead/mail storage if present", "enabled": false}
+  ]
+}

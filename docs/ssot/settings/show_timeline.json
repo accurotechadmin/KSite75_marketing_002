@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.show_timeline",
+  "title": "Show Timeline",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "rule": "Every content, asset, cue, and admin record must link to a Timeline Moment ID or GEN.",
+    "public_policy": "Timeline-specific internal cues may inspire public copy, but exact technical triggers remain internal unless approved."
+  }
+}

@@ -1,0 +1,109 @@
+{
+    "status": "draft_enabled_mvp",
+    "updated_at": "2026-07-21T21:10:21+00:00",
+    "section_controls": [],
+    "route_orders": [],
+    "visibility": [],
+    "asset_replacements": [],
+    "uploaded_images": [
+        {
+            "uploaded_image": "layer-upload-20260721-203128-2acddb.png",
+            "label": "Earl01",
+            "uploaded_at": "2026-07-21T20:31:28+00:00"
+        },
+        {
+            "uploaded_image": "layer-upload-20260721-205527-61dd69.png",
+            "label": "stage001",
+            "uploaded_at": "2026-07-21T20:55:27+00:00"
+        },
+        {
+            "uploaded_image": "layer-upload-20260721-210057-1203f2.png",
+            "label": "roadbox001",
+            "uploaded_at": "2026-07-21T21:00:57+00:00"
+        },
+        {
+            "uploaded_image": "layer-upload-20260721-210432-ed187b.png",
+            "label": "sticker001",
+            "uploaded_at": "2026-07-21T21:04:32+00:00"
+        }
+    ],
+    "image_labels": {
+        "layer-upload-20260721-203128-2acddb.png": "Earl01",
+        "layer-upload-20260721-205527-61dd69.png": "stage001",
+        "layer-upload-20260721-210057-1203f2.png": "roadbox001",
+        "layer-upload-20260721-210432-ed187b.png": "sticker001"
+    },
+    "template_notes": [],
+    "custom_files": [],
+    "publish_history": [],
+    "image_asset_metadata": {
+        "fog-strobe-atmosphere.webp": {
+            "global.media_inventory": {
+                "selected_asset": "layer-upload-20260721-205527-61dd69.png",
+                "image_label": "stage001",
+                "section_handle": "global.media_inventory",
+                "focus_x": 50,
+                "focus_y": 50,
+                "zoom": 150,
+                "crop_x": 0,
+                "crop_y": 0,
+                "aspect_ratio": "wide",
+                "background_removed": false,
+                "updated_at": "2026-07-21T20:56:50+00:00"
+            }
+        },
+        "road-case-vault-bg.webp": {
+            "global.media_inventory": {
+                "selected_asset": "layer-upload-20260721-210057-1203f2.png",
+                "image_label": "roadbox001",
+                "section_handle": "global.media_inventory",
+                "focus_x": 50,
+                "focus_y": 100,
+                "zoom": 114,
+                "crop_x": 0,
+                "crop_y": -13,
+                "aspect_ratio": "wide",
+                "background_removed": false,
+                "updated_at": "2026-07-21T21:03:16+00:00"
+            }
+        }
+    },
+    "section_corner_overlays": {
+        "/": {
+            "section.01.top@top-right@20260721203320-a879ce": {
+                "overlay_id": "section.01.top@top-right@20260721203320-a879ce",
+                "route": "/",
+                "section_handle": "section.01.top",
+                "corner": "top-right",
+                "selected_asset": "layer-upload-20260721-203128-2acddb.png",
+                "image_label": "Earl01",
+                "offset_x": -210,
+                "offset_y": 435,
+                "width": 640,
+                "rotation": 0,
+                "enabled": true,
+                "timeline_moment_id_or_gen": "GEN",
+                "alt_text": "",
+                "decorative": true,
+                "updated_at": "2026-07-21T20:38:47+00:00"
+            },
+            "section.03.event@top-right@20260721211021-f1ee92": {
+                "overlay_id": "section.03.event@top-right@20260721211021-f1ee92",
+                "route": "/",
+                "section_handle": "section.03.event",
+                "corner": "top-right",
+                "selected_asset": "layer-upload-20260721-210432-ed187b.png",
+                "image_label": "sticker001",
+                "offset_x": 0,
+                "offset_y": 0,
+                "width": 180,
+                "rotation": 0,
+                "enabled": true,
+                "timeline_moment_id_or_gen": "GEN",
+                "alt_text": "",
+                "decorative": true,
+                "updated_at": "2026-07-21T21:10:21+00:00"
+            }
+        }
+    }
+}

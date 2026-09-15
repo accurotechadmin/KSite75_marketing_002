@@ -1,0 +1,819 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "program_event_registry",
+  "document_class": "authority",
+  "title": "Program Event Registry",
+  "description": "Controlled PGM identities, source titles, set association, order, supplied durations, status, and lineage",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 2–8; program tables, timing profiles, unresolved register, and source reconciliation",
+      "extraction_method": "DOCX XML table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled PGM identity, supplied timing, set membership, conflicts, and safety boundaries"
+    },
+    {
+      "source_id": "source:docs_cue_txt",
+      "path": "docs/cue.txt",
+      "sha256": "479a2484bc4fbb0e180c556b8794198b0cd01c3fd6f2dc76083cf02aba1c8b21",
+      "locator": "Working Set Architecture, Working Song and Cue List, Timing Summary",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Draft candidate labels, durations, set grouping, and cue notes; not approval authority"
+    },
+    {
+      "source_id": "source:docs_ssot_cue_json",
+      "path": "docs/ssot/cue.json",
+      "sha256": "931a231b28a12adbd1657bfecc00e3375ded18919863f3a27eed40c7292ae049",
+      "locator": "source_document, project_rules, canonical_records, maintenance",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Structured draft lineage and publication/rights/safety boundaries"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_program_event_schema_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/program_event.schema.json",
+      "sha256": "7956913ca8992e812d1327c0b77024447f4eb839d52f88e867f32ea7f795a163",
+      "locator": "data.schema",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "PGM identity and program-event validation contract"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_responsibility_matrix_json",
+      "path": "extract/compendium/01_project_event_and_people/responsibility_matrix.json",
+      "sha256": "40fa70ce7447a19887d4c922ecb633ab664dc454b2eedfb346a6b0504d6ee09c",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Role accountability, specialist concurrence, and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "identity_rule": "PGM IDs are immutable controlled program identities and are distinct from Timeline Moment and department cue IDs.",
+    "authority_boundary": "The authoritative Cue Book controls program order and supplied durations in its declared domain; review status does not make this extraction approved or call-ready.",
+    "publication_gate": "Titles and program sequence remain internal until rights, content, event, safety, and release evidence is approved.",
+    "records": [
+      {
+        "program_event_id": "PGM-001",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Rock + Roll / Led Zeppelin Intro Song",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-001",
+          "A-01"
+        ],
+        "set_ref": "SET-001",
+        "order": 1,
+        "supplied_duration_seconds": [
+          211
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:00:00–00:03:31",
+        "profile_l_start_stop": "00:00:00–00:03:31",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-001"
+      },
+      {
+        "program_event_id": "PGM-002",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Deuce",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-002",
+          "A-02"
+        ],
+        "set_ref": "SET-001",
+        "order": 2,
+        "supplied_duration_seconds": [
+          232
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:03:31–00:07:23",
+        "profile_l_start_stop": "00:03:31–00:07:23",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-002"
+      },
+      {
+        "program_event_id": "PGM-003",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Let Me Go, Rock ’n’ Roll",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-003",
+          "A-03",
+          "A-03A"
+        ],
+        "set_ref": "SET-001",
+        "order": 3,
+        "supplied_duration_seconds": [
+          170,
+          234
+        ],
+        "duration_state": "unresolved_profile_choice",
+        "profile_s_start_stop": "00:07:23–00:10:13",
+        "profile_l_start_stop": "00:07:23–00:11:17",
+        "source_status": "UNRESOLVED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-003"
+      },
+      {
+        "program_event_id": "PGM-004",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Kissin’ Time",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-004",
+          "A-04"
+        ],
+        "set_ref": "SET-001",
+        "order": 4,
+        "supplied_duration_seconds": [
+          239
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:10:13–00:14:12",
+        "profile_l_start_stop": "00:11:17–00:15:16",
+        "source_status": "CONFIRMED + FLAGGED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-004"
+      },
+      {
+        "program_event_id": "PGM-005",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Love ’Em and Leave ’Em",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-005",
+          "A-05"
+        ],
+        "set_ref": "SET-001",
+        "order": 5,
+        "supplied_duration_seconds": [
+          218
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:14:12–00:17:50",
+        "profile_l_start_stop": "00:15:16–00:18:54",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-005"
+      },
+      {
+        "program_event_id": "PGM-006",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Psycho Circus",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-006",
+          "A-06"
+        ],
+        "set_ref": "SET-001",
+        "order": 6,
+        "supplied_duration_seconds": [
+          253
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:17:50–00:22:03",
+        "profile_l_start_stop": "00:18:54–00:23:07",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-006"
+      },
+      {
+        "program_event_id": "PGM-007",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "God of Thunder",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-007",
+          "D-01"
+        ],
+        "set_ref": "SET-002",
+        "order": 7,
+        "supplied_duration_seconds": [
+          427
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:22:03–00:29:10",
+        "profile_l_start_stop": "00:23:07–00:30:14",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-007"
+      },
+      {
+        "program_event_id": "PGM-008",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "I Love It Loud",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-008",
+          "D-02"
+        ],
+        "set_ref": "SET-002",
+        "order": 8,
+        "supplied_duration_seconds": [
+          203
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:29:10–00:32:33",
+        "profile_l_start_stop": "00:30:14–00:33:37",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-008"
+      },
+      {
+        "program_event_id": "PGM-009",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "When Lightning Strikes",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-009",
+          "D-03"
+        ],
+        "set_ref": "SET-002",
+        "order": 9,
+        "supplied_duration_seconds": [
+          219
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:32:33–00:36:12",
+        "profile_l_start_stop": "00:33:37–00:37:16",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-009"
+      },
+      {
+        "program_event_id": "PGM-010",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Cold Gin",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-010",
+          "D-04"
+        ],
+        "set_ref": "SET-002",
+        "order": 10,
+        "supplied_duration_seconds": [
+          299
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:36:12–00:41:11",
+        "profile_l_start_stop": "00:37:16–00:42:15",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-010"
+      },
+      {
+        "program_event_id": "PGM-011",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Scotty D’s + KISS Costume Change",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-011",
+          "D-05"
+        ],
+        "set_ref": "SET-002",
+        "order": 11,
+        "supplied_duration_seconds": [
+          234
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:41:11–00:45:05",
+        "profile_l_start_stop": "00:42:15–00:46:09",
+        "source_status": "CONFIRMED DURATION; FORMAT TBD",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-011"
+      },
+      {
+        "program_event_id": "PGM-012",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Radioactive",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-012",
+          "L-01"
+        ],
+        "set_ref": "SET-003",
+        "order": 12,
+        "supplied_duration_seconds": [
+          217
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:45:05–00:48:42",
+        "profile_l_start_stop": "00:46:09–00:49:46",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-012"
+      },
+      {
+        "program_event_id": "PGM-013",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Calling Dr. Love",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-013",
+          "L-02"
+        ],
+        "set_ref": "SET-003",
+        "order": 13,
+        "supplied_duration_seconds": [
+          220
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:48:42–00:52:22",
+        "profile_l_start_stop": "00:49:46–00:53:26",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-013"
+      },
+      {
+        "program_event_id": "PGM-014",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Hot + Cold",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-014",
+          "L-03"
+        ],
+        "set_ref": "SET-003",
+        "order": 14,
+        "supplied_duration_seconds": [
+          210
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:52:22–00:55:52",
+        "profile_l_start_stop": "00:53:26–00:56:56",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-014"
+      },
+      {
+        "program_event_id": "PGM-015",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "She",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-015",
+          "L-04"
+        ],
+        "set_ref": "SET-003",
+        "order": 15,
+        "supplied_duration_seconds": [
+          432
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "00:55:52–01:03:04",
+        "profile_l_start_stop": "00:56:56–01:04:08",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-015"
+      },
+      {
+        "program_event_id": "PGM-016",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "S.D. + KISS 2",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-016",
+          "L-05"
+        ],
+        "set_ref": "SET-003",
+        "order": 16,
+        "supplied_duration_seconds": [
+          201
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:03:04–01:06:25",
+        "profile_l_start_stop": "01:04:08–01:07:29",
+        "source_status": "CONFIRMED DURATION; MEANING TBD",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-016"
+      },
+      {
+        "program_event_id": "PGM-017",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Almost Human",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-017",
+          "Y-01"
+        ],
+        "set_ref": "SET-004",
+        "order": 17,
+        "supplied_duration_seconds": [
+          169
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:06:25–01:09:14",
+        "profile_l_start_stop": "01:07:29–01:10:18",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-017"
+      },
+      {
+        "program_event_id": "PGM-018",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Sweet Pain",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-018",
+          "Y-02"
+        ],
+        "set_ref": "SET-004",
+        "order": 18,
+        "supplied_duration_seconds": [
+          202
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:09:14–01:12:36",
+        "profile_l_start_stop": "01:10:18–01:13:40",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-018"
+      },
+      {
+        "program_event_id": "PGM-019",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Watchin’ You",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-019",
+          "Y-03"
+        ],
+        "set_ref": "SET-004",
+        "order": 19,
+        "supplied_duration_seconds": [
+          240
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:12:36–01:16:36",
+        "profile_l_start_stop": "01:13:40–01:17:40",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-019"
+      },
+      {
+        "program_event_id": "PGM-020",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Russian Roulette",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-020",
+          "Y-04"
+        ],
+        "set_ref": "SET-004",
+        "order": 20,
+        "supplied_duration_seconds": [
+          274
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:16:36–01:21:10",
+        "profile_l_start_stop": "01:17:40–01:22:14",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-020"
+      },
+      {
+        "program_event_id": "PGM-021",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Right Here Right Now",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-021",
+          "Y-05"
+        ],
+        "set_ref": "SET-004",
+        "order": 21,
+        "supplied_duration_seconds": [
+          237
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:21:10–01:25:07",
+        "profile_l_start_stop": "01:22:14–01:26:11",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-021"
+      },
+      {
+        "program_event_id": "PGM-022",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Not for the Innocent",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-022",
+          "M-01"
+        ],
+        "set_ref": "SET-005",
+        "order": 22,
+        "supplied_duration_seconds": [
+          271
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:25:07–01:29:38",
+        "profile_l_start_stop": "01:26:11–01:30:42",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-022"
+      },
+      {
+        "program_event_id": "PGM-023",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Charisma",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-023",
+          "M-02"
+        ],
+        "set_ref": "SET-005",
+        "order": 23,
+        "supplied_duration_seconds": [
+          268
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:29:38–01:34:06",
+        "profile_l_start_stop": "01:30:42–01:35:10",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-023"
+      },
+      {
+        "program_event_id": "PGM-024",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Spit",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-024",
+          "M-03"
+        ],
+        "set_ref": "SET-005",
+        "order": 24,
+        "supplied_duration_seconds": [
+          214
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:34:06–01:37:40",
+        "profile_l_start_stop": "01:35:10–01:38:44",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-024"
+      },
+      {
+        "program_event_id": "PGM-025",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "War Machine / Fuel",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-025",
+          "M-04"
+        ],
+        "set_ref": "SET-005",
+        "order": 25,
+        "supplied_duration_seconds": [
+          337
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:37:40–01:43:17",
+        "profile_l_start_stop": "01:38:44–01:44:21",
+        "source_status": "CONFIRMED DURATION; INTERNAL SPLIT TBD",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-025"
+      },
+      {
+        "program_event_id": "PGM-026",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Yes I Know",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-026",
+          "E-01"
+        ],
+        "set_ref": "SET-006",
+        "order": 26,
+        "supplied_duration_seconds": [
+          182
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:43:17–01:46:19",
+        "profile_l_start_stop": "01:44:21–01:47:23",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-026"
+      },
+      {
+        "program_event_id": "PGM-027",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Parasite",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-027",
+          "E-02"
+        ],
+        "set_ref": "SET-006",
+        "order": 27,
+        "supplied_duration_seconds": [
+          232
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:46:19–01:50:11",
+        "profile_l_start_stop": "01:47:23–01:51:15",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-027"
+      },
+      {
+        "program_event_id": "PGM-028",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Rock and Roll All Nite",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-028",
+          "E-03"
+        ],
+        "set_ref": "SET-006",
+        "order": 28,
+        "supplied_duration_seconds": [
+          242
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:50:11–01:54:13",
+        "profile_l_start_stop": "01:51:15–01:55:17",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-028"
+      },
+      {
+        "program_event_id": "PGM-029",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "Domino",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-029",
+          "E-04"
+        ],
+        "set_ref": "SET-006",
+        "order": 29,
+        "supplied_duration_seconds": [
+          226
+        ],
+        "duration_state": "supplied",
+        "profile_s_start_stop": "01:54:13–01:57:59",
+        "profile_l_start_stop": "01:55:17–01:59:03",
+        "source_status": "CONFIRMED",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-029"
+      },
+      {
+        "program_event_id": "PGM-030",
+        "event_type": "musical_program_or_interstitial",
+        "controlled_title": "God Gave Rock ’n’ Roll to You",
+        "public_title": null,
+        "legacy_source_ids": [
+          "SM-030",
+          "E-05"
+        ],
+        "set_ref": "SET-006",
+        "order": 30,
+        "supplied_duration_seconds": [],
+        "duration_state": "critical_tbd",
+        "profile_s_start_stop": "01:57:59–TBD",
+        "profile_l_start_stop": "01:59:03–TBD",
+        "source_status": "CRITICAL TBD",
+        "authority_state": "controlled_source_pending_approval",
+        "rights_state": "internal_reference_requires_clearance",
+        "publication_state": "withheld",
+        "safety_override": true,
+        "source_locator": "Cue Book program table row PGM-030"
+      }
+    ],
+    "record_count": 30,
+    "dependencies": [
+      "../90_schemas_and_vocabularies/program_event.schema.json",
+      "../01_project_event_and_people/responsibility_matrix.json",
+      "program_timing_profiles.json",
+      "set_registry.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "PROGRAM-Q-001",
+        "source_ref": "Cue Book R-001",
+        "question": "Which PGM-003 timing profile is selected and approved?",
+        "state": "human_decision_required"
+      },
+      {
+        "question_id": "PROGRAM-Q-002",
+        "source_ref": "Cue Book R-002",
+        "question": "What exact approved PGM-030 version and duration applies?",
+        "state": "evidence_required"
+      },
+      {
+        "question_id": "PROGRAM-Q-003",
+        "source_ref": "Cue Book R-003 through R-005",
+        "question": "What do the source markers and interstitial labels mean, and what execution formats apply?",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

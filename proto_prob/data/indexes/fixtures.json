@@ -1,0 +1,4366 @@
+{
+    "schema_version": "1.0.0",
+    "generated_at": "2026-07-24T21:52:42+00:00",
+    "count": 59,
+    "fixtures": [
+        {
+            "fixture_id": "AF-B",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "Floor B Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-USC",
+            "position": {
+                "x": 2,
+                "y": 2.5,
+                "z": 3.6
+            },
+            "rotation": {
+                "x": -35,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 260,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 260,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-F",
+                "output_number": 3,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AF-G",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "Floor G Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-USC",
+            "position": {
+                "x": -2,
+                "y": 2.5,
+                "z": 3.6
+            },
+            "rotation": {
+                "x": -35,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 259,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 259,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-F",
+                "output_number": 2,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AF-P",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "Floor P Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-USC",
+            "position": {
+                "x": 6,
+                "y": 2.5,
+                "z": 3.6
+            },
+            "rotation": {
+                "x": -35,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 261,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 261,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-F",
+                "output_number": 4,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AF-R",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "Floor R Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-USC",
+            "position": {
+                "x": -6,
+                "y": 2.5,
+                "z": 3.6
+            },
+            "rotation": {
+                "x": -35,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 258,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 258,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-F",
+                "output_number": 1,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SL-B",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SL B Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SL",
+            "position": {
+                "x": 14,
+                "y": 7,
+                "z": 6.1
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 256,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 256,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SL",
+                "output_number": 3,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SL-G",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SL G Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SL",
+            "position": {
+                "x": 14,
+                "y": 7,
+                "z": 5.35
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 255,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 255,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SL",
+                "output_number": 2,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SL-R",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SL R Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SL",
+            "position": {
+                "x": 14,
+                "y": 7,
+                "z": 4.6
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 254,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 254,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SL",
+                "output_number": 1,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SL-Y",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SL Y Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SL",
+            "position": {
+                "x": 14,
+                "y": 7,
+                "z": 6.85
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 257,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 257,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SL",
+                "output_number": 4,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SR-B",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SR B Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SR",
+            "position": {
+                "x": -14,
+                "y": 7,
+                "z": 6.1
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 252,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 252,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SR",
+                "output_number": 3,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SR-G",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SR G Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SR",
+            "position": {
+                "x": -14,
+                "y": 7,
+                "z": 5.35
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 251,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 251,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SR",
+                "output_number": 2,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SR-R",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SR R Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SR",
+            "position": {
+                "x": -14,
+                "y": 7,
+                "z": 4.6
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 250,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 250,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SR",
+                "output_number": 1,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "AY-SR-Y",
+            "fixture_type_id": "fixed_accent",
+            "display_name": "SR Y Accent",
+            "category": "Fixed-color accent",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-SR",
+            "position": {
+                "x": -14,
+                "y": 7,
+                "z": 6.85
+            },
+            "rotation": {
+                "x": -10,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 253,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 253,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 40,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": "DP-SR",
+                "output_number": 4,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "BL01",
+            "fixture_type_id": "single_dimmer",
+            "display_name": "Bright Center Special",
+            "category": "Spot/Special",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 0,
+                "y": 6,
+                "z": 11
+            },
+            "rotation": {
+                "x": -25,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 195,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 195,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 75,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "DB01",
+            "fixture_type_id": "disco_ball",
+            "display_name": "Center Disco Ball",
+            "category": "Disco ball system",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "DB",
+            "position": {
+                "x": 0,
+                "y": 6,
+                "z": 13.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 270,
+                "mode_id": "2ch",
+                "channel_count": 2,
+                "end_address": 271,
+                "preview_values": [
+                    60,
+                    0
+                ],
+                "default_values": [
+                    60,
+                    0
+                ],
+                "home_values": [
+                    60,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 25,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "DP-F",
+            "fixture_type_id": "dimmer_pack",
+            "display_name": "Floor Dimmer Pack",
+            "category": "4-channel DMX dimmer pack",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 0,
+                "y": 3,
+                "z": 2.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 258,
+                "mode_id": "4ch",
+                "channel_count": 4,
+                "end_address": 261,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 0,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "DP-SL",
+            "fixture_type_id": "dimmer_pack",
+            "display_name": "Stage Left Dimmer Pack",
+            "category": "4-channel DMX dimmer pack",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 14,
+                "y": 8,
+                "z": 2.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 254,
+                "mode_id": "4ch",
+                "channel_count": 4,
+                "end_address": 257,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 0,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "DP-SR",
+            "fixture_type_id": "dimmer_pack",
+            "display_name": "Stage Right Dimmer Pack",
+            "category": "4-channel DMX dimmer pack",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -14,
+                "y": 8,
+                "z": 2.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 250,
+                "mode_id": "4ch",
+                "channel_count": 4,
+                "end_address": 253,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 0,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "FX-SL",
+            "fixture_type_id": "fog_machine",
+            "display_name": "Stage Left Fog Machine",
+            "category": "Atmospheric effect",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "fog",
+            "zone_id": "FOG-LOW",
+            "position": {
+                "x": 10,
+                "y": 3.5,
+                "z": 2.2
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 273,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 273,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 700,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "FX-SR",
+            "fixture_type_id": "fog_machine",
+            "display_name": "Stage Right Fog Machine",
+            "category": "Atmospheric effect",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "fog",
+            "zone_id": "FOG-LOW",
+            "position": {
+                "x": -10,
+                "y": 3.5,
+                "z": 2.2
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 272,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 272,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 700,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H01",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 01",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -10.5,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 1,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 7,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H02",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 02",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -3.5,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 8,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 14,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H03",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 03",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 3.5,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 15,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 21,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H04",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 04",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 10.5,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 22,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 28,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H05",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 05",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -14,
+                "y": 5,
+                "z": 11
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 29,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 35,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H06",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 06",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 14,
+                "y": 5,
+                "z": 11
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 36,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 42,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H07",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 07",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -14,
+                "y": 9,
+                "z": 8
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 43,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 49,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H08",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 08",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 14,
+                "y": 9,
+                "z": 8
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 50,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 56,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H09",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 09",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -11,
+                "y": 5.5,
+                "z": 10
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 57,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 63,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H10",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 10",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -7,
+                "y": 5.5,
+                "z": 10
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 64,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 70,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H11",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 11",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -3,
+                "y": 5.5,
+                "z": 10
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 71,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 77,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H12",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 12",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 3,
+                "y": 5.5,
+                "z": 10
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 78,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 84,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H13",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 13",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 7,
+                "y": 5.5,
+                "z": 10
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 85,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 91,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "H14",
+            "fixture_type_id": "honeycomb",
+            "display_name": "Honeycomb 14",
+            "category": "Honeycomb LED wash",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 11,
+                "y": 5.5,
+                "z": 10
+            },
+            "rotation": {
+                "x": -20,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 92,
+                "mode_id": "7ch",
+                "channel_count": 7,
+                "end_address": 98,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 36,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-I-I",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS I Inner",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 264,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 264,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-I-O",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS I Outer",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 265,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 265,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-K-I",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS K Inner",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 262,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 262,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-K-O",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS K Outer",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 263,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 263,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-S1-I",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS S1 Inner",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 266,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 266,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-S1-O",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS S1 Outer",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 267,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 267,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-S2-I",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS S2 Inner",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 268,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 268,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "KS-S2-O",
+            "fixture_type_id": "kiss_circuit",
+            "display_name": "KISS S2 Outer",
+            "category": "KISS sign circuit",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "kiss-sign",
+            "zone_id": "S-KISS",
+            "position": {
+                "x": 0,
+                "y": 0.7,
+                "z": 7.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 269,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 269,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 120,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": true,
+                "clean_power_required": false,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR01",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 01",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -11,
+                "y": 3,
+                "z": 12
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 99,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 110,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR02",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 02",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 11,
+                "y": 3,
+                "z": 12
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 111,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 122,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR03",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 03",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -11,
+                "y": 9,
+                "z": 9.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 123,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 134,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR04",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 04",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 11,
+                "y": 9,
+                "z": 9.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 135,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 146,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR05",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 05",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -6,
+                "y": 6,
+                "z": 10.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 147,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 158,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR06",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 06",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -2,
+                "y": 6,
+                "z": 10.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 159,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 170,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR07",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 07",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 2,
+                "y": 6,
+                "z": 10.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 171,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 182,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "PTR08",
+            "fixture_type_id": "ptr",
+            "display_name": "PTR Moving Head 08",
+            "category": "PTR moving fixture",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 6,
+                "y": 6,
+                "z": 10.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 183,
+                "mode_id": "12ch",
+                "channel_count": 12,
+                "end_address": 194,
+                "preview_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    128,
+                    0,
+                    128,
+                    0,
+                    128,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 90,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "SP01",
+            "fixture_type_id": "single_dimmer",
+            "display_name": "Upper Spotlight 1",
+            "category": "Spot/Special",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -5,
+                "y": 3,
+                "z": 13.5
+            },
+            "rotation": {
+                "x": -30,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 196,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 196,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 75,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "SP02",
+            "fixture_type_id": "single_dimmer",
+            "display_name": "Upper Spotlight 2",
+            "category": "Spot/Special",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 5,
+                "y": 3,
+                "z": 13.5
+            },
+            "rotation": {
+                "x": -30,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 197,
+                "mode_id": "1ch",
+                "channel_count": 1,
+                "end_address": 197,
+                "preview_values": [
+                    0
+                ],
+                "default_values": [
+                    0
+                ],
+                "home_values": [
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 75,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U01",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 01",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -14,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 210,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 214,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U02",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 02",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -10,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 215,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 219,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U03",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 03",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -6,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 220,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 224,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U04",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 04",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": -2,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 225,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 229,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U05",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 05",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 2,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 230,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 234,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U06",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 06",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 6,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 235,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 239,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U07",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 07",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 10,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 240,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 244,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        },
+        {
+            "fixture_id": "U08",
+            "fixture_type_id": "cube_uplight",
+            "display_name": "Cube Up-light 08",
+            "category": "Cube up-light",
+            "status": "active",
+            "canonical": false,
+            "stage_layer": "lighting",
+            "zone_id": "P-CS",
+            "position": {
+                "x": 14,
+                "y": 12.5,
+                "z": 2.15
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "dmx": {
+                "enabled": true,
+                "universe": 1,
+                "start_address": 245,
+                "mode_id": "5ch",
+                "channel_count": 5,
+                "end_address": 249,
+                "preview_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "default_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "home_values": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "pan_invert": false,
+                "tilt_invert": false,
+                "wireless_receiver_id": null
+            },
+            "power": {
+                "voltage": 120,
+                "watts": 45,
+                "current": null,
+                "circuit_id": null,
+                "source_device_id": null,
+                "output_number": null,
+                "paired_output": null,
+                "dimmable": false,
+                "clean_power_required": true,
+                "connector": "Edison"
+            },
+            "maintenance": {
+                "last_tested": null,
+                "test_status": "not-tested",
+                "next_due": null,
+                "open_faults": [],
+                "service_record_ids": [],
+                "out_of_service_reason": null,
+                "notes": ""
+            },
+            "revision": 1,
+            "updated_at": "2026-07-24T21:36:58.802624+00:00"
+        }
+    ]
+}

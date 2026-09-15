@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "set_registry",
+  "document_class": "registry",
+  "title": "Set Registry",
+  "description": "Controlled set identities, ordered PGM membership, known timing, and unresolved transition boundaries",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 2–8; program tables, timing profiles, unresolved register, and source reconciliation",
+      "extraction_method": "DOCX XML table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled PGM identity, supplied timing, set membership, conflicts, and safety boundaries"
+    },
+    {
+      "source_id": "source:docs_cue_txt",
+      "path": "docs/cue.txt",
+      "sha256": "479a2484bc4fbb0e180c556b8794198b0cd01c3fd6f2dc76083cf02aba1c8b21",
+      "locator": "Working Set Architecture, Working Song and Cue List, Timing Summary",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Draft candidate labels, durations, set grouping, and cue notes; not approval authority"
+    },
+    {
+      "source_id": "source:docs_ssot_cue_json",
+      "path": "docs/ssot/cue.json",
+      "sha256": "931a231b28a12adbd1657bfecc00e3375ded18919863f3a27eed40c7292ae049",
+      "locator": "source_document, project_rules, canonical_records, maintenance",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Structured draft lineage and publication/rights/safety boundaries"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_program_event_schema_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/program_event.schema.json",
+      "sha256": "7956913ca8992e812d1327c0b77024447f4eb839d52f88e867f32ea7f795a163",
+      "locator": "data.schema",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "PGM identity and program-event validation contract"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_responsibility_matrix_json",
+      "path": "extract/compendium/01_project_event_and_people/responsibility_matrix.json",
+      "sha256": "40fa70ce7447a19887d4c922ecb633ab664dc454b2eedfb346a6b0504d6ee09c",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Role accountability, specialist concurrence, and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "name_boundary": "Set labels are controlled internal planning references; public use requires rights/content/release approval.",
+    "duration_rule": "Known durations sum supplied program material only; unknown PGM-030 and unlisted transition categories are not zero.",
+    "records": [
+      {
+        "set_id": "SET-001",
+        "controlled_name": "ALIVE",
+        "public_name": null,
+        "order": 1,
+        "ordered_program_event_refs": [
+          "PGM-001",
+          "PGM-002",
+          "PGM-003",
+          "PGM-004",
+          "PGM-005",
+          "PGM-006"
+        ],
+        "membership_state": "controlled_source_pending_approval",
+        "known_profile_s_duration_seconds": 1323,
+        "known_profile_l_duration_seconds": 1387,
+        "duration_completeness": "complete_supplied_material",
+        "entry_boundary": {
+          "from_set_ref": null,
+          "state": "transition_details_unresolved"
+        },
+        "exit_boundary": {
+          "to_set_ref": "SET-002",
+          "state": "transition_details_unresolved"
+        },
+        "publication_state": "withheld",
+        "source_locator": "Cue Book set 1 program and timing tables"
+      },
+      {
+        "set_id": "SET-002",
+        "controlled_name": "DESTROYER",
+        "public_name": null,
+        "order": 2,
+        "ordered_program_event_refs": [
+          "PGM-007",
+          "PGM-008",
+          "PGM-009",
+          "PGM-010",
+          "PGM-011"
+        ],
+        "membership_state": "controlled_source_pending_approval",
+        "known_profile_s_duration_seconds": 1382,
+        "known_profile_l_duration_seconds": 1382,
+        "duration_completeness": "complete_supplied_material",
+        "entry_boundary": {
+          "from_set_ref": "SET-001",
+          "state": "transition_details_unresolved"
+        },
+        "exit_boundary": {
+          "to_set_ref": "SET-003",
+          "state": "transition_details_unresolved"
+        },
+        "publication_state": "withheld",
+        "source_locator": "Cue Book set 2 program and timing tables"
+      },
+      {
+        "set_id": "SET-003",
+        "controlled_name": "LOVE GUN",
+        "public_name": null,
+        "order": 3,
+        "ordered_program_event_refs": [
+          "PGM-012",
+          "PGM-013",
+          "PGM-014",
+          "PGM-015",
+          "PGM-016"
+        ],
+        "membership_state": "controlled_source_pending_approval",
+        "known_profile_s_duration_seconds": 1280,
+        "known_profile_l_duration_seconds": 1280,
+        "duration_completeness": "complete_supplied_material",
+        "entry_boundary": {
+          "from_set_ref": "SET-002",
+          "state": "transition_details_unresolved"
+        },
+        "exit_boundary": {
+          "to_set_ref": "SET-004",
+          "state": "transition_details_unresolved"
+        },
+        "publication_state": "withheld",
+        "source_locator": "Cue Book set 3 program and timing tables"
+      },
+      {
+        "set_id": "SET-004",
+        "controlled_name": "DYNASTY",
+        "public_name": null,
+        "order": 4,
+        "ordered_program_event_refs": [
+          "PGM-017",
+          "PGM-018",
+          "PGM-019",
+          "PGM-020",
+          "PGM-021"
+        ],
+        "membership_state": "controlled_source_pending_approval",
+        "known_profile_s_duration_seconds": 1122,
+        "known_profile_l_duration_seconds": 1122,
+        "duration_completeness": "complete_supplied_material",
+        "entry_boundary": {
+          "from_set_ref": "SET-003",
+          "state": "transition_details_unresolved"
+        },
+        "exit_boundary": {
+          "to_set_ref": "SET-005",
+          "state": "transition_details_unresolved"
+        },
+        "publication_state": "withheld",
+        "source_locator": "Cue Book set 4 program and timing tables"
+      },
+      {
+        "set_id": "SET-005",
+        "controlled_name": "MONSTER",
+        "public_name": null,
+        "order": 5,
+        "ordered_program_event_refs": [
+          "PGM-022",
+          "PGM-023",
+          "PGM-024",
+          "PGM-025"
+        ],
+        "membership_state": "controlled_source_pending_approval",
+        "known_profile_s_duration_seconds": 1090,
+        "known_profile_l_duration_seconds": 1090,
+        "duration_completeness": "complete_supplied_material",
+        "entry_boundary": {
+          "from_set_ref": "SET-004",
+          "state": "transition_details_unresolved"
+        },
+        "exit_boundary": {
+          "to_set_ref": "SET-006",
+          "state": "transition_details_unresolved"
+        },
+        "publication_state": "withheld",
+        "source_locator": "Cue Book set 5 program and timing tables"
+      },
+      {
+        "set_id": "SET-006",
+        "controlled_name": "END OF THE ROAD",
+        "public_name": null,
+        "order": 6,
+        "ordered_program_event_refs": [
+          "PGM-026",
+          "PGM-027",
+          "PGM-028",
+          "PGM-029",
+          "PGM-030"
+        ],
+        "membership_state": "controlled_source_pending_approval",
+        "known_profile_s_duration_seconds": 882,
+        "known_profile_l_duration_seconds": 882,
+        "duration_completeness": "partial_excludes_pgm_030",
+        "entry_boundary": {
+          "from_set_ref": "SET-005",
+          "state": "transition_details_unresolved"
+        },
+        "exit_boundary": {
+          "to_set_ref": null,
+          "state": "transition_details_unresolved"
+        },
+        "publication_state": "withheld",
+        "source_locator": "Cue Book set 6 program and timing tables"
+      }
+    ],
+    "record_count": 6,
+    "dependencies": [
+      "program_event_registry.json",
+      "program_timing_profiles.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "SET-Q-001",
+        "question": "What approved transition, hold, costume, scenic, and safety boundaries apply between sets?",
+        "state": "evidence_required"
+      },
+      {
+        "question_id": "SET-Q-002",
+        "question": "Are the six internal set labels and memberships approved for operational and public use?",
+        "state": "human_decision_required"
+      }
+    ]
+  }
+}

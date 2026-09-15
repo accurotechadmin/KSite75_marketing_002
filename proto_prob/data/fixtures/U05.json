@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "U05",
+  "fixture_type_id": "cube_uplight",
+  "display_name": "Cube Up-light 05",
+  "local_name": "U05",
+  "asset_tag": "U05",
+  "serial_number": null,
+  "category": "Cube up-light",
+  "status": "active",
+  "canonical": false,
+  "stage_layer": "lighting",
+  "zone_id": "P-CS",
+  "position": {
+    "x": 2,
+    "y": 12.5,
+    "z": 2.15
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "scale": 1.0,
+  "mounting": {
+    "point_id": null,
+    "description": "Estimated position",
+    "safety_cable": true
+  },
+  "focus_target_id": "P-CS",
+  "position_confidence": "estimated",
+  "position_verified_at": null,
+  "dmx": {
+    "enabled": true,
+    "universe": 1,
+    "start_address": 230,
+    "mode_id": "5ch",
+    "channel_count": 5,
+    "end_address": 234,
+    "preview_values": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "default_values": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "home_values": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pan_invert": false,
+    "tilt_invert": false,
+    "wireless_receiver_id": null
+  },
+  "connections": {
+    "dmx_in_from": "U04",
+    "dmx_out_to": "U06",
+    "power_from": null
+  },
+  "power": {
+    "voltage": 120,
+    "watts": 45,
+    "current": null,
+    "circuit_id": null,
+    "source_device_id": null,
+    "output_number": null,
+    "paired_output": null,
+    "dimmable": false,
+    "clean_power_required": true,
+    "connector": "Edison"
+  },
+  "simulation": {
+    "model_asset": null,
+    "material_profile": "default",
+    "fixed_color": null,
+    "shadow_enabled": false,
+    "pick_proxy": true,
+    "visible": true
+  },
+  "photos": [],
+  "manuals": [],
+  "documents": [],
+  "source_evidence": [],
+  "open_questions": [
+    "Verify manufacturer/model, physical position, power and DMX settings."
+  ],
+  "maintenance": {
+    "last_tested": null,
+    "test_status": "not-tested",
+    "next_due": null,
+    "open_faults": [],
+    "service_record_ids": [],
+    "out_of_service_reason": null,
+    "notes": ""
+  },
+  "revision": 1,
+  "created_at": "2026-07-24T21:36:58.802624+00:00",
+  "created_by": "system",
+  "updated_at": "2026-07-24T21:36:58.802624+00:00",
+  "updated_by": "system",
+  "change_reason": "Initial generated MVP record"
+}

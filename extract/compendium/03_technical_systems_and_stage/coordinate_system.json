@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "coordinate_system",
+  "document_class": "authority",
+  "title": "Coordinate System",
+  "description": "Unapproved planning coordinate authority with explicit axes, orientation, precision, transformations, and verification boundaries",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_project_json",
+      "path": "proto_prob/data/global/project.json",
+      "sha256": "c88c77164a4e70da55ae651bf62c4911f776c6d988e30b05a821d0a6f32296d0",
+      "locator": "coordinate_system and units",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype coordinate convention candidate"
+    },
+    {
+      "source_id": "source:extract_ssot_source_inventory_md",
+      "path": "extract/ssot_source_inventory.md",
+      "sha256": "689e0cb88cb514ca5d6f7bb874d693db8f13f72bdea292214854969195209e56",
+      "locator": "Stage, pavilion, zones, and geometry source-family row",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Authority and estimation caution"
+    }
+  ],
+  "data": {
+    "extraction_state": "review_ready_unapproved",
+    "approval_state": "controlled_human_approval_required",
+    "verification_boundary": "All numeric and descriptive geometry is a prototype candidate. No value is surveyed, physically measured, venue-confirmed, structurally rated, load-approved, clearance-approved, or safe for execution.",
+    "use_rule": "Planning and visualization only. Field measurement, venue confirmation, technical review, and applicable safety/engineering approval are required before construction, rigging, access, clearance, or cue use.",
+    "coordinate_system_id": "coordinate:stage_candidate_v1",
+    "units": {
+      "linear": "feet",
+      "angular": "degrees",
+      "conversion": {
+        "feet_to_inches": 12,
+        "feet_to_meters": 0.3048
+      }
+    },
+    "origin": {
+      "definition": "Stage centerline at rear edge of main deck",
+      "coordinates": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "datum": "main_stage_deck_surface",
+      "verification_state": "prototype_candidate"
+    },
+    "axes": {
+      "x": {
+        "meaning": "horizontal across stage",
+        "negative": "stage_right",
+        "positive": "stage_left"
+      },
+      "y": {
+        "meaning": "stage depth",
+        "negative": "upstage of rear deck edge",
+        "positive": "downstage toward audience"
+      },
+      "z": {
+        "meaning": "vertical height relative to main stage deck datum",
+        "negative": "below deck datum",
+        "positive": "above deck datum"
+      }
+    },
+    "handedness": {
+      "convention": "right_handed",
+      "test": "x cross y equals z"
+    },
+    "orientation": {
+      "stage_left_right": "performer perspective facing audience",
+      "audience_direction": "+y",
+      "upstage_direction": "-y",
+      "downstage_direction": "+y"
+    },
+    "precision": {
+      "storage": "decimal feet",
+      "source_precision": "preserve supplied decimal places; do not infer measurement tolerance",
+      "display_rounding": "must not imply greater accuracy than evidence",
+      "comparison_tolerance_feet": 0.01
+    },
+    "transformations": {
+      "translation": "target = source + [dx,dy,dz]",
+      "rotation": "right-handed rotation in degrees; positive by right-hand rule; rotation order z,y,x when a compound transform is unavoidable",
+      "scale": "prohibited for physical planning unless explicitly identified as visualization-only",
+      "unit_conversion": "convert every component using the declared conversion factor",
+      "provenance_rule": "derived coordinates must identify source coordinate, transform, and rounding"
+    },
+    "candidate_coordinate_policy": {
+      "default_evidence_class": "prototype",
+      "default_confidence": "low",
+      "default_verification_state": "unverified",
+      "null_rule": "unknown values remain null, never zero"
+    },
+    "dependencies": [
+      "proto_prob/data/global/project.json"
+    ],
+    "unresolved_questions": [
+      "Survey/field-measure the origin and deck datum.",
+      "Confirm orientation against venue and stage-management conventions.",
+      "Establish measurement tolerance and survey control points."
+    ]
+  }
+}

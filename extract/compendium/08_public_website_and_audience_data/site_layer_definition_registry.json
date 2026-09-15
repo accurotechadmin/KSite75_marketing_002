@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0-scaffold",
+  "document_id": "site_layer_definition_registry",
+  "document_class": "schema",
+  "title": "Site Layer Definition Registry",
+  "description": "Structure/copy/media/style/behavior/review layers; allowed controls; validation; ownership",
+  "status": "draft",
+  "revision": "0.1.0",
+  "effective_date": null,
+  "owner_role": "TBD",
+  "approver_role": "TBD",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "scaffold_notice": "Structure only. No source facts have been extracted or approved.",
+  "data": {
+    "scaffold_state": "empty",
+    "components_and_subcomponents": "Structure/copy/media/style/behavior/review layers; allowed controls; validation; ownership",
+    "source_family_notes": "Layer-control PHP; snapshot doc; editor guide",
+    "records": [],
+    "schema_target": "site_layer_definition_registry",
+    "definitions": {}
+  }
+}

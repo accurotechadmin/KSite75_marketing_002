@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "channel_and_placement_vocabulary",
+  "document_class": "authority",
+  "title": "Channel and Placement Vocabulary",
+  "description": "Controlled marketing channels, placements, funnel stages, CTA intents, and tracking constraints.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "document.schema.json",
+  "source_refs": [
+    {
+      "source_id": "source:marketing_settings",
+      "path": "docs/ssot/settings/marketing_channels.json",
+      "sha256": "8cae675b3d1375e18710ec90a1daaa478b5dfc011fd327e86e33542d8c46e3d5",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:master_index",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:release_gates",
+      "path": "center/data/release_gate_matrix.php",
+      "sha256": "5290ffadba42d1fcabc25ca9dd4eea3ee68710526545a72e433620f507ff9f63",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "governance": {
+      "authority_scope": "Controlled marketing channels, placements, funnel stages, CTA intents, and tracking constraints.",
+      "change_rule": "Add, deprecate, or change meanings only through controlled review; preserve stable IDs and map legacy values.",
+      "approval_required_for_effective_use": true
+    },
+    "source_mapping": [
+      "Formal DOCX controls take precedence within their domains.",
+      "Settings and center contracts were normalized without treating prototype labels as approved canon.",
+      "Records remain REVIEW until a named authorized approver supplies controlled evidence."
+    ],
+    "channels": [
+      {
+        "record_id": "channel:public_website",
+        "label": "Public Website",
+        "definition": "Owned public routes and landing pages.",
+        "status": "review",
+        "ownership": "owned"
+      },
+      {
+        "record_id": "channel:email",
+        "label": "Email",
+        "definition": "Consent-governed owned email communications.",
+        "status": "review",
+        "ownership": "owned"
+      },
+      {
+        "record_id": "channel:press_kit",
+        "label": "Press Kit",
+        "definition": "Controlled downloadable or shared press materials.",
+        "status": "review",
+        "ownership": "owned"
+      },
+      {
+        "record_id": "channel:booking_outreach",
+        "label": "Booking Outreach",
+        "definition": "Restricted direct buyer or venue communications.",
+        "status": "review",
+        "ownership": "owned"
+      },
+      {
+        "record_id": "channel:facebook_meta",
+        "label": "Facebook / Meta",
+        "definition": "External social and advertising platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:instagram",
+        "label": "Instagram",
+        "definition": "External social and advertising platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:youtube",
+        "label": "YouTube",
+        "definition": "External video, description, and advertising platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:google_ads",
+        "label": "Google Ads",
+        "definition": "External search/display advertising platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:tiktok",
+        "label": "TikTok",
+        "definition": "External short-form video platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:snapchat",
+        "label": "Snapchat",
+        "definition": "External vertical/story platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:pinterest",
+        "label": "Pinterest",
+        "definition": "External visual discovery platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:x_twitter",
+        "label": "X / Twitter",
+        "definition": "External social platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:bluesky",
+        "label": "Bluesky",
+        "definition": "External decentralized-social platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:linkedin",
+        "label": "LinkedIn",
+        "definition": "External professional platform.",
+        "status": "review",
+        "ownership": "external"
+      },
+      {
+        "record_id": "channel:print_local",
+        "label": "Print / Local",
+        "definition": "Physical local placements and collateral.",
+        "status": "review",
+        "ownership": "external"
+      }
+    ],
+    "placements": [
+      {
+        "record_id": "placement:hero",
+        "label": "Hero",
+        "definition": "Primary landing-page hero.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:gallery",
+        "label": "Gallery",
+        "definition": "Website image gallery.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:background_texture",
+        "label": "Background Texture",
+        "definition": "Decorative background media.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:feed",
+        "label": "Feed",
+        "definition": "Standard social-feed placement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:story_reel",
+        "label": "Story Reel",
+        "definition": "Vertical story or reel placement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:short_video",
+        "label": "Short Video",
+        "definition": "Short-form video placement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:display_ad",
+        "label": "Display Ad",
+        "definition": "Display or discovery advertisement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:search_ad",
+        "label": "Search Ad",
+        "definition": "Text-led search advertisement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:video_preroll",
+        "label": "Video Preroll",
+        "definition": "Video pre-roll or in-stream placement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:profile_cover",
+        "label": "Profile Cover",
+        "definition": "Channel profile or cover asset.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:email_header",
+        "label": "Email Header",
+        "definition": "Email header or lead creative.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:press_download",
+        "label": "Press Download",
+        "definition": "Press-kit downloadable placement.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:booking_attachment",
+        "label": "Booking Attachment",
+        "definition": "Controlled booking attachment.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:poster_flyer",
+        "label": "Poster Flyer",
+        "definition": "Physical poster or flyer.",
+        "status": "review"
+      },
+      {
+        "record_id": "placement:event_listing",
+        "label": "Event Listing",
+        "definition": "Third-party event listing.",
+        "status": "review"
+      }
+    ],
+    "funnel_stages": [
+      {
+        "record_id": "funnel:awareness",
+        "label": "Awareness",
+        "definition": "Introduce the event or production.",
+        "status": "review"
+      },
+      {
+        "record_id": "funnel:interest",
+        "label": "Interest",
+        "definition": "Build curiosity and relevance.",
+        "status": "review"
+      },
+      {
+        "record_id": "funnel:consideration",
+        "label": "Consideration",
+        "definition": "Supply proof, practical facts, and fit.",
+        "status": "review"
+      },
+      {
+        "record_id": "funnel:conversion",
+        "label": "Conversion",
+        "definition": "Prompt an approved measurable action.",
+        "status": "review"
+      },
+      {
+        "record_id": "funnel:retention_nurture",
+        "label": "Retention Nurture",
+        "definition": "Continue consented engagement after initial action.",
+        "status": "review"
+      }
+    ],
+    "cta_types": [
+      {
+        "record_id": "cta:event_details",
+        "label": "Get Event Details",
+        "definition": "Navigate to verified event facts.",
+        "status": "review"
+      },
+      {
+        "record_id": "cta:watch",
+        "label": "Watch the Trailer",
+        "definition": "Navigate to cleared video.",
+        "status": "review"
+      },
+      {
+        "record_id": "cta:updates",
+        "label": "Get Updates",
+        "definition": "Enter a consent-governed update flow.",
+        "status": "review"
+      },
+      {
+        "record_id": "cta:inquiry",
+        "label": "Send an Inquiry",
+        "definition": "Enter a privacy-governed inquiry flow.",
+        "status": "review"
+      },
+      {
+        "record_id": "cta:booking",
+        "label": "Contact for Booking",
+        "definition": "Enter a restricted booking-contact flow.",
+        "status": "review"
+      },
+      {
+        "record_id": "cta:directions",
+        "label": "Plan Your Visit",
+        "definition": "Navigate to verified access and travel facts.",
+        "status": "review"
+      },
+      {
+        "record_id": "cta:download_press",
+        "label": "Download Press Kit",
+        "definition": "Download an approved press release package.",
+        "status": "review"
+      }
+    ],
+    "tracking_parameters": [
+      {
+        "record_id": "tracking:utm_source",
+        "label": "utm_source",
+        "definition": "Originating platform or publisher.",
+        "status": "review"
+      },
+      {
+        "record_id": "tracking:utm_medium",
+        "label": "utm_medium",
+        "definition": "Traffic or paid-media medium.",
+        "status": "review"
+      },
+      {
+        "record_id": "tracking:utm_campaign",
+        "label": "utm_campaign",
+        "definition": "Stable campaign identifier.",
+        "status": "review"
+      },
+      {
+        "record_id": "tracking:utm_content",
+        "label": "utm_content",
+        "definition": "Creative or placement variant; must not contain personal data.",
+        "status": "review"
+      }
+    ],
+    "record_count": 46
+  }
+}

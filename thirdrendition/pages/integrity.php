@@ -1,0 +1,3 @@
+<?php $report = tr_integrity_report(); tr_hero('Data guardrails', 'Data Integrity', 'This page keeps development honest by showing duplicate IDs, missing universal fields, timeline-format warnings, and unresolved relationship links.'); ?>
+<section class="integrity-grid"><?php foreach ($report as $name=>$items): ?><article class="panel"><h2><?= tr_e(ucwords(str_replace('_',' ',$name))); ?></h2><p><b><?= count($items); ?></b> findings</p><?php if ($items): ?><ul><?php foreach (array_slice($items,0,100) as $item): ?><li><?= tr_e($item); ?></li><?php endforeach; ?></ul><?php else: ?><p class="good">No findings in this category.</p><?php endif; ?></article><?php endforeach; ?></section>
+<?php tr_raw_block($report, 'Raw integrity report'); ?>

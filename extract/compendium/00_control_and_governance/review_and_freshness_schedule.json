@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-14",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "review_and_freshness_schedule",
+  "document_class": "plan",
+  "title": "Review and Freshness Schedule",
+  "description": "Review cadence; trigger events; owner; stale-data behavior; revalidation requirements",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CTRL-01 and controlled-document minimum fields, lifecycle, synchronization, readiness and reporting sections",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Normative controlled change, revision, distribution, synchronization, and review triggers"
+    },
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "document-control rules, safety precedence, readiness checklist, and performance closeout",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Show-control revision precedence, distribution, and event-triggered review"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_compendium_manifest_json",
+      "path": "extract/compendium/00_control_and_governance/compendium_manifest.json",
+      "sha256": "a9a63f58c929c53273eff95967a3e51a02804e9ef2f2eba2b0bbff9386ed459d",
+      "locator": "control envelope, generation contract, document catalog at session start",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Starting catalog and dependency evidence"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_open_questions_register_json",
+      "path": "extract/compendium/00_control_and_governance/open_questions_register.json",
+      "sha256": "75733f1e0cb78c78db5f218d0e1561fa539b1390294d8e26ebee3e563bdc8422",
+      "locator": "controlled approval and jsonschema availability questions",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Open blocker and validation limitation evidence"
+    },
+    {
+      "source_id": "source:center_docs_public_release_gate_policy_md",
+      "path": "center/docs/public_release_gate_policy.md",
+      "sha256": "acfab8646c82cbf99b7581b4ee38d8e49e577cad75a87ff3c995000d6cff4ec5",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Public release blockers and gate families"
+    },
+    {
+      "source_id": "source:center_docs_future_persistence_and_auth_plan_md",
+      "path": "center/docs/future_persistence_and_auth_plan.md",
+      "sha256": "a052ef2031f4694a207df387e70bf15d50f3015041ecf0cff90e0428d6ba37ad",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Safe-edit boundary and missing persistence/auth controls"
+    },
+    {
+      "source_id": "source:center_docs_canon_sync_policy_md",
+      "path": "center/docs/canon_sync_policy.md",
+      "sha256": "2d235c911ac4153aafb9122d01a176a3aa6e35c68fcc67a330280f6f1c5cbfea",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Primary paired-source, read-only seed, overlay, and safe-edit policy"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "coverage_contract": {
+      "review_leaf_counts": {
+        "00_control_and_governance": 13,
+        "01_project_event_and_people": 12,
+        "02_show_program_and_timeline": 14,
+        "03_technical_systems_and_stage": 10,
+        "90_schemas_and_vocabularies": 24,
+        "total": 73
+      },
+      "approved_leaf_count": 0,
+      "note": "Coverage is by section/status family and event trigger; Section 03 now includes ten review leaves through scaffold/rigging geometry, stage zones, and stage layers; no review_due_at, approval date, surveyed value, clearance, permission, structural authority, or operational activation was invented.",
+      "scaffold_leaf_count": 136
+    },
+    "validation_limitation": "When jsonschema is unavailable, structural/local-reference/representative checks may pass but full Draft 2020-12 metaschema and format assertions remain outstanding and are an explicit revalidation trigger.",
+    "schedules": [
+      {
+        "schedule_id": "review:section00-governance",
+        "covered_sections": [
+          "00_control_and_governance"
+        ],
+        "covered_statuses": [
+          "review"
+        ],
+        "owner_role": "role:production_manager",
+        "approver_role": "role:owner_performer",
+        "cadence": {
+          "type": "event_and_periodic",
+          "maximum_interval": "12 months after controlled approval; no calendar due date exists before approval"
+        },
+        "triggers": [
+          "any controlled source hash or authority change",
+          "schema/envelope/state-model change",
+          "registered conflict, privacy, rights, or approval finding",
+          "before extracting a newly dependent section",
+          "validation failure or unavailable required evidence"
+        ],
+        "checks": [
+          "all 13 leaves remain internally consistent",
+          "manifest and register cross-links resolve",
+          "source hashes and local references resolve",
+          "approval evidence exists before promotion"
+        ],
+        "stale_behavior": "Mark affected material working, conflict, blocked, or invalid as evidence warrants; block dependent promotion; notify owner and approver roles."
+      },
+      {
+        "schedule_id": "review:section90-schemas",
+        "covered_sections": [
+          "90_schemas_and_vocabularies"
+        ],
+        "covered_statuses": [
+          "review"
+        ],
+        "owner_role": "role:developer",
+        "approver_role": "role:production_manager",
+        "cadence": {
+          "type": "event_and_periodic",
+          "maximum_interval": "12 months after controlled approval; no calendar due date exists before approval"
+        },
+        "triggers": [
+          "consumer shape or identity vocabulary change",
+          "Draft 2020-12 validator availability or failure",
+          "new privacy/publication/safety gate requirement",
+          "before a dependent schema or authority release"
+        ],
+        "checks": [
+          "all 24 leaves pass structural and local-reference checks",
+          "representative positive/negative invariants pass",
+          "full metaschema and format assertions run when jsonschema is available",
+          "no schema freezes draft business facts"
+        ],
+        "stale_behavior": "Block dependent release, preserve the last approved schema if one exists, and open a validation question/finding."
+      },
+      {
+        "schedule_id": "review:section01-project-event-people",
+        "covered_sections": [
+          "01_project_event_and_people"
+        ],
+        "covered_statuses": [
+          "review"
+        ],
+        "owner_role": "role:production_manager",
+        "approver_role": "role:owner_performer",
+        "cadence": {
+          "type": "event_and_periodic",
+          "maximum_interval": "12 months after controlled approval; no calendar due date exists before approval"
+        },
+        "triggers": [
+          "project identity, scope, role, safety authority, relationship, event, or venue evidence changes",
+          "before publication, booking use, event advance, or role assignment",
+          "rights, affiliation, privacy, accessibility, or approval finding",
+          "source hash mismatch or validation failure"
+        ],
+        "checks": [
+          "all authored Section 01 leaves retain verified or explicitly unresolved claim states",
+          "event-specific facts are not promoted into GEN identity",
+          "role authority remains separate from named people and assignments",
+          "organization claims have scope-specific evidence and restricted contacts remain excluded",
+          "approval evidence exists before promotion"
+        ],
+        "stale_behavior": "Block affected dependent claims and releases; preserve unresolved states; register the exact evidence need and escalate to the responsible specialist and approver roles."
+      },
+      {
+        "schedule_id": "review:source-and-release-events",
+        "covered_sections": [
+          "00_control_and_governance",
+          "90_schemas_and_vocabularies"
+        ],
+        "covered_statuses": [
+          "review",
+          "approved"
+        ],
+        "owner_role": "role:production_manager",
+        "approver_role": "role:owner_performer",
+        "cadence": {
+          "type": "event_only",
+          "maximum_interval": null
+        },
+        "triggers": [
+          "controlled DOCX revision or active timing-profile decision",
+          "HOLD, ABORT, STOP, incident, near miss, rehearsal, or performance change proposal",
+          "public release request or rights/privacy/safety/accessibility gate change",
+          "source becomes stale, missing, restricted, or hash-mismatched",
+          "role/authority, venue, distribution, or retention requirement changes"
+        ],
+        "checks": [
+          "change is registered and risk-classified",
+          "observations remain records until approved",
+          "affected dependencies and distribution recipients are identified",
+          "obsolete operational copies have withdrawal evidence when applicable"
+        ],
+        "stale_behavior": "Fail closed: retain the prior approved revision if available, register the exact blocker/conflict, escalate to the named owner/approver role, and never substitute unavailable evidence."
+      }
+    ],
+    "schedule_count": 4
+  }
+}

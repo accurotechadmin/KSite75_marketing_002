@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "KS-S1-I",
+  "fixture_type_id": "kiss_circuit",
+  "display_name": "KISS S1 Inner",
+  "local_name": "KS-S1-I",
+  "asset_tag": "KS-S1-I",
+  "serial_number": null,
+  "category": "KISS sign circuit",
+  "status": "active",
+  "canonical": false,
+  "stage_layer": "kiss-sign",
+  "zone_id": "S-KISS",
+  "position": {
+    "x": 0,
+    "y": 0.7,
+    "z": 7.3
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "scale": 1.0,
+  "mounting": {
+    "point_id": null,
+    "description": "Estimated position",
+    "safety_cable": true
+  },
+  "focus_target_id": "P-CS",
+  "position_confidence": "estimated",
+  "position_verified_at": null,
+  "dmx": {
+    "enabled": true,
+    "universe": 1,
+    "start_address": 266,
+    "mode_id": "1ch",
+    "channel_count": 1,
+    "end_address": 266,
+    "preview_values": [
+      0
+    ],
+    "default_values": [
+      0
+    ],
+    "home_values": [
+      0
+    ],
+    "pan_invert": false,
+    "tilt_invert": false,
+    "wireless_receiver_id": null
+  },
+  "connections": {
+    "dmx_in_from": "KS-I-O",
+    "dmx_out_to": "KS-S1-O",
+    "power_from": null
+  },
+  "power": {
+    "voltage": 120,
+    "watts": 120,
+    "current": null,
+    "circuit_id": null,
+    "source_device_id": null,
+    "output_number": null,
+    "paired_output": null,
+    "dimmable": true,
+    "clean_power_required": false,
+    "connector": "Edison"
+  },
+  "simulation": {
+    "model_asset": null,
+    "material_profile": "default",
+    "fixed_color": "#ffdca8",
+    "shadow_enabled": false,
+    "pick_proxy": true,
+    "visible": true,
+    "letter": "S1",
+    "letter_index": 2,
+    "sign_zone": "inner"
+  },
+  "photos": [],
+  "manuals": [],
+  "documents": [],
+  "source_evidence": [],
+  "open_questions": [
+    "Verify manufacturer/model, physical position, power and DMX settings."
+  ],
+  "maintenance": {
+    "last_tested": null,
+    "test_status": "not-tested",
+    "next_due": null,
+    "open_faults": [],
+    "service_record_ids": [],
+    "out_of_service_reason": null,
+    "notes": ""
+  },
+  "revision": 1,
+  "created_at": "2026-07-24T21:36:58.802624+00:00",
+  "created_by": "system",
+  "updated_at": "2026-07-24T21:36:58.802624+00:00",
+  "updated_by": "system",
+  "change_reason": "Initial generated MVP record"
+}

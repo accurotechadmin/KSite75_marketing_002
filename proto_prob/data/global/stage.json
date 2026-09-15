@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "stage_id": "STAGE-MAIN",
+  "revision": 1,
+  "dimensions": {
+    "width": 32.0,
+    "depth": 16.0,
+    "deck_height": 1.67
+  },
+  "rear_platform": {
+    "width": 19.0,
+    "depth": 4.5,
+    "height": 1.5,
+    "x": 0,
+    "y": 2.5
+  },
+  "center_transition": {
+    "width": 3.5,
+    "depth": 3.0,
+    "height": 1.5,
+    "x": 0,
+    "y": 5.0
+  },
+  "octagon": {
+    "across_flats": 8.0,
+    "projection": 6.0,
+    "height": 1.67,
+    "x": 0,
+    "y": 18.0
+  },
+  "audience_floor": {
+    "width": 40.0,
+    "depth": 40.0
+  },
+  "finish": {
+    "stage": "worn red-brown painted wood",
+    "floor": "patterned brown/red carpet"
+  },
+  "updated_at": "2026-07-24T21:36:58.802624+00:00"
+}

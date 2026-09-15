@@ -1,0 +1,43 @@
+{
+    "status": "draft_enabled_mvp",
+    "updated_at": "2026-07-21T20:38:11+00:00",
+    "section_controls": [],
+    "route_orders": [],
+    "visibility": [],
+    "asset_replacements": [],
+    "uploaded_images": [
+        {
+            "uploaded_image": "layer-upload-20260721-203128-2acddb.png",
+            "label": "Earl01",
+            "uploaded_at": "2026-07-21T20:31:28+00:00"
+        }
+    ],
+    "image_labels": {
+        "layer-upload-20260721-203128-2acddb.png": "Earl01"
+    },
+    "template_notes": [],
+    "custom_files": [],
+    "publish_history": [],
+    "image_asset_metadata": [],
+    "section_corner_overlays": {
+        "/": {
+            "section.01.top@top-right@20260721203320-a879ce": {
+                "overlay_id": "section.01.top@top-right@20260721203320-a879ce",
+                "route": "/",
+                "section_handle": "section.01.top",
+                "corner": "top-right",
+                "selected_asset": "layer-upload-20260721-203128-2acddb.png",
+                "image_label": "Earl01",
+                "offset_x": -210,
+                "offset_y": 440,
+                "width": 640,
+                "rotation": 0,
+                "enabled": true,
+                "timeline_moment_id_or_gen": "GEN",
+                "alt_text": "",
+                "decorative": true,
+                "updated_at": "2026-07-21T20:38:11+00:00"
+            }
+        }
+    }
+}

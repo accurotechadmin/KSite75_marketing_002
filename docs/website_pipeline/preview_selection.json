@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "strategy": "affected routes plus one unaffected public route with shared dependencies",
+  "minimum_representative_unaffected": 1,
+  "rules": [
+    "affected route IDs must come from the validated impact report",
+    "unaffected route IDs must be public, disjoint from affected routes, and explicitly named",
+    "all selected routes use every required preview mode",
+    "an empty affected set is valid only for a dry run that performs no captures"
+  ]
+}

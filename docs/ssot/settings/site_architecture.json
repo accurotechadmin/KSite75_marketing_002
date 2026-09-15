@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.site_architecture",
+  "title": "Site Architecture",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "public_pages": [
+      {
+        "id": "home",
+        "purpose": "main event landing page",
+        "priority": "launch"
+      },
+      {
+        "id": "tickets-rsvp",
+        "purpose": "ticket, RSVP, or inquiry conversion",
+        "priority": "launch"
+      },
+      {
+        "id": "spectacle",
+        "purpose": "lights, projection, fog, and stage-energy preview",
+        "priority": "launch"
+      },
+      {
+        "id": "about-performer",
+        "purpose": "performer introduction and credibility",
+        "priority": "launch"
+      },
+      {
+        "id": "faq-disclaimer",
+        "purpose": "common questions and public-safe rights language",
+        "priority": "launch"
+      },
+      {
+        "id": "press-booking",
+        "purpose": "venue buyer and press pathway",
+        "priority": "next"
+      }
+    ],
+    "owner_modules": [
+      "dashboard",
+      "cms_drafts",
+      "asset_inventory",
+      "timeline_registry",
+      "operator_outputs",
+      "rights_safety_queue"
+    ],
+    "data_dependency_rule": "Pages consume settings and SSOT records by id; page templates should not become the canonical source."
+  }
+}

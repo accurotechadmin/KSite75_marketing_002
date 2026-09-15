@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "source_reference.schema",
+  "document_class": "schema",
+  "title": "Source Reference Schema",
+  "description": "Stable source identity, checksum, locator, extraction method, use, and redaction metadata.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:provenance",
+      "path": "center/data/source_provenance_schema.php",
+      "sha256": "9c5a3777592b96fef4fab11f13115296abdbdfb0fef48fde4a4e4cd104d12a51",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "source_reference.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "source_reference.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Source reference",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "path",
+        "sha256",
+        "locator",
+        "extraction_method",
+        "use"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "revision_or_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "extraction_method": {
+          "type": "string",
+          "enum": [
+            "structural review and reconciliation",
+            "manual transcription",
+            "machine parse",
+            "hash comparison",
+            "generated derivation"
+          ]
+        },
+        "use": {
+          "type": "string",
+          "enum": [
+            "normative input",
+            "reconciled implementation input",
+            "supporting evidence",
+            "conflicting candidate",
+            "generated input"
+          ]
+        },
+        "quoted_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "redaction_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "source_mapping": [
+      "The Supporting Production Documentation Standard supplies controlled identity, revision, approval, distribution, and supersession rules.",
+      "Repository settings and owner-center contracts are reconciled as implementation evidence, not promoted over formal authority.",
+      "Approval is represented as evidence-bearing state; review completion alone cannot satisfy approved conditions."
+    ],
+    "validation_notes": [
+      "Formats require a JSON Schema validator with format assertion enabled.",
+      "Domain vocabularies remain external authorities and are intentionally not duplicated as exhaustive enums."
+    ]
+  }
+}

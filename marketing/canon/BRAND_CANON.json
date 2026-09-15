@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "jok.brand-canon.portable",
+  "status": "controlled_internal_canon_snapshot",
+  "scope": "evergreen",
+  "brand_truth": "Just One KISS is an independent theatrical rock tribute that turns disciplined original craft into a reachable, arena-scale communal experience.",
+  "promise": "An extraordinary theatrical-rock encounter can feel monumental without feeling remote: crafted with intent, communicated honestly, and opened to the people who make the night complete.",
+  "category": "independent theatrical rock tribute",
+  "creative_formula": ["black_first", "chrome_second", "fire_third", "mythic_scale", "never_ordinary"],
+  "master_narrative": ["arena_arrives", "shadow_turns_to_fire", "craft_becomes_visible", "crowd_completes_ritual", "road_case_stays_open"],
+  "approved_evergreen_claims": {
+    "identity": "Just One KISS",
+    "category": "An independent theatrical rock tribute.",
+    "story": "A love letter with volume.",
+    "experience": "Arena-scale imagination. Reachable connection.",
+    "community": "The crowd completes the ritual.",
+    "continuity": "The road case stays open."
+  },
+  "volatile_claims": [],
+  "required_controls": ["independence", "rights", "literal_effect_accuracy", "fact_verification", "sensory_advisories", "accessibility", "consent", "single_action"]
+}

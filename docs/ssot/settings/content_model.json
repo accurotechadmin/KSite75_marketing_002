@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.content_model",
+  "title": "Content Model",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "required_record_fields": [
+      "record_id",
+      "title",
+      "section",
+      "category",
+      "timeline_moment_id_or_gen",
+      "status",
+      "priority",
+      "owner_or_responsible_role",
+      "public_private_flag",
+      "rights_status",
+      "safety_status",
+      "description",
+      "linked_files",
+      "linked_records",
+      "last_updated"
+    ],
+    "statuses": [
+      "draft",
+      "needs owner review",
+      "approved internal",
+      "approved public",
+      "archived"
+    ],
+    "priorities": [
+      "critical",
+      "high",
+      "medium",
+      "low"
+    ],
+    "visibility_flags": [
+      "internal-only",
+      "public-candidate",
+      "public-approved"
+    ],
+    "rights_statuses": [
+      "owned",
+      "licensed",
+      "approved",
+      "needs review",
+      "reference only",
+      "prohibited"
+    ],
+    "safety_statuses": [
+      "clear",
+      "needs review",
+      "venue review required",
+      "operator only",
+      "unsafe/prohibited"
+    ]
+  }
+}

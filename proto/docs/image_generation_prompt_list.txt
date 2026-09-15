@@ -1,0 +1,48 @@
+Just One KISS required website image generation list
+
+Use original, public-ready black/chrome/fire theatrical rock imagery. Do not include official KISS logos, exact makeup designs, outside costumes, album art, restricted fonts, outside photos, or any implication of partnership. Favor smoke, steel, flame, campground pavilion energy, stage lighting, road-case texture, and original show-world spectacle.
+
+1. hero-stage-portal.webp
+Prompt: Wide cinematic stage-portal background for a theatrical rock tribute landing page, black void stage, chrome jagged portal, red-orange fire rim light, smoke, sparks, no logos, no readable text, no exact makeup, high contrast, dramatic arena lighting, landscape 16:9.
+
+2. section-fire-pavilion-bg.webp
+Prompt: Dark campground pavilion stage at night with a full theatrical lighting setup, black truss silhouettes, red and orange flame glow, smoke haze, warm fire reflections, audience area implied but no identifiable faces, original public-ready rock-show atmosphere, landscape 16:9.
+
+3. cycle-moore-map-arrival-bg.webp
+Prompt: Stylized northern Michigan arrival-map background for Cycle Moore Legacy in Interlochen on US 31, dark road-map texture, glowing red route lines, campground marker, subtle lake/forest shapes, fire-orange highlights, no Google Maps UI, no restricted map tiles, landscape 16:9.
+
+4. campground-gate-parking-bg.webp
+Prompt: Nighttime campground parking and pavilion approach, marked parking flags or cones, firelight, red stage glow in the distance, vehicles as silhouettes, family-friendly outdoor event mood, no clearance plates, no logos, landscape 16:9.
+
+5. pavilion-stage-lights-bg.webp
+Prompt: Under-pavilion concert stage lighting background, black stage, chrome truss, red beams, amber strobes, fog haze, full stage lighting setup, dramatic but safe family event energy, no performers visible, no logos, landscape 16:9.
+
+6. family-friendly-firelight-bg.webp
+Prompt: Family-friendly campground rock-show atmosphere, warm firelight, pavilion lights in background, black/chrome/red palette, silhouettes of mixed-age attendees from behind only, no identifiable faces, bright lights and haze, welcoming but bombastic, landscape 16:9.
+
+7. facebook-share-flame-bg.webp
+Prompt: Social-sharing themed rock event background, abstract Facebook-blue glow mixed with fire orange and black chrome road-case texture, phone silhouettes taking photos/video, no actual Facebook logo unless cleared, no readable UI, energetic fan-sharing vibe, landscape 16:9.
+
+8. trailer-poster-stage-portal.webp
+Prompt: Trailer poster style original stage portal image, fire-rimmed entrance, chrome shards, smoke, black stage, red backlight, no outside logos, no text, dramatic vertical-friendly composition with safe crop for landscape, 16:9.
+
+9. spectacle-lighting-rig.webp
+Prompt: Original stage lighting rig close-up, DMX-controlled beams, chrome truss, red/orange/yellow lights, fog haze, hard rock theatrical energy, no logos, no readable presentation names, landscape 16:9.
+
+10. fog-strobe-atmosphere.webp
+Prompt: Fog and strobe atmosphere image for safety-aware show section, dense haze with red and white light patterns, dramatic beams, no people, no logos, original theatrical rock lighting, landscape 16:9.
+
+11. costume-chrome-detail.webp
+Prompt: Original black-and-chrome costume detail close-up, armor-like panels, studs or spikes, red fire reflections, no exact Gene Simmons/KISS makeup or restricted costume replication, original public-ready styling, landscape 4:3 or 16:9.
+
+12. gear-control-dossier.webp
+Prompt: Show-control show-control desk concept, laptop running abstract lighting-control interface, DMX cables, cue sheet, red/orange glow, black road case, no readable software logos, no private data, one-show-control mood, landscape 16:9.
+
+13. road-case-vault-bg.webp
+Prompt: Black road-case vault texture, chrome latches, red fire glow leaking from seams, backstage collector energy, no official memorabilia, no logos, dramatic texture usable behind website cards, landscape 16:9.
+
+14. press-performer-portrait.webp
+Prompt: Original theatrical rock tribute performer portrait placeholder, black/chrome costume silhouette, fire rim light, smoke, no exact KISS makeup design, no official marks, bold confident stage posture, portrait crop with landscape-safe background.
+
+15. button-fire-flare.webp
+Prompt: Small reusable website button background texture, intense orange flame flare, dark red smoke, chrome sparks, no text, seamless-ish horizontal crop, high contrast but not too busy, 3:1 wide banner.

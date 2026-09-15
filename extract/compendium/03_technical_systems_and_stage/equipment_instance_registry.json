@@ -1,0 +1,3083 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "equipment_instance_registry",
+  "document_class": "registry",
+  "title": "Equipment Instance Registry",
+  "description": "Provisional identities for 59 fixture records with type links and fail-closed verification, maintenance, patch, and safety boundaries",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_indexes_fixtures_json",
+      "path": "proto_prob/data/indexes/fixtures.json",
+      "sha256": "3861ae86092f0e9b2e1990054a60fd8f19dcd31c14837201b0246dd96b4d8a57",
+      "locator": "count and all 59 fixture index entries",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Completeness and stable identity cross-check"
+    },
+    {
+      "source_id": "source:proto_prob_schemas_fixture_schema_json",
+      "path": "proto_prob/schemas/fixture.schema.json",
+      "sha256": "5faff52f55bed91943ca032d655a4b0491437b2445148917229bc66fca53ff17",
+      "locator": "complete fixture record contract",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Source-field interpretation and nullability"
+    },
+    {
+      "source_id": "source:proto_prob_data_global_fixture-types_json",
+      "path": "proto_prob/data/global/fixture-types.json",
+      "sha256": "c9fa23bbda2b94acfcdd04b82e61373d8efbd3ec86be303ad5cd8ccef483d113",
+      "locator": "all fixture type IDs",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype type identity cross-check"
+    },
+    {
+      "source_id": "source:docs_inventory_reference_md",
+      "path": "docs/inventory_reference.md",
+      "sha256": "20380ccad4db027357e1aaefd26701bc9697f451d18131b7933b6d18492786d8",
+      "locator": "fixture inventory and verification cautions",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Narrative reconciliation boundary"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AF-B_json",
+      "path": "proto_prob/data/fixtures/AF-B.json",
+      "sha256": "942575e301ce0190bb0ee88dfe8e3f91d5ea5e41c983e6cfb12673fabb366dc2",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AF-B"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AF-G_json",
+      "path": "proto_prob/data/fixtures/AF-G.json",
+      "sha256": "41d87f5c1d3fcde1eaad4e7f4c7e3c9ee8768a61ad24d8cbcd768ecf026c8434",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AF-G"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AF-P_json",
+      "path": "proto_prob/data/fixtures/AF-P.json",
+      "sha256": "1dd019c72ecccdc40838c4c462b01780b67ec90160c3ba88b77a898fb730971c",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AF-P"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AF-R_json",
+      "path": "proto_prob/data/fixtures/AF-R.json",
+      "sha256": "4ffb57437f6eb5a3ab751fa3582b99c03c41c9dd120c3d3ead7d7c05c2df53d6",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AF-R"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SL-B_json",
+      "path": "proto_prob/data/fixtures/AY-SL-B.json",
+      "sha256": "0c30a53ac51ac086214a73c1aa6caa4ed98a5c1bb597ea916407fef317e7aedb",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SL-B"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SL-G_json",
+      "path": "proto_prob/data/fixtures/AY-SL-G.json",
+      "sha256": "76e641d312db2f4ab9df7cbc6113a0cc2834323613cf839a18e070f2abc3a590",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SL-G"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SL-R_json",
+      "path": "proto_prob/data/fixtures/AY-SL-R.json",
+      "sha256": "54daf704fa03f0ae48a7fcf3f1c62352ffbd4c50b6062161c337bb20102e9458",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SL-R"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SL-Y_json",
+      "path": "proto_prob/data/fixtures/AY-SL-Y.json",
+      "sha256": "f03db972afe2006b26c4943d473f4bc2de6ce35f856e2c739227db90d1d0308d",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SL-Y"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SR-B_json",
+      "path": "proto_prob/data/fixtures/AY-SR-B.json",
+      "sha256": "4bdd35bb52cdcf883f97ecf2b5407342b8e367e6770dc28e29dfc38c0abfd555",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SR-B"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SR-G_json",
+      "path": "proto_prob/data/fixtures/AY-SR-G.json",
+      "sha256": "d56166e0105206a0adb9c3c8c522f54a7059e139fa406e74c8607f2987f03d46",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SR-G"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SR-R_json",
+      "path": "proto_prob/data/fixtures/AY-SR-R.json",
+      "sha256": "1ebc2a053c30da994d374b5390ebe7b7620a502cb5a66045ac2513afef2dc7b8",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SR-R"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AY-SR-Y_json",
+      "path": "proto_prob/data/fixtures/AY-SR-Y.json",
+      "sha256": "e56cb04b75f407f6c27a91dc7d82cc88d1748aa5a7af892bb6fd8ea3844c5632",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for AY-SR-Y"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_BL01_json",
+      "path": "proto_prob/data/fixtures/BL01.json",
+      "sha256": "654707b5382b8253b9bc92cf3bf5cbc2ff5856b1173cf23e88ebc686e64774d0",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for BL01"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_DB01_json",
+      "path": "proto_prob/data/fixtures/DB01.json",
+      "sha256": "fae7fe03516effd2449927a43f92c0882037c9d6f096d5b0f56f7c41ce45aa4b",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for DB01"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_DP-F_json",
+      "path": "proto_prob/data/fixtures/DP-F.json",
+      "sha256": "51d68ae1913e45232aaa4a6ef90d598b819c8f263ce98dd175ae5e160215ab6f",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for DP-F"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_DP-SL_json",
+      "path": "proto_prob/data/fixtures/DP-SL.json",
+      "sha256": "444ecf410e1dd6044fdbbca235f6c087595b49c0e1590248f3830fb11ed0ac86",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for DP-SL"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_DP-SR_json",
+      "path": "proto_prob/data/fixtures/DP-SR.json",
+      "sha256": "049e70ffeb720312f78bc8049003e3f53f8477cf822c1c70dc5dbc523d8a5092",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for DP-SR"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_FX-SL_json",
+      "path": "proto_prob/data/fixtures/FX-SL.json",
+      "sha256": "e60c24fde55dc4bb1db801023cfff25e7551ab1b60fe38686bbac00beeae6be9",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for FX-SL"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_FX-SR_json",
+      "path": "proto_prob/data/fixtures/FX-SR.json",
+      "sha256": "0b231762fbad1fafb0e5115b83d6c3c5f08204b1ce2605b946b8eb2e064e0f17",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for FX-SR"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H01_json",
+      "path": "proto_prob/data/fixtures/H01.json",
+      "sha256": "01bf4a11f2fec5a7143e28d9055b24a00a7b528d9fdc8c46def227594ea0981c",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H01"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H02_json",
+      "path": "proto_prob/data/fixtures/H02.json",
+      "sha256": "b0f35ba55ab426c9b7c027690704f24faa61da33576ec3f7e447b0ae6728a5b5",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H02"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H03_json",
+      "path": "proto_prob/data/fixtures/H03.json",
+      "sha256": "0ca5fc3157c7851f97d75da8e56749a80887389641d55a5a12913bc636ffb2ec",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H03"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H04_json",
+      "path": "proto_prob/data/fixtures/H04.json",
+      "sha256": "90cad4f33cf0258276d00f7fad798771e8a8aa8dbee272dc8e0b6f8f04dd91a9",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H04"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H05_json",
+      "path": "proto_prob/data/fixtures/H05.json",
+      "sha256": "497f106c193951e47610122bfeb1dc6bbeb890e4e696b1061b9dc3516f58c94f",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H05"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H06_json",
+      "path": "proto_prob/data/fixtures/H06.json",
+      "sha256": "059a66229e33f665ccf49d4fb2a60b5e43b05782e788a5fca07c4a145df29990",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H06"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H07_json",
+      "path": "proto_prob/data/fixtures/H07.json",
+      "sha256": "4218e05d746c6db06417449345e6231f7b45d06ad83fcba0ba340a10204d01a1",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H07"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H08_json",
+      "path": "proto_prob/data/fixtures/H08.json",
+      "sha256": "ebb76298f80c20e9a1e8a124a2c0f300c58bd5c1a07a8e422df42eeabb631282",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H08"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H09_json",
+      "path": "proto_prob/data/fixtures/H09.json",
+      "sha256": "fe2ae825dc9fa91bf08f9a81ed44787d672f3861ef364fdca5753c823d4fd9d7",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H09"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H10_json",
+      "path": "proto_prob/data/fixtures/H10.json",
+      "sha256": "9efe3959b895938f6e316ca43ab221e1e3bb36b87f9ab16b8a6933a305967e1f",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H10"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H11_json",
+      "path": "proto_prob/data/fixtures/H11.json",
+      "sha256": "41cb1be244f6cc77ecbbaa6fc9e9b2977af5996fe266144078560b25312fb1a2",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H11"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H12_json",
+      "path": "proto_prob/data/fixtures/H12.json",
+      "sha256": "ec8fb4726bbb7eb5c8a4a5d304f49176ef932548d1cb672c13c0edc8f52ad5e6",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H12"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H13_json",
+      "path": "proto_prob/data/fixtures/H13.json",
+      "sha256": "51483f74fe33ea840902080e602fe4fa1d0b8f731e416a71f704a34e65ea0b7c",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H13"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_H14_json",
+      "path": "proto_prob/data/fixtures/H14.json",
+      "sha256": "c604f3765aceb653a197365196b455d8f98efbebf94ec65b4952406a35a551e1",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for H14"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-I-I_json",
+      "path": "proto_prob/data/fixtures/KS-I-I.json",
+      "sha256": "79737d224a747021cf68291955e22b00f60fab483b718120d612a01dca163781",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-I-I"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-I-O_json",
+      "path": "proto_prob/data/fixtures/KS-I-O.json",
+      "sha256": "eae79dd2ac633957a012c6716f7569edeafc218c4f35bfe7dfe2f52289edaa68",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-I-O"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-K-I_json",
+      "path": "proto_prob/data/fixtures/KS-K-I.json",
+      "sha256": "52fd7bed84dbb712d3b881213663a3ea2577bdefbc9170e8bd41558445c71b20",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-K-I"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-K-O_json",
+      "path": "proto_prob/data/fixtures/KS-K-O.json",
+      "sha256": "b2a01d6a4f835d42bd1f373d6dde3b571db8b679b26d534789315c144dda3e91",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-K-O"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-S1-I_json",
+      "path": "proto_prob/data/fixtures/KS-S1-I.json",
+      "sha256": "9a3b63d1174936bc73474c51b1587ab99c4ddbdd14db116cb1994ac7752b0689",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-S1-I"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-S1-O_json",
+      "path": "proto_prob/data/fixtures/KS-S1-O.json",
+      "sha256": "6746747b399f5cd9cfe6787888bf9c7532799bd7959e2b1b492aaaf82e47131f",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-S1-O"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-S2-I_json",
+      "path": "proto_prob/data/fixtures/KS-S2-I.json",
+      "sha256": "09c14b6f9e578c94d56e7d5e327ff042f9653932754591270dbd13597227cc0b",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-S2-I"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_KS-S2-O_json",
+      "path": "proto_prob/data/fixtures/KS-S2-O.json",
+      "sha256": "a5feb1e366d9bd93e6720c859940b5e301bbf9c7258d642dc5d6794ab213566c",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for KS-S2-O"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR01_json",
+      "path": "proto_prob/data/fixtures/PTR01.json",
+      "sha256": "c429b262c5be0e1df91857e1445895957552100ff9f1b16083334279872a20d2",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR01"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR02_json",
+      "path": "proto_prob/data/fixtures/PTR02.json",
+      "sha256": "9308d96568cca5bfc7e17d5bdc853d8a8eee7b9d975fe3ff95e8819a902d61ea",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR02"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR03_json",
+      "path": "proto_prob/data/fixtures/PTR03.json",
+      "sha256": "7277c1a430b2015307c8f3b689ff1d10c69fcbfbbfad918549fdfa3f23fa4707",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR03"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR04_json",
+      "path": "proto_prob/data/fixtures/PTR04.json",
+      "sha256": "6ebf76a983dfed2c8cb2767634509137c866c93e05b877dcbaaf110581e30e91",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR04"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR05_json",
+      "path": "proto_prob/data/fixtures/PTR05.json",
+      "sha256": "7f147cbd986c2e63730cff2aad41495ac625f2d495cce62d84dc78355dc0a38a",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR05"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR06_json",
+      "path": "proto_prob/data/fixtures/PTR06.json",
+      "sha256": "f6e54dfc4078f20c3e76b4cd17dca15d4ce318321cc80f6fa5eee7e9616acbf2",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR06"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR07_json",
+      "path": "proto_prob/data/fixtures/PTR07.json",
+      "sha256": "c218ccd19684f43abd65be7a35bb237437a2bc23516084d4cb1101794c8c60ee",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR07"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_PTR08_json",
+      "path": "proto_prob/data/fixtures/PTR08.json",
+      "sha256": "749037981b9af59b8dc721bde1fccc675e28c0d38ec5f0d57f3335647c90e395",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for PTR08"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_SP01_json",
+      "path": "proto_prob/data/fixtures/SP01.json",
+      "sha256": "15cb414ecee34573ad8af40726adc1c2b69db80a46b8876e967002d6e04b796c",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for SP01"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_SP02_json",
+      "path": "proto_prob/data/fixtures/SP02.json",
+      "sha256": "9200c6e8c6b647e6ea29c0dd225558abc2de74f1ec5412306b8d1cd1e02aebca",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for SP02"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U01_json",
+      "path": "proto_prob/data/fixtures/U01.json",
+      "sha256": "c21055c6aebabd4b91bb392de3985e80b09f08bfaa9a567b59167eb9b84051c4",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U01"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U02_json",
+      "path": "proto_prob/data/fixtures/U02.json",
+      "sha256": "ddc69d0a32a7b747def3e1a094f9f97d2ac72e7365d7e261d8e04e5d5ed2c5a7",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U02"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U03_json",
+      "path": "proto_prob/data/fixtures/U03.json",
+      "sha256": "6681281114934c77bbeb1ff7bd06dbc3a0f4d4af2093ca98fded52297d28c64c",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U03"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U04_json",
+      "path": "proto_prob/data/fixtures/U04.json",
+      "sha256": "7f6eb31c3861741feaafc7fe830bbd9718b140134c753444e5ba861a31daee10",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U04"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U05_json",
+      "path": "proto_prob/data/fixtures/U05.json",
+      "sha256": "82c5ba3580acab2186658ff2c4260c838061471bea9711bae75c17e318b766ba",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U05"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U06_json",
+      "path": "proto_prob/data/fixtures/U06.json",
+      "sha256": "9879379e1c44894ff30eaf8e31866a015a53771fd6b3c748ff573fc36cfac869",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U06"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U07_json",
+      "path": "proto_prob/data/fixtures/U07.json",
+      "sha256": "f08d81663e2f15320475e23df3f492dc59b598c6da3de3cdf70c4a82c141058b",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U07"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_U08_json",
+      "path": "proto_prob/data/fixtures/U08.json",
+      "sha256": "83e77042158415e723ba14ff48a8d2e03a2f129c89c41b7db0a20e07b99419d8",
+      "locator": "complete record",
+      "extraction_method": "SHA-256 plus structured JSON extraction",
+      "stated_use": "Candidate evidence for U08"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "active_configuration": false,
+    "source_record_count": 59,
+    "record_count": 59,
+    "authority_boundary": "Instance identities and source candidates do not establish physical verification, active patch/configuration, maintenance clearance, or safety approval.",
+    "status_mapping_rule": "Prototype status is retained only as source_status_candidate; controlled_status remains unverified_candidate.",
+    "records": [
+      {
+        "record_id": "equipment_instance:af-b",
+        "instance_id": "AF-B",
+        "display_name": "Floor B Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AF-B.json",
+        "asset_tag_candidate": "AF-B",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-USC",
+          "position": {
+            "x": 2,
+            "y": 2.5,
+            "z": 3.6
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:af-g",
+        "instance_id": "AF-G",
+        "display_name": "Floor G Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AF-G.json",
+        "asset_tag_candidate": "AF-G",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-USC",
+          "position": {
+            "x": -2,
+            "y": 2.5,
+            "z": 3.6
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:af-p",
+        "instance_id": "AF-P",
+        "display_name": "Floor P Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AF-P.json",
+        "asset_tag_candidate": "AF-P",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-USC",
+          "position": {
+            "x": 6,
+            "y": 2.5,
+            "z": 3.6
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:af-r",
+        "instance_id": "AF-R",
+        "display_name": "Floor R Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AF-R.json",
+        "asset_tag_candidate": "AF-R",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-USC",
+          "position": {
+            "x": -6,
+            "y": 2.5,
+            "z": 3.6
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sl-b",
+        "instance_id": "AY-SL-B",
+        "display_name": "SL B Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SL-B.json",
+        "asset_tag_candidate": "AY-SL-B",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SL",
+          "position": {
+            "x": 14,
+            "y": 7,
+            "z": 6.1
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sl-g",
+        "instance_id": "AY-SL-G",
+        "display_name": "SL G Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SL-G.json",
+        "asset_tag_candidate": "AY-SL-G",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SL",
+          "position": {
+            "x": 14,
+            "y": 7,
+            "z": 5.35
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sl-r",
+        "instance_id": "AY-SL-R",
+        "display_name": "SL R Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SL-R.json",
+        "asset_tag_candidate": "AY-SL-R",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SL",
+          "position": {
+            "x": 14,
+            "y": 7,
+            "z": 4.6
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sl-y",
+        "instance_id": "AY-SL-Y",
+        "display_name": "SL Y Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SL-Y.json",
+        "asset_tag_candidate": "AY-SL-Y",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SL",
+          "position": {
+            "x": 14,
+            "y": 7,
+            "z": 6.85
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sr-b",
+        "instance_id": "AY-SR-B",
+        "display_name": "SR B Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SR-B.json",
+        "asset_tag_candidate": "AY-SR-B",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SR",
+          "position": {
+            "x": -14,
+            "y": 7,
+            "z": 6.1
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sr-g",
+        "instance_id": "AY-SR-G",
+        "display_name": "SR G Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SR-G.json",
+        "asset_tag_candidate": "AY-SR-G",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SR",
+          "position": {
+            "x": -14,
+            "y": 7,
+            "z": 5.35
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sr-r",
+        "instance_id": "AY-SR-R",
+        "display_name": "SR R Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SR-R.json",
+        "asset_tag_candidate": "AY-SR-R",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SR",
+          "position": {
+            "x": -14,
+            "y": 7,
+            "z": 4.6
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ay-sr-y",
+        "instance_id": "AY-SR-Y",
+        "display_name": "SR Y Accent",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fixed_accent",
+        "source_fixture_record": "proto_prob/data/fixtures/AY-SR-Y.json",
+        "asset_tag_candidate": "AY-SR-Y",
+        "serial_number": null,
+        "physical_role_candidate": "Fixed-color accent",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-SR",
+          "position": {
+            "x": -14,
+            "y": 7,
+            "z": 6.85
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:bl01",
+        "instance_id": "BL01",
+        "display_name": "Bright Center Special",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:single_dimmer",
+        "source_fixture_record": "proto_prob/data/fixtures/BL01.json",
+        "asset_tag_candidate": "BL01",
+        "serial_number": null,
+        "physical_role_candidate": "Spot/Special",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 0,
+            "y": 6,
+            "z": 11
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:db01",
+        "instance_id": "DB01",
+        "display_name": "Center Disco Ball",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:disco_ball",
+        "source_fixture_record": "proto_prob/data/fixtures/DB01.json",
+        "asset_tag_candidate": "DB01",
+        "serial_number": null,
+        "physical_role_candidate": "Disco ball system",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "DB",
+          "position": {
+            "x": 0,
+            "y": 6,
+            "z": 13.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:dp-f",
+        "instance_id": "DP-F",
+        "display_name": "Floor Dimmer Pack",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:dimmer_pack",
+        "source_fixture_record": "proto_prob/data/fixtures/DP-F.json",
+        "asset_tag_candidate": "DP-F",
+        "serial_number": null,
+        "physical_role_candidate": "4-channel DMX dimmer pack",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 2.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:dp-sl",
+        "instance_id": "DP-SL",
+        "display_name": "Stage Left Dimmer Pack",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:dimmer_pack",
+        "source_fixture_record": "proto_prob/data/fixtures/DP-SL.json",
+        "asset_tag_candidate": "DP-SL",
+        "serial_number": null,
+        "physical_role_candidate": "4-channel DMX dimmer pack",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 14,
+            "y": 8,
+            "z": 2.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:dp-sr",
+        "instance_id": "DP-SR",
+        "display_name": "Stage Right Dimmer Pack",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:dimmer_pack",
+        "source_fixture_record": "proto_prob/data/fixtures/DP-SR.json",
+        "asset_tag_candidate": "DP-SR",
+        "serial_number": null,
+        "physical_role_candidate": "4-channel DMX dimmer pack",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -14,
+            "y": 8,
+            "z": 2.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:fx-sl",
+        "instance_id": "FX-SL",
+        "display_name": "Stage Left Fog Machine",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fog_machine",
+        "source_fixture_record": "proto_prob/data/fixtures/FX-SL.json",
+        "asset_tag_candidate": "FX-SL",
+        "serial_number": null,
+        "physical_role_candidate": "Atmospheric effect",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "fog",
+          "zone_id": "FOG-LOW",
+          "position": {
+            "x": 10,
+            "y": 3.5,
+            "z": 2.2
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:fx-sr",
+        "instance_id": "FX-SR",
+        "display_name": "Stage Right Fog Machine",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:fog_machine",
+        "source_fixture_record": "proto_prob/data/fixtures/FX-SR.json",
+        "asset_tag_candidate": "FX-SR",
+        "serial_number": null,
+        "physical_role_candidate": "Atmospheric effect",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "fog",
+          "zone_id": "FOG-LOW",
+          "position": {
+            "x": -10,
+            "y": 3.5,
+            "z": 2.2
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h01",
+        "instance_id": "H01",
+        "display_name": "Honeycomb 01",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H01.json",
+        "asset_tag_candidate": "H01",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -10.5,
+            "y": 2.5,
+            "z": 14
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h02",
+        "instance_id": "H02",
+        "display_name": "Honeycomb 02",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H02.json",
+        "asset_tag_candidate": "H02",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -3.5,
+            "y": 2.5,
+            "z": 14
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h03",
+        "instance_id": "H03",
+        "display_name": "Honeycomb 03",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H03.json",
+        "asset_tag_candidate": "H03",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 3.5,
+            "y": 2.5,
+            "z": 14
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h04",
+        "instance_id": "H04",
+        "display_name": "Honeycomb 04",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H04.json",
+        "asset_tag_candidate": "H04",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 10.5,
+            "y": 2.5,
+            "z": 14
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h05",
+        "instance_id": "H05",
+        "display_name": "Honeycomb 05",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H05.json",
+        "asset_tag_candidate": "H05",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -14,
+            "y": 5,
+            "z": 11
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h06",
+        "instance_id": "H06",
+        "display_name": "Honeycomb 06",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H06.json",
+        "asset_tag_candidate": "H06",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 14,
+            "y": 5,
+            "z": 11
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h07",
+        "instance_id": "H07",
+        "display_name": "Honeycomb 07",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H07.json",
+        "asset_tag_candidate": "H07",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -14,
+            "y": 9,
+            "z": 8
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h08",
+        "instance_id": "H08",
+        "display_name": "Honeycomb 08",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H08.json",
+        "asset_tag_candidate": "H08",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 14,
+            "y": 9,
+            "z": 8
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h09",
+        "instance_id": "H09",
+        "display_name": "Honeycomb 09",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H09.json",
+        "asset_tag_candidate": "H09",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -11,
+            "y": 5.5,
+            "z": 10
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h10",
+        "instance_id": "H10",
+        "display_name": "Honeycomb 10",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H10.json",
+        "asset_tag_candidate": "H10",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -7,
+            "y": 5.5,
+            "z": 10
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h11",
+        "instance_id": "H11",
+        "display_name": "Honeycomb 11",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H11.json",
+        "asset_tag_candidate": "H11",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -3,
+            "y": 5.5,
+            "z": 10
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h12",
+        "instance_id": "H12",
+        "display_name": "Honeycomb 12",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H12.json",
+        "asset_tag_candidate": "H12",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 3,
+            "y": 5.5,
+            "z": 10
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h13",
+        "instance_id": "H13",
+        "display_name": "Honeycomb 13",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H13.json",
+        "asset_tag_candidate": "H13",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 7,
+            "y": 5.5,
+            "z": 10
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:h14",
+        "instance_id": "H14",
+        "display_name": "Honeycomb 14",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:honeycomb",
+        "source_fixture_record": "proto_prob/data/fixtures/H14.json",
+        "asset_tag_candidate": "H14",
+        "serial_number": null,
+        "physical_role_candidate": "Honeycomb LED wash",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 11,
+            "y": 5.5,
+            "z": 10
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-i-i",
+        "instance_id": "KS-I-I",
+        "display_name": "KISS I Inner",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-I-I.json",
+        "asset_tag_candidate": "KS-I-I",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-i-o",
+        "instance_id": "KS-I-O",
+        "display_name": "KISS I Outer",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-I-O.json",
+        "asset_tag_candidate": "KS-I-O",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-k-i",
+        "instance_id": "KS-K-I",
+        "display_name": "KISS K Inner",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-K-I.json",
+        "asset_tag_candidate": "KS-K-I",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-k-o",
+        "instance_id": "KS-K-O",
+        "display_name": "KISS K Outer",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-K-O.json",
+        "asset_tag_candidate": "KS-K-O",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-s1-i",
+        "instance_id": "KS-S1-I",
+        "display_name": "KISS S1 Inner",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-S1-I.json",
+        "asset_tag_candidate": "KS-S1-I",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-s1-o",
+        "instance_id": "KS-S1-O",
+        "display_name": "KISS S1 Outer",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-S1-O.json",
+        "asset_tag_candidate": "KS-S1-O",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-s2-i",
+        "instance_id": "KS-S2-I",
+        "display_name": "KISS S2 Inner",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-S2-I.json",
+        "asset_tag_candidate": "KS-S2-I",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ks-s2-o",
+        "instance_id": "KS-S2-O",
+        "display_name": "KISS S2 Outer",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:kiss_circuit",
+        "source_fixture_record": "proto_prob/data/fixtures/KS-S2-O.json",
+        "asset_tag_candidate": "KS-S2-O",
+        "serial_number": null,
+        "physical_role_candidate": "KISS sign circuit",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "kiss-sign",
+          "zone_id": "S-KISS",
+          "position": {
+            "x": 0,
+            "y": 0.7,
+            "z": 7.3
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr01",
+        "instance_id": "PTR01",
+        "display_name": "PTR Moving Head 01",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR01.json",
+        "asset_tag_candidate": "PTR01",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -11,
+            "y": 3,
+            "z": 12
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr02",
+        "instance_id": "PTR02",
+        "display_name": "PTR Moving Head 02",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR02.json",
+        "asset_tag_candidate": "PTR02",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 11,
+            "y": 3,
+            "z": 12
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr03",
+        "instance_id": "PTR03",
+        "display_name": "PTR Moving Head 03",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR03.json",
+        "asset_tag_candidate": "PTR03",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -11,
+            "y": 9,
+            "z": 9.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr04",
+        "instance_id": "PTR04",
+        "display_name": "PTR Moving Head 04",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR04.json",
+        "asset_tag_candidate": "PTR04",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 11,
+            "y": 9,
+            "z": 9.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr05",
+        "instance_id": "PTR05",
+        "display_name": "PTR Moving Head 05",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR05.json",
+        "asset_tag_candidate": "PTR05",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -6,
+            "y": 6,
+            "z": 10.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr06",
+        "instance_id": "PTR06",
+        "display_name": "PTR Moving Head 06",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR06.json",
+        "asset_tag_candidate": "PTR06",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -2,
+            "y": 6,
+            "z": 10.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr07",
+        "instance_id": "PTR07",
+        "display_name": "PTR Moving Head 07",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR07.json",
+        "asset_tag_candidate": "PTR07",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 2,
+            "y": 6,
+            "z": 10.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:ptr08",
+        "instance_id": "PTR08",
+        "display_name": "PTR Moving Head 08",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:ptr",
+        "source_fixture_record": "proto_prob/data/fixtures/PTR08.json",
+        "asset_tag_candidate": "PTR08",
+        "serial_number": null,
+        "physical_role_candidate": "PTR moving fixture",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 6,
+            "y": 6,
+            "z": 10.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:sp01",
+        "instance_id": "SP01",
+        "display_name": "Upper Spotlight 1",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:single_dimmer",
+        "source_fixture_record": "proto_prob/data/fixtures/SP01.json",
+        "asset_tag_candidate": "SP01",
+        "serial_number": null,
+        "physical_role_candidate": "Spot/Special",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -5,
+            "y": 3,
+            "z": 13.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:sp02",
+        "instance_id": "SP02",
+        "display_name": "Upper Spotlight 2",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:single_dimmer",
+        "source_fixture_record": "proto_prob/data/fixtures/SP02.json",
+        "asset_tag_candidate": "SP02",
+        "serial_number": null,
+        "physical_role_candidate": "Spot/Special",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 5,
+            "y": 3,
+            "z": 13.5
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u01",
+        "instance_id": "U01",
+        "display_name": "Cube Up-light 01",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U01.json",
+        "asset_tag_candidate": "U01",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -14,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u02",
+        "instance_id": "U02",
+        "display_name": "Cube Up-light 02",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U02.json",
+        "asset_tag_candidate": "U02",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -10,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u03",
+        "instance_id": "U03",
+        "display_name": "Cube Up-light 03",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U03.json",
+        "asset_tag_candidate": "U03",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -6,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u04",
+        "instance_id": "U04",
+        "display_name": "Cube Up-light 04",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U04.json",
+        "asset_tag_candidate": "U04",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": -2,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u05",
+        "instance_id": "U05",
+        "display_name": "Cube Up-light 05",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U05.json",
+        "asset_tag_candidate": "U05",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 2,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u06",
+        "instance_id": "U06",
+        "display_name": "Cube Up-light 06",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U06.json",
+        "asset_tag_candidate": "U06",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 6,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u07",
+        "instance_id": "U07",
+        "display_name": "Cube Up-light 07",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U07.json",
+        "asset_tag_candidate": "U07",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 10,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      },
+      {
+        "record_id": "equipment_instance:u08",
+        "instance_id": "U08",
+        "display_name": "Cube Up-light 08",
+        "timeline_scope": "GEN",
+        "type_ref": "equipment_type:cube_uplight",
+        "source_fixture_record": "proto_prob/data/fixtures/U08.json",
+        "asset_tag_candidate": "U08",
+        "serial_number": null,
+        "physical_role_candidate": "Cube up-light",
+        "source_status_candidate": "active",
+        "controlled_status": "unverified_candidate",
+        "location_candidate": {
+          "stage_layer": "lighting",
+          "zone_id": "P-CS",
+          "position": {
+            "x": 14,
+            "y": 12.5,
+            "z": 2.15
+          },
+          "position_confidence": "estimated"
+        },
+        "physical_verification": {
+          "state": "unverified",
+          "verified_at": null,
+          "verified_by_role": null,
+          "evidence_refs": []
+        },
+        "maintenance_state": {
+          "clearance": null,
+          "last_tested": null,
+          "test_status": "unverified_source_candidate",
+          "next_due": null,
+          "maintenance_record_refs": []
+        },
+        "active_patch_ref": null,
+        "active_configuration": false,
+        "safety_approval_refs": [],
+        "unresolved_questions": [
+          "Verify manufacturer/model, physical position, power and DMX settings.",
+          "Confirm asset tag and serial number against the physical unit; source active status is not accepted as controlled operational status."
+        ]
+      }
+    ],
+    "dependencies": [
+      "equipment_instance.schema.json",
+      "equipment_type_catalog.json"
+    ],
+    "unresolved_conflicts": [
+      "All 59 prototype records have canonical=false and require physical reconciliation.",
+      "Prototype coordinates, tags, statuses, power, and DMX values are candidates rather than active configuration."
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+<header class="topbar"><div><p class="eyebrow">Current module</p><h2><?= ac_e($currentMeta['label']) ?></h2></div><div class="launch-chip"><b><?= ac_e($config['launch_focus']) ?></b><span><?= ac_e($config['launch_date']) ?></span></div><label class="quick-search">Quick search<input type="search" data-global-search placeholder="Filter visible tables/cards"></label></header>

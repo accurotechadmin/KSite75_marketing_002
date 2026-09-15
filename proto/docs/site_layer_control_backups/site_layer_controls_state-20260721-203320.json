@@ -1,0 +1,23 @@
+{
+    "status": "draft_enabled_mvp",
+    "updated_at": "2026-07-21T20:31:28+00:00",
+    "section_controls": [],
+    "route_orders": [],
+    "visibility": [],
+    "asset_replacements": [],
+    "uploaded_images": [
+        {
+            "uploaded_image": "layer-upload-20260721-203128-2acddb.png",
+            "label": "Earl01",
+            "uploaded_at": "2026-07-21T20:31:28+00:00"
+        }
+    ],
+    "image_labels": {
+        "layer-upload-20260721-203128-2acddb.png": "Earl01"
+    },
+    "template_notes": [],
+    "custom_files": [],
+    "publish_history": [],
+    "image_asset_metadata": [],
+    "section_corner_overlays": []
+}

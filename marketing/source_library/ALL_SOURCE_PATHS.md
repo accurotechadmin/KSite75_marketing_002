@@ -1,0 +1,67 @@
+# Complete Pre-Laboratory Source Path Inventory
+
+This is the exhaustive path-level working inventory used when the laboratory was created. Inclusion means “potentially campaign-relevant,” not approved, current, or safe to publish. The curated interpretation is in [SOURCE_CATALOG.md](SOURCE_CATALOG.md).
+
+**Paths inventoried:** 61
+
+- `center/pages/marketing-planner.php`
+- `docs/brand_story_style_guide_inventory.md`
+- `docs/first_run_marketing_campaign.md`
+- `docs/marketing_image_mockup_specs/00_shared_mockup_data.md`
+- `docs/marketing_image_mockup_specs/01_awareness_mockup_spec.md`
+- `docs/marketing_image_mockup_specs/02_interest_mockup_spec.md`
+- `docs/marketing_image_mockup_specs/03_consideration_mockup_spec.md`
+- `docs/marketing_image_mockup_specs/04_conversion_mockup_spec.md`
+- `docs/marketing_image_mockup_specs/05_retention_nurture_mockup_spec.md`
+- `docs/marketing_image_mockup_specs/HOW_TO_USE.md`
+- `docs/marketing_image_mockup_specs/README.md`
+- `docs/marketing_image_mockup_specs/facebook_ad_campaign_production_briefs.md`
+- `docs/marketing_image_prompt_templates/00_shared_template_contract.md`
+- `docs/marketing_image_prompt_templates/01_awareness_prompt_template.md`
+- `docs/marketing_image_prompt_templates/02_interest_prompt_template.md`
+- `docs/marketing_image_prompt_templates/03_consideration_prompt_template.md`
+- `docs/marketing_image_prompt_templates/04_conversion_prompt_template.md`
+- `docs/marketing_image_prompt_templates/05_retention_nurture_prompt_template.md`
+- `docs/marketing_image_prompt_templates/README.md`
+- `docs/marketing_image_prompts/bluesky_still_image_prompts.md`
+- `docs/marketing_image_prompts/facebook_meta_still_image_prompts.md`
+- `docs/marketing_image_prompts/google_ads_still_image_prompts.md`
+- `docs/marketing_image_prompts/instagram_still_image_prompts.md`
+- `docs/marketing_image_prompts/linkedin_still_image_prompts.md`
+- `docs/marketing_image_prompts/pinterest_still_image_prompts.md`
+- `docs/marketing_image_prompts/snapchat_still_image_prompts.md`
+- `docs/marketing_image_prompts/tiktok_still_image_prompts.md`
+- `docs/marketing_image_prompts/x_twitter_still_image_prompts.md`
+- `docs/marketing_image_prompts/youtube_ads_still_image_prompts.md`
+- `docs/marketing_images/facebook_meta/README.md`
+- `docs/marketing_still_image_inventory.md`
+- `docs/prompts/marketing_campaign_expert_boot_prompt.md`
+- `docs/ssot/ads_specs.md`
+- `docs/ssot/brand_story_style_guide_inventory.json`
+- `docs/ssot/first_run_marketing_campaign.json`
+- `docs/ssot/settings/marketing_channels.json`
+- `docs/ssot/styleguide.json`
+- `docs/styleguide.md`
+- `docs/website_style_look_feel_ssot_report.md`
+- `extract/compendium/07_marketing_sales_and_booking/README.md`
+- `extract/compendium/07_marketing_sales_and_booking/audience_segment_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/booking_contact_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/booking_pipeline.json`
+- `extract/compendium/07_marketing_sales_and_booking/booking_product_and_offer.json`
+- `extract/compendium/07_marketing_sales_and_booking/campaign_piece_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/campaign_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/campaign_release_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/channel_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/creative_brief_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/funnel_stage_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/marketing_calendar.json`
+- `extract/compendium/07_marketing_sales_and_booking/measurement_and_tracking_plan.json`
+- `extract/compendium/07_marketing_sales_and_booking/placement_specification_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/press_kit_manifest.json`
+- `extract/compendium/07_marketing_sales_and_booking/prompt_template_registry.json`
+- `extract/compendium/07_marketing_sales_and_booking/technical_rider.json`
+- `extract/compendium/90_schemas_and_vocabularies/campaign.schema.json`
+- `owner_arena_command/data/ssot/styleguide.json`
+- `scripts/generate_facebook_awareness.php`
+- `secondrendition/data/ssot/styleguide.json`
+- `thirdrendition/data/ssot/styleguide.json`

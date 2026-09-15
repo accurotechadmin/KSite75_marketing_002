@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "scene_profile.schema",
+  "document_class": "schema",
+  "title": "Scene Profile Schema",
+  "description": "Scene profile layers, parameter values, view and patch compatibility, and verification.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "lighting_department_lead",
+  "approver_role": "technical_director",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "document families, minimum fields, approval and synchronization rules",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing supporting-document, cue, safety, inspection, and approval controls"
+    },
+    {
+      "source_id": "source:proto_prob_schemas_profile_schema_json",
+      "path": "proto_prob/schemas/profile.schema.json",
+      "sha256": "1bc0c0a80c4fdfdf7ec9cb22d1a668712de35fcee27c5aeda4bd2ae01511ee33",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "prototype profile contract"
+    },
+    {
+      "source_id": "source:proto_prob_data_profiles_stage-scenes_blackout_json",
+      "path": "proto_prob/data/profiles/stage-scenes/blackout.json",
+      "sha256": "a9ab985a9812bf9dcff45e39e95a3d483ee84c76b1476170f62bf6d6b061e02d",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "representative safety profile"
+    },
+    {
+      "source_id": "source:proto_prob_data_profiles_stage-scenes_red-upper-green-floor_json",
+      "path": "proto_prob/data/profiles/stage-scenes/red-upper-green-floor.json",
+      "sha256": "0810d0ace125939905d4483e797927a6a343a7f79bc8bfc9ecaa3bb94cbb905d",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "representative layered profile"
+    },
+    {
+      "source_id": "source:proto_prob_data_global_layers_json",
+      "path": "proto_prob/data/global/layers.json",
+      "sha256": "0ca322b6f9af75402debd0626b5730f1c2598cd9f2a7ab509dfde3c30ec795c5",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "layer vocabulary"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "scene_profile.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "scene_profile.schema.json",
+      "title": "Scene Profile",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "profile_id",
+        "layers",
+        "verification_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "profile_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "layer_ref",
+              "values"
+            ],
+            "properties": {
+              "layer_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "values": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                  "type": [
+                    "number",
+                    "integer",
+                    "string",
+                    "boolean",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "view_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "patch_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "compatibility": {
+          "enum": [
+            "verified",
+            "requires_validation",
+            "incompatible",
+            "unknown"
+          ]
+        },
+        "verification_state": {
+          "enum": [
+            "tested",
+            "reviewed",
+            "draft",
+            "unverified"
+          ]
+        }
+      }
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

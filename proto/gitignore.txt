@@ -1,0 +1,7 @@
+owner_arena_command_storage/
+# Generated marketing raster assets (binary files are distributed separately)
+docs/marketing_images/facebook_meta/*.png
+# Admin-generated structured editor backups
+proto/docs/page_section_backups/*.json
+# Generated one-click website preservation backups
+proto/storage/site-preserve-backups/

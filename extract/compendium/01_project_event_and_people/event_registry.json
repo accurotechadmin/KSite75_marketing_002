@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "event_registry",
+  "document_class": "registry",
+  "title": "Event Registry",
+  "description": "Evidence-gated event identity, date/time, offer, audience posture, venue, status, and public fact block",
+  "source_refs": [
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "master register and SM-02, SCHED-01, VEN-01 requirements",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled schedule, venue-advance, ownership, dependency, and approval requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_source_authority_policy_json",
+      "path": "extract/compendium/00_control_and_governance/source_authority_policy.json",
+      "sha256": "8b330f8fa66615067494490bbd17ff7ce210e9f106cce086eb98dbcac9a2741d",
+      "locator": "AUTH-001 through AUTH-006",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Candidate, authority, safety, privacy, and approval boundaries"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_project_identity_json",
+      "path": "extract/compendium/01_project_event_and_people/project_identity.json",
+      "sha256": "b7633cdfea838e976a1e89caa6d87eeba007070440a115f869b0bedd2bb862de",
+      "locator": "data.identity and public_claim_guardrails",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Durable project identity and independent-tribute posture"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_roles_and_authorities_json",
+      "path": "extract/compendium/01_project_event_and_people/roles_and_authorities.json",
+      "sha256": "4f478fa18202f331e847509d06a841450f9e391479436ab3cbc05d726331dbf4",
+      "locator": "data.records and authority_rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Stable owner, reviewer, venue, and safety role references"
+    },
+    {
+      "source_id": "source:proto_docs_language_json",
+      "path": "proto/docs/language.json",
+      "sha256": "5253a6dd21ec9270940307da8be664f5e5f4cbe9687ebf8d7facb1ae9f955933",
+      "locator": "event, eventInfo, contact and logistics candidates",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Unverified public-language candidates; no fact promoted"
+    },
+    {
+      "source_id": "source:proto_app_site_data_php",
+      "path": "proto/app/site_data.php",
+      "sha256": "2978c1566dab24f742088e7448cafa24d665e43d4a175905fca4dad7fe7f2b5c",
+      "locator": "event data and public fact candidates",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Runtime candidate evidence; no fact promoted"
+    },
+    {
+      "source_id": "source:docs_brand_story_style_guide_inventory_md",
+      "path": "docs/brand_story_style_guide_inventory.md",
+      "sha256": "2270c92ab93e7986664691500758308487579adc658537da189136b19cce8b9f",
+      "locator": "event fact inventory and claim guardrails",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Candidate-fact conflicts and conservative publication rules"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "publication_gate": "No event fact may be public until evidence, owner approval, applicable venue confirmation, freshness, and release approval are recorded.",
+    "records": [
+      {
+        "event_id": "event:JOK-GEN-candidate-001",
+        "project_ref": "project_identity.json",
+        "durable_identity_ref": "project_identity.json#data.identity",
+        "candidate_fact_state": "unverified_candidates_withheld",
+        "event_name": null,
+        "event_date": null,
+        "start_time": null,
+        "time_zone": null,
+        "offer": null,
+        "audience_posture": null,
+        "venue_ref": null,
+        "public_fact_block": null,
+        "status": "candidate",
+        "approval_state": "pending evidence and controlled approval",
+        "candidate_source_refs": [
+          "proto/docs/language.json",
+          "proto/app/site_data.php",
+          "docs/brand_story_style_guide_inventory.md"
+        ],
+        "required_verifications": [
+          "event identity and occurrence",
+          "calendar date",
+          "local start time and time zone",
+          "venue identity and relationship",
+          "offer and material terms",
+          "audience eligibility and access conditions"
+        ],
+        "expiry": null,
+        "owner_role": "role:owner_performer"
+      }
+    ],
+    "record_count": 1,
+    "dependencies": [
+      "project_identity.json",
+      "organizations_and_partners.json",
+      "venue_registry.json",
+      "event_schedule_plan.json",
+      "../00_control_and_governance/source_authority_policy.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "EVENT-Q-001",
+        "question": "What controlled evidence verifies the event, date, time zone, venue, offer, and publishable fact block?",
+        "owner_role": "role:owner_performer",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "inventory": "docs/website_pipeline/public_site_inventory.json",
+  "request_method": "GET",
+  "follow_redirects": false,
+  "routes": [
+    {"id":"route.contact","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.contact-press","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.directions","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.faq-disclaimer","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.home","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.september-26-2026","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.preserve-backup","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers.behavior","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers.copy","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers.media","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers.review","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers.structure","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.site-layers.style","surface":"owner_tool","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.spectacle","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.technical","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.vault","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.video","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"},
+    {"id":"route.what-is-just-one-kiss","surface":"public","status":200,"content_type":"text/html","body_contains":"<!doctype html"}
+  ],
+  "all_responses": {
+    "forbidden_body_patterns": ["Fatal error", "Stack trace", "PHP Warning", "<b>Warning</b>"],
+    "required_headers": {"content-type": "text/html"}
+  }
+}

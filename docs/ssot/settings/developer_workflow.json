@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.developer_workflow",
+  "title": "Developer Workflow",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "naming_rules": [
+      "lowercase snake_case ids",
+      "stable record_id values",
+      "JSON files validated before commit"
+    ],
+    "loading_order": [
+      "settings_manifest.json",
+      "settings/*.json",
+      "domain SSOT documents",
+      "page templates"
+    ],
+    "recommended_checks": [
+      "python -m json.tool docs/ssot/settings_manifest.json",
+      "for f in docs/ssot/settings/*.json; do python -m json.tool \"$f\" >/dev/null; done"
+    ],
+    "next_build_steps": [
+      "create shared settings loader",
+      "render owner settings inventory page",
+      "map public route config to site_architecture.json"
+    ]
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "role_vocabulary",
+  "document_class": "authority",
+  "title": "Role Vocabulary",
+  "description": "Project, department, owner/admin, safety, approval, audience, and privacy roles without naming people.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "document.schema.json",
+  "source_refs": [
+    {
+      "source_id": "source:cue_book",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:center_schema",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:release_gates",
+      "path": "center/data/release_gate_matrix.php",
+      "sha256": "5290ffadba42d1fcabc25ca9dd4eea3ee68710526545a72e433620f507ff9f63",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "governance": {
+      "authority_scope": "Project, department, owner/admin, safety, approval, audience, and privacy roles without naming people.",
+      "change_rule": "Add, deprecate, or change meanings only through controlled review; preserve stable IDs and map legacy values.",
+      "approval_required_for_effective_use": true
+    },
+    "source_mapping": [
+      "Formal DOCX controls take precedence within their domains.",
+      "Settings and center contracts were normalized without treating prototype labels as approved canon.",
+      "Records remain REVIEW until a named authorized approver supplies controlled evidence."
+    ],
+    "records": [
+      {
+        "record_id": "role:production_manager",
+        "label": "Production Manager",
+        "definition": "Accountable for production coordination and controlled-document governance.",
+        "status": "review",
+        "category": "project",
+        "approval_scope": "production and document control"
+      },
+      {
+        "record_id": "role:director",
+        "label": "Director",
+        "definition": "Controls approved creative and performance direction.",
+        "status": "review",
+        "category": "project",
+        "approval_scope": "creative/performance"
+      },
+      {
+        "record_id": "role:technical_director",
+        "label": "Technical Director",
+        "definition": "Controls integrated technical planning and verified technical releases.",
+        "status": "review",
+        "category": "project",
+        "approval_scope": "technical"
+      },
+      {
+        "record_id": "role:stage_manager",
+        "label": "Stage Manager / Show Caller",
+        "definition": "Controls calling, stage-management records, and operational propagation.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "stage management"
+      },
+      {
+        "record_id": "role:owner_performer",
+        "label": "Owner / Performer",
+        "definition": "Project owner role for business and owner-surface decisions; does not replace specialist safety approval.",
+        "status": "review",
+        "category": "owner_admin",
+        "approval_scope": "owner/business"
+      },
+      {
+        "record_id": "role:developer",
+        "label": "Developer",
+        "definition": "Implements data and application mechanics without approving project facts.",
+        "status": "review",
+        "category": "owner_admin",
+        "approval_scope": "none"
+      },
+      {
+        "record_id": "role:venue_representative",
+        "label": "Venue Representative",
+        "definition": "Supplies venue facts and venue-specific operational authority.",
+        "status": "review",
+        "category": "external",
+        "approval_scope": "venue"
+      },
+      {
+        "record_id": "role:safety_authority",
+        "label": "Safety Authority",
+        "definition": "May impose HOLD, STOP, ABORT, or restrictions within assigned competence.",
+        "status": "review",
+        "category": "safety",
+        "approval_scope": "safety"
+      },
+      {
+        "record_id": "role:privacy_steward",
+        "label": "Privacy Steward",
+        "definition": "Controls restricted personal data handling and retention.",
+        "status": "review",
+        "category": "governance",
+        "approval_scope": "privacy"
+      },
+      {
+        "record_id": "role:rights_reviewer",
+        "label": "Rights Reviewer",
+        "definition": "Reviews ownership, license, consent, and permitted-use evidence.",
+        "status": "review",
+        "category": "governance",
+        "approval_scope": "rights"
+      },
+      {
+        "record_id": "role:accessibility_reviewer",
+        "label": "Accessibility Reviewer",
+        "definition": "Reviews accessibility requirements and evidence.",
+        "status": "review",
+        "category": "governance",
+        "approval_scope": "accessibility"
+      },
+      {
+        "record_id": "role:aud",
+        "label": "Audio / Playback",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Audio / Playback.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "AUD"
+      },
+      {
+        "record_id": "role:lx",
+        "label": "Lighting",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Lighting.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "LX"
+      },
+      {
+        "record_id": "role:vid",
+        "label": "Video / Projection",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Video / Projection.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "VID"
+      },
+      {
+        "record_id": "role:scn",
+        "label": "Scenery",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Scenery.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "SCN"
+      },
+      {
+        "record_id": "role:auto",
+        "label": "Automation / Rigging",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Automation / Rigging.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "AUTO"
+      },
+      {
+        "record_id": "role:deck",
+        "label": "Deck",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Deck.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "DECK"
+      },
+      {
+        "record_id": "role:ward",
+        "label": "Wardrobe",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Wardrobe.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "WARD"
+      },
+      {
+        "record_id": "role:perf",
+        "label": "Performers",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Performers.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "PERF"
+      },
+      {
+        "record_id": "role:prop",
+        "label": "Props",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Props.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "PROP"
+      },
+      {
+        "record_id": "role:fx",
+        "label": "Special Effects",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Special Effects.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "FX"
+      },
+      {
+        "record_id": "role:foh",
+        "label": "Front of House",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Front of House.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "FOH"
+      },
+      {
+        "record_id": "role:comms",
+        "label": "Communications",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Communications.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "COMMS"
+      },
+      {
+        "record_id": "role:pwr",
+        "label": "Power / Electrical",
+        "definition": "Department role defined by the Supporting Production Documentation Standard: Power / Electrical.",
+        "status": "review",
+        "category": "department",
+        "approval_scope": "PWR"
+      },
+      {
+        "record_id": "role:audience",
+        "label": "Audience",
+        "definition": "Public participant; never an approval or operational authority.",
+        "status": "review",
+        "category": "audience",
+        "approval_scope": "none"
+      },
+      {
+        "record_id": "role:booking_contact",
+        "label": "Booking Contact",
+        "definition": "Restricted business-contact role referenced without embedding contact details.",
+        "status": "review",
+        "category": "external",
+        "approval_scope": "none"
+      }
+    ],
+    "record_count": 26
+  }
+}

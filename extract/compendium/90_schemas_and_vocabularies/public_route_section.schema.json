@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "public_route_section.schema",
+  "document_class": "schema",
+  "title": "Public Route Section Schema",
+  "description": "Public route and section ordering, bindings, accessibility, visibility, and publication gates.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "website_content_manager",
+  "approver_role": "project_owner",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:docs_website_system_plan_md",
+      "path": "docs/website_system_plan.md",
+      "sha256": "90d2a5bfac133c94d0423f08fd0328cb1d6dfe843dfe7040751ce26c8c7e43fb",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "route architecture"
+    },
+    {
+      "source_id": "source:proto_docs_routes_and_supporting_pages_md",
+      "path": "proto/docs/routes_and_supporting_pages.md",
+      "sha256": "1adf73f59ac0c0fc684063b5f4e3eef657b8a11e706f2dbe2ca6fc485c73104e",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "route variants"
+    },
+    {
+      "source_id": "source:proto_docs_page_sections_json",
+      "path": "proto/docs/page_sections.json",
+      "sha256": "c12ef72d65a7b888ad29267913d961d6c415ce0fc1abe798ede69db2a29cbfa9",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "section binding shapes"
+    },
+    {
+      "source_id": "source:proto_app_page_sections_php",
+      "path": "proto/app/page_sections.php",
+      "sha256": "97b73b964f2851e3d7e3498a45690919e5192b666d6b4cf06c41cdd4e3713554",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "runtime section loader"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "public_route_section.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "public_route_section.schema.json",
+      "title": "Public Route Section",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "route",
+        "section_id",
+        "order",
+        "visibility_state",
+        "publication_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "route": {
+          "type": "string",
+          "pattern": "^/[a-z0-9/_-]*$"
+        },
+        "section_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "binding_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "visibility_state": {
+          "enum": [
+            "public",
+            "internal_preview",
+            "hidden",
+            "restricted"
+          ]
+        },
+        "accessibility_review_state": {
+          "enum": [
+            "not_started",
+            "in_review",
+            "changes_required",
+            "verified"
+          ]
+        },
+        "publication_state": {
+          "enum": [
+            "draft",
+            "review",
+            "approval_pending",
+            "approved_with_evidence",
+            "published",
+            "withdrawn"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "publication_state": {
+                "const": "published"
+              }
+            },
+            "required": [
+              "publication_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "visibility_state": {
+                "const": "public"
+              },
+              "accessibility_review_state": {
+                "const": "verified"
+              },
+              "approval_evidence_refs": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "approval_evidence_refs"
+            ]
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

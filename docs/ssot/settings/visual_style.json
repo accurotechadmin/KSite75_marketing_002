@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.visual_style",
+  "title": "Visual Style",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "color_roles": {
+      "black": "primary void and contrast",
+      "chrome": "hardware, bevel, and premium accent",
+      "fire_red": "urgency and danger",
+      "gold": "heat and spotlight",
+      "white": "legibility and sparks"
+    },
+    "layout_traits": [
+      "high contrast hero sections",
+      "poster-like blocks",
+      "sharp metallic dividers",
+      "large CTAs"
+    ],
+    "imagery_rules": [
+      "prefer performer, lights, smoke, silhouettes, chrome, fire-like color",
+      "avoid generic stock-band imagery",
+      "mark rights status before public use"
+    ],
+    "accessibility_baselines": [
+      "preserve readable contrast",
+      "do not convey state by color alone",
+      "provide alt text for meaningful images"
+    ]
+  }
+}

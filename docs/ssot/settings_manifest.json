@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.settings_manifest",
+  "title": "Just One KISS Website Settings Manifest",
+  "purpose": "Inventory the JSON settings files needed to build the website from a single source of truth covering canon data, information, settings, options, vocabulary, style guide rules, and brand stories.",
+  "generated_date": "2026-07-19",
+  "central_storage_policy": {
+    "primary_settings_root": "docs/ssot/settings",
+    "manifest_path": "docs/ssot/settings_manifest.json",
+    "record_classification_required": true,
+    "default_timeline_moment_id_or_gen": "GEN",
+    "developer_rule": "Website code should read durable facts, labels, options, copy seeds, and governance rules from these JSON settings files rather than hard-coding project canon in templates.",
+    "promotion_rule": "When prototype settings graduate into production behavior, preserve IDs and add migration notes instead of replacing records ad hoc."
+  },
+  "settings_file_inventory": [
+    {
+      "file_id": "project_identity",
+      "path": "docs/ssot/settings/project_identity.json",
+      "status": "starter-created",
+      "domain": "canon",
+      "purpose": "Project identity, event posture, key public facts, disclaimers, owner roles, and durable one-line summaries."
+    },
+    {
+      "file_id": "site_architecture",
+      "path": "docs/ssot/settings/site_architecture.json",
+      "status": "starter-created",
+      "domain": "website",
+      "purpose": "Recommended public and owner-site routes, page purposes, conversion goals, required SSOT dependencies, and launch priorities."
+    },
+    {
+      "file_id": "content_model",
+      "path": "docs/ssot/settings/content_model.json",
+      "status": "starter-created",
+      "domain": "data_schema",
+      "purpose": "Reusable record fields, validation expectations, workflow statuses, visibility flags, rights/safety states, and timeline classification options."
+    },
+    {
+      "file_id": "brand_voice",
+      "path": "docs/ssot/settings/brand_voice.json",
+      "status": "starter-created",
+      "domain": "brand_style",
+      "purpose": "Voice principles, approved vocabulary, avoided language, copy patterns, audience promises, and public-facing tonal guardrails."
+    },
+    {
+      "file_id": "visual_style",
+      "path": "docs/ssot/settings/visual_style.json",
+      "status": "starter-created",
+      "domain": "brand_style",
+      "purpose": "Color roles, type direction, layout language, motif guidance, imagery rules, UI treatment, and accessibility baselines."
+    },
+    {
+      "file_id": "brand_stories",
+      "path": "docs/ssot/settings/brand_stories.json",
+      "status": "starter-created",
+      "domain": "brand_story",
+      "purpose": "Reusable story arcs, hero copy seeds, proof points, audience journeys, and public-safe narrative modules."
+    },
+    {
+      "file_id": "marketing_channels",
+      "path": "docs/ssot/settings/marketing_channels.json",
+      "status": "starter-created",
+      "domain": "marketing",
+      "purpose": "Channel inventory, content uses, default CTAs, campaign stages, tracking needs, and asset-format planning hooks."
+    },
+    {
+      "file_id": "asset_taxonomy",
+      "path": "docs/ssot/settings/asset_taxonomy.json",
+      "status": "starter-created",
+      "domain": "assets",
+      "purpose": "Asset categories, required metadata, intended website placements, edit statuses, priority labels, and review gates."
+    },
+    {
+      "file_id": "show_timeline",
+      "path": "docs/ssot/settings/show_timeline.json",
+      "status": "starter-created",
+      "domain": "timeline",
+      "purpose": "Timeline Moment ID families, moment relationship rules, cue-to-website linking policy, and non-timeline GENERAL handling."
+    },
+    {
+      "file_id": "technical_show_control",
+      "path": "docs/ssot/settings/technical_show_control.json",
+      "status": "starter-created",
+      "domain": "technical_operations",
+      "purpose": "Rig families, emergency states, operating rules, safety-first defaults, and technical content disclosure levels for public pages."
+    },
+    {
+      "file_id": "integrations",
+      "path": "docs/ssot/settings/integrations.json",
+      "status": "starter-created",
+      "domain": "developer_operations",
+      "purpose": "Future integration placeholders for CMS adapters, forms, analytics, email capture, ads pixels, media storage, and local AI workflows."
+    },
+    {
+      "file_id": "developer_workflow",
+      "path": "docs/ssot/settings/developer_workflow.json",
+      "status": "starter-created",
+      "domain": "developer_operations",
+      "purpose": "Build conventions, data-loading expectations, naming rules, freshness checks, validation commands, and safe defaults for contributors."
+    }
+  ],
+  "future_candidates": [
+    "docs/ssot/settings/commerce_ticketing.json",
+    "docs/ssot/settings/venue_event_instances.json",
+    "docs/ssot/settings/press_kit.json",
+    "docs/ssot/settings/legal_rights_safety.json",
+    "docs/ssot/settings/localization.json",
+    "docs/ssot/settings/performance_metrics.json"
+  ],
+  "maintenance": {
+    "status": "active-starter",
+    "last_updated": "2026-07-19",
+    "next_step": "Wire website loaders to this manifest, then expand individual settings files as real content and production integrations are approved."
+  }
+}

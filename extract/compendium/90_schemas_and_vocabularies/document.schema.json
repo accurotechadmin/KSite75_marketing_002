@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "document.schema",
+  "document_class": "schema",
+  "title": "Document Schema",
+  "description": "Common document envelope, revision controls, approval boundary, sensitivity, and lifecycle.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:content_model",
+      "path": "docs/ssot/settings/content_model.json",
+      "sha256": "0f3d926acea8b8e67dc4dff1f9b40368f6bce75feeb466ea73e9dcec62719e26",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    },
+    {
+      "source_id": "source:center_schema",
+      "path": "center/data/schema.php",
+      "sha256": "9f6ec8f02ebd0e07b102caaf99bbe0b3036c2e082036a27367ea734d72a7ee86",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "document.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "document.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Compendium document envelope",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "document_id",
+        "document_class",
+        "title",
+        "description",
+        "status",
+        "revision",
+        "effective_date",
+        "owner_role",
+        "approver_role",
+        "visibility",
+        "timeline_scope",
+        "schema_ref",
+        "source_refs",
+        "conflict_refs",
+        "supersedes",
+        "superseded_by",
+        "created_at",
+        "updated_at",
+        "review_due_at",
+        "data"
+      ],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "document_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "document_class": {
+          "type": "string",
+          "enum": [
+            "authority",
+            "index",
+            "plan",
+            "procedure",
+            "record",
+            "registry",
+            "release",
+            "schema",
+            "view"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "scaffold",
+            "draft",
+            "working",
+            "conflict",
+            "blocked",
+            "review",
+            "approved",
+            "generated",
+            "superseded",
+            "archived"
+          ]
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[a-z0-9.-]+)?$"
+        },
+        "effective_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "owner_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "approver_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted",
+            "safety_sensitive"
+          ]
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "schema_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+          },
+          "uniqueItems": true
+        },
+        "supersedes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+          }
+        },
+        "superseded_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "updated_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "review_due_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "data": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "approved"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "effective_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "source_refs": {
+                "minItems": 1
+              },
+              "data": {
+                "required": [
+                  "approval_evidence"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "document_class": {
+                "const": "schema"
+              }
+            },
+            "required": [
+              "document_class"
+            ]
+          },
+          "then": {
+            "properties": {
+              "schema_ref": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "generated"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "data": {
+                "required": [
+                  "generation"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "The Supporting Production Documentation Standard supplies controlled identity, revision, approval, distribution, and supersession rules.",
+      "Repository settings and owner-center contracts are reconciled as implementation evidence, not promoted over formal authority.",
+      "Approval is represented as evidence-bearing state; review completion alone cannot satisfy approved conditions."
+    ],
+    "validation_notes": [
+      "Formats require a JSON Schema validator with format assertion enabled.",
+      "Domain vocabularies remain external authorities and are intentionally not duplicated as exhaustive enums."
+    ]
+  }
+}

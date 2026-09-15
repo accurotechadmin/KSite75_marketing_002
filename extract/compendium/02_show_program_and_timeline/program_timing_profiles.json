@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "program_timing_profiles",
+  "document_class": "authority",
+  "title": "Program Timing Profiles",
+  "description": "Supplied Profile S/L timing, calculations, exclusions, overrides, and controlled selection state",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 2–8; program tables, timing profiles, unresolved register, and source reconciliation",
+      "extraction_method": "DOCX XML table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled PGM identity, supplied timing, set membership, conflicts, and safety boundaries"
+    },
+    {
+      "source_id": "source:docs_cue_txt",
+      "path": "docs/cue.txt",
+      "sha256": "479a2484bc4fbb0e180c556b8794198b0cd01c3fd6f2dc76083cf02aba1c8b21",
+      "locator": "Working Set Architecture, Working Song and Cue List, Timing Summary",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Draft candidate labels, durations, set grouping, and cue notes; not approval authority"
+    },
+    {
+      "source_id": "source:docs_ssot_cue_json",
+      "path": "docs/ssot/cue.json",
+      "sha256": "931a231b28a12adbd1657bfecc00e3375ded18919863f3a27eed40c7292ae049",
+      "locator": "source_document, project_rules, canonical_records, maintenance",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Structured draft lineage and publication/rights/safety boundaries"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_program_event_schema_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/program_event.schema.json",
+      "sha256": "7956913ca8992e812d1327c0b77024447f4eb839d52f88e867f32ea7f795a163",
+      "locator": "data.schema",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "PGM identity and program-event validation contract"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_responsibility_matrix_json",
+      "path": "extract/compendium/01_project_event_and_people/responsibility_matrix.json",
+      "sha256": "40fa70ce7447a19887d4c922ecb633ab664dc454b2eedfb346a6b0504d6ee09c",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Role accountability, specialist concurrence, and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "active_profile_id": null,
+    "selection_gate": "A producer/director, stage-management, and audio decision with controlled evidence is required; no consumer may silently select a profile.",
+    "units": "seconds",
+    "calculation_policy": [
+      "Retain supplied durations separately from calculated elapsed totals.",
+      "Do not treat excluded or unknown time as zero.",
+      "Recalculate all downstream times if an approved event duration changes."
+    ],
+    "profiles": [
+      {
+        "profile_id": "profile:S",
+        "label": "Short",
+        "pgm_003_duration_seconds": 170,
+        "known_material_before_pgm_030_seconds": 7079,
+        "downstream_offset_from_profile_s_seconds": 0,
+        "selection_state": "candidate_not_selected",
+        "approved": false,
+        "calculation_method": "Sum authoritative supplied PGM-001 through PGM-029 durations using the profile-specific PGM-003 edit.",
+        "included_range": "PGM-001 through PGM-029",
+        "excluded_time_categories": [
+          "PGM-030 unknown duration",
+          "applause",
+          "dialogue",
+          "audience interaction",
+          "unlisted solos",
+          "holds and emergencies",
+          "TBD technical movement or changes",
+          "bows, blackout, walk-out, and audience release"
+        ],
+        "source_locator": "Cue Book Section 2 timing profile table"
+      },
+      {
+        "profile_id": "profile:L",
+        "label": "Long",
+        "pgm_003_duration_seconds": 234,
+        "known_material_before_pgm_030_seconds": 7143,
+        "downstream_offset_from_profile_s_seconds": 64,
+        "selection_state": "candidate_not_selected",
+        "approved": false,
+        "calculation_method": "Sum authoritative supplied PGM-001 through PGM-029 durations using the profile-specific PGM-003 edit.",
+        "included_range": "PGM-001 through PGM-029",
+        "excluded_time_categories": [
+          "PGM-030 unknown duration",
+          "applause",
+          "dialogue",
+          "audience interaction",
+          "unlisted solos",
+          "holds and emergencies",
+          "TBD technical movement or changes",
+          "bows, blackout, walk-out, and audience release"
+        ],
+        "source_locator": "Cue Book Section 2 timing profile table"
+      }
+    ],
+    "profile_count": 2,
+    "per_event_overrides": [
+      {
+        "program_event_ref": "PGM-003",
+        "profile_s_seconds": 170,
+        "profile_l_seconds": 234,
+        "difference_seconds": 64,
+        "state": "two_valid_supplied_candidates_pending_selection"
+      },
+      {
+        "program_event_ref": "PGM-030",
+        "profile_s_seconds": null,
+        "profile_l_seconds": null,
+        "difference_seconds": null,
+        "state": "critical_duration_evidence_required"
+      }
+    ],
+    "dependencies": [
+      "program_event_registry.json",
+      "set_registry.json",
+      "../01_project_event_and_people/responsibility_matrix.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "TIMING-Q-001",
+        "question": "Which controlled decision selects Profile S or Profile L?",
+        "state": "human_decision_required"
+      },
+      {
+        "question_id": "TIMING-Q-002",
+        "question": "What supplied, version-specific duration closes PGM-030 and the complete runtime?",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "content_token.schema",
+  "document_class": "schema",
+  "title": "Content Token Schema",
+  "description": "Versioned content token, placement, claims, accessibility, localization, and evidence-bearing approval.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "content_editor",
+  "approver_role": "project_owner",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:docs_styleguide_md",
+      "path": "docs/styleguide.md",
+      "sha256": "a2f208dd7367c0de1e0b53088fd8244e14bdb1e8bab46a64eac3660382878484",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "content and accessibility authority"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_brand_voice_json",
+      "path": "docs/ssot/settings/brand_voice.json",
+      "sha256": "721fd4ab5f934797666e036d54c939d23f8692389c35c52aa095c6d2027f4b6f",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "content token vocabulary"
+    },
+    {
+      "source_id": "source:docs_brand_story_style_guide_inventory_md",
+      "path": "docs/brand_story_style_guide_inventory.md",
+      "sha256": "2270c92ab93e7986664691500758308487579adc658537da189136b19cce8b9f",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "claims and rights guardrails"
+    },
+    {
+      "source_id": "source:proto_docs_page_sections_json",
+      "path": "proto/docs/page_sections.json",
+      "sha256": "c12ef72d65a7b888ad29267913d961d6c415ce0fc1abe798ede69db2a29cbfa9",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "representative page bindings"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "content_token.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "content_token.schema.json",
+      "title": "Content Token",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "token_id",
+        "value",
+        "content_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "token_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "placement_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fact_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accessibility_purpose": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "content_state": {
+          "enum": [
+            "draft",
+            "fact_check",
+            "rights_review",
+            "approval_pending",
+            "approved_with_evidence",
+            "published",
+            "withdrawn"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "content_state": {
+                "enum": [
+                  "approved_with_evidence",
+                  "published"
+                ]
+              }
+            },
+            "required": [
+              "content_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "approval_evidence_refs": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "approval_evidence_refs"
+            ]
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

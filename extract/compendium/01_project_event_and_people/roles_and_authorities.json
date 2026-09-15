@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "roles_and_authorities",
+  "document_class": "registry",
+  "title": "Roles And Authorities",
+  "description": "Role IDs; responsibilities; approval authority; performer/operator model; safety and show-stop authority",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "purpose, scope, document identity, control rules",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled program scope and identity boundary"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "purpose, scope, PGM/TECH/FIN references",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Supporting-document domain and identity boundary"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_role_vocabulary_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/role_vocabulary.json",
+      "sha256": "722fb2f36d7e91a1f678b473f4210d22c8a5fc4b9982b02024c2e49aebcbdefe",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled review vocabulary for stable role IDs"
+    },
+    {
+      "source_id": "source:center_docs_answers_md",
+      "path": "center/docs/answers.md",
+      "sha256": "588f1a5bee5d52bdcf34eb2d5ff7dbc18de36055e6a1ecb9b8b0b9309a763019",
+      "locator": "OI-006 and RACI/release-gate answers",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Prototype-stage role/RACI candidates, treated as evidence not authority"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_source_authority_policy_json",
+      "path": "extract/compendium/00_control_and_governance/source_authority_policy.json",
+      "sha256": "8b330f8fa66615067494490bbd17ff7ce210e9f106cce086eb98dbcac9a2741d",
+      "locator": "AUTH-001 through AUTH-006",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Approval and safety boundaries"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "authority_rules": [
+      "Authority belongs to stable roles and documented assignments, not names embedded in this registry.",
+      "No role may self-approve outside its documented domain; specialist approvals remain independent.",
+      "Any person who observes imminent danger may request a stop; designated stage, technical, venue, and safety roles may impose HOLD/STOP/ABORT within assigned competence.",
+      "Safety action takes immediate precedence and is never delayed for creative, timing, financial, or release approval.",
+      "Developer and generated-system behavior never constitute fact or policy approval."
+    ],
+    "records": [
+      {
+        "role_id": "role:owner_performer",
+        "label": "Owner / Performer",
+        "authority_domain": "owner_business",
+        "responsibility": "May approve owner/business identity and scope when controlled evidence is recorded; cannot replace specialist safety, venue, rights, privacy, or technical authority.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:production_manager",
+        "label": "Production Manager",
+        "authority_domain": "production_control",
+        "responsibility": "Coordinates production and document control; accountable only within assigned and approved production scope.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:director",
+        "label": "Director",
+        "authority_domain": "creative_performance",
+        "responsibility": "Controls approved creative and performance direction subject to safety and rights constraints.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:technical_director",
+        "label": "Technical Director",
+        "authority_domain": "technical",
+        "responsibility": "Controls integrated technical planning and verified technical releases; may hold unsafe or unverified technical execution.",
+        "may_initiate_safety_stop": true,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:stage_manager",
+        "label": "Stage Manager / Show Caller",
+        "authority_domain": "show_calling",
+        "responsibility": "Calls approved show actions and propagates HOLD/STOP/ABORT; does not invent or bypass approvals.",
+        "may_initiate_safety_stop": true,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:safety_authority",
+        "label": "Safety Authority",
+        "authority_domain": "safety",
+        "responsibility": "May issue HOLD, STOP, ABORT, restrictions, or refusal within assigned competence; this authority overrides timing and creative intent.",
+        "may_initiate_safety_stop": true,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:rights_reviewer",
+        "label": "Rights Reviewer",
+        "authority_domain": "rights",
+        "responsibility": "Reviews ownership, license, consent, affiliation, endorsement, and permitted-use evidence.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:privacy_steward",
+        "label": "Privacy Steward",
+        "authority_domain": "privacy",
+        "responsibility": "Controls access, minimization, retention, deletion, and escalation for restricted personal data.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:accessibility_reviewer",
+        "label": "Accessibility Reviewer",
+        "authority_domain": "accessibility",
+        "responsibility": "Reviews accessibility requirements, claims, and evidence.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:venue_representative",
+        "label": "Venue Representative",
+        "authority_domain": "venue",
+        "responsibility": "Supplies and approves venue-specific facts within documented authority; relationship is not presumed.",
+        "may_initiate_safety_stop": true,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      },
+      {
+        "role_id": "role:developer",
+        "label": "Developer",
+        "authority_domain": "implementation",
+        "responsibility": "Implements mechanics and validation; has no authority to approve project facts or policy.",
+        "may_initiate_safety_stop": false,
+        "holder_state": "unassigned_or_not_recorded",
+        "person_ref": null,
+        "approval_state": "pending controlled approval"
+      }
+    ],
+    "record_count": 11,
+    "department_role_source": "../90_schemas_and_vocabularies/role_vocabulary.json",
+    "named_people_boundary": "Named holders, qualifications, active dates, and assignment evidence belong in personnel_registry; none are asserted here.",
+    "dependencies": [
+      "project_identity.json",
+      "../90_schemas_and_vocabularies/role_vocabulary.json",
+      "responsibility_matrix.json"
+    ],
+    "unresolved_assignments": [
+      {
+        "question_id": "ROLE-Q-001",
+        "question": "Which qualified people are assigned to each required role for a specific event?",
+        "resolution_record": "personnel_registry.json"
+      },
+      {
+        "question_id": "ROLE-Q-002",
+        "question": "What controlled evidence approves this role model and its RACI mappings?",
+        "resolution_record": "responsibility_matrix.json"
+      }
+    ]
+  }
+}

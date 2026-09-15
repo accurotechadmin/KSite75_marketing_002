@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "open_questions_register",
+  "document_class": "registry",
+  "title": "Open Questions Register",
+  "description": "Unresolved facts; severity; blocker status; responsible role; due date; linked conflicts",
+  "source_refs": [
+    {
+      "source_id": "source:extract_work_sessions_2026_08_13_section_90_foundation_md",
+      "path": "extract/work_sessions/2026-08-13_section-90-foundation.md",
+      "sha256": "3aa8185e8796c497be4b6fa9968a95c20aa9c400141c5d821f67d26aa79baefa",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Prior findings and current validation limitation"
+    },
+    {
+      "source_id": "source:extract_scripts_validate_compendium_py",
+      "path": "extract/scripts/validate_compendium.py",
+      "sha256": "0a08e0ca43351ea2266460141b21811c8c1d0e1dad740c6ac138009c3c66ed66",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Prior findings and current validation limitation"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "records": [
+      {
+        "question_id": "question:controlled-approval-001",
+        "question": "Which authorized human approver will approve the Section 90 and Section 00 review leaves, with what evidence and effective scope?",
+        "status": "open",
+        "blocker": true,
+        "responsible_role": "role:owner_performer",
+        "linked_conflict_ids": [],
+        "linked_decision_ids": []
+      },
+      {
+        "question_id": "question:jsonschema-validation-001",
+        "question": "Can full Draft 2020-12 metaschema and format-assertion validation be run with a conforming jsonschema installation?",
+        "status": "open",
+        "blocker": false,
+        "responsible_role": "role:developer",
+        "linked_conflict_ids": [],
+        "linked_decision_ids": []
+      }
+    ],
+    "record_count": 2
+  }
+}

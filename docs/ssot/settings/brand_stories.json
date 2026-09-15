@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.brand_stories",
+  "title": "Brand Stories",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "story_arcs": [
+      {
+        "id": "arena_arrives",
+        "title": "The arena arrives in the room",
+        "use": "home hero and ads"
+      },
+      {
+        "id": "from_shadow_to_fire",
+        "title": "From shadow to fire",
+        "use": "spectacle page"
+      },
+      {
+        "id": "one_night_invitation",
+        "title": "One-night invitation",
+        "use": "conversion copy"
+      }
+    ],
+    "proof_points": [
+      "show-control planning",
+      "lighting, projection, fog, and strobe design",
+      "public-ready theatrical posture"
+    ],
+    "audience_promises": [
+      "a bigger-than-a-listing night out",
+      "a photo-worthy rock spectacle",
+      "a clear path to attend or inquire"
+    ]
+  }
+}

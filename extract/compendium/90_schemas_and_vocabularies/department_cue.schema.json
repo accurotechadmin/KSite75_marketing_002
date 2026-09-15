@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "department_cue.schema",
+  "document_class": "schema",
+  "title": "Department Cue Schema",
+  "description": "Department cue, controlling event, trigger, action, timing, confirmation, safety, and approval shape.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "stage_manager",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:01_Authoritative_Show_Control_and_Performance_Cue_Book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "revision_or_date": null,
+      "locator": "sections 1-7 and program-event tables",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing program identity, order, timing, and uncertainty"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "document families, minimum fields, approval and synchronization rules",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing supporting-document, cue, safety, inspection, and approval controls"
+    },
+    {
+      "source_id": "source:docs_cue_txt",
+      "path": "docs/cue.txt",
+      "sha256": "479a2484bc4fbb0e180c556b8794198b0cd01c3fd6f2dc76083cf02aba1c8b21",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "working cue shapes"
+    },
+    {
+      "source_id": "source:docs_timeline_moment_registry_md",
+      "path": "docs/timeline_moment_registry.md",
+      "sha256": "237c6bc843edb1de78c3e1699fccfc04871998fea8f649f5822928bce22b1fe7",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "timeline crosswalk rules"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "department_cue.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "department_cue.schema.json",
+      "title": "Department Cue",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "cue_id",
+        "department",
+        "event_ref",
+        "trigger",
+        "action",
+        "safety_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "cue_id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9]{1,9}-[0-9]{3,}$"
+        },
+        "department": {
+          "type": "string",
+          "minLength": 2
+        },
+        "event_ref": {
+          "type": "string",
+          "pattern": "^(PGM|TECH|FIN)-[0-9]{3}$"
+        },
+        "trigger": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "description",
+            "verification_state"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verification_state": {
+              "enum": [
+                "verified",
+                "provisional",
+                "unverified"
+              ]
+            }
+          }
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timing_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "confirmation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "abort_or_hold_action": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "safety_state": {
+          "enum": [
+            "not_applicable",
+            "pending_review",
+            "restricted",
+            "approved_with_evidence",
+            "hold",
+            "prohibited"
+          ]
+        }
+      }
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "actual_performance_timing_log",
+  "document_class": "record",
+  "title": "Actual Performance Timing Log",
+  "description": "Empty controlled contract for evidence-backed performance-instance timing, holds, applause/dialogue, variance, and reasons",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Controlled PGM/TECH/FIN order; Appendix B",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled event identity and timing-record requirements"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "PERF-01 and REP-02 requirements and acceptance criteria",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Performer-track and performance-record contract"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_program_timing_profiles_json",
+      "path": "extract/compendium/02_show_program_and_timeline/program_timing_profiles.json",
+      "sha256": "dc0eaad5e1558153209278d7102914c3ab1d41e1706096366070f0c58c2b2b12",
+      "locator": "controlled data and governance",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Referenced inactive execution/timing contract"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_show_state_vocabulary_json",
+      "path": "extract/compendium/02_show_program_and_timeline/show_state_vocabulary.json",
+      "sha256": "b7df6f72c527565ca6200ac349a26b4d86f617fc75de1eea3e12ba4f63a373b8",
+      "locator": "controlled data and governance",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Referenced inactive execution/timing contract"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_run_of_show_json",
+      "path": "extract/compendium/02_show_program_and_timeline/run_of_show.json",
+      "sha256": "ebe1932b8ccb68acd0f16aae9b4387c8c823bcbe4f3333fcf0cb7792dcf78f96",
+      "locator": "controlled data and governance",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Referenced inactive execution/timing contract"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "record_state": "empty_contract_not_active_record",
+    "generation_state": "not_generated",
+    "authority_boundary": "Records describe what occurred and never silently change approved program order, duration, calls, or safety policy.",
+    "immutability_rule": "Once authorized, performance_instance_id, source timestamps, evidence references, and audit identity are append-only; corrections require a linked superseding record.",
+    "required_record_contract": {
+      "performance_instance_id": "required immutable reference to an evidence-backed show instance",
+      "record_id": "required immutable unique identity",
+      "timeline_or_event_ref": "required controlled event reference",
+      "source_clock_id": "required identified clock/source",
+      "source_start_timestamp": "nullable until observed",
+      "source_stop_timestamp": "nullable until observed",
+      "actual_duration_seconds": "nullable and derived only when supported",
+      "hold_intervals": "array of sourced start/stop/reason/authority records",
+      "applause_or_dialogue_intervals": "array of sourced classified intervals",
+      "planned_duration_seconds": "nullable controlled profile reference, not copied authority",
+      "variance_seconds": "nullable derived value",
+      "variance_reason": "nullable evidence-backed classification",
+      "show_state_refs": "required observed state links",
+      "evidence_refs": "required source path/hash/locator references",
+      "authorization": {
+        "recorded_by_role": "required",
+        "authorized_by_role": "required",
+        "authorized_at": "required timestamp"
+      },
+      "safety_or_incident_refs": "required array; empty only after explicit no-link confirmation"
+    },
+    "records": [],
+    "record_count": 0,
+    "unknown_value_rule": "Unknown timestamps, durations, variance, reasons, and links remain null; absence is never zero.",
+    "activation_gate": "Requires a registered performance instance, synchronized source clock, provenance, recorder authorization, and applicable incident/safety linkage review before accepting a record.",
+    "unresolved_requirements": [
+      "Actual performance-instance evidence",
+      "Clock identity and synchronization evidence",
+      "Authorized recorder/reviewer and incident linkage"
+    ]
+  }
+}

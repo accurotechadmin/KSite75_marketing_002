@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "project_scope_and_objectives",
+  "document_class": "plan",
+  "title": "Project Scope And Objectives",
+  "description": "Audience promise; production objectives; booking/repeatability objectives; exclusions; success measures",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "purpose, scope, document identity, control rules",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled program scope and identity boundary"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "purpose, scope, PGM/TECH/FIN references",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Supporting-document domain and identity boundary"
+    },
+    {
+      "source_id": "source:docs_mastergameplan_md",
+      "path": "docs/mastergameplan.md",
+      "sha256": "29d9e47f6e22dc5c159f3fd8837013afd065860dd4d2d698e8dd4ec389e53f82",
+      "locator": "project description; planning families; goals",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Strategic objectives and repeatability candidates"
+    },
+    {
+      "source_id": "source:docs_current_documentation_groundwork_plan_md",
+      "path": "docs/current_documentation_groundwork_plan.md",
+      "sha256": "82d2299c32d8fe270ac35f42f84c85f89be80abbd13a8f8e9f6177ebb01974a7",
+      "locator": "goals; current-document architecture; public presentation rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Current scope boundaries and documentation objectives"
+    },
+    {
+      "source_id": "source:docs_brand_story_style_guide_inventory_md",
+      "path": "docs/brand_story_style_guide_inventory.md",
+      "sha256": "2270c92ab93e7986664691500758308487579adc658537da189136b19cce8b9f",
+      "locator": "rights posture and guardrails",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Rights-aware public-output constraints"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_source_authority_policy_json",
+      "path": "extract/compendium/00_control_and_governance/source_authority_policy.json",
+      "sha256": "8b330f8fa66615067494490bbd17ff7ce210e9f106cce086eb98dbcac9a2741d",
+      "locator": "AUTH-001 through AUTH-006",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance constraints"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "scope_boundaries": {
+      "in_scope": [
+        "Controlled, reusable documentation for a live theatrical tribute production.",
+        "Event-specific planning through verified event, venue, schedule, personnel, safety, rights, and release records.",
+        "Audience-facing materials that use verified facts and original or cleared assets.",
+        "Repeatable production, booking, operating, and closeout workflows."
+      ],
+      "out_of_scope": [
+        "Claims of official KISS or Gene Simmons affiliation, endorsement, sponsorship, or rights clearance without evidence.",
+        "Promotion of prototype, runtime, draft, historical, or generated material to approved canon.",
+        "Unverified dates, venues, offers, capacities, named partners, or personnel assignments as durable facts.",
+        "Storage of secrets, raw personal contacts, submissions, or sensitive diagnostics in this public-readable compendium.",
+        "Creative or schedule instructions that override safety HOLD, ABORT, or STOP authority."
+      ]
+    },
+    "objective_classes": [
+      {
+        "objective_id": "OBJ-AUDIENCE",
+        "objective": "Deliver a coherent audience-facing theatrical tribute experience using only verified claims and cleared presentation material.",
+        "measure_classes": [
+          "release-gate pass evidence",
+          "accessibility review evidence",
+          "rights/claim review evidence"
+        ],
+        "measurement_state": "definitions_ready_targets_unresolved"
+      },
+      {
+        "objective_id": "OBJ-PRODUCTION",
+        "objective": "Make approved show intent executable, safe, traceable, and recoverable across departments.",
+        "measure_classes": [
+          "readiness gate outcomes",
+          "cue identity coverage",
+          "rehearsal and incident closeout"
+        ],
+        "measurement_state": "definitions_ready_targets_unresolved"
+      },
+      {
+        "objective_id": "OBJ-REPEATABILITY",
+        "objective": "Separate reusable GEN controls from event-specific facts so the production can be advanced and repeated without fact forks.",
+        "measure_classes": [
+          "controlled-record reuse",
+          "event-specific verification coverage",
+          "canon synchronization findings"
+        ],
+        "measurement_state": "definitions_ready_targets_unresolved"
+      },
+      {
+        "objective_id": "OBJ-BOOKING",
+        "objective": "Support evidence-based venue and booking review without making an unapproved public or commercial promise.",
+        "measure_classes": [
+          "verified packet completeness",
+          "venue requirement closure",
+          "approval-gate evidence"
+        ],
+        "measurement_state": "definitions_ready_targets_unresolved"
+      }
+    ],
+    "constraints": [
+      "Controlled DOCX domains and supporting identities remain distinct.",
+      "Every managed item is Timeline-specific or GEN.",
+      "Safety precedence is unconditional.",
+      "Privacy minimization and restricted-reference-only handling apply.",
+      "Public claims require affiliation, rights, accessibility, and factual verification as applicable."
+    ],
+    "dependencies": [
+      "project_identity.json",
+      "../00_control_and_governance/source_authority_policy.json",
+      "../00_control_and_governance/data_classification_policy.json",
+      "../90_schemas_and_vocabularies/role_vocabulary.json"
+    ],
+    "unresolved_decisions": [
+      {
+        "decision_id": "SCOPE-Q-001",
+        "decision_needed": "Approve measurable targets and event-specific success thresholds.",
+        "owner_role": "role:owner_performer",
+        "effect": "Targets remain unresolved; objective classes may be reviewed."
+      },
+      {
+        "decision_id": "SCOPE-Q-002",
+        "decision_needed": "Approve the first event, venue, offer, and publication commitment in their dedicated records.",
+        "owner_role": "role:owner_performer",
+        "effect": "No dated public promise is authorized here."
+      }
+    ]
+  }
+}

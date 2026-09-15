@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "transition_registry",
+  "document_class": "registry",
+  "title": "Transition Registry",
+  "description": "Known set and technical-event boundaries with unknown operational transition facts preserved",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Program/set tables and Sections 7-8 transition notes",
+      "extraction_method": "SHA-256 plus WordprocessingML text/table extraction and targeted manual reconciliation",
+      "stated_use": "Ordered boundaries and special-event candidates"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_set_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/set_registry.json",
+      "sha256": "7ee8b779dc6fd81ca3f84dc789d8bd6b7972feaddf89ac89dd1aa901ca7ec974",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled set boundaries"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_special_technical_event_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/special_technical_event_registry.json",
+      "sha256": "096235e12b9838ab2522cae793ea2484a3128da1fe29e5e0b56544f4651179ba",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "TECH relationships, conflicts, and readiness gates"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_program_timeline_crosswalk_json",
+      "path": "extract/compendium/02_show_program_and_timeline/program_timeline_crosswalk.json",
+      "sha256": "08dbb52b0dc1b4d9825fd1458c3df35da0026f268f72fc57d465d021aca8a551",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Reviewed provisional Timeline relations"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_department_cue_crosswalk_json",
+      "path": "extract/compendium/02_show_program_and_timeline/department_cue_crosswalk.json",
+      "sha256": "70e65a27726c1b88f7ef364c6008cd0d28e2c19bcfcbc0cd6c47791c65c15a8a",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Pending department allocations and concurrence"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "unknown_value_rule": "Unknown duration, trigger, costume, scenic, spoken, hold, and reset facts remain null; null duration never means zero.",
+    "safety_rule": "No special-event transition is executable until trigger conflict resolution, controlled approval, department concurrence, readiness gates, and safety authority permit it.",
+    "records": [
+      {
+        "transition_id": "TRN-SET-001-002",
+        "transition_type": "between_set",
+        "from_ref": "SET-001",
+        "to_ref": "SET-002",
+        "related_event_refs": [
+          "PGM-006",
+          "PGM-007"
+        ],
+        "timeline_moment_ref": null,
+        "boundary_state": "known_order_boundary",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "withheld_pending_controlled_approval",
+        "notes": "Only the ordered set boundary is supported; operational transition facts remain unknown."
+      },
+      {
+        "transition_id": "TRN-SET-002-003",
+        "transition_type": "between_set",
+        "from_ref": "SET-002",
+        "to_ref": "SET-003",
+        "related_event_refs": [
+          "PGM-011",
+          "PGM-012"
+        ],
+        "timeline_moment_ref": null,
+        "boundary_state": "known_order_boundary",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "withheld_pending_controlled_approval",
+        "notes": "Only the ordered set boundary is supported; operational transition facts remain unknown."
+      },
+      {
+        "transition_id": "TRN-SET-003-004",
+        "transition_type": "between_set",
+        "from_ref": "SET-003",
+        "to_ref": "SET-004",
+        "related_event_refs": [
+          "PGM-016",
+          "PGM-017"
+        ],
+        "timeline_moment_ref": null,
+        "boundary_state": "known_order_boundary",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "withheld_pending_controlled_approval",
+        "notes": "Only the ordered set boundary is supported; operational transition facts remain unknown."
+      },
+      {
+        "transition_id": "TRN-SET-004-005",
+        "transition_type": "between_set",
+        "from_ref": "SET-004",
+        "to_ref": "SET-005",
+        "related_event_refs": [
+          "PGM-021",
+          "PGM-022"
+        ],
+        "timeline_moment_ref": null,
+        "boundary_state": "known_order_boundary",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "withheld_pending_controlled_approval",
+        "notes": "Only the ordered set boundary is supported; operational transition facts remain unknown."
+      },
+      {
+        "transition_id": "TRN-SET-005-006",
+        "transition_type": "between_set",
+        "from_ref": "SET-005",
+        "to_ref": "SET-006",
+        "related_event_refs": [
+          "PGM-025",
+          "PGM-026"
+        ],
+        "timeline_moment_ref": null,
+        "boundary_state": "known_order_boundary",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "withheld_pending_controlled_approval",
+        "notes": "Only the ordered set boundary is supported; operational transition facts remain unknown."
+      },
+      {
+        "transition_id": "TRN-TECH-001",
+        "transition_type": "special_technical_event",
+        "from_ref": "PGM-002",
+        "to_ref": "PGM-003",
+        "related_event_refs": [
+          "TECH-001",
+          "PGM-002",
+          "PGM-003"
+        ],
+        "timeline_moment_ref": "timeline:trn-001",
+        "boundary_state": "relationship_known_trigger_unresolved",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved_conflicting_candidates",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "special_technical_event_registry",
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "blocked_pending_approval_readiness_and_trigger_resolution",
+        "notes": "Candidate trigger wording is preserved upstream; this registry does not select or normalize it."
+      },
+      {
+        "transition_id": "TRN-TECH-002",
+        "transition_type": "special_technical_event",
+        "from_ref": "PGM-006",
+        "to_ref": "PGM-007",
+        "related_event_refs": [
+          "TECH-002",
+          "PGM-006",
+          "PGM-007"
+        ],
+        "timeline_moment_ref": "timeline:cst-001",
+        "boundary_state": "relationship_known_trigger_unresolved",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved_conflicting_candidates",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "special_technical_event_registry",
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "blocked_pending_approval_readiness_and_trigger_resolution",
+        "notes": "Candidate trigger wording is preserved upstream; this registry does not select or normalize it."
+      },
+      {
+        "transition_id": "TRN-TECH-003",
+        "transition_type": "special_technical_event",
+        "from_ref": "PGM-014",
+        "to_ref": "PGM-015",
+        "related_event_refs": [
+          "TECH-003",
+          "PGM-014",
+          "PGM-015"
+        ],
+        "timeline_moment_ref": "timeline:vid-001",
+        "boundary_state": "relationship_known_trigger_unresolved",
+        "duration_seconds": null,
+        "duration_state": "unknown_not_zero",
+        "trigger": null,
+        "trigger_state": "unresolved_conflicting_candidates",
+        "costume_facts": null,
+        "scenic_facts": null,
+        "spoken_facts": null,
+        "hold_facts": null,
+        "reset_facts": null,
+        "readiness_dependencies": [
+          "special_technical_event_registry",
+          "department_cue_crosswalk"
+        ],
+        "execution_state": "blocked_pending_approval_readiness_and_trigger_resolution",
+        "notes": "Candidate trigger wording is preserved upstream; this registry does not select or normalize it."
+      }
+    ]
+  }
+}

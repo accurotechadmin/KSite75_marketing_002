@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "finale_and_audience_release_registry",
+  "document_class": "authority",
+  "title": "Finale and Audience Release Registry",
+  "description": "Controlled FIN identities, ordered finale actions, fail-closed audience release, and unresolved finale timing/version decisions",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 6–8; special technical, finale/audience-release, and unresolved-decision registers",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled TECH/FIN identities, relationships, triggers, requirements, and unresolved decisions"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_responsibility_matrix_json",
+      "path": "extract/compendium/01_project_event_and_people/responsibility_matrix.json",
+      "sha256": "40fa70ce7447a19887d4c922ecb633ab664dc454b2eedfb346a6b0504d6ee09c",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Role accountability, specialist concurrence, and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "authority_boundary": "FIN actions remain unapproved and non-call-ready; HOLD, ABORT, and STOP authority overrides the planned sequence.",
+    "audience_release_rule": "FIN-003 must fail closed until objective safe-stage evidence and explicit Stage Manager and FOH authorization are recorded. Unknown conditions are never interpreted as satisfied.",
+    "sequence": [
+      "FIN-001",
+      "FIN-002",
+      "FIN-003",
+      "FIN-004"
+    ],
+    "records": [
+      {
+        "finale_event_id": "FIN-001",
+        "legacy_id": "E-06",
+        "order": 1,
+        "action": "Finale hold / final picture",
+        "program_event_refs": [
+          "PGM-030"
+        ],
+        "trigger": "Final musical button of PGM-030",
+        "trigger_state": "blocked_pending_approved_pgm_030_version_and_duration",
+        "departments": [
+          "SM",
+          "AUD",
+          "LX",
+          "VID",
+          "PERF",
+          "FX"
+        ],
+        "execution_requirement": "Hold the approved final stage picture until a predetermined, rehearsed, objective count, applause condition, or Stage Manager release.",
+        "required_evidence": [
+          "approved PGM-030 version and duration",
+          "rehearsed objective release condition",
+          "department readiness and safety concurrence"
+        ],
+        "authorization_state": "pending controlled approval",
+        "safety_override": true,
+        "source_locator": "Cue Book Section 7 row FIN-001 and Section 8 R-002"
+      },
+      {
+        "finale_event_id": "FIN-002",
+        "legacy_id": "E-07",
+        "order": 2,
+        "action": "Final blackout / media stop",
+        "program_event_refs": [
+          "PGM-030"
+        ],
+        "trigger": "Stage Manager release from FIN-001",
+        "trigger_state": "withheld_until_fin_001_objective_release",
+        "departments": [
+          "SM",
+          "LX",
+          "AUD",
+          "VID"
+        ],
+        "execution_requirement": "Execute the approved blackout and audio/video stop or fade; determine and approve whether a screen image remains active.",
+        "required_evidence": [
+          "FIN-001 completion confirmation",
+          "approved blackout/media state",
+          "department concurrence"
+        ],
+        "authorization_state": "pending controlled approval",
+        "safety_override": true,
+        "source_locator": "Cue Book Section 7 row FIN-002"
+      },
+      {
+        "finale_event_id": "FIN-003",
+        "legacy_id": "E-08",
+        "order": 3,
+        "action": "House release / walk-out",
+        "program_event_refs": [
+          "PGM-030"
+        ],
+        "trigger": "Objective stage and audience conditions safe, with Stage Manager and FOH authorization",
+        "trigger_state": "fail_closed_evidence_required",
+        "departments": [
+          "SM",
+          "FOH",
+          "LX",
+          "AUD",
+          "VID"
+        ],
+        "execution_requirement": "Only after safe-stage evidence and joint SM/FOH authorization, restore approved house-light level, start approved walk-out media, and release the audience.",
+        "required_evidence": [
+          "safe-stage confirmation",
+          "safe audience/egress condition",
+          "Stage Manager authorization",
+          "FOH authorization",
+          "approved house-light and walk-out media state"
+        ],
+        "authorization_state": "pending controlled approval",
+        "audience_release_authorized": false,
+        "safety_override": true,
+        "source_locator": "Cue Book Section 7 row FIN-003"
+      },
+      {
+        "finale_event_id": "FIN-004",
+        "legacy_id": "E-09",
+        "order": 4,
+        "action": "Stage clear / post-show turnover",
+        "program_event_refs": [
+          "PGM-030"
+        ],
+        "trigger": "All performers and moving equipment confirmed clear",
+        "trigger_state": "fail_closed_evidence_required",
+        "departments": [
+          "SM",
+          "DECK",
+          "WARD",
+          "PERF",
+          "FX",
+          "AUTO"
+        ],
+        "execution_requirement": "Confirm the stage safe before reset, maintenance, or load-out begins.",
+        "required_evidence": [
+          "performer clear confirmation",
+          "moving-equipment clear confirmation",
+          "stage-safe confirmation"
+        ],
+        "authorization_state": "pending controlled approval",
+        "safety_override": true,
+        "source_locator": "Cue Book Section 7 row FIN-004"
+      }
+    ],
+    "record_count": 4,
+    "dependencies": [
+      "program_event_registry.json",
+      "program_timing_profiles.json",
+      "../01_project_event_and_people/responsibility_matrix.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "FIN-Q-001",
+        "question": "What exact approved PGM-030 version and positive duration govern the finale?",
+        "state": "evidence_and_human_decision_required"
+      },
+      {
+        "question_id": "FIN-Q-002",
+        "question": "What approved objective conditions govern final pose, bows, blackout, walk-out, safe-stage confirmation, and audience release?",
+        "state": "evidence_and_human_decision_required"
+      },
+      {
+        "question_id": "FIN-Q-003",
+        "question": "Is there an approved encore or false-ending sequence, and if so what timing and calls apply?",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

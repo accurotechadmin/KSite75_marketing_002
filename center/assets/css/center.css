@@ -1,0 +1,49 @@
+/**
+ * Purpose: This stylesheet establishes the first visual scaffolding for the centralized owner command center with accessible contrast, black-first arena-command tone, and simple responsive layout without introducing a build step.
+ * Components to populate: design tokens, shell grid, sidebar, topbar, panels, cards, tables, status pills, forms, focus states, mobile navigation, print/export layouts, settings inventory views, and alert strips.
+ */
+:root { color-scheme: dark; --bg: #080808; --panel: #151515; --text: #f5f1e8; --muted: #b8aca0; --accent: #ff6a00; --line: #3a332c; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; }
+a { color: inherit; }
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: var(--accent); color: #000; padding: .75rem; z-index: 10; }
+.center-shell { min-height: 100vh; display: grid; grid-template-columns: 18rem 1fr; }
+.center-sidebar { border-right: 1px solid var(--line); padding: 1rem; background: #0d0d0d; }
+.center-sidebar nav { display: grid; gap: .35rem; margin-top: 1rem; }
+.center-sidebar a { padding: .5rem .65rem; border: 1px solid transparent; border-radius: .5rem; text-decoration: none; color: var(--muted); }
+.center-sidebar a[aria-current="page"] { color: var(--text); border-color: var(--accent); background: #21150b; }
+.center-topbar, .center-footer { border-bottom: 1px solid var(--line); padding: 1rem 1.25rem; }
+.center-main { padding: 1.25rem; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem; margin-bottom: 1rem; }
+@media (max-width: 850px) { .center-shell { grid-template-columns: 1fr; } .center-sidebar { border-right: 0; border-bottom: 1px solid var(--line); } }
+
+.center-table { width: 100%; border-collapse: collapse; }
+.center-table th, .center-table td { text-align: left; vertical-align: top; border-top: 1px solid var(--line); padding: .55rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1rem; }
+.card h3 { margin-top: 0; }
+.warning-strip { border: 1px solid #ff6a00; background: #241104; padding: .8rem; border-radius: .75rem; margin-bottom: 1rem; }
+
+.hero-panel { background: linear-gradient(135deg, #171717, #111); border: 1px solid var(--line); border-radius: 1rem; padding: 1.35rem; margin-bottom: 1rem; }
+.hero-panel h1 { margin: .15rem 0 .5rem; font-size: clamp(1.6rem, 3vw, 2.35rem); }
+.pill { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: .2rem .55rem; color: var(--muted); background: #101010; font-size: .8rem; }
+.card { min-width: 0; }
+.card p { overflow-wrap: anywhere; }
+
+.check-list { padding-left: 1.2rem; }
+.disabled-actions { display: grid; gap: .7rem; }
+.disabled-actions label { display: block; color: var(--muted); padding: .65rem .8rem; border: 1px dashed var(--line); border-radius: .7rem; background: rgba(255,255,255,.03); }
+.pill.timeline { border-color: rgba(255, 207, 92, .45); }
+.pill.disclosure { border-color: rgba(97, 197, 255, .45); }
+.pill.inquiry { border-color: rgba(255, 120, 97, .45); }
+.pill.muted { opacity: .7; }
+
+.control-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 1rem; }
+.disabled-control { border: 1px dashed var(--line); border-radius: .9rem; padding: 1rem; background: rgba(255,255,255,.025); opacity: .92; }
+.disabled-control label { display: grid; gap: .35rem; margin: .75rem 0; color: var(--muted); }
+.disabled-control input, .disabled-control select { width: 100%; border: 1px solid var(--line); border-radius: .55rem; padding: .55rem; background: #0b0b0b; color: var(--muted); }
+.control-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0; }
+.control-actions button { border: 1px solid var(--line); border-radius: 999px; padding: .45rem .65rem; background: #171717; color: var(--muted); cursor: not-allowed; }
+.control-meta { padding-left: 1.1rem; color: var(--muted); }
+.launch-lane { border-left: .25rem solid var(--accent); }

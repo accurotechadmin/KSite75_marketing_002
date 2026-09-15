@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.cue",
+  "source_document": {
+    "path": "docs/cue.txt",
+    "title": "Just One KISS - Working Cue and Setlist Draft",
+    "format": "text_markdown",
+    "category": "show_flow",
+    "role": "Current working cue and setlist draft for proposed set blocks, songs, durations, and cue seeds.",
+    "source_size_bytes": 12248
+  },
+  "timeline_classification": "TIMELINE_SPECIFIC_DRAFT",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "two_person_execution_model": {
+      "performer": "single performer",
+      "crew_operator": "single show-control system"
+    },
+    "rights_posture": "Public outputs must be public-ready, original, reviewed, and focused on the event experience."
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "show_flow",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as stable structured source data; prototype layouts may vary but should not fork facts away from this SSOT record."
+  },
+  "content_summary": "Current working cue and setlist draft for proposed set blocks, songs, durations, and cue seeds.",
+  "canonical_records": [
+    {
+      "record_id": "cue.working_draft",
+      "title": "Working cue and setlist draft",
+      "timeline_moment_id_or_gen": "TIMELINE_SPECIFIC_DRAFT",
+      "status": "proposed",
+      "rights_status": "needs_review",
+      "safety_status": "needs_review"
+    }
+  ],
+  "relationships": {
+    "source_path": "docs/cue.txt",
+    "related_ssot_documents": [],
+    "related_human_documents": []
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-13",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and docs/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-13",
+    "ssot_companion_purpose": "Machine-readable seed for website prototypes, owner-admin views, generated materials, and future production data files."
+  }
+}

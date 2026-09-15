@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "scaffold_id": "SC-MAIN",
+  "revision": 1,
+  "dimensions": {
+    "width": 32.0,
+    "depth": 14.0,
+    "height": 15.0
+  },
+  "tower": {
+    "width": 3.5,
+    "depth": 4.0
+  },
+  "rails": {
+    "lower": 7.5,
+    "primary": 11.5,
+    "upper": 14.5
+  },
+  "position": {
+    "x": 0.0,
+    "y": 7.0,
+    "z": 0.0
+  },
+  "material": "dull silver steel/aluminum",
+  "verified": false,
+  "updated_at": "2026-07-24T21:36:58.802624+00:00"
+}

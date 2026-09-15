@@ -1,0 +1,719 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.inventory_reference",
+  "source_document": {
+    "path": "docs/inventory_reference.md",
+    "title": "Inventory Reference Manual: QLC+ / DMX Lighting Installation",
+    "format": "markdown",
+    "category": "technical_inventory",
+    "role": "Authoritative lighting/DMX fixture identity, patch, channel maps, and QLC+ programming reference.",
+    "source_size_bytes": 52504
+  },
+  "timeline_classification": "GEN_WITH_TIMELINE_LINKS",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "two_person_execution_model": {
+      "performer": "single performer",
+      "crew_operator": "single show-control system"
+    },
+    "rights_posture": "Public outputs must be public-ready, original, reviewed, and focused on the event experience."
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "technical_inventory",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as stable structured source data; prototype layouts may vary but should not fork facts away from this SSOT record."
+  },
+  "content_summary": "Authoritative lighting/DMX fixture identity, patch, channel maps, and QLC+ programming reference.",
+  "canonical_records": [
+    {
+      "record_id": "inventory.patch.bright_1_bright_4",
+      "title": "Bright 1–Bright 4 DMX 1–4",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Bright 1–Bright 4: 1–4. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_26",
+      "title": "Honeycomb [26] DMX 9–15",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [26]: 9–15. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.1_plug_4_plug",
+      "title": "1 Plug–4 Plug DMX 21–24",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for 1 Plug–4 Plug: 21–24. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_27",
+      "title": "Honeycomb [27] DMX 33–39",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [27]: 33–39. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_30",
+      "title": "Honeycomb [30] DMX 49–55",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [30]: 49–55. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_28",
+      "title": "Honeycomb [28] DMX 57–63",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [28]: 57–63. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_32",
+      "title": "Honeycomb [32] DMX 65–71",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [32]: 65–71. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_31",
+      "title": "Honeycomb [31] DMX 73–79",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [31]: 73–79. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_29",
+      "title": "Honeycomb [29] DMX 81–87",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [29]: 81–87. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_33",
+      "title": "Honeycomb [33] DMX 89–95",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [33]: 89–95. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.kiss_k_k_i_i_s_s_z_z",
+      "title": "KISS `K k I i S s Z z DMX 129–136",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for KISS `K k I i S s Z z: 129–136. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_34",
+      "title": "Honeycomb [34] DMX 169–175",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [34]: 169–175. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_13",
+      "title": "Spot Portable [13] DMX 177–181",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [13]: 177–181. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_21",
+      "title": "Spot Portable [21] DMX 183–187",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [21]: 183–187. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_35",
+      "title": "Honeycomb [35] DMX 193–199",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [35]: 193–199. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_18",
+      "title": "Spot Portable [18] DMX 201–205",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [18]: 201–205. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_22",
+      "title": "Spot Portable [22] DMX 207–211",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [22]: 207–211. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_36",
+      "title": "Honeycomb [36] DMX 217–223",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [36]: 217–223. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_19",
+      "title": "Spot Portable [19] DMX 225–229",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [19]: 225–229. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_23",
+      "title": "Spot Portable [23] DMX 231–235",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [23]: 231–235. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_37",
+      "title": "Honeycomb [37] DMX 241–247",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [37]: 241–247. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_20",
+      "title": "Spot Portable [20] DMX 249–253",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [20]: 249–253. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.spot_portable_24",
+      "title": "Spot Portable [24] DMX 255–259",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Spot Portable [24]: 255–259. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_38",
+      "title": "Honeycomb [38] DMX 265–271",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [38]: 265–271. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.honeycomb_39",
+      "title": "Honeycomb [39] DMX 289–295",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Honeycomb [39]: 289–295. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_42",
+      "title": "Rotator [42] DMX 297–310",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [42]: 297–310. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_43",
+      "title": "Rotator [43] DMX 321–334",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [43]: 321–334. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_44",
+      "title": "Rotator [44] DMX 337–350",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [44]: 337–350. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_45",
+      "title": "Rotator [45] DMX 361–374",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [45]: 361–374. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_46",
+      "title": "Rotator [46] DMX 385–398",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [46]: 385–398. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_47",
+      "title": "Rotator [47] DMX 409–422",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [47]: 409–422. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_48",
+      "title": "Rotator [48] DMX 441–454",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [48]: 441–454. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "inventory.patch.rotator_49",
+      "title": "Rotator [49] DMX 465–478",
+      "section": "inventory",
+      "category": "dmx patch",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "active",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "owned",
+      "safety_status": "needs review",
+      "description": "Universe 1 patch range for Rotator [49]: 465–478. Gaps are intentional and should not be repacked without updating QLC+, labels, patch sheets, and references.",
+      "notes": "Derived from docs/rig.md Universe 1 patch.",
+      "linked_files": [
+        "docs/rig.md"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    }
+  ],
+  "relationships": {
+    "source_path": "docs/inventory_reference.md",
+    "related_ssot_documents": [],
+    "related_human_documents": []
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-13",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and data/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-13",
+    "ssot_companion_purpose": "Machine-readable seed for website prototypes, owner-admin views, generated materials, and future production data files."
+  }
+}

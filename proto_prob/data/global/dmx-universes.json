@@ -1,0 +1,9 @@
+[
+  {
+    "universe": 1,
+    "name": "Main Stage Universe",
+    "channels": 512,
+    "protocol": "DMX512",
+    "status": "planned"
+  }
+]

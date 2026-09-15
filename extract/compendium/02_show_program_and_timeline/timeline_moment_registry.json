@@ -1,0 +1,1007 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/timeline_moment.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "timeline_moment_registry",
+  "document_class": "registry",
+  "title": "Timeline Moment Registry",
+  "description": "Controlled Timeline Moment namespaces, lifecycle, GEN distinction, and provisional cross-domain identity allocations",
+  "source_refs": [
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_timeline_moment_schema_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/timeline_moment.schema.json",
+      "sha256": "49d99704e08710536546d12c54931c2eb51d626583012078cbb610bea7315617",
+      "locator": "data.schema",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Timeline identity and record validation contract"
+    },
+    {
+      "source_id": "source:docs_ssot_timeline_moment_registry_json",
+      "path": "docs/ssot/timeline_moment_registry.json",
+      "sha256": "6a46c2c95191a87669a391145720134ef3e1cb5cdd6c6cd8a23f30a26a6cd482",
+      "locator": "project_rules, canonical_records, maintenance",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Draft family vocabulary and GEN classification rule; not approval authority"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_show_timeline_json",
+      "path": "docs/ssot/settings/show_timeline.json",
+      "sha256": "55c615c9c698912b7f5db2ec72fa3155a82fa8a4e1c0ebcad55721febb99d497",
+      "locator": "timeline_id_families and status rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Draft implementation vocabulary; not approval authority"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_program_event_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/program_event_registry.json",
+      "sha256": "e69b71ebee1918b533efe216480983edce51e460a7695ace6df4d9a46dbc1193",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Resolvable controlled PGM relationships"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_finale_and_audience_release_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/finale_and_audience_release_registry.json",
+      "sha256": "10d5471561ac3a522875d08de7bb7cacbdbee6a0c7af7b33b55b6f13938994f5",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled FIN relationships"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_special_technical_event_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/special_technical_event_registry.json",
+      "sha256": "096235e12b9838ab2522cae793ea2484a3128da1fe29e5e0b56544f4651179ba",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled TECH relationships"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "identity_rule": "Every managed record is Timeline-specific or GEN. GEN is a non-timeline scope, not an ID family allocation. PGM, TECH, and controlled FIN event identities remain distinct from Timeline Moment IDs even when text is identical.",
+    "lifecycle_states": [
+      "proposed_withheld",
+      "review",
+      "approved",
+      "active",
+      "retired",
+      "superseded"
+    ],
+    "approval_rule": "No proposed allocation becomes active, call-ready, public, or approved without controlled approval evidence and completed crosswalk review.",
+    "family_definitions": [
+      {
+        "family": "PRE",
+        "pattern": "PRE-###",
+        "purpose": "pre-show",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "OPEN",
+        "pattern": "OPEN-###",
+        "purpose": "opening",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "SET",
+        "pattern": "SET-###",
+        "purpose": "set-level",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "SONG",
+        "pattern": "SONG-###",
+        "purpose": "song/program",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "TRN",
+        "pattern": "TRN-###",
+        "purpose": "transition",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "CST",
+        "pattern": "CST-###",
+        "purpose": "costume-change",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "VID",
+        "pattern": "VID-###",
+        "purpose": "video/projection",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "LGT",
+        "pattern": "LGT-###",
+        "purpose": "lighting",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "FOG",
+        "pattern": "FOG-###",
+        "purpose": "fog",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "STR",
+        "pattern": "STR-###",
+        "purpose": "strobe",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "SPK",
+        "pattern": "SPK-###",
+        "purpose": "spoken/performance",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "FIN",
+        "pattern": "FIN-###",
+        "purpose": "finale",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "ENC",
+        "pattern": "ENC-###",
+        "purpose": "encore",
+        "allocation_state": "controlled_namespace_pending_approval"
+      },
+      {
+        "family": "POST",
+        "pattern": "POST-###",
+        "purpose": "post-show",
+        "allocation_state": "controlled_namespace_pending_approval"
+      }
+    ],
+    "gen_rule": {
+      "value": "GEN",
+      "classification": "general_not_timeline_specific",
+      "allocation_behavior": "No numbered GEN IDs; use GEN only when a record is genuinely non-timeline-specific or remains pending classification with an explicit review state."
+    },
+    "records": [
+      {
+        "record_id": "timeline:set-001",
+        "title": "Set 1 moment",
+        "status": "proposed_withheld",
+        "timeline_scope": "SET-001",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-001",
+          "PGM-002",
+          "PGM-003",
+          "PGM-004",
+          "PGM-005",
+          "PGM-006"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Set-level allocation; exact entry/exit transition remains unresolved."
+      },
+      {
+        "record_id": "timeline:set-002",
+        "title": "Set 2 moment",
+        "status": "proposed_withheld",
+        "timeline_scope": "SET-002",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-007",
+          "PGM-008",
+          "PGM-009",
+          "PGM-010",
+          "PGM-011"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Set-level allocation; exact entry/exit transition remains unresolved."
+      },
+      {
+        "record_id": "timeline:set-003",
+        "title": "Set 3 moment",
+        "status": "proposed_withheld",
+        "timeline_scope": "SET-003",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-012",
+          "PGM-013",
+          "PGM-014",
+          "PGM-015",
+          "PGM-016"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Set-level allocation; exact entry/exit transition remains unresolved."
+      },
+      {
+        "record_id": "timeline:set-004",
+        "title": "Set 4 moment",
+        "status": "proposed_withheld",
+        "timeline_scope": "SET-004",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-017",
+          "PGM-018",
+          "PGM-019",
+          "PGM-020",
+          "PGM-021"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Set-level allocation; exact entry/exit transition remains unresolved."
+      },
+      {
+        "record_id": "timeline:set-005",
+        "title": "Set 5 moment",
+        "status": "proposed_withheld",
+        "timeline_scope": "SET-005",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-022",
+          "PGM-023",
+          "PGM-024",
+          "PGM-025"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Set-level allocation; exact entry/exit transition remains unresolved."
+      },
+      {
+        "record_id": "timeline:set-006",
+        "title": "Set 6 moment",
+        "status": "proposed_withheld",
+        "timeline_scope": "SET-006",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-026",
+          "PGM-027",
+          "PGM-028",
+          "PGM-029",
+          "PGM-030"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Set-level allocation; exact entry/exit transition remains unresolved."
+      },
+      {
+        "record_id": "timeline:song-001",
+        "title": "Program moment 1",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-001",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-001"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-002",
+        "title": "Program moment 2",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-002",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-002"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-003",
+        "title": "Program moment 3",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-003",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-003"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-004",
+        "title": "Program moment 4",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-004",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-004"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-005",
+        "title": "Program moment 5",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-005",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-005"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-006",
+        "title": "Program moment 6",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-006",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-006"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-007",
+        "title": "Program moment 7",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-007",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-007"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-008",
+        "title": "Program moment 8",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-008",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-008"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-009",
+        "title": "Program moment 9",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-009",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-009"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-010",
+        "title": "Program moment 10",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-010",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-010"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-011",
+        "title": "Program moment 11",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-011",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-011"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-012",
+        "title": "Program moment 12",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-012",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-012"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-013",
+        "title": "Program moment 13",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-013",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-013"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-014",
+        "title": "Program moment 14",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-014",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-014"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-015",
+        "title": "Program moment 15",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-015",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-015"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-016",
+        "title": "Program moment 16",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-016",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-016"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-017",
+        "title": "Program moment 17",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-017",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-017"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-018",
+        "title": "Program moment 18",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-018",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-018"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-019",
+        "title": "Program moment 19",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-019",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-019"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-020",
+        "title": "Program moment 20",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-020",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-020"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-021",
+        "title": "Program moment 21",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-021",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-021"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-022",
+        "title": "Program moment 22",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-022",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-022"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-023",
+        "title": "Program moment 23",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-023",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-023"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-024",
+        "title": "Program moment 24",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-024",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-024"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-025",
+        "title": "Program moment 25",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-025",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-025"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-026",
+        "title": "Program moment 26",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-026",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-026"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-027",
+        "title": "Program moment 27",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-027",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-027"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-028",
+        "title": "Program moment 28",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-028",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-028"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-029",
+        "title": "Program moment 29",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-029",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-029"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:song-030",
+        "title": "Program moment 30",
+        "status": "proposed_withheld",
+        "timeline_scope": "SONG-030",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "PGM-030"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Provisional one-to-one Timeline allocation; does not replace the PGM identity or approve title/timing."
+      },
+      {
+        "record_id": "timeline:trn-001",
+        "title": "Platform-drop transition",
+        "status": "proposed_withheld",
+        "timeline_scope": "TRN-001",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "TECH-001",
+          "PGM-002",
+          "PGM-003"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Trigger candidates conflict; allocation does not select one."
+      },
+      {
+        "record_id": "timeline:cst-001",
+        "title": "Psycho Circus costume change",
+        "status": "proposed_withheld",
+        "timeline_scope": "CST-001",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "TECH-002",
+          "PGM-006",
+          "PGM-007"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "During/after trigger and duration unresolved."
+      },
+      {
+        "record_id": "timeline:vid-001",
+        "title": "Screen-drop transition",
+        "status": "proposed_withheld",
+        "timeline_scope": "VID-001",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "TECH-003",
+          "PGM-014",
+          "PGM-015"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Trigger candidates conflict; allocation does not select one."
+      },
+      {
+        "record_id": "timeline:fin-001",
+        "title": "Finale action 1",
+        "status": "proposed_withheld",
+        "timeline_scope": "FIN-001",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "FIN-001",
+          "PGM-030"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Timeline FIN identity remains distinct from the same-text controlled FIN event identity; crosswalk relation is pending review."
+      },
+      {
+        "record_id": "timeline:fin-002",
+        "title": "Finale action 2",
+        "status": "proposed_withheld",
+        "timeline_scope": "FIN-002",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "FIN-002",
+          "PGM-030"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Timeline FIN identity remains distinct from the same-text controlled FIN event identity; crosswalk relation is pending review."
+      },
+      {
+        "record_id": "timeline:fin-003",
+        "title": "Finale action 3",
+        "status": "proposed_withheld",
+        "timeline_scope": "FIN-003",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "FIN-003",
+          "PGM-030"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Timeline FIN identity remains distinct from the same-text controlled FIN event identity; crosswalk relation is pending review."
+      },
+      {
+        "record_id": "timeline:fin-004",
+        "title": "Finale action 4",
+        "status": "proposed_withheld",
+        "timeline_scope": "FIN-004",
+        "classification": "timeline_specific",
+        "confidence": "provisional",
+        "verification_state": "provisional",
+        "program_event_refs": [
+          "FIN-004",
+          "PGM-030"
+        ],
+        "linked_moment_ids": [],
+        "planned_offset": null,
+        "approval_evidence_refs": [],
+        "conflict_refs": [],
+        "source_refs": [],
+        "notes": "Timeline FIN identity remains distinct from the same-text controlled FIN event identity; crosswalk relation is pending review."
+      }
+    ],
+    "record_count": 43,
+    "draft_only_candidates_withheld": true,
+    "dependencies": [
+      "program_event_registry.json",
+      "set_registry.json",
+      "finale_and_audience_release_registry.json",
+      "special_technical_event_registry.json",
+      "../90_schemas_and_vocabularies/timeline_moment.schema.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "TIMELINE-Q-001",
+        "question": "Which provisional Timeline allocations and crosswalk relation types receive controlled approval?",
+        "state": "human_decision_required"
+      },
+      {
+        "question_id": "TIMELINE-Q-002",
+        "question": "Which PRE, OPEN, transition, lighting, fog, strobe, spoken, encore, and post-show moments have sufficient evidence for allocation?",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

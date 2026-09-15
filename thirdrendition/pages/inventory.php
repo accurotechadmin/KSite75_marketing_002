@@ -1,0 +1,3 @@
+<?php $rows = tr_page_records(tr_inventory_records()); tr_hero('DMX fixture inventory', 'All rig, fixture, manual, channel, and patch records', 'This page is for the owner/operator who wants lighting and DMX facts in one place. Click any item to open its full record, source JSON, linked files, and raw fields.'); tr_collection_filter('inventory'); ?>
+<section class="panel"><h2>Inventory records</h2><?php tr_owner_table($rows, 'No inventory records match this filter.'); ?></section>
+<section class="panel"><h2>Inventory cards</h2><div class="cards"><?php foreach ($rows as $r) tr_record_card($r); ?></div></section>

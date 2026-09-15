@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "source_authority_policy",
+  "document_class": "authority",
+  "title": "Source Authority Policy",
+  "description": "Domain authority hierarchy; conflict precedence; safety precedence; implementation-versus-policy rule",
+  "source_refs": [
+    {
+      "source_id": "source:readme_md",
+      "path": "README.md",
+      "sha256": "15f8a4423f078145734734d57fcae7fe7130e7a19c1bb63360bd16ff3e46d98d",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "whole file",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "whole file",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_canon_sync_policy_md",
+      "path": "center/docs/canon_sync_policy.md",
+      "sha256": "2d235c911ac4153aafb9122d01a176a3aa6e35c68fcc67a330280f6f1c5cbfea",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_public_release_gate_policy_md",
+      "path": "center/docs/public_release_gate_policy.md",
+      "sha256": "acfab8646c82cbf99b7581b4ee38d8e49e577cad75a87ff3c995000d6cff4ec5",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "policy_rules": [
+      {
+        "rule_id": "AUTH-001",
+        "rule": "Authority is domain-specific: the Show Control and Performance Cue Book controls PGM/TECH/FIN identity, order, and supplied timing; the Supporting Production Documentation Standard controls supporting-document requirements. Supporting sources reference those identities and do not create a competing show order."
+      },
+      {
+        "rule_id": "AUTH-002",
+        "rule": "Controlled approved evidence outranks review drafts, plans, runtime observations, backups, prompts, prototypes, generated views, and copied bundles within the same domain. Implementation demonstrates behavior but cannot establish policy."
+      },
+      {
+        "rule_id": "AUTH-003",
+        "rule": "Safety HOLD, ABORT, and STOP authority overrides planned timing, creative intent, and release readiness. The most conservative privacy, rights, safety, and approval restriction applies while authority is unresolved."
+      },
+      {
+        "rule_id": "AUTH-004",
+        "rule": "Every managed item is Timeline-specific or GEN. Current state, approved release, and immutable history remain separate classes."
+      },
+      {
+        "rule_id": "AUTH-005",
+        "rule": "Conflicting candidates remain recorded with provenance until an authorized role supplies controlled decision evidence; convenience, recency, or duplication alone does not resolve authority."
+      },
+      {
+        "rule_id": "AUTH-006",
+        "rule": "Public claims remain independent-tribute, rights-aware, and free of unsupported affiliation, sponsorship, endorsement, ownership, or clearance claims."
+      }
+    ],
+    "domain_precedence": [
+      {
+        "domain": "program_and_timing",
+        "primary": "source:01_authoritative_show_control_and_performance_cue_book_docx"
+      },
+      {
+        "domain": "supporting_production_documents",
+        "primary": "source:02_authoritative_supporting_production_documentation_standard_docx"
+      },
+      {
+        "domain": "repository_governance",
+        "primary": "controlled compendium authority leaves once approved",
+        "interim": "review records are proposals, not effective canon"
+      }
+    ]
+  }
+}

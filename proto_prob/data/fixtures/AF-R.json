@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "AF-R",
+  "fixture_type_id": "fixed_accent",
+  "display_name": "Floor R Accent",
+  "local_name": "AF-R",
+  "asset_tag": "AF-R",
+  "serial_number": null,
+  "category": "Fixed-color accent",
+  "status": "active",
+  "canonical": false,
+  "stage_layer": "lighting",
+  "zone_id": "P-USC",
+  "position": {
+    "x": -6,
+    "y": 2.5,
+    "z": 3.6
+  },
+  "rotation": {
+    "x": -35,
+    "y": 0,
+    "z": 0
+  },
+  "scale": 1.0,
+  "mounting": {
+    "point_id": null,
+    "description": "Estimated position",
+    "safety_cable": true
+  },
+  "focus_target_id": "P-CS",
+  "position_confidence": "estimated",
+  "position_verified_at": null,
+  "dmx": {
+    "enabled": true,
+    "universe": 1,
+    "start_address": 258,
+    "mode_id": "1ch",
+    "channel_count": 1,
+    "end_address": 258,
+    "preview_values": [
+      0
+    ],
+    "default_values": [
+      0
+    ],
+    "home_values": [
+      0
+    ],
+    "pan_invert": false,
+    "tilt_invert": false,
+    "wireless_receiver_id": null
+  },
+  "connections": {
+    "dmx_in_from": null,
+    "dmx_out_to": null,
+    "power_from": null
+  },
+  "power": {
+    "voltage": 120,
+    "watts": 40,
+    "current": null,
+    "circuit_id": null,
+    "source_device_id": "DP-F",
+    "output_number": 1,
+    "paired_output": null,
+    "dimmable": true,
+    "clean_power_required": false,
+    "connector": "Edison"
+  },
+  "simulation": {
+    "model_asset": null,
+    "material_profile": "default",
+    "fixed_color": "#ff2400",
+    "shadow_enabled": false,
+    "pick_proxy": true,
+    "visible": true
+  },
+  "photos": [],
+  "manuals": [],
+  "documents": [],
+  "source_evidence": [],
+  "open_questions": [
+    "Verify manufacturer/model, physical position, power and DMX settings."
+  ],
+  "maintenance": {
+    "last_tested": null,
+    "test_status": "not-tested",
+    "next_due": null,
+    "open_faults": [],
+    "service_record_ids": [],
+    "out_of_service_reason": null,
+    "notes": ""
+  },
+  "revision": 1,
+  "created_at": "2026-07-24T21:36:58.802624+00:00",
+  "created_by": "system",
+  "updated_at": "2026-07-24T21:36:58.802624+00:00",
+  "updated_by": "system",
+  "change_reason": "Initial generated MVP record"
+}

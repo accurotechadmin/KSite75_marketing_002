@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.honeycomb_manual",
+  "source_document": {
+    "path": "docs/ZQ01082-36PCS-Par-Light-RGB-with-Wireless-Remote-Control.pdf",
+    "title": "U'King ZQ01082 / Honeycomb PAR Manual",
+    "format": "pdf",
+    "category": "vendor_manual",
+    "role": "Vendor/manual reference for Honeycomb / U'King RGB PAR fixtures.",
+    "source_size_bytes": 3907949
+  },
+  "timeline_classification": "GEN",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "two_person_execution_model": {
+      "performer": "single performer",
+      "crew_operator": "single show-control system"
+    },
+    "rights_posture": "Public outputs must be public-ready, original, reviewed, and focused on the event experience."
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "vendor_manual",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as stable structured source data; prototype layouts may vary but should not fork facts away from this SSOT record."
+  },
+  "content_summary": "Vendor/manual reference for Honeycomb / U'King RGB PAR fixtures.",
+  "canonical_records": [
+    {
+      "record_id": "manual.honeycomb_manual",
+      "title": "U'King ZQ01082 / Honeycomb PAR Manual",
+      "timeline_moment_id_or_gen": "GEN",
+      "status": "reference",
+      "rights_status": "vendor_reference"
+    }
+  ],
+  "relationships": {
+    "source_path": "docs/ZQ01082-36PCS-Par-Light-RGB-with-Wireless-Remote-Control.pdf",
+    "related_ssot_documents": [],
+    "related_human_documents": []
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-13",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and docs/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-13",
+    "ssot_companion_purpose": "Machine-readable seed for website prototypes, owner-admin views, generated materials, and future production data files."
+  }
+}

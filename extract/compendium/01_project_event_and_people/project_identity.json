@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:owner_performer",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "project_identity",
+  "document_class": "authority",
+  "title": "Project Identity",
+  "description": "Canonical name; project type; description; independent-tribute posture; operating model; durable summaries",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "purpose, scope, document identity, control rules",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Controlled program scope and identity boundary"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "purpose, scope, PGM/TECH/FIN references",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Supporting-document domain and identity boundary"
+    },
+    {
+      "source_id": "source:readme_md",
+      "path": "README.md",
+      "sha256": "15f8a4423f078145734734d57fcae7fe7130e7a19c1bb63360bd16ff3e46d98d",
+      "locator": "Project at a Glance; Production Model; Public Presentation Standard",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Repository orientation and durable identity candidate"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_project_identity_json",
+      "path": "docs/ssot/settings/project_identity.json",
+      "sha256": "28db87e89da78e3018d1b34ebdd0b4002382653f637615e20262669ba976c96b",
+      "locator": "settings object",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Starter project identity candidate and explicit public guardrails"
+    },
+    {
+      "source_id": "source:docs_styleguide_md",
+      "path": "docs/styleguide.md",
+      "sha256": "a2f208dd7367c0de1e0b53088fd8244e14bdb1e8bab46a64eac3660382878484",
+      "locator": "opening scope; tribute-language and legal-safety guidance",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Independent-tribute presentation constraints"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_source_authority_policy_json",
+      "path": "extract/compendium/00_control_and_governance/source_authority_policy.json",
+      "sha256": "8b330f8fa66615067494490bbd17ff7ce210e9f106cce086eb98dbcac9a2741d",
+      "locator": "AUTH-001 through AUTH-006",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Authority, safety, Timeline/GEN, and public-claim rules"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "identity": {
+      "project_id": "project:just_one_kiss",
+      "canonical_name": "Just One KISS",
+      "project_type": "independent theatrical tribute stage-production project",
+      "durable_description": "A repeatable live theatrical tribute production centered on a Gene Simmons tribute performer and an audience-facing rock-spectacle experience.",
+      "operating_model": "Controlled documentation separates program, technical, financial, safety, public-release, and historical records; execution is event-specific while reusable governance remains GEN.",
+      "affiliation_posture": "independent_tribute_no_verified_official_affiliation"
+    },
+    "scope_model": {
+      "default_scope": "GEN",
+      "event_specific_rule": "Dates, venues, offers, personnel assignments, schedules, and event claims require an event or Timeline reference plus verification before use.",
+      "timeline_specific_rule": "Show actions and assets tied to an exact moment must reference a controlled Timeline Moment ID."
+    },
+    "verification_states": [
+      {
+        "claim": "canonical_name",
+        "value": "Just One KISS",
+        "state": "supported_for_review",
+        "basis": [
+          "README.md",
+          "docs/ssot/settings/project_identity.json"
+        ]
+      },
+      {
+        "claim": "project_type",
+        "value": "independent theatrical tribute stage-production project",
+        "state": "supported_for_review",
+        "basis": [
+          "README.md",
+          "docs/styleguide.md"
+        ]
+      },
+      {
+        "claim": "official_affiliation_or_endorsement",
+        "value": null,
+        "state": "not_verified",
+        "public_use": "Do not claim or imply."
+      },
+      {
+        "claim": "current_event_date_venue_or_offer",
+        "value": null,
+        "state": "unresolved_event_specific",
+        "public_use": "Resolve in event_registry before publication."
+      }
+    ],
+    "public_guardrails": [
+      "Describe an independent tribute experience; do not imply endorsement, sponsorship, partnership, ownership, or clearance without controlled evidence.",
+      "Use original, rights-reviewed public assets and claims.",
+      "Keep internal mechanics and unverified event facts out of public summaries.",
+      "Safety HOLD, ABORT, and STOP authority overrides planned presentation or timing."
+    ],
+    "dependencies": [
+      "../00_control_and_governance/source_authority_policy.json",
+      "../90_schemas_and_vocabularies/role_vocabulary.json"
+    ],
+    "unresolved_claims": [
+      {
+        "question_id": "PI-Q-001",
+        "question": "What controlled evidence, if any, supports a specific public event date, venue, or offer?",
+        "required_owner_role": "role:owner_performer",
+        "blocking_scope": "event-specific publication only"
+      },
+      {
+        "question_id": "PI-Q-002",
+        "question": "Who supplies controlled approval evidence for this project identity authority?",
+        "required_owner_role": "role:owner_performer",
+        "blocking_scope": "promotion from review to approved"
+      }
+    ]
+  }
+}

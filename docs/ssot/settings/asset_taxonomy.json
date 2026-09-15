@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.asset_taxonomy",
+  "title": "Asset Taxonomy",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "asset_types": [
+      "photo",
+      "video",
+      "graphic",
+      "document",
+      "prop",
+      "costume",
+      "fixture",
+      "venue_media",
+      "ad_creative"
+    ],
+    "required_metadata": [
+      "asset_name",
+      "asset_type",
+      "status",
+      "category",
+      "description",
+      "timeline_moment_id_or_gen",
+      "potential_website_use",
+      "potential_marketing_use",
+      "content_status",
+      "owner_or_source",
+      "needed_edits",
+      "priority",
+      "notes"
+    ],
+    "review_gates": [
+      "rights review",
+      "safety review",
+      "brand fit review",
+      "technical accuracy review"
+    ],
+    "website_placements": [
+      "hero",
+      "gallery",
+      "spectacle proof",
+      "press kit",
+      "background texture",
+      "ad landing page"
+    ]
+  }
+}

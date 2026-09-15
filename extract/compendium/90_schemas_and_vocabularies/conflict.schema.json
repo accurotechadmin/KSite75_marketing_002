@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "conflict.schema",
+  "document_class": "schema",
+  "title": "Conflict Schema",
+  "description": "Material candidate claims, authority assessment, affected documents, resolution, and approval evidence.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "documentation_control_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:cue_book",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:supporting_standard",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "normative input"
+    },
+    {
+      "source_id": "source:decisions",
+      "path": "center/data/decision_schema.php",
+      "sha256": "8d5d8fc7598bdb386858e8e3f43d224088fe66c6f69761bc44590db7ea7430ed",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "reconciled implementation input"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "conflict.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "conflict.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Conflict record",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conflict_id",
+        "claim_scope",
+        "status",
+        "materiality",
+        "candidates",
+        "affected_document_ids",
+        "decision_owner_role",
+        "created_at"
+      ],
+      "properties": {
+        "conflict_id": {
+          "type": "string",
+          "pattern": "^CONFLICT-[0-9]{3,}$"
+        },
+        "claim_scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "open",
+            "under_review",
+            "resolved",
+            "accepted_variance",
+            "superseded"
+          ]
+        },
+        "materiality": {
+          "type": "string",
+          "enum": [
+            "informational",
+            "minor",
+            "material",
+            "safety_critical"
+          ]
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "candidate_id",
+              "value",
+              "source_refs",
+              "authority_assessment"
+            ],
+            "properties": {
+              "candidate_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+              },
+              "value": {},
+              "source_refs": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "source_reference.schema.json#/data/schema"
+                }
+              },
+              "authority_assessment": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "affected_document_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+          },
+          "uniqueItems": true
+        },
+        "decision_owner_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resolution": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "approval_evidence_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "resolved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "source_mapping": [
+      "The Supporting Production Documentation Standard supplies controlled identity, revision, approval, distribution, and supersession rules.",
+      "Repository settings and owner-center contracts are reconciled as implementation evidence, not promoted over formal authority.",
+      "Approval is represented as evidence-bearing state; review completion alone cannot satisfy approved conditions."
+    ],
+    "validation_notes": [
+      "Formats require a JSON Schema validator with format assertion enabled.",
+      "Domain vocabularies remain external authorities and are intentionally not duplicated as exhaustive enums."
+    ]
+  }
+}

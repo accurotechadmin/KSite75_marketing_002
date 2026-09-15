@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a64d2bd8ad6ccadfdc05ee92",
+        "site": "just_one_kiss_site_base",
+        "email": "emaildustin@usa.com",
+        "name": null,
+        "city_zip": "49616",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-21T22:02:06+00:00"
+    },
+    {
+        "id": "a80495e5c877e82adaa8cf5d",
+        "site": "just_one_kiss_site_base",
+        "email": "blankrustic@gmail.com",
+        "name": null,
+        "city_zip": "49616",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-21T22:11:51+00:00"
+    },
+    {
+        "id": "01eebeb8cbab508224aaa294",
+        "site": "just_one_kiss_site_base",
+        "email": "blankrustic@gmail.com",
+        "name": null,
+        "city_zip": "49616",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-21T22:26:26+00:00"
+    },
+    {
+        "id": "2cbda0884ca90cc5881233e8",
+        "site": "just_one_kiss_site_base",
+        "email": "blankrustic@gmail.com",
+        "name": null,
+        "city_zip": "49616",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-21T23:08:18+00:00"
+    },
+    {
+        "id": "6716b3bd0a3047572e3c0004",
+        "site": "just_one_kiss_site_base",
+        "email": "blankrustic@gmail.com",
+        "name": null,
+        "city_zip": "49616",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-21T23:10:55+00:00"
+    },
+    {
+        "id": "abf407f40907130c93dba70d",
+        "site": "just_one_kiss_site_base",
+        "email": "blankrustic@gmail.com",
+        "name": null,
+        "city_zip": "49616",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-21T23:12:14+00:00"
+    },
+    {
+        "id": "cfa1ede03a9967cbe534f47b",
+        "site": "just_one_kiss_site_base",
+        "email": "blankrustic@gmail.com",
+        "name": null,
+        "city_zip": "40504",
+        "interest_tags": [
+            "event_updates",
+            "directions_info",
+            "media_drops",
+            "collector_relic_updates"
+        ],
+        "consent_given": true,
+        "consent_source": "Just One KISS free show update form",
+        "referrer": "https://justonekiss.org/proto/public/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "created_at": "2026-07-22T00:10:04+00:00"
+    }
+]

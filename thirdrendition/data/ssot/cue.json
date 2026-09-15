@@ -1,0 +1,973 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_document_id": "ssot.cue",
+  "source_document": {
+    "path": "docs/cue.txt",
+    "title": "Just One KISS - Working Cue and Setlist Draft",
+    "format": "text_markdown",
+    "category": "show_flow",
+    "role": "Current working cue and setlist draft for proposed set blocks, songs, durations, and cue seeds.",
+    "source_size_bytes": 12248
+  },
+  "timeline_classification": "TIMELINE_SPECIFIC_DRAFT",
+  "project_rules": {
+    "requires_timeline_or_gen_on_records": true,
+    "timeline_id_families": [
+      "PRE-###",
+      "OPEN-###",
+      "SET-###",
+      "SONG-###",
+      "TRN-###",
+      "CST-###",
+      "VID-###",
+      "LGT-###",
+      "FOG-###",
+      "STR-###",
+      "SPK-###",
+      "FIN-###",
+      "ENC-###",
+      "POST-###",
+      "GEN"
+    ],
+    "two_person_execution_model": {
+      "performer": "single performer",
+      "crew_operator": "single show-control system"
+    },
+    "rights_posture": "Public outputs must be public-ready, original, reviewed, and focused on the event experience."
+  },
+  "admin_use": {
+    "can_feed_owner_admin_prototypes": true,
+    "recommended_module": "show_flow",
+    "default_public_private_flag": "internal",
+    "prototype_note": "Use this JSON as stable structured source data; prototype layouts may vary but should not fork facts away from this SSOT record."
+  },
+  "content_summary": "Current working cue and setlist draft for proposed set blocks, songs, durations, and cue seeds.",
+  "canonical_records": [
+    {
+      "record_id": "cue.set-001",
+      "title": "SET-001 · ALIVE",
+      "section": "timeline",
+      "category": "set block",
+      "timeline_moment_id_or_gen": "SET-001",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "owner",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working set block: Opening / live-energy block. Internal planning label; public use needs content review.",
+      "notes": "Derived from docs/cue.txt working set architecture; not final show-ready.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.set-002",
+      "title": "SET-002 · DESTROYER",
+      "section": "timeline",
+      "category": "set block",
+      "timeline_moment_id_or_gen": "SET-002",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "owner",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working set block: Mythic heavy spectacle block. Internal planning label; public use needs content review.",
+      "notes": "Derived from docs/cue.txt working set architecture; not final show-ready.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.set-003",
+      "title": "SET-003 · LOVE GUN",
+      "section": "timeline",
+      "category": "set block",
+      "timeline_moment_id_or_gen": "SET-003",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "owner",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working set block: Fan-service / mid-show spectacle block. Internal planning label; public use needs content review.",
+      "notes": "Derived from docs/cue.txt working set architecture; not final show-ready.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.set-004",
+      "title": "SET-004 · DYNASTY",
+      "section": "timeline",
+      "category": "set block",
+      "timeline_moment_id_or_gen": "SET-004",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "owner",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working set block: Groove / character-depth block. Internal planning label; public use needs content review.",
+      "notes": "Derived from docs/cue.txt working set architecture; not final show-ready.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.set-005",
+      "title": "SET-005 · MONSTER",
+      "section": "timeline",
+      "category": "set block",
+      "timeline_moment_id_or_gen": "SET-005",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "owner",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working set block: Darker heavy block. Internal planning label; public use needs content review.",
+      "notes": "Derived from docs/cue.txt working set architecture; not final show-ready.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.set-006",
+      "title": "SET-006 · END OF THE ROAD",
+      "section": "timeline",
+      "category": "set block",
+      "timeline_moment_id_or_gen": "SET-006",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "owner",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working set block: Finale / closing block. Internal planning label; public use needs content review.",
+      "notes": "Derived from docs/cue.txt working set architecture; not final show-ready.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.open_001",
+      "title": "OPEN-001 · ROCK + ROLL / LED ZEPPELIN INTRO SONG",
+      "section": "timeline",
+      "category": "opening/song",
+      "timeline_moment_id_or_gen": "OPEN-001",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"ROCK + ROLL / LED ZEPPELIN INTRO SONG\". Duration: 3:31. Production note: Intro song / opening energy.. Follow-up: Confirm whether this is walk-in, overture, entrance, or first performed song.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "SONG-001"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_002",
+      "title": "SONG-002 · Deuce",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-002",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Deuce\". Duration: 3:52. Production note: Platform drop.. Follow-up: Add platform-drop cue as `TRN-###`, `LGT-###`, `VID-###`, or safety/blocking cue as applicable.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_003",
+      "title": "SONG-003 · Let Me Go, Rock 'n' Roll",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-003",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Let Me Go, Rock 'n' Roll\". Duration: 2:50 or 3:54. Production note: Alternate duration listed.. Follow-up: Confirm arrangement/version before final timing.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_004",
+      "title": "SONG-004 · Kissin' Time",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-004",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Kissin' Time\". Duration: 3:59. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_005",
+      "title": "SONG-005 · Love 'Em and Leave 'Em",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-005",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Love 'Em and Leave 'Em\". Duration: 3:38. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_006",
+      "title": "SONG-006 · Psycho Circus",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-006",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Psycho Circus\". Duration: 4:13. Production note: Costume change.. Follow-up: Add costume-change transition as `CST-001` or next available `CST-###`; confirm show-control hold look and safe fallback.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_007",
+      "title": "SONG-007 · God of Thunder",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-007",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"God of Thunder\". Duration: 7:07. Production note: None listed.. Follow-up: Likely high-spectacle moment; add lighting/projection/fog/strobe details only after approval.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_008",
+      "title": "SONG-008 · I Love It Loud",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-008",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"I Love It Loud\". Duration: 3:23. Production note: None listed.. Follow-up: Add crowd-response and show-control cue notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_009",
+      "title": "SONG-009 · When Lightning Strikes",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-009",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"When Lightning Strikes\". Duration: 3:39. Production note: None listed.. Follow-up: Consider lightning-style lighting only if safely programmable for one show-control.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_010",
+      "title": "SONG-010 · Cold Gin",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-010",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Cold Gin\". Duration: 4:59. Production note: None listed.. Follow-up: Add performance and transition notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.trn_001",
+      "title": "TRN-001 · Scotty D's + KISS costume change",
+      "section": "timeline",
+      "category": "transition",
+      "timeline_moment_id_or_gen": "TRN-001",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Scotty D's + KISS costume change\". Duration: 3:54. Production note: Costume-change transition.. Follow-up: Confirm exact meaning, audio/video content, content status, and performer/show-control workload.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "CST-002"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_011",
+      "title": "SONG-011 · Radioactive",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-011",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Radioactive\". Duration: 3:37. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_012",
+      "title": "SONG-012 · Calling Dr. Love",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-012",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Calling Dr. Love\". Duration: 3:40. Production note: None listed.. Follow-up: Add crowd-response and show-control cue notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_013",
+      "title": "SONG-013 · Hot + Cold",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-013",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Hot + Cold\". Duration: 3:30. Production note: Screen drop.. Follow-up: Add screen drop as `VID-###` and any related `LGT-###` or safety cue.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_014",
+      "title": "SONG-014 · She",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-014",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"She\". Duration: 7:12. Production note: None listed.. Follow-up: Long-form moment; confirm pacing, blocking, and cue density.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.trn_002",
+      "title": "TRN-002 · S.D. + KISS 2",
+      "section": "timeline",
+      "category": "transition",
+      "timeline_moment_id_or_gen": "TRN-002",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"S.D. + KISS 2\". Duration: 3:21. Production note: Transition / likely costume-change or interstitial.. Follow-up: Confirm exact content and content status.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "CST-003"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_015",
+      "title": "SONG-015 · Almost Human",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-015",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Almost Human\". Duration: 2:49. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_016",
+      "title": "SONG-016 · Sweet Pain",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-016",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Sweet Pain\". Duration: 3:22. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_017",
+      "title": "SONG-017 · Watchin' You",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-017",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Watchin' You\". Duration: 4:00. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_018",
+      "title": "SONG-018 · Russian Roulette",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-018",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Russian Roulette\". Duration: 4:34. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_019",
+      "title": "SONG-019 · Right Here Right Now",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-019",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Right Here Right Now\". Duration: 3:57. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_020",
+      "title": "SONG-020 · Not for the Innocent",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-020",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Not for the Innocent\". Duration: 4:31. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_021",
+      "title": "SONG-021 · Charisma",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-021",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Charisma\". Duration: 4:28. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_022",
+      "title": "SONG-022 · Spit",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-022",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Spit\". Duration: 3:34. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_023",
+      "title": "SONG-023 · War Machine / Fuel",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-023",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"War Machine / Fuel\". Duration: 5:37. Production note: Medley or paired item.. Follow-up: Confirm arrangement, content status, and exact timing.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_024",
+      "title": "SONG-024 · Yes I Know",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-024",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Yes I Know\". Duration: 3:02. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.song_025",
+      "title": "SONG-025 · Parasite",
+      "section": "timeline",
+      "category": "song",
+      "timeline_moment_id_or_gen": "SONG-025",
+      "status": "proposed",
+      "priority": "medium",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Parasite\". Duration: 3:52. Production note: None listed.. Follow-up: Add performance, lighting, projection, fog, and strobe notes during cue build.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.fin_001",
+      "title": "FIN-001 · Rock and Roll All Nite",
+      "section": "timeline",
+      "category": "finale/song",
+      "timeline_moment_id_or_gen": "FIN-001",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Rock and Roll All Nite\". Duration: 4:02. Production note: Finale candidate.. Follow-up: Confirm if this is the primary finale moment and build finale blackout/bow/reset states.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "SONG-026"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.enc_001",
+      "title": "ENC-001 · Domino",
+      "section": "timeline",
+      "category": "encore/song",
+      "timeline_moment_id_or_gen": "ENC-001",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"Domino\". Duration: 3:46. Production note: Encore candidate.. Follow-up: Confirm if this belongs to encore or finale block.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "SONG-027"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.enc_002",
+      "title": "ENC-002 · God Gave Rock 'n' Roll to You",
+      "section": "timeline",
+      "category": "encore/song",
+      "timeline_moment_id_or_gen": "ENC-002",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "performer",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Working draft item \"God Gave Rock 'n' Roll to You\". Duration: TBD. Production note: Closing/encore candidate.. Follow-up: Duration missing; confirm arrangement and closing cue structure.",
+      "notes": "Derived from docs/cue.txt working song/cue list; verify timing, clearance, safety, performer load, and show-control load before show-ready use.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "SONG-028"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.opening_intro_song",
+      "title": "Cue seed · Opening intro song",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `OPEN-001` / `SONG-001`. Source moment: ROCK + ROLL / LED ZEPPELIN INTRO SONG. Required documentation: Define entrance, lighting, projection, fog/strobe permissions, and fallback.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "OPEN-001",
+        "SONG-001"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.platform_drop",
+      "title": "Cue seed · Platform drop",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "critical",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `TRN-###` / `LGT-###` / safety cue. Source moment: Deuce. Required documentation: Define physical mechanism, show-control trigger, performer position, blackout/safe-light fallback, and venue approval.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "TRN-###",
+        "LGT-###"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.costume_change_after_psycho_circus",
+      "title": "Cue seed · Costume change after Psycho Circus",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "critical",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `CST-001`. Source moment: Psycho Circus. Required documentation: Define costume preset, hold look, projection/audio cover, show-control load, and emergency hold state.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "CST-001"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.scotty_d_s_kiss_costume_change",
+      "title": "Cue seed · Scotty D's + KISS costume change",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "critical",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `TRN-001` / `CST-002`. Source moment: Between DESTROYER and LOVE GUN blocks. Required documentation: Define content, duration, content review, costume change, and cue stack.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "TRN-001",
+        "CST-002"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.screen_drop",
+      "title": "Cue seed · Screen drop",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "critical",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `VID-###` / `TRN-###`. Source moment: Hot + Cold. Required documentation: Define screen hardware, cue trigger, projection state, lighting cover, and safety/fallback.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "VID-###",
+        "TRN-###"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.s_d_kiss_2",
+      "title": "Cue seed · S.D. + KISS 2",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `TRN-002` / `CST-003`. Source moment: Between LOVE GUN and DYNASTY blocks. Required documentation: Confirm meaning, content, content, and show-control/performance purpose.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "TRN-002",
+        "CST-003"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.finale_candidate",
+      "title": "Cue seed · Finale candidate",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "critical",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `FIN-001`. Source moment: Rock and Roll All Nite. Required documentation: Define final visual hit, fog/strobe permissions, blackout, bow, and post-show transition.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "FIN-001"
+      ],
+      "last_updated": "needs freshness review"
+    },
+    {
+      "record_id": "cue.seed.encore_candidates",
+      "title": "Cue seed · Encore candidates",
+      "section": "timeline",
+      "category": "cue seed",
+      "timeline_moment_id_or_gen": "GEN-PENDING-REVIEW",
+      "status": "proposed",
+      "priority": "high",
+      "owner_or_responsible_role": "show-control system",
+      "public_private_flag": "internal-only",
+      "rights_status": "needs review",
+      "safety_status": "needs review",
+      "description": "Proposed classification: `ENC-001` / `ENC-002`. Source moment: Domino; God Gave Rock 'n' Roll to You. Required documentation: Confirm encore structure, final exit, and house/post-show states.",
+      "notes": "Cue seed must become one or more concrete Timeline Moment records before programming or publishing.",
+      "linked_files": [
+        "docs/cue.txt"
+      ],
+      "linked_records": [
+        "ENC-001",
+        "ENC-002"
+      ],
+      "last_updated": "needs freshness review"
+    }
+  ],
+  "relationships": {
+    "source_path": "docs/cue.txt",
+    "related_ssot_documents": [],
+    "related_human_documents": []
+  },
+  "maintenance": {
+    "status": "active",
+    "last_generated_from_repo": "2026-07-13",
+    "update_rule": "When the human-readable source changes, update this SSOT JSON and data/ssot/master_index.json in the same change.",
+    "last_synced_with_source": "2026-07-13",
+    "ssot_companion_purpose": "Machine-readable seed for website prototypes, owner-admin views, generated materials, and future production data files."
+  }
+}

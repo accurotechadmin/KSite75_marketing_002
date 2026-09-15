@@ -1,0 +1,106 @@
+[
+  {
+    "id": "GRP-HONEYCOMB-ALL",
+    "name": "All Honeycombs",
+    "members": [
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06",
+      "H07",
+      "H08",
+      "H09",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14"
+    ]
+  },
+  {
+    "id": "GRP-HONEYCOMB-TOP-4",
+    "name": "Honeycomb Top Four",
+    "members": [
+      "H01",
+      "H02",
+      "H03",
+      "H04"
+    ]
+  },
+  {
+    "id": "GRP-HONEYCOMB-CENTRAL-6",
+    "name": "Honeycomb Central Six",
+    "members": [
+      "H09",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14"
+    ]
+  },
+  {
+    "id": "GRP-PTR-ALL",
+    "name": "All PTR",
+    "members": [
+      "PTR01",
+      "PTR02",
+      "PTR03",
+      "PTR04",
+      "PTR05",
+      "PTR06",
+      "PTR07",
+      "PTR08"
+    ]
+  },
+  {
+    "id": "GRP-PTR-OUTER-4",
+    "name": "PTR Outer Four",
+    "members": [
+      "PTR01",
+      "PTR02",
+      "PTR03",
+      "PTR04"
+    ]
+  },
+  {
+    "id": "GRP-PTR-CENTER-4",
+    "name": "PTR Center Four",
+    "members": [
+      "PTR05",
+      "PTR06",
+      "PTR07",
+      "PTR08"
+    ]
+  },
+  {
+    "id": "GRP-KISS-ALL",
+    "name": "KISS Sign All",
+    "members": [
+      "KS-K-I",
+      "KS-K-O",
+      "KS-I-I",
+      "KS-I-O",
+      "KS-S1-I",
+      "KS-S1-O",
+      "KS-S2-I",
+      "KS-S2-O"
+    ]
+  },
+  {
+    "id": "GRP-CUBES-ALL",
+    "name": "Cube Up-lights All",
+    "members": [
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U05",
+      "U06",
+      "U07",
+      "U08"
+    ]
+  }
+]

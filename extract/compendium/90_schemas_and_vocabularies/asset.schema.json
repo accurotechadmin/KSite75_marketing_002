@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "asset.schema",
+  "document_class": "schema",
+  "title": "Asset Schema",
+  "description": "Rights-aware physical and digital asset identity, uses, edits, clearance, storage, and provenance.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "asset_manager",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "document families, minimum fields, approval and synchronization rules",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing supporting-document, cue, safety, inspection, and approval controls"
+    },
+    {
+      "source_id": "source:docs_marketing_still_image_inventory_md",
+      "path": "docs/marketing_still_image_inventory.md",
+      "sha256": "dc1865bce251a56d63c23c9bd80473c3f787c745fde113d42b8f076565a8d43b",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "asset inventory shapes"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_asset_taxonomy_json",
+      "path": "docs/ssot/settings/asset_taxonomy.json",
+      "sha256": "91006616b332c7d73dbc95ed9d7b220c0be4a908bfafde31b4785b42493ed2b3",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "asset taxonomy"
+    },
+    {
+      "source_id": "source:docs_brand_story_style_guide_inventory_md",
+      "path": "docs/brand_story_style_guide_inventory.md",
+      "sha256": "2270c92ab93e7986664691500758308487579adc658537da189136b19cce8b9f",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "rights and public presentation guardrails"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "asset.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "asset.schema.json",
+      "title": "Asset",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "asset_id",
+        "asset_kind",
+        "rights_state",
+        "publication_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "asset_id": {
+          "type": "string",
+          "pattern": "^AST-[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "asset_kind": {
+          "enum": [
+            "physical",
+            "digital",
+            "hybrid"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "storage_reference": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Controlled indirection; never embed credentials or restricted payloads."
+        },
+        "intended_uses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "edit_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rights_state": {
+          "enum": [
+            "owned",
+            "licensed",
+            "cleared",
+            "review_required",
+            "restricted",
+            "expired",
+            "unknown"
+          ]
+        },
+        "rights_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "publication_state": {
+          "enum": [
+            "not_public",
+            "candidate",
+            "approval_pending",
+            "approved_with_evidence",
+            "published",
+            "withdrawn"
+          ]
+        },
+        "accessibility_metadata": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "alt_text": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "caption": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "transcript_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "publication_state": {
+                "enum": [
+                  "approved_with_evidence",
+                  "published"
+                ]
+              }
+            },
+            "required": [
+              "publication_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "rights_state": {
+                "enum": [
+                  "owned",
+                  "licensed",
+                  "cleared"
+                ]
+              },
+              "rights_evidence_refs": {
+                "minItems": 1
+              },
+              "approval_evidence_refs": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "rights_evidence_refs",
+              "approval_evidence_refs"
+            ]
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

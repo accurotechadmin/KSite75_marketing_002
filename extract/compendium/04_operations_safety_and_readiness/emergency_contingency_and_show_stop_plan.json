@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0-scaffold",
+  "document_id": "emergency_contingency_and_show_stop_plan",
+  "document_class": "authority",
+  "title": "Emergency Contingency And Show Stop Plan",
+  "description": "Stop authority; evacuation; fire/medical/weather; power/system failure; missing performer; misfire; restart/cancel criteria",
+  "status": "draft",
+  "revision": "0.1.0",
+  "effective_date": null,
+  "owner_role": "TBD",
+  "approver_role": "TBD",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "source_refs": [],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "scaffold_notice": "Structure only. No source facts have been extracted or approved.",
+  "data": {
+    "scaffold_state": "empty",
+    "components_and_subcomponents": "Stop authority; evacuation; fire/medical/weather; power/system failure; missing performer; misfire; restart/cancel criteria",
+    "source_family_notes": "Supporting standard `SAFE-01`; Cue Book; rig emergency states",
+    "records": []
+  }
+}

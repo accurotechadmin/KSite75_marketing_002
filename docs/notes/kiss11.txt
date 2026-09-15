@@ -1,0 +1,372 @@
+Boot Report: I Am Ready to Create the Marketing-Image Prompt Set
+I have booted into the repository as the Just One KISS marketing campaign expert and focused specifically on the still-image marketing campaign system, the brand/story/style rules, the website visual language shown in your screenshot, and the document-controlled rules for what we can and cannot say or depict.
+
+I am ready for your next instruction: to create the individual LLM image-generation prompts for each individual still image on each platform/placement described in the campaign documentation.
+
+No files were changed, so I did not commit and did not call the PR tool.
+
+1. Repository and Documentation Study Completed
+I located and studied the documentation set across the repository, with special attention to:
+
+Repository Canon / Source-of-Truth Rules
+README.md establishes that Just One KISS is a Gene Simmons tribute theatrical stage event built around theatricality, spectacle, fire, chrome, black, mythic scale, and public-ready independent-tribute framing. It also defines the repository’s source-of-truth hierarchy and the rule that every item must be either tied to a Timeline Moment ID or marked GEN / GENERAL.
+
+docs/knowledge.md, docs/mastergameplan.md, docs/current_documentation_groundwork_plan.md, docs/timeline_moment_registry.md, docs/cue.txt, docs/inventory_reference.md, and docs/rig.md were reviewed as project, production, timeline, and technical context. The technical cue/rig material informs the atmosphere of the campaign, but public marketing should not expose private cue timing or show-control internals.
+
+Marketing Campaign Target Document
+The primary target is docs/first_run_marketing_campaign.md, which defines the first campaign as a five-piece still-image customer journey and explicitly says it is a planning and production-description document, not final image creation yet. 
+
+That document marks the campaign as GEN / GENERAL because the assets promote the event ecosystem rather than a precise show cue. 
+
+Brand / Story / Style Sources
+docs/brand_story_style_guide_inventory.md captures the approved current-site direction and says the current visual styling, wording, colors, typography, section rhythm, card framing, badges, CTA language, and theatrical presentation should be preserved rather than reinvented. 
+
+docs/styleguide.md supplies the broader public creative posture: black/chrome/fire, mythic scale, theatrical overstatement, KISS-era emotional references, and a fan-facing campaign voice.
+
+proto/docs/language.json and proto/docs/language_map.md are the public-copy SSOT / readable language map, with reusable phrases like “Get the July 25 drop,” “Free Show,” “Cycle Moore Legacy,” “Join the July 25 update list,” “Fog / strobes,” and the safety/disclaimer copy patterns.
+
+proto/docs/website_ssot.md establishes the active public website canon and confirms the active app is proto/, with homepage sections, public facts, image policy, forms, and route jobs controlled there. 
+
+Marketing Inventory and Platform Specs
+docs/marketing_still_image_inventory.md is the broad menu of possible still-image materials across social, paid, website, print, venue, booking, fan, and owner/admin contexts.
+
+docs/ssot/ads_specs.md supplies the platform still-image planning specs for Facebook/Meta, Instagram, LinkedIn, X/Twitter, Google Ads, and Bluesky. 
+
+proto/docs/image_generation_inventory.md, proto/docs/image_generation_requests.txt, and proto/docs/image_generation_prompt_list.txt define the current image-generation boundary: original, public-ready black/chrome/fire theatrical rock imagery; no official logos, exact makeup, album art, official costumes, restricted fonts, outside photos, or implied partnership.
+
+Boot Prompts / Prompt History
+I studied the marketing boot prompt at docs/prompts/marketing_campaign_expert_boot_prompt.md, which says this is not a greenfield branding exercise and that the job is to reload the current repository state, study the truth, compile the marketing brief, and be ready to create specific campaign materials when asked.
+
+I also inspected the other prompt files under docs/prompts/ and proto/docs/proto_expert_coding_boot_prompt.md to understand prior boot conventions and not accidentally treat historical build prompts as current instructions.
+
+2. Current Project and Event Truth I Extracted
+The campaign must stay anchored in these facts:
+
+Project / event name: Just One KISS.
+
+Event concept: an independent Gene Simmons / KISS-inspired theatrical rock tribute event, centered on fan energy, stage spectacle, and mythic rock-show atmosphere.
+
+Date: July 25, 2026. 
+
+Admission: free show; no ticket required; RSVP/update-list is appreciated where stated. 
+
+Venue: Cycle Moore Legacy.
+
+Address: 11075 US 31 South, Interlochen, MI 49643. 
+
+Area shorthand: Interlochen / US 31.
+
+Camping: overnight camping is $10/night; regular Cycle Moore charges apply for stays more than one night before or after. 
+
+Parking: inside the campground, around the pavilion, on grass as directed and clearly marked, without inventing extra traffic-control claims. 
+
+Safety: loud sound, bright lights, fog, flashing patterns, and strobe-style looks may be used. Safety notes need to remain visible near conversion, attendance, directions, and footer contexts. 
+
+Independent-tribute posture: no outside partnership, authorization, sponsorship, endorsement, official status, or official KISS/Gene Simmons affiliation should be implied.
+
+The website canon also confirms the current homepage jobs: hero announces the free July 25 show, event details separate free admission from camping cost, about/proof sells spectacle, Join the Rally captures updates, the final CTA repeats the core facts, and Fan Vault supports fan interaction. 
+
+3. Marketing Campaign Side: What I Understand
+The first-run campaign is a five-piece funnel, not a random set of posters.
+
+The campaign thesis is that the still images should behave like a month-by-month fan journey, with one unified theatrical world: black-dominant, chrome-framed, fire-lit, huge white display type, yellow fact chips, red/orange CTAs, smoke/fog atmosphere, road-case texture, stage truss silhouettes, and practical facts kept readable. 
+
+The funnel is:
+
+Awareness — audience learns the night exists.
+
+Interest — audience understands why it feels different from a generic cover night.
+
+Consideration — audience gets practical confidence: where, when, cost, camping, safety, arrival.
+
+Conversion — audience joins updates / RSVPs without ticket-purchase language.
+
+Retention & Nurture — audience shares, invites, asks questions, sends fan media, and returns for updates. 
+
+Because this is a free show, the campaign must avoid “buy,” “tickets on sale,” “purchase,” “checkout,” VIP, paid admission, and scarcity language that implies a transaction. The approved conversion vocabulary is “RSVP appreciated,” “Join updates,” “Tell your crew,” “Plan your night,” and “No ticket required.” 
+
+4. The Five Campaign Pieces I Am Ready to Prompt
+Piece 01 — Awareness: “The Night Exists”
+Core message: FREE SHOW · JULY 25, 2026 · CYCLE MOORE LEGACY · INTERLOCHEN / US 31
+
+Recommended headline lockup: YOU WANTED THE BEST? above JULY 25 IS COMING.
+
+CTA: Save July 25 / Join updates
+
+Visual direction: black arena void, huge white compressed type, original chrome shards or truss geometry, red/orange smoke, distant stage-light flare, and only an original rim-lit silhouette or shadow form — not exact protected makeup or official imagery. 
+
+Platform variants: Meta square, Meta/Instagram 4:5, Stories/Reels 9:16, X/LinkedIn/Google 1.91:1, Google 300x250, print flyer. 
+
+Piece 02 — Interest: “The Ritual”
+Core message: A STAGE TAKEOVER, NOT A POLITE COVER NIGHT.
+
+Recommended headline lockup: THE RITUAL STARTS HERE. with Not a polite cover night. as secondary line.
+
+CTA: See the spectacle / Get the July 25 drop
+
+Visual direction: current About-the-Show card-grid energy: dark stage floor, low red fog, chrome border panels, light beams, and four proof tiles — 01 Demon-scale entrance, 02 Fire-lit singalong, 03 One controlled blast, 04 Chrome-blood spectacle. These are mood promises, not internal cue disclosures. 
+
+Platform variants: Instagram carousel, Meta 4:5, Stories 9:16, Google responsive display, LinkedIn / venue-buyer feed, X / Bluesky organic. 
+
+Piece 03 — Consideration: “Before You Roll In”
+Core message: BEFORE YOU ROLL IN...
+
+Subhead: Free admission. No ticket required. Cycle Moore Legacy. Interlochen on US 31.
+
+CTA: Get directions / Plan the night
+
+Visual direction: theatrical practical-info card using black background, yellow numbered badges, red smoke glow, chrome/gold dividers, and five info cards: Admission, Location / Parking, Camping, Fog / Strobes, BYOB and be safe. 
+
+Fact requirements: include address in larger variants and the camping distinction: $10/night; regular Cycle Moore charges apply for longer stays. 
+
+Platform variants: Meta/Instagram square, 4:5 vertical feed, split Stories if needed, Google/X/LinkedIn 1.91:1, print flyer, and small display banner. 
+
+Piece 04 — Conversion: “Get the July 25 Drop”
+Core message: GET THE JULY 25 DROP.
+
+Headline lockup: GET THE JULY 25 DROP. plus Free show · RSVP appreciated.
+
+CTA: Join updates / RSVP appreciated
+
+Visual direction: signup-section-inspired split layout: huge white headline over black/red texture on one side, mock form panel on the other with email, city/ZIP, consent checkbox row, and red-orange CTA button. It must not pretend to be a live form unless used as a website banner. 
+
+Platform variants: Meta/Instagram feed, Stories 9:16, Google Display/Discovery, X/Bluesky, LinkedIn, print/QR card. 
+
+Piece 05 — Retention & Nurture: “Open the Road Case”
+Core message: OPEN THE ROAD CASE.
+
+Secondary line: Tell your crew. Bring the night with you.
+
+CTA: Tell your crew / Open the Fan Vault / Ask a question
+
+Visual direction: fan-vault road-case image matching the current site’s card-grid section: original black touring road case opened toward viewer, red/yellow glow inside, chrome latches, six compartments labeled Free show, Video posts, Fan media, Tips, Q&A, Chat; no official memorabilia. 
+
+Platform variants: Instagram/Facebook carousel, square feed, Stories 9:16, X/Bluesky, Google remarketing, local/community print. 
+
+The rollout sequence is month-by-month: Awareness, Interest, Consideration, Conversion, then Retention/Nurture; if compressed, pieces 01–02 serve cold audiences, 03–04 warm/retargeting audiences, and 05 engaged/signed-up audiences. 
+
+5. Brand Story, Style, and Words I Extracted
+The brand is not polite, generic, or neutral. It is:
+
+black-first,
+
+chrome-second,
+
+fire-third,
+
+mythic-scale always,
+
+theatrical,
+
+fan-facing,
+
+loud,
+
+practical where necessary,
+
+rights-aware,
+
+safety-aware,
+
+independent-tribute framed.
+
+The approved current site direction must be preserved: current visual styling, wording, color, typography, section rhythm, card framing, badges, CTA language, and overall theatrical presentation are already considered correct. 
+
+The brand tension to preserve is especially important:
+
+tribute energy + original expression,
+
+fan devotion + rights restraint,
+
+arena scale + campground/local event facts,
+
+mythic threat + family-friendly practical warning language,
+
+dangerous-looking stage picture + controlled/safe production posture,
+
+heavy theatrical copy + clear utility details,
+
+loud visual style + accessible forms and route navigation. 
+
+The useful voice grammar includes short, blunt, high-impact phrases such as:
+
+YOU WANTED THE BEST?
+
+YOU GOT THE BEST!
+
+A STAGE TAKEOVER, NOT A POLITE COVER NIGHT.
+
+GET THE JULY 25 DROP.
+
+OPEN THE ROAD CASE.
+
+BEFORE YOU ROLL IN...
+
+Free show
+
+No ticket required
+
+RSVP appreciated
+
+Join updates
+
+Tell your crew
+
+Interlochen / US 31
+
+The website and campaign should use practical fact chips and CTA buttons in the same visual language shown in your screenshot: yellow/gold pills, red/orange CTA gradients, black cards, chrome/gold edges, red smoke, oversized white condensed headlines, and controlled utility text.
+
+6. Visual Style I Extracted from the Screenshot and Docs
+Your screenshot confirms the repository’s written style rules visually:
+
+Page field: near-black background with red/amber atmospheric glow.
+
+Header: compact black top bar; bold white Just One KISS mark; small uppercase nav; red-orange Join Updates CTA.
+
+Hero: huge stacked white type, yellow eyebrow facts, yellow fact chips, red/orange glow, chrome shard/stage architecture, hard black frame.
+
+Cards: rounded rectangular panels with thin yellow/gold borders, inner shadows, red smoke, chrome highlights, black card interiors.
+
+Typography: compressed, arena-poster-like, all-caps, heavy display headlines with smaller clear utility body text.
+
+CTA language: short imperative phrases, not polite brochure language.
+
+Fact chips: practical but stylized — Free show, No ticket required, RSVP appreciated, Camping $10/night, etc.
+
+Safety/footer tone: plain and visible, not jokey.
+
+This matches the campaign-wide creative rules: one visual world, readable facts, rights-aware tribute posture, safety-aware conversion, modular/crop-safe layouts, and no actual image generation yet. 
+
+7. Platform / Placement Understanding
+The campaign’s shared adaptation kit requires a master system across all five pieces:
+
+master vertical poster: 2160x2700 / 4:5,
+
+square social: 1440x1440 / 1:1,
+
+vertical feed: 1440x1800 / 4:5,
+
+story/reel still: 1080x1920 or 1440x2560 / 9:16,
+
+wide landscape: 1200x628 or 1440x754 / 1.91:1,
+
+Google square: 1200x1200 / 1:1,
+
+Google portrait: 960x1200 / 4:5,
+
+small display banner: 300x250,
+
+event/header crop: 1920x1005 or 1500x500,
+
+print handout/flyer: 8.5x11 and 4x6. 
+
+The safe-zone behavior is also clear:
+
+headline/date in central 70% for square and vertical crops,
+
+story assets must avoid top/bottom UI overlays,
+
+1.91:1 landscapes should simplify the central image and push facts into a lower strip,
+
+300x250 banners should use only the smallest fact lockup. 
+
+The platform spec sheet confirms the specific planning families:
+
+Facebook/Meta: feed 1:1 or 4:5, Stories 9:16, right column/marketplace/carousel square. 
+
+Instagram: square, vertical 4:5, horizontal 1.91:1, Stories/Reels 9:16. 
+
+LinkedIn: 1200x628 landscape, 1200x1200 square, 720x900 vertical mobile-only, carousel square. 
+
+X/Twitter: 1200x1200 or 1200x628, website card 800x418, profile/header reference 1500x500. 
+
+Google Ads: 1200x628 landscape, 1200x1200 square, 960x1200 portrait, 1080x1920 story, 300x250 banner. 
+
+Bluesky: 1080x1080 square, 1200x627 landscape, 627x1200 portrait, 1200x630 link preview, 1500x500 header. 
+
+Before final paid spend or print export, I would re-verify current external platform specs if you request production-final dimensions, because platform ad requirements can change.
+
+8. Rights, Safety, and Public-Copy Guardrails I Will Enforce
+For every future image prompt and image concept, I will enforce:
+
+No official KISS logos.
+
+No exact protected makeup.
+
+No official album art.
+
+No official photos.
+
+No official costumes copied exactly.
+
+No restricted fonts.
+
+No official-sounding affiliation.
+
+No outside partnership, sponsor, endorsement, authorization, or venue claim unless explicitly approved.
+
+No “buy,” “tickets on sale,” “purchase,” “checkout,” “VIP,” or paid-admission framing for this free-show campaign.
+
+No hidden safety warnings near attendance/conversion prompts.
+
+No invented parking, accessibility, camping, weather, traffic, security, or venue-operation details.
+
+No internal cue timing, show-control internals, owner workflows, or private launch blockers in public creative.
+
+Critical event facts must be real, readable text in production layouts, not only decorative image texture.
+
+Every asset remains GEN unless later tied to a specific Timeline Moment ID.
+
+These requirements are directly aligned with the first-run campaign rules and public SSOT guardrails. 
+
+9. Image and Placeholder Policy I Will Use
+I understand that:
+
+The current website homepage has approved generated/background assets, but supporting routes should keep placeholder image blocks until route-specific images are generated, reviewed, and intentionally approved. 
+
+The campaign document is not asking for final image generation yet; it asks for future art direction, prompts, platform adaptations, safety/rights posture, and export families. 
+
+If you later provide specific images and assign them to specific campaign materials, I should treat those image choices as canon for that material unless they conflict with rights, safety, or verified facts.
+
+If no source image exists, I can create clear LLM image prompts using placeholders or original generated-image direction: chrome shards, road-case texture, stage truss, smoke, black void, fire-colored atmosphere, campground pavilion energy, map texture, performer silhouette, etc.
+
+The prompts should request original public-ready imagery, not official KISS/Gene Simmons assets or exact replicas.
+
+10. Asset-Record and Review Plan I Will Apply Later
+Every final still-image concept should eventually be catalogued as an owner/admin record with:
+
+asset name,
+
+asset type,
+
+physical/digital status,
+
+category,
+
+GEN / Timeline classification,
+
+campaign stage,
+
+platform/placement,
+
+exact dimensions/aspect ratio,
+
+source copy,
+
+image source,
+
+public/private flag,
+
+rights status,
+
+safety status,
+
+fact status,
+
+CTA/destination,
+
+crop notes,
+
+disclaimer/safety/footer requirements. 
+
+That means when you ask me to create the individual LLM prompts, I can structure them so they already contain the metadata needed for asset records and review.

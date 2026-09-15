@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "campaign.schema",
+  "document_class": "schema",
+  "title": "Campaign Schema",
+  "description": "Campaign, funnel, channel, placement, creative, measurement, and gated release relationships.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "marketing_lead",
+  "approver_role": "project_owner",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:docs_first_run_marketing_campaign_md",
+      "path": "docs/first_run_marketing_campaign.md",
+      "sha256": "76326ed800ada7d0e9c549854fd39659ea20988acb4d0a4d7cdbacd22e1fa985",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "campaign and funnel plan"
+    },
+    {
+      "source_id": "source:docs_ssot_settings_marketing_channels_json",
+      "path": "docs/ssot/settings/marketing_channels.json",
+      "sha256": "8cae675b3d1375e18710ec90a1daaa478b5dfc011fd327e86e33542d8c46e3d5",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "channel and placement shapes"
+    },
+    {
+      "source_id": "source:docs_marketing_image_mockup_specs_00_shared_mockup_data_md",
+      "path": "docs/marketing_image_mockup_specs/00_shared_mockup_data.md",
+      "sha256": "14d9e231123ed290ee08cf3d21d1b3355d22835af3b368cbca433f4111ea6550",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "creative constraints"
+    },
+    {
+      "source_id": "source:center_pages_marketing-planner_php",
+      "path": "center/pages/marketing-planner.php",
+      "sha256": "18d7168a16614addde17b20d20e0d68f6a3e17342c565ebee6ef7eb47559819f",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "owner workflow implementation"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "campaign.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "campaign.schema.json",
+      "title": "Campaign",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "campaign_id",
+        "funnel_stage",
+        "channels",
+        "release_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "campaign_id": {
+          "type": "string",
+          "pattern": "^CAM-[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "funnel_stage": {
+          "enum": [
+            "awareness",
+            "interest",
+            "consideration",
+            "conversion",
+            "retention_nurture"
+          ]
+        },
+        "channels": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "placement_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "asset_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "measurement_plan_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "release_state": {
+          "enum": [
+            "planning",
+            "creative_review",
+            "rights_review",
+            "approval_pending",
+            "approved_with_evidence",
+            "released",
+            "paused",
+            "retired"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "release_state": {
+                "enum": [
+                  "approved_with_evidence",
+                  "released"
+                ]
+              }
+            },
+            "required": [
+              "release_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "approval_evidence_refs": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "approval_evidence_refs"
+            ]
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

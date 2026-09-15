@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-14",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "document_revision_log",
+  "document_class": "record",
+  "title": "Document Revision Log",
+  "description": "Per-document revision; reason; author/approver; effective date; distribution; superseded version",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CTRL-01 and controlled-document minimum fields, lifecycle, synchronization, readiness and reporting sections",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Normative controlled change, revision, distribution, synchronization, and review triggers"
+    },
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "document-control rules, safety precedence, readiness checklist, and performance closeout",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Show-control revision precedence, distribution, and event-triggered review"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_compendium_manifest_json",
+      "path": "extract/compendium/00_control_and_governance/compendium_manifest.json",
+      "sha256": "a9a63f58c929c53273eff95967a3e51a02804e9ef2f2eba2b0bbff9386ed459d",
+      "locator": "control envelope, generation contract, document catalog at session start",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Starting catalog and dependency evidence"
+    },
+    {
+      "source_id": "source:extract_work_sessions_2026_08_13_section_90_foundation_md",
+      "path": "extract/work_sessions/2026-08-13_section-90-foundation.md",
+      "sha256": "3aa8185e8796c497be4b6fa9968a95c20aa9c400141c5d821f67d26aa79baefa",
+      "locator": "verified transitions, sources, findings, and checks",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Operational evidence for Section 90 authored batch"
+    },
+    {
+      "source_id": "source:extract_work_sessions_2026_08_14_section_00_governance_foundation_md",
+      "path": "extract/work_sessions/2026-08-14_section-00-governance-foundation.md",
+      "sha256": "04abf92d7d3f185be002d1a28f830e6e96fc42eb02ba0a7c629b7a02ee37cae7",
+      "locator": "verified transitions, sources, decisions, and checks",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Operational evidence for Section 00 governance batch"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "rules": [
+      "Semantic revision communicates impact; Git commit identifies an evidence snapshot.",
+      "Null approver and effective date are required while controlled approval is pending.",
+      "Superseded revisions remain traceable and obsolete operational copies require explicit withdrawal."
+    ],
+    "records": [
+      {
+        "revision_id": "revision:section90-foundation-1.0.0",
+        "scope": "90_schemas_and_vocabularies",
+        "revision": "1.0.0",
+        "revision_class": "major",
+        "revision_date": "2026-08-13",
+        "repository_evidence": {
+          "commit": "04bad9989ead8e81a6668922352f343470d5195b",
+          "note": "Git snapshot evidence only; not approval evidence."
+        },
+        "change_refs": [
+          "change:section90-foundation-20260813"
+        ],
+        "affected_document_ids": [
+          "section:90_schemas_and_vocabularies"
+        ],
+        "reason": "Initial controlled schema/vocabulary foundation; 24 leaves authored for review.",
+        "previous_revision": null,
+        "approval_state": "pending controlled approval",
+        "approved_by": null,
+        "effective_date": null,
+        "distribution": {
+          "method": "repository commit and operational handoff",
+          "recipient_roles": [
+            "role:production_manager",
+            "role:owner_performer",
+            "role:department_lead"
+          ],
+          "verification": "Validator and manifest checks passed as recorded in the linked handoff."
+        },
+        "supersession": {
+          "supersedes": [],
+          "superseded_by": null,
+          "withdrawal_confirmation": "not applicable; initial revision"
+        },
+        "evidence_refs": [
+          "source:extract_work_sessions_2026_08_13_section_90_foundation_md"
+        ]
+      },
+      {
+        "revision_id": "revision:section00-governance-foundation-1.0.0",
+        "scope": "00_control_and_governance",
+        "revision": "1.0.0",
+        "revision_class": "major",
+        "revision_date": "2026-08-14",
+        "repository_evidence": {
+          "commit": "9319bb7b5e3b5c55ce5b140891803daf8b53df1f",
+          "note": "Git snapshot evidence only; not approval evidence."
+        },
+        "change_refs": [
+          "change:section00-governance-foundation-20260814"
+        ],
+        "affected_document_ids": [
+          "compendium_manifest",
+          "source_authority_policy",
+          "document_control_policy",
+          "data_classification_policy",
+          "source_registry",
+          "provenance_ledger",
+          "conflict_register",
+          "open_questions_register",
+          "decision_register"
+        ],
+        "reason": "Initial governance policy, source/provenance, and issue-register foundation; nine leaves authored for review.",
+        "previous_revision": null,
+        "approval_state": "pending controlled approval",
+        "approved_by": null,
+        "effective_date": null,
+        "distribution": {
+          "method": "repository commit and operational handoff",
+          "recipient_roles": [
+            "role:production_manager",
+            "role:owner_performer",
+            "role:department_lead"
+          ],
+          "verification": "Validator and manifest checks passed as recorded in the linked handoff."
+        },
+        "supersession": {
+          "supersedes": [],
+          "superseded_by": null,
+          "withdrawal_confirmation": "not applicable; initial revision"
+        },
+        "evidence_refs": [
+          "source:extract_work_sessions_2026_08_14_section_00_governance_foundation_md"
+        ]
+      }
+    ],
+    "record_count": 2
+  }
+}

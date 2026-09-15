@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "vendor_document_registry",
+  "document_class": "registry",
+  "title": "Vendor Document Registry",
+  "description": "Hashed identities and unresolved applicability/revision status for three vendor manuals, explicitly separating metadata companions and located claims",
+  "source_refs": [
+    {
+      "source_id": "source:docs_ssot_master_index_json",
+      "path": "docs/ssot/master_index.json",
+      "sha256": "950ba29fe9999401e8112be966cfb973d8c13fcb294ba41b5768351bdaf18513",
+      "locator": "vendor_manual category entries",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Registry discovery only"
+    },
+    {
+      "source_id": "source:docs_612870_Manual_170822_pdf",
+      "path": "docs/612870_Manual_170822.pdf",
+      "sha256": "0cccae10a7d886e33a8032178785f2a116bd169d9053edbab70a289aa2be31f4",
+      "locator": "entire binary PDF; no page claims extracted",
+      "extraction_method": "SHA-256 binary inventory; claim extraction withheld because page-locator tooling is unavailable",
+      "stated_use": "Primary vendor-document identity and hash"
+    },
+    {
+      "source_id": "source:docs_ssot_colorstrip_manual_json",
+      "path": "docs/ssot/colorstrip_manual.json",
+      "sha256": "85fc9648ebc28f85e1cb8f3d8de8edd20b1e16dd5f9809fb41b154a675bf852c",
+      "locator": "source_document, canonical_records, relationships, maintenance",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Metadata companion identity only"
+    },
+    {
+      "source_id": "source:docs_FreedomPAR_StripMini_RGBA_UM_Rev4_ML_WO_pdf",
+      "path": "docs/FreedomPAR_StripMini_RGBA_UM_Rev4_ML_WO.pdf",
+      "sha256": "7b6f8baf054361dbc31227b0ef3dc5073d396fc2013c89ca718ff3433d1231b7",
+      "locator": "entire binary PDF; no page claims extracted",
+      "extraction_method": "SHA-256 binary inventory; claim extraction withheld because page-locator tooling is unavailable",
+      "stated_use": "Primary vendor-document identity and hash"
+    },
+    {
+      "source_id": "source:docs_ssot_freedompar_manual_json",
+      "path": "docs/ssot/freedompar_manual.json",
+      "sha256": "4aaa0f883c74f2eb2b4a360070c31a144b3109a934a126517e972f55892a8ee0",
+      "locator": "source_document, canonical_records, relationships, maintenance",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Metadata companion identity only"
+    },
+    {
+      "source_id": "source:docs_ZQ01082-36PCS-Par-Light-RGB-with-Wireless-Remote-Control_pdf",
+      "path": "docs/ZQ01082-36PCS-Par-Light-RGB-with-Wireless-Remote-Control.pdf",
+      "sha256": "2c4f841d30ce4ecf1def449b998ac5cba20ee3fbebbea8db862bf6764eb2c175",
+      "locator": "entire binary PDF; no page claims extracted",
+      "extraction_method": "SHA-256 binary inventory; claim extraction withheld because page-locator tooling is unavailable",
+      "stated_use": "Primary vendor-document identity and hash"
+    },
+    {
+      "source_id": "source:docs_ssot_honeycomb_manual_json",
+      "path": "docs/ssot/honeycomb_manual.json",
+      "sha256": "bc50e9534205389335976856e36c3c7a60292a6742f665997347d9b932b2c9b8",
+      "locator": "source_document, canonical_records, relationships, maintenance",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Metadata companion identity only"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "record_count": 3,
+    "claim_promotion_rule": "A vendor claim requires the applicable manual revision, a page/section locator, and model applicability; metadata companions never satisfy that rule.",
+    "records": [
+      {
+        "manual_id": "manual:chauvet_colorstrip_mini",
+        "title": "Chauvet COLORstrip Mini Manual",
+        "timeline_scope": "GEN",
+        "vendor": "Chauvet",
+        "model_applicability_candidate": "COLORstrip Mini",
+        "equipment_type_ref_candidate": "equipment_type:single_dimmer",
+        "source_file": "docs/612870_Manual_170822.pdf",
+        "sha256": "0cccae10a7d886e33a8032178785f2a116bd169d9053edbab70a289aa2be31f4",
+        "revision": null,
+        "revision_state": "unresolved",
+        "applicability_state": "unverified_pending_model_and_physical_reconciliation",
+        "metadata_companion": "docs/ssot/colorstrip_manual.json",
+        "metadata_companion_role": "discovery metadata only; not the manual and not claim evidence",
+        "claim_extraction_status": "not_extracted_no_page_locator_available",
+        "extracted_claims": [],
+        "supersedes": [],
+        "superseded_by": null,
+        "conflicts_and_questions": [
+          "Confirm exact model applicability against physical labels.",
+          "Confirm manual revision/effective applicability and whether a newer/superseding manual exists."
+        ]
+      },
+      {
+        "manual_id": "manual:chauvet_freedom_par_rgba",
+        "title": "Chauvet DJ Freedom Par RGBA Manual",
+        "timeline_scope": "GEN",
+        "vendor": "Chauvet DJ",
+        "model_applicability_candidate": "Freedom Par / Strip Mini RGBA",
+        "equipment_type_ref_candidate": "equipment_type:cube_uplight",
+        "source_file": "docs/FreedomPAR_StripMini_RGBA_UM_Rev4_ML_WO.pdf",
+        "sha256": "7b6f8baf054361dbc31227b0ef3dc5073d396fc2013c89ca718ff3433d1231b7",
+        "revision": "Rev4 indicated by filename; internal revision page not independently extracted",
+        "revision_state": "candidate_from_filename",
+        "applicability_state": "unverified_pending_model_and_physical_reconciliation",
+        "metadata_companion": "docs/ssot/freedompar_manual.json",
+        "metadata_companion_role": "discovery metadata only; not the manual and not claim evidence",
+        "claim_extraction_status": "not_extracted_no_page_locator_available",
+        "extracted_claims": [],
+        "supersedes": [],
+        "superseded_by": null,
+        "conflicts_and_questions": [
+          "Confirm exact model applicability against physical labels.",
+          "Confirm manual revision/effective applicability and whether a newer/superseding manual exists."
+        ]
+      },
+      {
+        "manual_id": "manual:uking_zq01082",
+        "title": "U'King ZQ01082 / Honeycomb PAR Manual",
+        "timeline_scope": "GEN",
+        "vendor": "U'King",
+        "model_applicability_candidate": "ZQ01082 / 36PCS PAR",
+        "equipment_type_ref_candidate": "equipment_type:honeycomb",
+        "source_file": "docs/ZQ01082-36PCS-Par-Light-RGB-with-Wireless-Remote-Control.pdf",
+        "sha256": "2c4f841d30ce4ecf1def449b998ac5cba20ee3fbebbea8db862bf6764eb2c175",
+        "revision": null,
+        "revision_state": "unresolved",
+        "applicability_state": "unverified_pending_model_and_physical_reconciliation",
+        "metadata_companion": "docs/ssot/honeycomb_manual.json",
+        "metadata_companion_role": "discovery metadata only; not the manual and not claim evidence",
+        "claim_extraction_status": "not_extracted_no_page_locator_available",
+        "extracted_claims": [],
+        "supersedes": [],
+        "superseded_by": null,
+        "conflicts_and_questions": [
+          "Confirm exact model applicability against physical labels.",
+          "Confirm manual revision/effective applicability and whether a newer/superseding manual exists."
+        ]
+      }
+    ],
+    "unresolved_conflicts": [
+      "PDF text/page extraction tooling is unavailable, so no vendor claim is promoted.",
+      "Revision, exact model applicability, conflict, and supersession review remain open for each manual."
+    ],
+    "dependencies": [
+      "equipment_type_catalog.json",
+      "equipment_capability_and_mode_catalog.json (authored candidate catalog)"
+    ]
+  }
+}

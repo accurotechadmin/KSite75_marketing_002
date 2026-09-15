@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "data_classification_policy",
+  "document_class": "authority",
+  "title": "Data Classification Policy",
+  "description": "Public/internal/restricted/secret-reference-only; PII; security; retention; redaction",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "whole file",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_public_release_gate_policy_md",
+      "path": "center/docs/public_release_gate_policy.md",
+      "sha256": "acfab8646c82cbf99b7581b4ee38d8e49e577cad75a87ff3c995000d6cff4ec5",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    },
+    {
+      "source_id": "source:center_docs_future_persistence_and_auth_plan_md",
+      "path": "center/docs/future_persistence_and_auth_plan.md",
+      "sha256": "a052ef2031f4694a207df387e70bf15d50f3015041ecf0cff90e0428d6ba37ad",
+      "locator": "whole file",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Governance, authority, document-control, privacy, or inventory evidence"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "classes": [
+      {
+        "id": "public",
+        "handling": "Approved for intentional public release after rights, privacy, safety, accessibility, and claim gates."
+      },
+      {
+        "id": "internal",
+        "handling": "Project roles only; do not publish by default."
+      },
+      {
+        "id": "restricted",
+        "handling": "Least-privilege access, purpose limitation, audit, encryption-appropriate storage, and redacted exports."
+      },
+      {
+        "id": "secret-reference-only",
+        "handling": "Store only opaque configuration/secret identifiers and stewardship metadata; never values."
+      }
+    ],
+    "rules": [
+      "PII, contact details, submissions, consent evidence, mail bodies, credentials, tokens, environment diagnostics, and raw runtime payloads are excluded from unrestricted compendium leaves.",
+      "Public derivatives minimize fields and redact identifiers; irreversible anonymization must be verified before reclassification.",
+      "Retention is purpose- and authority-bound: record a schedule/trigger and responsible privacy role; where no approved duration exists, restrict access and open a question rather than invent a period.",
+      "Deletion requests and suspected exposure are escalated to role:privacy_steward; legal/operational holds are recorded, not silently bypassed.",
+      "Prototype storage is evidence of behavior, not proof that authentication, audit, backup, deletion, or retention controls exist."
+    ]
+  }
+}

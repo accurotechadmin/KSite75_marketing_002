@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "form_submission.schema",
+  "document_class": "schema",
+  "title": "Form Submission Schema",
+  "description": "Privacy-minimized submission metadata, consent evidence, secure indirection, retention, and workflow state.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "privacy_data_steward",
+  "approver_role": "project_owner",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:proto_app_form_storage_php",
+      "path": "proto/app/form_storage.php",
+      "sha256": "445a1ede64040e03ca127e7010f601ad5a3bef307f3523e65122e3569a6ed1d9",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "secure form-storage behavior"
+    },
+    {
+      "source_id": "source:proto_app_forms_inquiry_submit_php",
+      "path": "proto/app/forms/inquiry_submit.php",
+      "sha256": "4f29359bbf2aefbb69e93aee6bd2cf5d9f762c757c6fd30a857bd0e7dd523461",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "inquiry handler contract"
+    },
+    {
+      "source_id": "source:proto_app_forms_lead_submit_php",
+      "path": "proto/app/forms/lead_submit.php",
+      "sha256": "1f4685bc9a112a02574044d314351cadb07c07db1ccb8995891ea4d0fabf04ba",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "lead handler contract"
+    },
+    {
+      "source_id": "source:proto_database_schema_sql",
+      "path": "proto/database/schema.sql",
+      "sha256": "b492e141815a041abc43e6884a0a887d7fe052b88486207605fc4a33fd51cc56",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "persistence contract"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "document families, minimum fields, approval and synchronization rules",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing supporting-document, cue, safety, inspection, and approval controls"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "form_submission.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "form_submission.schema.json",
+      "title": "Form Submission",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "submission_id",
+        "form_id",
+        "received_at",
+        "privacy_classification",
+        "secure_storage_ref",
+        "consent",
+        "processing_state",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "submission_id": {
+          "type": "string",
+          "pattern": "^SUB-[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "form_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "received_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "privacy_classification": {
+          "enum": [
+            "restricted_personal_data",
+            "restricted_sensitive_data"
+          ]
+        },
+        "secure_storage_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Opaque reference to access-controlled storage; not a payload, email body, credential, or secret."
+        },
+        "consent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "basis",
+            "captured_at",
+            "evidence_ref"
+          ],
+          "properties": {
+            "basis": {
+              "enum": [
+                "explicit",
+                "contractual",
+                "legitimate_interest",
+                "not_applicable"
+              ]
+            },
+            "captured_at": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date-time"
+            },
+            "evidence_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "processing_state": {
+          "enum": [
+            "received",
+            "triaged",
+            "in_progress",
+            "completed",
+            "rejected",
+            "retention_hold",
+            "deleted"
+          ]
+        },
+        "retention_due_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "data_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Category labels only; never raw values."
+        },
+        "raw_payload": false,
+        "mail_body": false,
+        "secret": false
+      }
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "The schema intentionally forbids raw_payload, mail_body, and secret properties and requires secure indirection.",
+      "Authorization, encryption, retention execution, and consent validity require application and human controls beyond JSON Schema."
+    ]
+  }
+}

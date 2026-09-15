@@ -1,0 +1,886 @@
+{
+    "generated_at_utc": "2026-07-22T21:42:34+00:00",
+    "purpose": "Environment diagnostic for a local website metadata scanner",
+    "invocation": {
+        "argv": [
+            "metadata_diagnostics.php",
+            "--base-url=https://justonekiss.org",
+            "--public-root=/home/sitkaotw/justonekiss.org/proto/public",
+            "--output=../metadata_diagnostics.json",
+            "--max-files=2000"
+        ],
+        "base_url": "https://justonekiss.org",
+        "requested_public_root": "/home/sitkaotw/justonekiss.org/proto/public",
+        "resolved_public_root": "/home/sitkaotw/justonekiss.org/proto/public",
+        "output": "../metadata_diagnostics.json",
+        "max_files": 2000
+    },
+    "runtime": {
+        "php_version": "8.3.31",
+        "php_version_id": 80331,
+        "php_sapi": "cli",
+        "php_binary": "/opt/alt/php83/usr/bin/php",
+        "php_os": "Linux",
+        "php_os_family": "Linux",
+        "uname": "Linux premium49.web-hosting.com 4.18.0-553.54.1.lve.el8.x86_64 #1 SMP Wed Jun 4 13:01:13 UTC 2025 x86_64",
+        "architecture": "x86_64",
+        "current_user": "sitkaotw",
+        "process_uid": 1532,
+        "process_gid": 1527,
+        "loaded_ini_file": "/opt/alt/php83/etc/php.ini",
+        "scanned_ini_files": "/opt/alt/php83/link/conf/alt_php.ini\n",
+        "ini_settings": {
+            "allow_url_fopen": "1",
+            "open_basedir": "",
+            "disable_functions": "",
+            "memory_limit": "1024M",
+            "max_execution_time": "0",
+            "default_socket_timeout": "60",
+            "user_agent": "",
+            "curl.cainfo": "",
+            "openssl.cafile": "",
+            "openssl.capath": "",
+            "sys_temp_dir": "",
+            "upload_tmp_dir": "",
+            "include_path": ".:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php",
+            "auto_prepend_file": "",
+            "auto_append_file": ""
+        },
+        "loaded_extensions": [
+            "apcu",
+            "bcmath",
+            "bz2",
+            "calendar",
+            "Core",
+            "ctype",
+            "curl",
+            "date",
+            "dom",
+            "exif",
+            "fileinfo",
+            "filter",
+            "ftp",
+            "gd",
+            "gettext",
+            "hash",
+            "i360",
+            "iconv",
+            "igbinary",
+            "imagick",
+            "imap",
+            "intl",
+            "json",
+            "libxml",
+            "mbstring",
+            "msgpack",
+            "mysqli",
+            "mysqlnd",
+            "openssl",
+            "pcntl",
+            "pcre",
+            "PDO",
+            "pdo_mysql",
+            "pdo_pgsql",
+            "pdo_sqlite",
+            "pgsql",
+            "Phar",
+            "posix",
+            "random",
+            "readline",
+            "redis",
+            "Reflection",
+            "session",
+            "shmop",
+            "SimpleXML",
+            "soap",
+            "sockets",
+            "sodium",
+            "SPL",
+            "sqlite3",
+            "standard",
+            "tidy",
+            "tokenizer",
+            "xml",
+            "xmlreader",
+            "xmlrpc",
+            "xmlwriter",
+            "xsl",
+            "Zend OPcache",
+            "zip",
+            "zlib"
+        ],
+        "function_availability": {
+            "curl_init": true,
+            "file_get_contents": true,
+            "get_headers": true,
+            "stream_context_create": true,
+            "openssl_get_cert_locations": true,
+            "json_encode": true,
+            "libxml_use_internal_errors": true,
+            "mb_detect_encoding": true,
+            "mime_content_type": true,
+            "finfo_open": true,
+            "gzdecode": true,
+            "iconv": true,
+            "simplexml_load_string": true,
+            "shell_exec": true,
+            "exec": true,
+            "proc_open": true
+        },
+        "class_availability": {
+            "DOMDocument": true,
+            "DOMXPath": true,
+            "RecursiveDirectoryIterator": true,
+            "RecursiveIteratorIterator": true,
+            "finfo": true,
+            "XMLReader": true
+        },
+        "libxml_version": "2.10.2",
+        "curl_version": {
+            "version_number": 529408,
+            "age": 11,
+            "features": 1363101581,
+            "ssl_version_number": 0,
+            "version": "8.20.0",
+            "host": "x86_64-redhat-linux-gnu",
+            "ssl_version": "OpenSSL/1.1.1w",
+            "libz_version": "1.2.11",
+            "protocols": [
+                "dict",
+                "file",
+                "ftp",
+                "ftps",
+                "gopher",
+                "gophers",
+                "http",
+                "https",
+                "imap",
+                "imaps",
+                "ldap",
+                "ldaps",
+                "mqtt",
+                "mqtts",
+                "pop3",
+                "pop3s",
+                "rtsp",
+                "scp",
+                "sftp",
+                "smtp",
+                "smtps",
+                "telnet",
+                "tftp",
+                "ws",
+                "wss"
+            ],
+            "ares": "",
+            "ares_num": 0,
+            "libidn": "2.2.0",
+            "iconv_ver_num": 0,
+            "libssh_version": "libssh2/1.11.1",
+            "brotli_ver_num": 0,
+            "brotli_version": ""
+        },
+        "openssl_version": "OpenSSL 1.1.1w  11 Sep 2023"
+    },
+    "paths_and_permissions": {
+        "cwd": {
+            "path": "/home/sitkaotw/justonekiss.org/proto/public",
+            "realpath": "/home/sitkaotw/justonekiss.org/proto/public",
+            "exists": true,
+            "is_file": false,
+            "is_dir": true,
+            "is_link": false,
+            "readable": true,
+            "writable": true,
+            "executable": true,
+            "permissions_octal": "0755",
+            "owner_id": 1532,
+            "group_id": 1527,
+            "owner_name": "sitkaotw",
+            "group_name": "sitkaotw"
+        },
+        "script": {
+            "path": "/home/sitkaotw/justonekiss.org/proto/public/metadata_diagnostics.php",
+            "realpath": "/home/sitkaotw/justonekiss.org/proto/public/metadata_diagnostics.php",
+            "exists": true,
+            "is_file": true,
+            "is_dir": false,
+            "is_link": false,
+            "readable": true,
+            "writable": true,
+            "executable": false,
+            "permissions_octal": "0644",
+            "owner_id": 1532,
+            "group_id": 1527,
+            "owner_name": "sitkaotw",
+            "group_name": "sitkaotw"
+        },
+        "script_directory": {
+            "path": "/home/sitkaotw/justonekiss.org/proto/public",
+            "realpath": "/home/sitkaotw/justonekiss.org/proto/public",
+            "exists": true,
+            "is_file": false,
+            "is_dir": true,
+            "is_link": false,
+            "readable": true,
+            "writable": true,
+            "executable": true,
+            "permissions_octal": "0755",
+            "owner_id": 1532,
+            "group_id": 1527,
+            "owner_name": "sitkaotw",
+            "group_name": "sitkaotw"
+        },
+        "public_root": {
+            "path": "/home/sitkaotw/justonekiss.org/proto/public",
+            "realpath": "/home/sitkaotw/justonekiss.org/proto/public",
+            "exists": true,
+            "is_file": false,
+            "is_dir": true,
+            "is_link": false,
+            "readable": true,
+            "writable": true,
+            "executable": true,
+            "permissions_octal": "0755",
+            "owner_id": 1532,
+            "group_id": 1527,
+            "owner_name": "sitkaotw",
+            "group_name": "sitkaotw"
+        },
+        "temp_directory": {
+            "path": "/tmp",
+            "realpath": "/tmp",
+            "exists": true,
+            "is_file": false,
+            "is_dir": true,
+            "is_link": false,
+            "readable": true,
+            "writable": true,
+            "executable": true,
+            "permissions_octal": "0700",
+            "owner_id": 1532,
+            "group_id": 1527,
+            "owner_name": "sitkaotw",
+            "group_name": "sitkaotw"
+        },
+        "ancestor_directories": [
+            {
+                "path": "/home/sitkaotw/justonekiss.org/proto/public",
+                "realpath": "/home/sitkaotw/justonekiss.org/proto/public",
+                "exists": true,
+                "is_file": false,
+                "is_dir": true,
+                "is_link": false,
+                "readable": true,
+                "writable": true,
+                "executable": true,
+                "permissions_octal": "0755",
+                "owner_id": 1532,
+                "group_id": 1527,
+                "owner_name": "sitkaotw",
+                "group_name": "sitkaotw"
+            },
+            {
+                "path": "/home/sitkaotw/justonekiss.org/proto",
+                "realpath": "/home/sitkaotw/justonekiss.org/proto",
+                "exists": true,
+                "is_file": false,
+                "is_dir": true,
+                "is_link": false,
+                "readable": true,
+                "writable": true,
+                "executable": true,
+                "permissions_octal": "0775",
+                "owner_id": 1532,
+                "group_id": 1527,
+                "owner_name": "sitkaotw",
+                "group_name": "sitkaotw"
+            },
+            {
+                "path": "/home/sitkaotw/justonekiss.org",
+                "realpath": "/home/sitkaotw/justonekiss.org",
+                "exists": true,
+                "is_file": false,
+                "is_dir": true,
+                "is_link": false,
+                "readable": true,
+                "writable": true,
+                "executable": true,
+                "permissions_octal": "0750",
+                "owner_id": 1532,
+                "group_id": 99,
+                "owner_name": "sitkaotw",
+                "group_name": "nobody"
+            },
+            {
+                "path": "/home/sitkaotw",
+                "realpath": "/home/sitkaotw",
+                "exists": true,
+                "is_file": false,
+                "is_dir": true,
+                "is_link": false,
+                "readable": true,
+                "writable": true,
+                "executable": true,
+                "permissions_octal": "0711",
+                "owner_id": 1532,
+                "group_id": 1527,
+                "owner_name": "sitkaotw",
+                "group_name": "sitkaotw"
+            },
+            {
+                "path": "/home",
+                "realpath": "/home",
+                "exists": true,
+                "is_file": false,
+                "is_dir": true,
+                "is_link": false,
+                "readable": true,
+                "writable": false,
+                "executable": true,
+                "permissions_octal": "0755",
+                "owner_id": 0,
+                "group_id": 0,
+                "owner_name": "root",
+                "group_name": "root"
+            },
+            {
+                "path": "/",
+                "realpath": "/",
+                "exists": true,
+                "is_file": false,
+                "is_dir": true,
+                "is_link": false,
+                "readable": true,
+                "writable": false,
+                "executable": true,
+                "permissions_octal": "0755",
+                "owner_id": 0,
+                "group_id": 0,
+                "owner_name": "root",
+                "group_name": "root"
+            }
+        ],
+        "write_tests": {
+            "script_directory": {
+                "directory": "/home/sitkaotw/justonekiss.org/proto/public",
+                "attempted": true,
+                "success": true,
+                "error": null
+            },
+            "public_root": {
+                "directory": "/home/sitkaotw/justonekiss.org/proto/public",
+                "attempted": true,
+                "success": true,
+                "error": null
+            },
+            "temp_directory": {
+                "directory": "/tmp",
+                "attempted": true,
+                "success": true,
+                "error": null
+            }
+        }
+    },
+    "routing": {
+        "htaccess_files_found": []
+    },
+    "filesystem_snapshot": {
+        "root": "/home/sitkaotw/justonekiss.org/proto/public",
+        "entries": [
+            {
+                "type": "dir",
+                "path": "what-is-just-one-kiss",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "what-is-just-one-kiss/index.php",
+                "size_bytes": 7046,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "metadata_diagnostics.php",
+                "size_bytes": 22383,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "july-25-2026",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "july-25-2026/index.php",
+                "size_bytes": 7089,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "video",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "video/index.php",
+                "size_bytes": 4498,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layer-save.php",
+                "size_bytes": 1102,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "admin-language-save.php",
+                "size_bytes": 4553,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "technical",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "technical/index.php",
+                "size_bytes": 5204,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "faq-disclaimer",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "faq-disclaimer/index.php",
+                "size_bytes": 8187,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "directions",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "directions/index.php",
+                "size_bytes": 7439,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "contact-press",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "contact-press/index.php",
+                "size_bytes": 83,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "contact",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "contact/index.php",
+                "size_bytes": 6256,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "preserve-backup",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "preserve-backup/index.php",
+                "size_bytes": 23526,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers/media",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/media/index.php",
+                "size_bytes": 137,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers/behavior",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/behavior/index.php",
+                "size_bytes": 140,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers/structure",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/structure/index.php",
+                "size_bytes": 141,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers/style",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/style/index.php",
+                "size_bytes": 137,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers/copy",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/copy/index.php",
+                "size_bytes": 136,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "site-layers/review",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/review/index.php",
+                "size_bytes": 138,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "site-layers/index.php",
+                "size_bytes": 9965,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "vault",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "vault/index.php",
+                "size_bytes": 4733,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "assets",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "assets/img",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "assets/js",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "assets/js/site.js",
+                "size_bytes": 6722,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "assets/font",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "assets/css",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "index.php",
+                "size_bytes": 14273,
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "dir",
+                "path": "spectacle",
+                "readable": true,
+                "writable": true
+            },
+            {
+                "type": "file",
+                "path": "spectacle/index.php",
+                "size_bytes": 7673,
+                "readable": true,
+                "writable": true
+            }
+        ],
+        "extension_counts": {
+            "php": 22,
+            "png": 19,
+            "webp": 9,
+            "otf": 2,
+            "jpg": 1,
+            "md": 1,
+            "js": 1,
+            "css": 1
+        },
+        "file_count_seen": 56,
+        "directory_count_seen": 23,
+        "truncated": false,
+        "errors": []
+    },
+    "network": {
+        "base_url": {
+            "url": "https://justonekiss.org/",
+            "method": "curl",
+            "success": true,
+            "status": 200,
+            "final_url": "https://justonekiss.org/",
+            "content_type": "text/html; charset=UTF-8",
+            "response_bytes_sampled": 72559,
+            "elapsed_seconds": 0.1478,
+            "headers": {
+                "x-powered-by": "PHP/8.3.31",
+                "set-cookie": "[REDACTED]",
+                "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+                "cache-control": "no-store, no-cache, must-revalidate",
+                "pragma": "no-cache",
+                "content-type": "text/html; charset=UTF-8",
+                "date": "Wed, 22 Jul 2026 21:42:34 GMT",
+                "server": "LiteSpeed"
+            },
+            "html_signals": {
+                "has_html_tag": true,
+                "has_head_tag": true,
+                "has_title_tag": true,
+                "open_graph_tag_count": 0,
+                "twitter_tag_count": 0,
+                "json_ld_block_count": 0,
+                "canonical_link_count": 0,
+                "oembed_link_count": 0
+            },
+            "error": null
+        },
+        "robots_txt": {
+            "url": "https://justonekiss.org/robots.txt",
+            "method": "curl",
+            "success": true,
+            "status": 404,
+            "final_url": "https://justonekiss.org/robots.txt",
+            "content_type": "text/html",
+            "response_bytes_sampled": 1251,
+            "elapsed_seconds": 0.0316,
+            "headers": {
+                "cache-control": "private, no-cache, no-store, must-revalidate, max-age=0",
+                "pragma": "no-cache",
+                "content-type": "text/html",
+                "content-length": "1251",
+                "date": "Wed, 22 Jul 2026 21:42:34 GMT",
+                "server": "LiteSpeed"
+            },
+            "html_signals": {
+                "has_html_tag": true,
+                "has_head_tag": true,
+                "has_title_tag": true,
+                "open_graph_tag_count": 0,
+                "twitter_tag_count": 0,
+                "json_ld_block_count": 0,
+                "canonical_link_count": 0,
+                "oembed_link_count": 0
+            },
+            "error": null
+        }
+    },
+    "command_line_tools": {
+        "php": {
+            "command": "php",
+            "shell_functions": {
+                "exec": true,
+                "shell_exec": true,
+                "system": true,
+                "passthru": true,
+                "proc_open": true,
+                "popen": true
+            },
+            "path": "/usr/local/bin/php"
+        },
+        "curl": {
+            "command": "curl",
+            "shell_functions": {
+                "exec": true,
+                "shell_exec": true,
+                "system": true,
+                "passthru": true,
+                "proc_open": true,
+                "popen": true
+            },
+            "path": "/bin/curl"
+        },
+        "wget": {
+            "command": "wget",
+            "shell_functions": {
+                "exec": true,
+                "shell_exec": true,
+                "system": true,
+                "passthru": true,
+                "proc_open": true,
+                "popen": true
+            },
+            "path": "/bin/wget"
+        },
+        "find": {
+            "command": "find",
+            "shell_functions": {
+                "exec": true,
+                "shell_exec": true,
+                "system": true,
+                "passthru": true,
+                "proc_open": true,
+                "popen": true
+            },
+            "path": "/bin/find"
+        },
+        "grep": {
+            "command": "grep",
+            "shell_functions": {
+                "exec": true,
+                "shell_exec": true,
+                "system": true,
+                "passthru": true,
+                "proc_open": true,
+                "popen": true
+            },
+            "path": "/bin/grep"
+        },
+        "jq": {
+            "command": "jq",
+            "shell_functions": {
+                "exec": true,
+                "shell_exec": true,
+                "system": true,
+                "passthru": true,
+                "proc_open": true,
+                "popen": true
+            },
+            "path": null
+        }
+    },
+    "cli_server_environment": {
+        "BASH_FUNC__module_raw%%": "() {  unset _mlshdbg;\n if [ \"${MODULES_SILENT_SHELL_DEBUG:-0}\" = '1' ]; then\n case \"$-\" in \n *v*x*)\n set +vx;\n _mlshdbg='vx'\n ;;\n *v*)\n set +v;\n _mlshdbg='v'\n ;;\n *x*)\n set +x;\n _mlshdbg='x'\n ;;\n *)\n _mlshdbg=''\n ;;\n esac;\n fi;\n unset _mlre _mlIFS;\n if [ -n \"${IFS+x}\" ]; then\n _mlIFS=$IFS;\n fi;\n IFS=' ';\n for _mlv in ${MODULES_RUN_QUARANTINE:-};\n do\n if [ \"${_mlv}\" = \"${_mlv##*[!A-Za-z0-9_]}\" -a \"${_mlv}\" = \"${_mlv#[0-9]}\" ]; then\n if [ -n \"`eval 'echo ${'$_mlv'+x}'`\" ]; then\n _mlre=\"${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' \";\n fi;\n _mlrv=\"MODULES_RUNENV_${_mlv}\";\n _mlre=\"${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' \";\n fi;\n done;\n if [ -n \"${_mlre:-}\" ]; then\n eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '\"$@\"'`;\n else\n eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \"$@\"`;\n fi;\n _mlstatus=$?;\n if [ -n \"${_mlIFS+x}\" ]; then\n IFS=$_mlIFS;\n else\n unset IFS;\n fi;\n unset _mlre _mlv _mlrv _mlIFS;\n if [ -n \"${_mlshdbg:-}\" ]; then\n set -$_mlshdbg;\n fi;\n unset _mlshdbg;\n return $_mlstatus\n}",
+        "BASH_FUNC_ml%%": "() {  module ml \"$@\"\n}",
+        "BASH_FUNC_module%%": "() {  _module_raw \"$@\" 2>&1\n}",
+        "BASH_FUNC_scl%%": "() {  if [ \"$1\" = \"load\" -o \"$1\" = \"unload\" ]; then\n eval \"module $@\";\n else\n /usr/bin/scl \"$@\";\n fi\n}",
+        "BASH_FUNC_switchml%%": "() {  typeset swfound=1;\n if [ \"${MODULES_USE_COMPAT_VERSION:-0}\" = '1' ]; then\n typeset swname='main';\n if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n typeset swfound=0;\n unset MODULES_USE_COMPAT_VERSION;\n fi;\n else\n typeset swname='compatibility';\n if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n typeset swfound=0;\n MODULES_USE_COMPAT_VERSION=1;\n export MODULES_USE_COMPAT_VERSION;\n fi;\n fi;\n if [ $swfound -eq 0 ]; then\n echo \"Switching to Modules $swname version\";\n source /usr/share/Modules/init/bash;\n else\n echo \"Cannot switch to Modules $swname version, command not found\";\n return 1;\n fi\n}",
+        "BASH_FUNC_which%%": "() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}",
+        "DOCUMENT_ROOT": "",
+        "HISTCONTROL": "ignoredups",
+        "HISTSIZE": "1000",
+        "HOME": "/home/sitkaotw",
+        "HOSTNAME": "premium49.web-hosting.com",
+        "LANG": "en_US.UTF-8",
+        "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+        "LOADEDMODULES": "",
+        "LOGNAME": "sitkaotw",
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:",
+        "MAIL": "/var/spool/mail/sitkaotw",
+        "MANPATH": "/usr/share/man::/opt/puppetlabs/puppet/share/man",
+        "MODULEPATH": "/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles",
+        "MODULEPATH_modshare": "/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2",
+        "MODULESHOME": "/usr/share/Modules",
+        "MODULES_CMD": "/usr/share/Modules/libexec/modulecmd.tcl",
+        "MODULES_RUN_QUARANTINE": "LD_LIBRARY_PATH LD_PRELOAD",
+        "OLDPWD": "/home/sitkaotw/justonekiss.org/proto",
+        "OPENSSL_NO_DEFAULT_ZLIB": "1",
+        "PATH": "/usr/local/cpanel/3rdparty/lib/path-bin:/usr/share/Modules/bin:/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin:/opt/puppetlabs/bin:/home/sitkaotw/bin",
+        "PATH_TRANSLATED": "metadata_diagnostics.php",
+        "PHP_SELF": "metadata_diagnostics.php",
+        "PROMPT_COMMAND": "history -a >(tee -a  ~/.bash_history |logger -p local5.alert -t \"${USER}:${PWD}\")",
+        "PWD": "/home/sitkaotw/justonekiss.org/proto/public",
+        "REQUEST_TIME": 1784756554,
+        "REQUEST_TIME_FLOAT": 1784756554.169598,
+        "SCRIPT_FILENAME": "metadata_diagnostics.php",
+        "SCRIPT_NAME": "metadata_diagnostics.php",
+        "SHLVL": "1",
+        "S_COLORS": "auto",
+        "TERM": "xterm-256color",
+        "USER": "sitkaotw",
+        "_": "/usr/local/bin/php",
+        "argc": 5,
+        "which_declare": "declare -f"
+    },
+    "security_note": "Values with names resembling passwords, tokens, keys, authorization headers, cookies, or sessions are redacted. Review the JSON before sharing it."
+}

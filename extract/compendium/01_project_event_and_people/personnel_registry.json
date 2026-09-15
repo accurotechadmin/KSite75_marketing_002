@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:owner_performer",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "personnel_registry",
+  "document_class": "registry",
+  "title": "Personnel Registry",
+  "description": "Privacy-minimized required-position, assignment, qualification, consent, and visibility controls",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CONTACT-01 and controlled supporting-document requirements",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Responsibility, personnel, contact, ownership, dependency, and approval requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_role_vocabulary_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/role_vocabulary.json",
+      "sha256": "722fb2f36d7e91a1f678b473f4210d22c8a5fc4b9982b02024c2e49aebcbdefe",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled stable role vocabulary"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_roles_and_authorities_json",
+      "path": "extract/compendium/01_project_event_and_people/roles_and_authorities.json",
+      "sha256": "4f478fa18202f331e847509d06a841450f9e391479436ab3cbc05d726331dbf4",
+      "locator": "data.records and authority_rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Authority domains and safety override"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "privacy_boundary": "No name, contact value, private biography, credential payload, or unverified public identity is stored.",
+    "required_positions": [
+      {
+        "position_id": "position:owner_performer",
+        "role_id": "role:owner_performer",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:production_manager",
+        "role_id": "role:production_manager",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:technical_director",
+        "role_id": "role:technical_director",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:stage_manager",
+        "role_id": "role:stage_manager",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:safety_authority",
+        "role_id": "role:safety_authority",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:rights_reviewer",
+        "role_id": "role:rights_reviewer",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:privacy_steward",
+        "role_id": "role:privacy_steward",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:accessibility_reviewer",
+        "role_id": "role:accessibility_reviewer",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      },
+      {
+        "position_id": "position:venue_representative",
+        "role_id": "role:venue_representative",
+        "holder_ref": null,
+        "assignment_state": "required_unassigned",
+        "active_from": null,
+        "active_until": null,
+        "qualification_requirements": [
+          "controlled evidence appropriate to assigned authority domain"
+        ],
+        "qualification_verification_state": "evidence_required",
+        "qualification_evidence_ref": null,
+        "consent_state": "not_recorded",
+        "public_display_state": "withheld",
+        "public_display_name": null,
+        "visibility": "internal",
+        "expiry": null
+      }
+    ],
+    "record_count": 9,
+    "publication_gate": "Public identity requires controlled assignment evidence, purpose-specific consent, applicable rights/privacy approval, release approval, and unexpired evidence.",
+    "dependencies": [
+      "roles_and_authorities.json",
+      "responsibility_matrix.json",
+      "restricted_contact_directory.json"
+    ],
+    "unresolved_staffing": [
+      {
+        "question_id": "PERSON-Q-001",
+        "question": "Who is assigned, qualified, consented, and active for each required position?",
+        "owner_role": "role:production_manager",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

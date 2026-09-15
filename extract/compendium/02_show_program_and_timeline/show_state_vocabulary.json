@@ -1,0 +1,506 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:stage_manager",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "show_state_vocabulary",
+  "document_class": "authority",
+  "title": "Show State Vocabulary",
+  "description": "Controlled planned and emergency show states, evidence requirements, and fail-closed transition rules",
+  "source_refs": [
+    {
+      "source_id": "source:01_authoritative_show_control_and_performance_cue_book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "Sections 2, 7-10; calling conventions and safety precedence",
+      "extraction_method": "SHA-256 plus targeted UTF-8/WordprocessingML extraction and manual reconciliation",
+      "stated_use": "HOLD/ABORT/STOP, finale, calling, restart and release controls"
+    },
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "SM-01, SAFE-01, COMMS-01 requirements and synchronization rules",
+      "extraction_method": "SHA-256 plus targeted UTF-8/WordprocessingML extraction and manual reconciliation",
+      "stated_use": "Required calls, emergency authority, evidence and department concurrence"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_timeline_moment_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/timeline_moment_registry.json",
+      "sha256": "87921747428b51c304c88c426a8f665b09fc4f9dd7f8b1cc1700f37a77a34fbd",
+      "locator": "data.lifecycle_states and governance",
+      "extraction_method": "SHA-256 plus targeted UTF-8/WordprocessingML extraction and manual reconciliation",
+      "stated_use": "Distinction from record lifecycle states"
+    },
+    {
+      "source_id": "source:extract_compendium_02_show_program_and_timeline_transition_registry_json",
+      "path": "extract/compendium/02_show_program_and_timeline/transition_registry.json",
+      "sha256": "0b6321d39e87392c8d2609b07c0f8fc6adea3f207ec3138eb71e1f99daa5cd02",
+      "locator": "data.governance and records",
+      "extraction_method": "SHA-256 plus targeted UTF-8/WordprocessingML extraction and manual reconciliation",
+      "stated_use": "Known show boundary controls"
+    }
+  ],
+  "data": {
+    "authority_boundary": "Review-ready vocabulary only; it does not approve calls, equipment procedures, people, or a performance. Venue emergency authority and approved equipment procedures govern in operation.",
+    "namespace_boundary": "These are operational show-control states, not Timeline Moment record lifecycle states.",
+    "precedence": [
+      "ABORT",
+      "STOP",
+      "HOLD",
+      "approved safety restriction",
+      "planned timing and schedule"
+    ],
+    "unknown_transition_rule": "A transition not explicitly allowed is prohibited. Missing evidence is negative; silence is not confirmation; null is not GO.",
+    "states": [
+      {
+        "state_id": "SHOW-PRESET",
+        "state": "PRESET",
+        "class": "planned",
+        "meaning": "Conditions are being established; no execution authority.",
+        "requires_authorized_transition": false
+      },
+      {
+        "state_id": "SHOW-WARNING",
+        "state": "WARNING",
+        "class": "planned",
+        "meaning": "Advance notice that an identified action may approach; not authority to execute.",
+        "requires_authorized_transition": false
+      },
+      {
+        "state_id": "SHOW-STANDBY",
+        "state": "STANDBY",
+        "class": "planned",
+        "meaning": "Named recipients acknowledge readiness for an identified prospective cue; not authority to execute.",
+        "requires_authorized_transition": false
+      },
+      {
+        "state_id": "SHOW-GO",
+        "state": "GO",
+        "class": "planned",
+        "meaning": "Authorized release of one identified, approved cue after prerequisites are positively confirmed.",
+        "requires_authorized_transition": true
+      },
+      {
+        "state_id": "SHOW-CONFIRM",
+        "state": "CONFIRM",
+        "class": "planned",
+        "meaning": "Named recipient reports objective completion or state evidence; does not release a new cue.",
+        "requires_authorized_transition": false
+      },
+      {
+        "state_id": "SHOW-HOLD",
+        "state": "HOLD",
+        "class": "protective",
+        "meaning": "Pause progression and prevent new GO calls while the condition is evaluated.",
+        "requires_authorized_transition": true
+      },
+      {
+        "state_id": "SHOW-ABORT",
+        "state": "ABORT",
+        "class": "emergency",
+        "meaning": "Prevent or terminate the identified unsafe action using its approved equipment-specific procedure.",
+        "requires_authorized_transition": true
+      },
+      {
+        "state_id": "SHOW-STOP",
+        "state": "STOP",
+        "class": "emergency",
+        "meaning": "Immediately stop show progression or affected operation under applicable safety authority.",
+        "requires_authorized_transition": true
+      },
+      {
+        "state_id": "SHOW-RESET",
+        "state": "RESET",
+        "class": "recovery",
+        "meaning": "Controlled restoration after stop/abort; it is not permission to resume show progression.",
+        "requires_authorized_transition": true
+      },
+      {
+        "state_id": "SHOW-RESTART_READY",
+        "state": "RESTART_READY",
+        "class": "recovery",
+        "meaning": "Evidence package and rehearsed restart point are positively accepted by authorized roles; a separate GO remains required.",
+        "requires_authorized_transition": true
+      },
+      {
+        "state_id": "SHOW-COMPLETE",
+        "state": "COMPLETE",
+        "class": "terminal",
+        "meaning": "The identified sequence is objectively complete; teardown still requires safe-stage release.",
+        "requires_authorized_transition": false
+      }
+    ],
+    "allowed_transitions": [
+      {
+        "from": "PRESET",
+        "to": "WARNING",
+        "authority_roles": [
+          "role:stage_manager"
+        ],
+        "required_evidence": [
+          "identified approved cue or event",
+          "current approved calling material"
+        ]
+      },
+      {
+        "from": "WARNING",
+        "to": "STANDBY",
+        "authority_roles": [
+          "role:stage_manager"
+        ],
+        "required_evidence": [
+          "named recipients",
+          "readiness responses"
+        ]
+      },
+      {
+        "from": "STANDBY",
+        "to": "GO",
+        "authority_roles": [
+          "role:stage_manager"
+        ],
+        "required_evidence": [
+          "all applicable prerequisites positively confirmed",
+          "department concurrence",
+          "no HOLD, ABORT, STOP, or safety restriction"
+        ]
+      },
+      {
+        "from": "GO",
+        "to": "CONFIRM",
+        "authority_roles": [
+          "role:department_lead",
+          "role:operator"
+        ],
+        "required_evidence": [
+          "objective completion or state report"
+        ]
+      },
+      {
+        "from": "CONFIRM",
+        "to": "COMPLETE",
+        "authority_roles": [
+          "role:stage_manager"
+        ],
+        "required_evidence": [
+          "required completion confirmations"
+        ]
+      },
+      {
+        "from": "PRESET",
+        "to": "HOLD",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:production_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "reported unsafe, unclear, or unmet condition; protective action does not wait for planned timing"
+        ]
+      },
+      {
+        "from": "WARNING",
+        "to": "HOLD",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:production_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "reported unsafe, unclear, or unmet condition; protective action does not wait for planned timing"
+        ]
+      },
+      {
+        "from": "STANDBY",
+        "to": "HOLD",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:production_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "reported unsafe, unclear, or unmet condition; protective action does not wait for planned timing"
+        ]
+      },
+      {
+        "from": "GO",
+        "to": "HOLD",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:production_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "reported unsafe, unclear, or unmet condition; protective action does not wait for planned timing"
+        ]
+      },
+      {
+        "from": "CONFIRM",
+        "to": "HOLD",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:production_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "reported unsafe, unclear, or unmet condition; protective action does not wait for planned timing"
+        ]
+      },
+      {
+        "from": "PRESET",
+        "to": "ABORT",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "PRESET",
+        "to": "STOP",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "WARNING",
+        "to": "ABORT",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "WARNING",
+        "to": "STOP",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "STANDBY",
+        "to": "ABORT",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "STANDBY",
+        "to": "STOP",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "GO",
+        "to": "ABORT",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "GO",
+        "to": "STOP",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "CONFIRM",
+        "to": "ABORT",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "CONFIRM",
+        "to": "STOP",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "HOLD",
+        "to": "ABORT",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "HOLD",
+        "to": "STOP",
+        "authority_roles": [
+          "role:safety_lead",
+          "role:stage_manager",
+          "role:authorized_equipment_operator"
+        ],
+        "required_evidence": [
+          "unsafe condition or emergency determination",
+          "applicable approved procedure and immediate communication"
+        ]
+      },
+      {
+        "from": "HOLD",
+        "to": "RESET",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "hazard controlled",
+          "affected systems safe",
+          "incident/change record initiated",
+          "approved recovery procedure selected"
+        ]
+      },
+      {
+        "from": "ABORT",
+        "to": "RESET",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "hazard controlled",
+          "affected systems safe",
+          "incident/change record initiated",
+          "approved recovery procedure selected"
+        ]
+      },
+      {
+        "from": "STOP",
+        "to": "RESET",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:safety_lead",
+          "role:department_lead"
+        ],
+        "required_evidence": [
+          "hazard controlled",
+          "affected systems safe",
+          "incident/change record initiated",
+          "approved recovery procedure selected"
+        ]
+      },
+      {
+        "from": "RESET",
+        "to": "RESTART_READY",
+        "authority_roles": [
+          "role:stage_manager",
+          "role:production_manager",
+          "role:safety_lead"
+        ],
+        "required_evidence": [
+          "authorized release of hold",
+          "department confirmations",
+          "rehearsed restart point",
+          "affected equipment recovery complete"
+        ]
+      },
+      {
+        "from": "RESTART_READY",
+        "to": "STANDBY",
+        "authority_roles": [
+          "role:stage_manager"
+        ],
+        "required_evidence": [
+          "restart recipients warned",
+          "fresh readiness acknowledgements"
+        ]
+      }
+    ],
+    "global_rules": [
+      "HOLD, ABORT, and STOP override every planned duration, trigger, profile, transition, finale action, and release target.",
+      "Only an authorized person may release a hold and select a rehearsed restart point.",
+      "Audience release and teardown require their independent positive safety gates; COMPLETE is not sufficient."
+    ],
+    "unresolved_questions": [
+      "Which venue-specific roles have emergency, hold-release, cancellation, and restart authority?",
+      "What approved exact language, communications paths, and equipment-specific abort/stop/recovery procedures apply?"
+    ],
+    "approval_state": "pending controlled approval",
+    "dependencies": []
+  }
+}

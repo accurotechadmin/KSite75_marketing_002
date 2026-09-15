@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "timeline_moment_id_or_gen": "GEN",
+  "status": "starter",
+  "last_updated": "2026-07-19",
+  "ssot_document_id": "ssot.settings.marketing_channels",
+  "title": "Marketing Channels",
+  "source_manifest": "docs/ssot/settings_manifest.json",
+  "settings": {
+    "campaign_stages": [
+      "awareness",
+      "interest",
+      "consideration",
+      "conversion",
+      "retention_nurture"
+    ],
+    "channels": [
+      "facebook_meta",
+      "instagram",
+      "youtube_ads",
+      "google_ads",
+      "tiktok",
+      "snapchat",
+      "pinterest",
+      "x_twitter",
+      "bluesky",
+      "linkedin"
+    ],
+    "default_ctas": [
+      "RSVP",
+      "Get event details",
+      "Watch the trailer",
+      "Contact for booking"
+    ],
+    "tracking_placeholders": [
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_content"
+    ]
+  }
+}

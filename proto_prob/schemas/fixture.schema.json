@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fixture.schema.json",
+  "title": "Stage Fixture",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "fixture_id",
+    "fixture_type_id",
+    "display_name",
+    "position",
+    "dmx",
+    "revision"
+  ],
+  "properties": {
+    "fixture_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9-]{1,31}$"
+    },
+    "fixture_type_id": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "position": {
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "dmx": {
+      "type": "object"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

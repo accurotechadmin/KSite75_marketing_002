@@ -1,0 +1,67 @@
+[
+  {
+    "id": "pavilion",
+    "name": "Pavilion",
+    "default_visible": true
+  },
+  {
+    "id": "stage",
+    "name": "Stage Furniture",
+    "default_visible": true
+  },
+  {
+    "id": "scaffold",
+    "name": "Scaffold",
+    "default_visible": true
+  },
+  {
+    "id": "masking",
+    "name": "Masking",
+    "default_visible": true
+  },
+  {
+    "id": "lighting",
+    "name": "Lighting Fixtures",
+    "default_visible": true
+  },
+  {
+    "id": "beams",
+    "name": "Fixture Beams",
+    "default_visible": true
+  },
+  {
+    "id": "kiss-sign",
+    "name": "KISS Sign",
+    "default_visible": true
+  },
+  {
+    "id": "scenic",
+    "name": "Scenic Elements",
+    "default_visible": false
+  },
+  {
+    "id": "audio",
+    "name": "Audio/Monitors",
+    "default_visible": false
+  },
+  {
+    "id": "fog",
+    "name": "Fog/Atmosphere",
+    "default_visible": true
+  },
+  {
+    "id": "labels",
+    "name": "Labels",
+    "default_visible": false
+  },
+  {
+    "id": "zones",
+    "name": "Stage Zones",
+    "default_visible": false
+  },
+  {
+    "id": "measurements",
+    "name": "Measurements",
+    "default_visible": false
+  }
+]

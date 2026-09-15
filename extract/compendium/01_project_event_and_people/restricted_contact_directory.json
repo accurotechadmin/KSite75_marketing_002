@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:production_manager",
+  "approver_role": "role:privacy_steward",
+  "visibility": "restricted",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-14",
+  "review_due_at": null,
+  "document_id": "restricted_contact_directory",
+  "document_class": "registry",
+  "title": "Restricted Contact Directory",
+  "description": "Opaque restricted-contact references and lifecycle/access controls without contact payloads",
+  "source_refs": [
+    {
+      "source_id": "source:02_authoritative_supporting_production_documentation_standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "CONTACT-01 and controlled supporting-document requirements",
+      "extraction_method": "DOCX XML text/table extraction to temporary workspace; manual reconciliation",
+      "stated_use": "Responsibility, personnel, contact, ownership, dependency, and approval requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_90_schemas_and_vocabularies_role_vocabulary_json",
+      "path": "extract/compendium/90_schemas_and_vocabularies/role_vocabulary.json",
+      "sha256": "722fb2f36d7e91a1f678b473f4210d22c8a5fc4b9982b02024c2e49aebcbdefe",
+      "locator": "data.records",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Controlled stable role vocabulary"
+    },
+    {
+      "source_id": "source:extract_compendium_01_project_event_and_people_roles_and_authorities_json",
+      "path": "extract/compendium/01_project_event_and_people/roles_and_authorities.json",
+      "sha256": "4f478fa18202f331e847509d06a841450f9e391479436ab3cbc05d726331dbf4",
+      "locator": "data.records and authority_rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Authority domains and safety override"
+    },
+    {
+      "source_id": "source:extract_compendium_00_control_and_governance_data_classification_policy_json",
+      "path": "extract/compendium/00_control_and_governance/data_classification_policy.json",
+      "sha256": "50935bc45eb4263e08d2d3d4f6f0a22f1d182a57ee7a45c8716fe3d09138be55",
+      "locator": "data classification, minimization, retention, and deletion rules",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Restricted-data control boundary"
+    },
+    {
+      "source_id": "source:center_data_booking_contacts_seed_php",
+      "path": "center/data/booking_contacts_seed.php",
+      "sha256": "a3b9c17c7b263102b9a800401bd8dba656ed5080432f0c9b0be72e9da074ae3e",
+      "locator": "record shape only; payload values deliberately excluded",
+      "extraction_method": "UTF-8 parse and targeted manual reconciliation",
+      "stated_use": "Prototype booking/contact configuration evidence, not authority"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "storage_boundary": "This compendium stores only opaque references and control metadata; authorized restricted systems store and resolve payloads.",
+    "prohibited_fields": [
+      "name",
+      "address",
+      "email_address",
+      "telephone",
+      "message_content",
+      "credential",
+      "secret"
+    ],
+    "resolution_contract": {
+      "resolver": "authorized restricted contact system",
+      "default_access": "deny",
+      "audit_required": true,
+      "purpose_limitation_required": true,
+      "consumer_behavior": "Resolve only for an authorized, current purpose; never cache or publish returned values."
+    },
+    "records": [
+      {
+        "contact_ref": "contact-ref:booking-duty",
+        "subject_type": "role",
+        "subject_ref": "role:production_manager",
+        "purpose": "booking coordination",
+        "method_types": [
+          "restricted_system_resolved"
+        ],
+        "access_roles": [
+          "role:production_manager",
+          "role:privacy_steward"
+        ],
+        "consent_state": "evidence_required",
+        "consent_evidence_ref": null,
+        "retention_rule": "retain only while assignment and purpose remain active",
+        "expires_at": null,
+        "redaction_state": "payload_absent",
+        "deletion_state": "delete_or_disable_on withdrawal, expiry, or ended purpose",
+        "emergency_use": false,
+        "verification_state": "unverified_reference"
+      },
+      {
+        "contact_ref": "contact-ref:venue-emergency-interface",
+        "subject_type": "role",
+        "subject_ref": "role:venue_representative",
+        "purpose": "verified event emergency interface",
+        "method_types": [
+          "restricted_system_resolved"
+        ],
+        "access_roles": [
+          "role:stage_manager",
+          "role:safety_authority",
+          "role:privacy_steward"
+        ],
+        "consent_state": "evidence_required",
+        "consent_evidence_ref": null,
+        "retention_rule": "event-specific minimum period defined by approved safety and records policy",
+        "expires_at": null,
+        "redaction_state": "payload_absent",
+        "deletion_state": "delete_or_disable on expiry unless lawful incident hold applies",
+        "emergency_use": true,
+        "verification_state": "unverified_reference"
+      }
+    ],
+    "record_count": 2,
+    "incident_and_deletion_rules": [
+      "Emergency use must be necessary, logged, role-authorized, and limited to the active emergency.",
+      "Consent withdrawal, expiry, access anomaly, or ended purpose triggers disablement, deletion review, and privacy-steward escalation.",
+      "A lawful safety or incident hold must be documented; it does not authorize publication."
+    ],
+    "dependencies": [
+      "personnel_registry.json",
+      "responsibility_matrix.json",
+      "venue_advance_and_house_interface.json",
+      "../00_control_and_governance/data_classification_policy.json"
+    ],
+    "unresolved_questions": [
+      {
+        "question_id": "CONTACT-Q-001",
+        "question": "Which approved restricted system and evidence establish current contact references, consent, retention periods, and expiry?",
+        "owner_role": "role:privacy_steward",
+        "state": "evidence_required"
+      }
+    ]
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-15",
+  "review_due_at": null,
+  "document_id": "equipment_type_catalog",
+  "document_class": "registry",
+  "title": "Equipment Type Catalog",
+  "description": "Provisional equipment-family identities separating vendor claims from observed/configured candidates, modes, capabilities, and evidence applicability",
+  "source_refs": [
+    {
+      "source_id": "source:docs_inventory_reference_md",
+      "path": "docs/inventory_reference.md",
+      "sha256": "20380ccad4db027357e1aaefd26701bc9697f451d18131b7933b6d18492786d8",
+      "locator": "Fixture inventory, channel maps, verification cautions and procedures",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Narrative inventory authority"
+    },
+    {
+      "source_id": "source:proto_prob_data_global_fixture-types_json",
+      "path": "proto_prob/data/global/fixture-types.json",
+      "sha256": "c9fa23bbda2b94acfcdd04b82e61373d8efbd3ec86be303ad5cd8ccef483d113",
+      "locator": "all type definitions",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype family/mode candidates requiring verification"
+    },
+    {
+      "source_id": "source:docs_ssot_colorstrip_manual_json",
+      "path": "docs/ssot/colorstrip_manual.json",
+      "sha256": "85fc9648ebc28f85e1cb8f3d8de8edd20b1e16dd5f9809fb41b154a675bf852c",
+      "locator": "source metadata and vendor-reference linkage",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Paired manual metadata; not independent verification"
+    },
+    {
+      "source_id": "source:docs_ssot_freedompar_manual_json",
+      "path": "docs/ssot/freedompar_manual.json",
+      "sha256": "4aaa0f883c74f2eb2b4a360070c31a144b3109a934a126517e972f55892a8ee0",
+      "locator": "source metadata and vendor-reference linkage",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Paired manual metadata; not independent verification"
+    },
+    {
+      "source_id": "source:docs_ssot_honeycomb_manual_json",
+      "path": "docs/ssot/honeycomb_manual.json",
+      "sha256": "bc50e9534205389335976856e36c3c7a60292a6742f665997347d9b932b2c9b8",
+      "locator": "source metadata and vendor-reference linkage",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Paired manual metadata; not independent verification"
+    }
+  ],
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "active_configuration": false,
+    "authority_boundary": "Cataloging a family or candidate mode does not assign an instance, establish a patch, approve safety, or activate configuration.",
+    "claim_separation_rule": "Manufacturer claims require an applicable versioned vendor source; repository observations/configurations remain separately labeled and do not become manufacturer specifications.",
+    "verification_rule": "Working identifications, simulation geometry, power, capabilities, and modes remain provisional/estimated/unverified until reconciled with the physical unit and applicable manual revision.",
+    "records": [
+      {
+        "record_id": "equipment_type:honeycomb",
+        "title": "Honeycomb LED wash",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "HONEYCOMB",
+        "manufacturer": "U'King",
+        "model": "ZQ01082 (working identification)",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 0.85,
+              "height": 0.65,
+              "depth": 0.65
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 36
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "hex",
+              "color_model": "RGB",
+              "beam_angle": 28,
+              "max_distance": 24
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "7ch",
+            "channel_count": 7,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Dimmer"
+              },
+              {
+                "offset": 2,
+                "function": "Red"
+              },
+              {
+                "offset": 3,
+                "function": "Green"
+              },
+              {
+                "offset": 4,
+                "function": "Blue"
+              },
+              {
+                "offset": 5,
+                "function": "Strobe"
+              },
+              {
+                "offset": 6,
+                "function": "Macro"
+              },
+              {
+                "offset": 7,
+                "function": "Macro Speed"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Blue",
+          "Dimmer",
+          "Green",
+          "Macro",
+          "Macro Speed",
+          "Red",
+          "Strobe"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:ptr",
+        "title": "PTR moving fixture",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "PTR",
+        "manufacturer": "XPCLEOYZ",
+        "model": "7x12W RGBW Moving Head (working identification)",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 1.0,
+              "height": 1.35,
+              "depth": 0.9
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 90
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "moving-head",
+              "color_model": "RGBW",
+              "beam_angle": 18,
+              "max_distance": 34,
+              "pan_range": 540,
+              "tilt_range": 270
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "12ch",
+            "channel_count": 12,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Pan"
+              },
+              {
+                "offset": 2,
+                "function": "Pan Fine"
+              },
+              {
+                "offset": 3,
+                "function": "Tilt"
+              },
+              {
+                "offset": 4,
+                "function": "Tilt Fine"
+              },
+              {
+                "offset": 5,
+                "function": "Movement Speed"
+              },
+              {
+                "offset": 6,
+                "function": "Dimmer"
+              },
+              {
+                "offset": 7,
+                "function": "Red"
+              },
+              {
+                "offset": 8,
+                "function": "Green"
+              },
+              {
+                "offset": 9,
+                "function": "Blue"
+              },
+              {
+                "offset": 10,
+                "function": "White"
+              },
+              {
+                "offset": 11,
+                "function": "Strobe"
+              },
+              {
+                "offset": 12,
+                "function": "Macro"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Blue",
+          "Dimmer",
+          "Green",
+          "Macro",
+          "Movement Speed",
+          "Pan",
+          "Pan Fine",
+          "Red",
+          "Strobe",
+          "Tilt",
+          "Tilt Fine",
+          "White"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:single_dimmer",
+        "title": "Spot/Special",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "SINGLE_DIMMER",
+        "manufacturer": null,
+        "model": "Single-channel light",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 0.8,
+              "height": 0.8,
+              "depth": 1.0
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 75
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "spot",
+              "color_model": "fixed",
+              "beam_angle": 22,
+              "max_distance": 30
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "1ch",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Dimmer"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Dimmer"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:fixed_accent",
+        "title": "Fixed-color accent",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "FIXED_ACCENT",
+        "manufacturer": null,
+        "model": "Fixed-color accent lamp",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 0.6,
+              "height": 0.6,
+              "depth": 0.6
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 40
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "par",
+              "color_model": "fixed",
+              "beam_angle": 35,
+              "max_distance": 18
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "1ch",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Dimmer"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Dimmer"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:cube_uplight",
+        "title": "Cube up-light",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "CUBE_UPLIGHT",
+        "manufacturer": null,
+        "model": "1-foot LED cube up-light",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 1.0,
+              "height": 1.0,
+              "depth": 1.0
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 45
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "cube",
+              "color_model": "RGB",
+              "beam_angle": 50,
+              "max_distance": 16
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "5ch",
+            "channel_count": 5,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Dimmer"
+              },
+              {
+                "offset": 2,
+                "function": "Red"
+              },
+              {
+                "offset": 3,
+                "function": "Green"
+              },
+              {
+                "offset": 4,
+                "function": "Blue"
+              },
+              {
+                "offset": 5,
+                "function": "Strobe"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Blue",
+          "Dimmer",
+          "Green",
+          "Red",
+          "Strobe"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:dimmer_pack",
+        "title": "4-channel DMX dimmer pack",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "DIMMER_PACK",
+        "manufacturer": "Elation",
+        "model": "DP-415 (working identification)",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 1.7,
+              "height": 0.65,
+              "depth": 0.85
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 0
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "box",
+              "color_model": "none"
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "4ch",
+            "channel_count": 4,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Output Pair 1"
+              },
+              {
+                "offset": 2,
+                "function": "Output Pair 2"
+              },
+              {
+                "offset": 3,
+                "function": "Output Pair 3"
+              },
+              {
+                "offset": 4,
+                "function": "Output Pair 4"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Output Pair 1",
+          "Output Pair 2",
+          "Output Pair 3",
+          "Output Pair 4"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:kiss_circuit",
+        "title": "KISS sign circuit",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "KISS_CIRCUIT",
+        "manufacturer": "Custom",
+        "model": "KISS sign inner/outer circuit",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 2.4,
+              "height": 3.4,
+              "depth": 0.3
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 120
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "bulb-circuit",
+              "color_model": "warm-white"
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "1ch",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Circuit Dimmer"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Circuit Dimmer"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:disco_ball",
+        "title": "Disco ball system",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "DISCO_BALL",
+        "manufacturer": null,
+        "model": "24-inch mirrored disco ball",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "diameter": 2.0
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 25
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "sphere",
+              "color_model": "white"
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "2ch",
+            "channel_count": 2,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Motor Speed"
+              },
+              {
+                "offset": 2,
+                "function": "Illumination"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Illumination",
+          "Motor Speed"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      },
+      {
+        "record_id": "equipment_type:fog_machine",
+        "title": "Atmospheric effect",
+        "status": "candidate_pending_verification",
+        "timeline_scope": "GEN",
+        "type_id": "FOG_MACHINE",
+        "manufacturer": null,
+        "model": "Stage fog/FX unit",
+        "identity_confidence": "provisional",
+        "manufacturer_claims": [],
+        "observed_or_configured_claims": [
+          {
+            "claim_family": "dimensions",
+            "value": {
+              "width": 1.2,
+              "height": 0.55,
+              "depth": 0.8
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "power",
+            "value": {
+              "voltage": 120,
+              "watts": 700
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          },
+          {
+            "claim_family": "simulation",
+            "value": {
+              "shape": "fog",
+              "color_model": "none"
+            },
+            "claim_class": "prototype_observed_or_configured_candidate",
+            "confidence": "estimated",
+            "applicability": "prototype simulation/configuration only",
+            "source_ref": "proto_prob/data/global/fixture-types.json"
+          }
+        ],
+        "modes": [
+          {
+            "mode_id": "1ch",
+            "channel_count": 1,
+            "channels": [
+              {
+                "offset": 1,
+                "function": "Fog Output"
+              }
+            ]
+          }
+        ],
+        "capabilities": [
+          "Fog Output"
+        ],
+        "manual_source_refs": [],
+        "verification_state": "unverified",
+        "instance_assignment_refs": [],
+        "patch_refs": [],
+        "safety_approval_refs": [],
+        "active_configuration": false,
+        "unresolved_conflicts": [
+          "Working identifications and prototype values require reconciliation against inventory and applicable manufacturer manual."
+        ]
+      }
+    ],
+    "record_count": 9,
+    "vendor_conflicts_and_missing_evidence": [
+      "The three paired manual JSON files are metadata companions, not extracted manual claims.",
+      "No applicable manual/version linkage is established per type.",
+      "Prototype family candidates may not match physical inventory or current patch."
+    ],
+    "dependencies": [
+      "equipment_type.schema.json",
+      "vendor_document_registry.json (unfinished)",
+      "equipment_capability_and_mode_catalog.json (unfinished)",
+      "equipment_instance_registry.json (unfinished)"
+    ]
+  }
+}

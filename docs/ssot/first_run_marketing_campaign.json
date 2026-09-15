@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "ssot_document_id": "first_run_marketing_campaign",
+  "title": "Just One KISS - First-Run Still Image Marketing Campaign",
+  "human_readable_path": "docs/first_run_marketing_campaign.md",
+  "timeline_classification": "GEN",
+  "status": "campaign creative brief / still-image asset plan",
+  "purpose": "Define the first five-piece Just One KISS still-image marketing campaign across the adapted Awareness, Interest, Consideration, Conversion, and Retention/Nurture journey without creating final images.",
+  "source_documents": [
+    "docs/brand_story_style_guide_inventory.md",
+    "docs/marketing_still_image_inventory.md",
+    "docs/styleguide.md",
+    "docs/knowledge.md",
+    "README.md",
+    "proto/docs/language.json",
+    "proto/docs/website_ssot.md",
+    "docs/ssot/ads_specs.md"
+  ],
+  "campaign_rules": [
+    "Use black-first, chrome-second, fire-third, mythic-scale visual language consistent with the current public site.",
+    "Do not create actual images from this brief until concepts are approved.",
+    "Do not use paid-ticket, purchase, official-affiliation, VIP, or official-logo language.",
+    "Keep verified facts, independent-tribute disclaimers, and safety language readable where relevant.",
+    "Classify campaign assets as GEN unless a later asset promotes a precise Timeline Moment ID."
+  ],
+  "funnel_adaptation": [
+    {
+      "stage": "Awareness",
+      "audience_action": "Learn that the show exists.",
+      "campaign_job": "Announce the night and create instant recognition.",
+      "primary_cta": "Remember July 25."
+    },
+    {
+      "stage": "Interest",
+      "audience_action": "Understand why it is worth attention.",
+      "campaign_job": "Sell the spectacle, mood, and fan ritual.",
+      "primary_cta": "See what the night feels like."
+    },
+    {
+      "stage": "Consideration",
+      "audience_action": "Decide whether it is practical to attend.",
+      "campaign_job": "Explain free admission, location, camping, safety, and arrival basics.",
+      "primary_cta": "Plan the trip / get directions."
+    },
+    {
+      "stage": "Conversion",
+      "audience_action": "Commit without paid ticket language.",
+      "campaign_job": "Drive RSVP or update-list signup.",
+      "primary_cta": "Get the July 25 drop."
+    },
+    {
+      "stage": "Retention & Nurture",
+      "audience_action": "Share, invite, ask questions, and return for updates.",
+      "campaign_job": "Turn attendees into promoters and community participants.",
+      "primary_cta": "Tell your crew / open the road case."
+    }
+  ],
+  "artwork_pieces": [
+    {
+      "asset_id": "JOK-CAMPAIGN01-AWARENESS",
+      "title": "The Night Exists",
+      "stage": "Awareness",
+      "timeline_moment_id_or_gen": "GEN",
+      "core_message": "FREE SHOW \u00b7 JULY 25, 2026 \u00b7 CYCLE MOORE LEGACY \u00b7 INTERLOCHEN / US 31",
+      "recommended_headline": "YOU WANTED THE BEST? / JULY 25 IS COMING.",
+      "cta": "Save July 25 / Join updates",
+      "art_direction": "Black arena-void announcement poster with huge white display headline, original chrome shards or truss geometry, red/orange smoke, yellow fact chips, and compact independent-tribute disclaimer."
+    },
+    {
+      "asset_id": "JOK-CAMPAIGN02-INTEREST",
+      "title": "The Ritual",
+      "stage": "Interest",
+      "timeline_moment_id_or_gen": "GEN",
+      "core_message": "A STAGE TAKEOVER, NOT A POLITE COVER NIGHT.",
+      "recommended_headline": "THE RITUAL STARTS HERE.",
+      "cta": "See the spectacle / Get the July 25 drop",
+      "art_direction": "Dark stage-card composition with chrome/red frame and four numbered proof tiles for entrance, singalong, controlled blast, and chrome-blood spectacle mood language."
+    },
+    {
+      "asset_id": "JOK-CAMPAIGN03-CONSIDERATION",
+      "title": "Before You Roll In",
+      "stage": "Consideration",
+      "timeline_moment_id_or_gen": "GEN",
+      "core_message": "BEFORE YOU ROLL IN...",
+      "recommended_headline": "BEFORE YOU ROLL IN...",
+      "cta": "Get directions / Plan the night",
+      "art_direction": "Practical theatrical info card with five numbered panels: admission, location/parking, camping, fog/strobes, and BYOB/be safe."
+    },
+    {
+      "asset_id": "JOK-CAMPAIGN04-CONVERSION",
+      "title": "Get the July 25 Drop",
+      "stage": "Conversion",
+      "timeline_moment_id_or_gen": "GEN",
+      "core_message": "GET THE JULY 25 DROP.",
+      "recommended_headline": "GET THE JULY 25 DROP.",
+      "cta": "Join updates / RSVP appreciated",
+      "art_direction": "Split conversion-card layout with huge headline, mock update-list panel, consent row, red-orange CTA button, free-show chip, and safety note."
+    },
+    {
+      "asset_id": "JOK-CAMPAIGN05-RETENTION",
+      "title": "Open the Road Case",
+      "stage": "Retention & Nurture",
+      "timeline_moment_id_or_gen": "GEN",
+      "core_message": "OPEN THE ROAD CASE.",
+      "recommended_headline": "OPEN THE ROAD CASE.",
+      "cta": "Tell your crew / Open the Fan Vault / Ask a question",
+      "art_direction": "Original black touring road case opened toward viewer with red/yellow glow, chrome latches, smoke depth, and six compartments for free show, video posts, fan media, tips, Q&A, and chat."
+    }
+  ],
+  "export_families": [
+    {
+      "name": "Master vertical poster",
+      "dimensions": "2160x2700",
+      "ratio": "4:5"
+    },
+    {
+      "name": "Square social",
+      "dimensions": "1440x1440",
+      "ratio": "1:1"
+    },
+    {
+      "name": "Vertical feed",
+      "dimensions": "1440x1800",
+      "ratio": "4:5"
+    },
+    {
+      "name": "Story / reel still",
+      "dimensions": "1080x1920 or 1440x2560",
+      "ratio": "9:16"
+    },
+    {
+      "name": "Wide landscape",
+      "dimensions": "1200x628 or 1440x754",
+      "ratio": "1.91:1"
+    },
+    {
+      "name": "Google square",
+      "dimensions": "1200x1200",
+      "ratio": "1:1"
+    },
+    {
+      "name": "Google portrait",
+      "dimensions": "960x1200",
+      "ratio": "4:5"
+    },
+    {
+      "name": "Small display banner",
+      "dimensions": "300x250",
+      "ratio": "1.2:1"
+    },
+    {
+      "name": "Event/header crop",
+      "dimensions": "1920x1005 or 1500x500",
+      "ratio": "varies"
+    },
+    {
+      "name": "Print handout/flyer",
+      "dimensions": "8.5x11 in and 4x6 in",
+      "ratio": "print"
+    }
+  ],
+  "maintenance": {
+    "status": "current campaign planning seed",
+    "update_rule": "When the human-readable campaign brief changes, update this SSOT JSON and docs/ssot/master_index.json in the same change."
+  }
+}

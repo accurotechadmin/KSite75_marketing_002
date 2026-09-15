@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "pavilion_id": "PAV-001",
+  "revision": 1,
+  "dimensions": {
+    "width": 40.0,
+    "length": 58.0,
+    "eave_height": 10.5,
+    "ridge_height": 18.5
+  },
+  "roof": {
+    "type": "exposed wood gable",
+    "truss_spacing": 4.0,
+    "material": "pale timber and OSB"
+  },
+  "cradle": {
+    "width": 5.0,
+    "depth": 3.0,
+    "height": 2.0,
+    "bottom_elevation": 15.5,
+    "x": 0,
+    "y": 6.0
+  },
+  "masking": {
+    "rear_width": 34.0,
+    "rear_height": 11.0,
+    "side_return_depth": 7.0,
+    "upper_width": 17.0,
+    "upper_height": 5.5
+  },
+  "updated_at": "2026-07-24T21:36:58.802624+00:00"
+}

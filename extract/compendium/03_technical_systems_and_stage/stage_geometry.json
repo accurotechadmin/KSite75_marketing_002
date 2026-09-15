@@ -1,0 +1,435 @@
+{
+  "schema_version": "1.0.0",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "role:technical_director",
+  "approver_role": "role:production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": "../90_schemas_and_vocabularies/document.schema.json",
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-18",
+  "review_due_at": null,
+  "document_id": "stage_geometry",
+  "document_class": "registry",
+  "title": "Stage Geometry",
+  "description": "Evidence-qualified stage, platform, transition, octagon, audience-floor, and finish candidates with machine-checkable bounds",
+  "source_refs": [
+    {
+      "source_id": "source:proto_prob_data_global_stage_json",
+      "path": "proto_prob/data/global/stage.json",
+      "sha256": "b1940be0c073c371b1924bf637b0b192f61d4292c1518d451143b8a5b0f21011",
+      "locator": "all records",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype stage geometry and finish candidates"
+    },
+    {
+      "source_id": "source:proto_prob_data_global_zones_json",
+      "path": "proto_prob/data/global/zones.json",
+      "sha256": "8753185a373e3c922fb9d52ac01e6767e075abe4627f61874feb4b4332f56199",
+      "locator": "all zone centers",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Prototype relationship and visualization cross-check"
+    },
+    {
+      "source_id": "source:docs_rig_md",
+      "path": "docs/rig.md",
+      "sha256": "af32084d9b27d8d9f8b1cff0b4a47141a6fe5bbe5cba0de76e39fe212149141c",
+      "locator": "stage layout and rig planning narrative",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Secondary planning context; not measurement"
+    },
+    {
+      "source_id": "source:01_Authoritative_Show_Control_and_Performance_Cue_Book_docx",
+      "path": "01_Authoritative_Show_Control_and_Performance_Cue_Book.docx",
+      "sha256": "6c7fdff80c14d92413fec6fc4050184c3519aa48810faa7569b08da9a598e037",
+      "locator": "deck/platform/scenic checks and TECH completion requirements",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled operational requirements; does not verify geometry"
+    },
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "locator": "stage/scenic/rigging documentation and approval requirements",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Controlled supporting-document requirements"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_coordinate_system_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/coordinate_system.json",
+      "sha256": "ec3a2143d9ef71e85af534c00971c6e5b9fa3eb0f1c3bb235f26d7f906c5c2f7",
+      "locator": "coordinate authority",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Coordinate interpretation"
+    },
+    {
+      "source_id": "source:extract_compendium_03_technical_systems_and_stage_pavilion_geometry_json",
+      "path": "extract/compendium/03_technical_systems_and_stage/pavilion_geometry.json",
+      "sha256": "720475f4ce8993c161164ca872fe9d36064097e7490704ff548ff5afd6cfcacd",
+      "locator": "candidate pavilion envelope",
+      "extraction_method": "SHA-256 plus targeted structured/text extraction and manual reconciliation",
+      "stated_use": "Candidate relationship context only"
+    }
+  ],
+  "data": {
+    "extraction_state": "review_ready_unapproved",
+    "approval_state": "controlled_human_approval_required",
+    "verification_boundary": "All numeric and descriptive geometry is a prototype candidate. No value is surveyed, physically measured, venue-confirmed, structurally rated, load-approved, clearance-approved, or safe for execution.",
+    "use_rule": "Planning and visualization only. Field measurement, venue confirmation, technical review, and applicable safety/engineering approval are required before construction, rigging, access, clearance, or cue use.",
+    "stage_id": "stage:STAGE-MAIN",
+    "coordinate_system_ref": "coordinate_system#coordinate:stage_candidate_v1",
+    "pavilion_ref": "pavilion_geometry#pavilion:PAV-001",
+    "record_count": 20,
+    "measurements": [
+      {
+        "measurement_id": "stage:dimensions_width",
+        "feature": "dimensions",
+        "quantity": "width",
+        "candidate_value": 32.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:dimensions_depth",
+        "feature": "dimensions",
+        "quantity": "depth",
+        "candidate_value": 16.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:dimensions_deck_height",
+        "feature": "dimensions",
+        "quantity": "deck_height",
+        "candidate_value": 1.67,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:rear_platform_width",
+        "feature": "rear_platform",
+        "quantity": "width",
+        "candidate_value": 19.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:rear_platform_depth",
+        "feature": "rear_platform",
+        "quantity": "depth",
+        "candidate_value": 4.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:rear_platform_height",
+        "feature": "rear_platform",
+        "quantity": "height",
+        "candidate_value": 1.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:rear_platform_x",
+        "feature": "rear_platform",
+        "quantity": "x",
+        "candidate_value": 0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:rear_platform_y",
+        "feature": "rear_platform",
+        "quantity": "y",
+        "candidate_value": 2.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:center_transition_width",
+        "feature": "center_transition",
+        "quantity": "width",
+        "candidate_value": 3.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:center_transition_depth",
+        "feature": "center_transition",
+        "quantity": "depth",
+        "candidate_value": 3.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:center_transition_height",
+        "feature": "center_transition",
+        "quantity": "height",
+        "candidate_value": 1.5,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:center_transition_x",
+        "feature": "center_transition",
+        "quantity": "x",
+        "candidate_value": 0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:center_transition_y",
+        "feature": "center_transition",
+        "quantity": "y",
+        "candidate_value": 5.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:octagon_across_flats",
+        "feature": "octagon",
+        "quantity": "across_flats",
+        "candidate_value": 8.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:octagon_projection",
+        "feature": "octagon",
+        "quantity": "projection",
+        "candidate_value": 6.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:octagon_height",
+        "feature": "octagon",
+        "quantity": "height",
+        "candidate_value": 1.67,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:octagon_x",
+        "feature": "octagon",
+        "quantity": "x",
+        "candidate_value": 0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:octagon_y",
+        "feature": "octagon",
+        "quantity": "y",
+        "candidate_value": 18.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:audience_floor_width",
+        "feature": "audience_floor",
+        "quantity": "width",
+        "candidate_value": 40.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      },
+      {
+        "measurement_id": "stage:audience_floor_depth",
+        "feature": "audience_floor",
+        "quantity": "depth",
+        "candidate_value": 40.0,
+        "unit": "feet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "approval_state": "not_approved",
+        "operational_use": "planning_visualization_only"
+      }
+    ],
+    "candidate_bounds": {
+      "main_stage": {
+        "x_min": -16,
+        "x_max": 16,
+        "y_min": 0,
+        "y_max": 16,
+        "z_min": 0,
+        "z_max": 1.67
+      },
+      "rear_platform": {
+        "x_min": -9.5,
+        "x_max": 9.5,
+        "y_min": 0.25,
+        "y_max": 4.75,
+        "z_min": 1.67,
+        "z_max": 3.17
+      },
+      "center_transition": {
+        "x_min": -1.75,
+        "x_max": 1.75,
+        "y_min": 3.5,
+        "y_max": 6.5,
+        "z_min": 1.67,
+        "z_max": 3.17
+      },
+      "octagon": {
+        "center_x": 0,
+        "center_y": 18,
+        "across_flats": 8,
+        "projection": 6,
+        "z_min": 0,
+        "z_max": 1.67
+      },
+      "audience_floor": {
+        "width": 40,
+        "depth": 40,
+        "origin_and_bounds": null
+      }
+    },
+    "relationships": [
+      {
+        "relationship_id": "stage:rear_platform_on_main",
+        "subject": "rear_platform",
+        "predicate": "candidate_overlaps_xy_and_sits_above",
+        "object": "main_stage",
+        "verification_state": "unverified"
+      },
+      {
+        "relationship_id": "stage:center_transition_links",
+        "subject": "center_transition",
+        "predicate": "candidate_transition_between",
+        "object": [
+          "rear_platform",
+          "main_stage"
+        ],
+        "verification_state": "unverified"
+      },
+      {
+        "relationship_id": "stage:octagon_downstage",
+        "subject": "octagon",
+        "predicate": "candidate_center_downstage_of",
+        "object": "main_stage",
+        "verification_state": "unverified"
+      },
+      {
+        "relationship_id": "stage:audience_floor_context",
+        "subject": "audience_floor",
+        "predicate": "candidate_adjacent_context_for",
+        "object": "main_stage",
+        "verification_state": "unverified"
+      }
+    ],
+    "finish_candidates": {
+      "stage": {
+        "value": "worn red-brown painted wood",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "slip_flame_and_load_approval": "not_assessed"
+      },
+      "floor": {
+        "value": "patterned brown/red carpet",
+        "evidence_class": "prototype_record",
+        "confidence": "low",
+        "verification_state": "unverified",
+        "slip_flame_and_load_approval": "not_assessed"
+      }
+    },
+    "access_routes": [],
+    "clearances": [],
+    "structural_capacities": [],
+    "safety_boundary": "Empty access, clearance, and structural-capacity lists are deliberate: none may be inferred from candidate bounds.",
+    "conflicts_and_gaps": [
+      "The octagon center y=18 exceeds the candidate main-stage y maximum of 16; projection semantics and connection must be field-confirmed.",
+      "Audience-floor origin/bounds and relationship to stage are unspecified.",
+      "Candidate rear-platform and transition z semantics are derived for visualization and require physical verification.",
+      "No stairs, railings, ramps, egress routes, performer clearances, load ratings, structural review, or finish safety evidence was located."
+    ],
+    "dependencies": [
+      "coordinate_system",
+      "pavilion_geometry",
+      "program_event_registry",
+      "special_technical_event_registry"
+    ]
+  }
+}

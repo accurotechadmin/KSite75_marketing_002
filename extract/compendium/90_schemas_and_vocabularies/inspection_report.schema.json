@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "inspection_report.schema",
+  "document_class": "schema",
+  "title": "Inspection Report Schema",
+  "description": "Inspection scope, checklist, findings, evidence, corrective action, safety disposition, and sign-off.",
+  "status": "review",
+  "revision": "1.0.0",
+  "effective_date": null,
+  "owner_role": "safety_lead",
+  "approver_role": "production_manager",
+  "visibility": "internal",
+  "timeline_scope": "GEN",
+  "schema_ref": null,
+  "source_refs": [
+    {
+      "source_id": "source:02_Authoritative_Supporting_Production_Documentation_Standard_docx",
+      "path": "02_Authoritative_Supporting_Production_Documentation_Standard.docx",
+      "sha256": "08a9d21e44292e36e6c9cf66cb78216d3023bfd76a5b461f250bb0aa59fb2291",
+      "revision_or_date": null,
+      "locator": "document families, minimum fields, approval and synchronization rules",
+      "extraction_method": "DOCX XML text/table extraction and structural review",
+      "use": "governing supporting-document, cue, safety, inspection, and approval controls"
+    },
+    {
+      "source_id": "source:docs_inventory_reference_md",
+      "path": "docs/inventory_reference.md",
+      "sha256": "20380ccad4db027357e1aaefd26701bc9697f451d18131b7933b6d18492786d8",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "equipment inspection expectations"
+    },
+    {
+      "source_id": "source:docs_owner_admin_build_readiness_md",
+      "path": "docs/owner_admin_build_readiness.md",
+      "sha256": "26ea34113b0060427818d6dc2c802a70f004e9d600b6de5be483edfc1584061b",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "inspection and owner workflow shape"
+    },
+    {
+      "source_id": "source:proto_prob_data_fixtures_AF-B_json",
+      "path": "proto_prob/data/fixtures/AF-B.json",
+      "sha256": "942575e301ce0190bb0ee88dfe8e3f91d5ea5e41c983e6cfb12673fabb366dc2",
+      "revision_or_date": null,
+      "locator": "whole document; field-level derivations are described in data.source_mapping",
+      "extraction_method": "structural review and reconciliation",
+      "use": "representative maintenance-bearing equipment record"
+    }
+  ],
+  "conflict_refs": [],
+  "supersedes": [],
+  "superseded_by": null,
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-13",
+  "review_due_at": null,
+  "data": {
+    "extraction_state": "complete",
+    "approval_state": "pending controlled approval",
+    "schema_target": "inspection_report.schema",
+    "json_schema_draft": "2020-12",
+    "schema": {
+      "$id": "inspection_report.schema.json",
+      "title": "Inspection Report",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "title",
+        "status",
+        "timeline_scope",
+        "inspection_id",
+        "scope_ref",
+        "performed_at",
+        "inspector_role",
+        "checklist_results",
+        "findings",
+        "safety_disposition",
+        "confidence",
+        "source_refs"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeline_scope": {
+          "type": "string",
+          "pattern": "^(GEN|(PRE|OPEN|SET|SONG|TRN|CST|VID|LGT|FOG|STR|SPK|FIN|ENC|POST)-[0-9]{3})$"
+        },
+        "confidence": {
+          "enum": [
+            "verified",
+            "provisional",
+            "estimated",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "source_reference.schema.json#/data/schema"
+          }
+        },
+        "approval_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "inspection_id": {
+          "type": "string",
+          "pattern": "^INSP-[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "scope_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "performed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "inspector_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checklist_results": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "item_id",
+              "result"
+            ],
+            "properties": {
+              "item_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "result": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "not_applicable",
+                  "not_inspected"
+                ]
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "finding_id",
+              "severity",
+              "state"
+            ],
+            "properties": {
+              "finding_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "severity": {
+                "enum": [
+                  "observation",
+                  "minor",
+                  "major",
+                  "critical"
+                ]
+              },
+              "state": {
+                "enum": [
+                  "open",
+                  "mitigated",
+                  "verified_closed",
+                  "accepted_by_authority"
+                ]
+              },
+              "corrective_action_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "safety_disposition": {
+          "enum": [
+            "serviceable",
+            "restricted",
+            "tagged_out",
+            "requires_authority_review"
+          ]
+        },
+        "sign_off": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "evidence_ref",
+            "signed_at"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "signed_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "next_due_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "safety_disposition": {
+                "const": "serviceable"
+              }
+            },
+            "required": [
+              "safety_disposition"
+            ]
+          },
+          "then": {
+            "required": [
+              "sign_off"
+            ]
+          }
+        }
+      ]
+    },
+    "source_mapping": [
+      "Authoritative controls are modeled as shape and evidence requirements without promoting draft business facts to constants.",
+      "Repository records were sampled across the documented source family; uncertain values retain confidence or verification state."
+    ],
+    "validation_notes": [
+      "Draft 2020-12 schema checking and representative positive/negative instance tests are required.",
+      "Cross-record uniqueness, overlap, authority, and approval require registry or workflow validation beyond JSON Schema."
+    ]
+  }
+}

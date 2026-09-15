@@ -1,0 +1,154 @@
+# Just One KISS - Working Cue and Setlist Draft
+
+**Purpose:** Capture the current working show-flow notes, set blocks, song candidates, transition notes, and cue implications that must feed the Timeline Moment Registry, Cue Bible, show-control run sheets, website/media planning, and rehearsal documents.
+
+**Status:** Working draft / not final approved setlist.
+
+**Timeline classification:** Timeline-specific. Each set block, song, transition, costume-change note, platform-drop note, and screen-drop note should be migrated into `docs/timeline_moment_registry.md` with a Timeline Moment ID before it is treated as show-ready.
+
+**Source note:** This file began as the newest raw cue note in the repository. It has been normalized into the same base Markdown format as the other planning documents while preserving the original sequence, titles, durations, and parenthetical cue notes.
+
+**Content / public-presentation note:** Song titles, album/era labels, and KISS-adjacent references are internal planning references. Public-facing use requires content review, performance clearance review, and public-ready copy review before publication.
+
+---
+
+## 1. How This Document Should Be Used
+
+Use this file as the current working source for the tentative show-flow draft, not as the final cue bible.
+
+| Use case | Required next step |
+|---|---|
+| Timeline planning | Convert each set block into a `SET-###` row and each song into a `SONG-###` row in the Timeline Moment Registry. |
+| Cue programming | Convert parenthetical notes such as platform drop, costume change, and screen drop into `TRN-###`, `CST-###`, `VID-###`, `LGT-###`, `FOG-###`, or `STR-###` cue rows as needed. |
+| Show-control run sheets | Add performer action, show-control action, trigger condition, fallback state, and emergency recovery path for each cue. |
+| Rehearsal | Confirm actual durations, transition lengths, costume-change feasibility, screen timing, and streamlined show-control load. |
+| Website / marketing | Treat the full draft as internal. Only publish reviewed, cleared, audience-facing excerpts. |
+
+---
+
+## 2. Working Set Architecture
+
+| Working set block | Proposed Timeline Moment ID | Current role | Notes |
+|---|---|---|---|
+| ALIVE | `SET-001` | Opening / live-energy block | Internal planning label; public use needs content review. |
+| DESTROYER | `SET-002` | Mythic heavy spectacle block | Internal planning label; public use needs content review. |
+| LOVE GUN | `SET-003` | Fan-service / mid-show spectacle block | Internal planning label; public use needs content review. |
+| DYNASTY | `SET-004` | Groove / character-depth block | Internal planning label; public use needs content review. |
+| MONSTER | `SET-005` | Darker heavy block | Internal planning label; public use needs content review. |
+| END OF THE ROAD | `SET-006` | Finale / closing block | Internal planning label; public use needs content review. |
+
+---
+
+## 3. Working Song and Cue List
+
+### 3.1 ALIVE — `SET-001`
+
+| Proposed Timeline Moment ID | Item | Duration | Cue / production note | Follow-up classification |
+|---|---|---:|---|---|
+| `OPEN-001` / `SONG-001` | ROCK + ROLL / LED ZEPPELIN INTRO SONG | 3:31 | Intro song / opening energy. | Confirm whether this is walk-in, overture, entrance, or first performed song. |
+| `SONG-002` | Deuce | 3:52 | Platform drop. | Add platform-drop cue as `TRN-###`, `LGT-###`, `VID-###`, or safety/blocking cue as applicable. |
+| `SONG-003` | Let Me Go, Rock 'n' Roll | 2:50 or 3:54 | Alternate duration listed. | Confirm arrangement/version before final timing. |
+| `SONG-004` | Kissin' Time | 3:59 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-005` | Love 'Em and Leave 'Em | 3:38 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-006` | Psycho Circus | 4:13 | Costume change. | Add costume-change transition as `CST-001` or next available `CST-###`; confirm show-control hold look and safe fallback. |
+
+### 3.2 DESTROYER — `SET-002`
+
+| Proposed Timeline Moment ID | Item | Duration | Cue / production note | Follow-up classification |
+|---|---|---:|---|---|
+| `SONG-007` | God of Thunder | 7:07 | None listed. | Likely high-spectacle moment; add lighting/projection/fog/strobe details only after content. |
+| `SONG-008` | I Love It Loud | 3:23 | None listed. | Add crowd-response and show-control cue notes during cue build. |
+| `SONG-009` | When Lightning Strikes | 3:39 | None listed. | Consider lightning-style lighting only if safely programmable for the approved show-control plan. |
+| `SONG-010` | Cold Gin | 4:59 | None listed. | Add performance and transition notes during cue build. |
+| `TRN-001` / `CST-002` | Scotty D's + KISS costume change | 3:54 | Costume-change transition. | Confirm exact meaning, audio/video content, content status, and performer/show-control workload. |
+
+### 3.3 LOVE GUN — `SET-003`
+
+| Proposed Timeline Moment ID | Item | Duration | Cue / production note | Follow-up classification |
+|---|---|---:|---|---|
+| `SONG-011` | Radioactive | 3:37 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-012` | Calling Dr. Love | 3:40 | None listed. | Add crowd-response and show-control cue notes during cue build. |
+| `SONG-013` | Hot + Cold | 3:30 | Screen drop. | Add screen drop as `VID-###` and any related `LGT-###` or safety cue. |
+| `SONG-014` | She | 7:12 | None listed. | Long-form moment; confirm pacing, blocking, and cue density. |
+| `TRN-002` / `CST-003` | S.D. + KISS 2 | 3:21 | Transition / likely costume-change or interstitial. | Confirm exact content and content status. |
+
+### 3.4 DYNASTY — `SET-004`
+
+| Proposed Timeline Moment ID | Item | Duration | Cue / production note | Follow-up classification |
+|---|---|---:|---|---|
+| `SONG-015` | Almost Human | 2:49 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-016` | Sweet Pain | 3:22 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-017` | Watchin' You | 4:00 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-018` | Russian Roulette | 4:34 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-019` | Right Here Right Now | 3:57 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+
+### 3.5 MONSTER — `SET-005`
+
+| Proposed Timeline Moment ID | Item | Duration | Cue / production note | Follow-up classification |
+|---|---|---:|---|---|
+| `SONG-020` | Not for the Innocent | 4:31 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-021` | Charisma | 4:28 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-022` | Spit | 3:34 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-023` | War Machine / Fuel | 5:37 | Medley or paired item. | Confirm arrangement, content status, and exact timing. |
+
+### 3.6 END OF THE ROAD — `SET-006`
+
+| Proposed Timeline Moment ID | Item | Duration | Cue / production note | Follow-up classification |
+|---|---|---:|---|---|
+| `SONG-024` | Yes I Know | 3:02 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `SONG-025` | Parasite | 3:52 | None listed. | Add performance, lighting, projection, fog, and strobe notes during cue build. |
+| `FIN-001` / `SONG-026` | Rock and Roll All Nite | 4:02 | Finale candidate. | Confirm if this is the primary finale moment and build finale blackout/bow/reset states. |
+| `ENC-001` / `SONG-027` | Domino | 3:46 | Encore candidate. | Confirm if this belongs to encore or finale block. |
+| `ENC-002` / `SONG-028` | God Gave Rock 'n' Roll to You | TBD | Closing/encore candidate. | Duration missing; confirm arrangement and closing cue structure. |
+
+---
+
+## 4. Known Cue Seeds From This Draft
+
+| Cue seed | Proposed classification | Source moment | Required documentation |
+|---|---|---|---|
+| Opening intro song | `OPEN-001` / `SONG-001` | ROCK + ROLL / LED ZEPPELIN INTRO SONG | Define entrance, lighting, projection, fog/strobe permissions, and fallback. |
+| Platform drop | `TRN-###` / `LGT-###` / safety cue | Deuce | Define physical mechanism, show-control trigger, performer position, blackout/safe-light fallback, and venue content. |
+| Costume change after Psycho Circus | `CST-001` | Psycho Circus | Define costume preset, hold look, projection/audio cover, show-control load, and emergency hold state. |
+| Scotty D's + KISS costume change | `TRN-001` / `CST-002` | Between DESTROYER and LOVE GUN blocks | Define content, duration, content review, costume change, and cue stack. |
+| Screen drop | `VID-###` / `TRN-###` | Hot + Cold | Define screen hardware, cue trigger, projection state, lighting cover, and safety/fallback. |
+| S.D. + KISS 2 | `TRN-002` / `CST-003` | Between LOVE GUN and DYNASTY blocks | Confirm meaning, content, content, and show-control/performance purpose. |
+| Finale candidate | `FIN-001` | Rock and Roll All Nite | Define final visual hit, fog/strobe permissions, blackout, bow, and post-show transition. |
+| Encore candidates | `ENC-001` / `ENC-002` | Domino; God Gave Rock 'n' Roll to You | Confirm encore structure, final exit, and house/post-show states. |
+
+---
+
+## 5. Timing Summary
+
+Known listed durations total approximately **1 hour, 57 minutes, and 59 seconds** when `Let Me Go, Rock 'n' Roll` uses the 2:50 timing, or **1 hour, 59 minutes, and 3 seconds** when it uses the 3:54 alternate. This excludes the missing duration for `God Gave Rock 'n' Roll to You`, any transitions not represented by listed durations, applause, spoken moments, safety holds, costume-change overruns, and post-show activity.
+
+| Timing issue | Required action |
+|---|---|
+| `Let Me Go, Rock 'n' Roll` has two possible durations. | Choose the performance arrangement and update the Timeline Moment Registry. |
+| `God Gave Rock 'n' Roll to You` has no duration listed. | Add duration after arrangement is confirmed. |
+| Costume-change and screen/platform cues may require additional safety time. | Validate in rehearsal with the approved live-production model. |
+| Total show length may exceed practical booking limits once transitions are added. | Build a full run-time calculator in the future Cue Bible or Set Architecture document. |
+
+---
+
+## 6. Required Cross-Document Updates
+
+This file must feed the following documents and systems:
+
+| Target document / system | Update needed |
+|---|---|
+| `docs/timeline_moment_registry.md` | Add or reserve the proposed `SET-###`, `SONG-###`, `TRN-###`, `CST-###`, `VID-###`, `FIN-###`, and `ENC-###` entries. |
+| `docs/mastergameplan.md` | Treat this file as the first concrete working cue/setlist draft and make the Cue Bible a priority downstream document. |
+| `docs/rig.md` | Use this file to identify likely show-control cue categories, but keep actual fixture programming in the rig/reference documents. |
+| `docs/inventory_reference.md` | Add cue-specific recipes only after registry IDs and show-control design are approved. |
+| `docs/website_system_plan.md` | Use the set blocks and spectacle notes to plan internal page/media records; public use requires content review. |
+| `docs/styleguide.md` | Use set-block energy internally as style inspiration, not as a clearance to copy restricted presentation. |
+| `docs/knowledge.md` and `docs/prompt.md` | Include this cue draft as the current working cue/setlist source for future sessions. |
+
+---
+
+## Machine-Readable SSOT Companion
+
+This human-readable document has a paired SSOT JSON companion at `docs/ssot/cue.json`. That JSON file is the stable machine-readable seed for website prototypes, owner-admin views, generated checklists, booking materials, marketing materials, and future production data files.
+
+Use the SSOT companion when building software or structured outputs so facts can be reused across multiple website styles without being retyped, forked, or lost. When this document changes, update `docs/ssot/cue.json` and `docs/ssot/master_index.json` in the same change.
