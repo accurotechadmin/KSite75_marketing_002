@@ -1,5 +1,7 @@
 # Reusable Prompt — Boot a September 26 Expert Marketing Design and Production Session
 
+> **Superseded orientation:** Use [`../canon/JUST_ONE_KISS_MARKETING_SESSION_BOOT.md`](../canon/JUST_ONE_KISS_MARKETING_SESSION_BOOT.md), which incorporates the owner's 2026-09-16 mandatory date, time, address, and Earl-phone instruction plus the relocated `canon/Earls/` reference library. This older prompt remains for provenance and must not override current campaign canon.
+
 Copy everything inside the prompt block into a fresh LLM session whose working directory is the repository root.
 
 ```text

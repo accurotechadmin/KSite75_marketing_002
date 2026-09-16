@@ -43,6 +43,8 @@ Read these before creating public-facing work:
 
 **Fast rule:** A piece is not releasable unless its identity, facts, proof, assets, rights, safety/accessibility treatment, consent/privacy behavior, destination, exact export, reviewers, approval, schedule, and expiry are all resolved in the appropriate records.
 
+**Session boot aid:** After reading the controlling sources, use [`JUST_ONE_KISS_MARKETING_SESSION_BOOT.md`](JUST_ONE_KISS_MARKETING_SESSION_BOOT.md) to orient a fresh expert marketing/design/coding session. It is a workflow prompt, not independent fact, rights, or release authority.
+
 ---
 
 ## 3. Discipline-by-Discipline Specification Map

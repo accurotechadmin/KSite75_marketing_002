@@ -1,7 +1,7 @@
 # Just One KISS — September 26 Marketing Campaign Canon
 
 **Document ID:** `JOK-SEP26-CANON`
-**Version:** `1.0.0-draft`
+**Version:** `1.1.0-draft`
 **Status:** controlled internal campaign SSOT; **not approved for public release**
 **Prepared:** 2026-09-14
 **Campaign:** the next Just One KISS show on September 26 at 7:30 PM
@@ -11,12 +11,17 @@
 
 ## 0. Status banner: read before creating anything
 
-The owner has confirmed only two new event-specific facts:
+The owner has now explicitly confirmed these event-specific facts:
 
-- **Date:** September 26.
+- **Date:** September 26, 2026.
 - **Start time:** 7:30 PM.
+- **Event address:** 11075 US-31, Interlochen, MI 49643.
+- **Earl's public phone:** 231-276-9091.
+- **Venue name:** Cycle Moore Legacy (previously owner-confirmed on 2026-09-15).
+- **Offer:** free show; no ticket required; RSVP appreciated (previously owner-confirmed on 2026-09-15).
+- **Parking/camping:** the existing published details remain valid (previously owner-confirmed on 2026-09-15; recheck the exact public wording at release).
 
-The year was not explicitly stated. Because this document was created on September 14, 2026, **September 26, 2026 is a planning assumption, not publishable truth**. The venue, location, timezone, admission/price, registration mechanism, destination URL, performer billing, logistics, sponsors, and media rights all remain unresolved. No old July 25 event fact may be silently carried forward.
+The registration mechanism, destination URL, performer billing, age/access and weather policies, sponsors, and media rights remain subject to their recorded states. No old July 25 event fact may be silently carried forward unless the current owner has explicitly reconfirmed it.
 
 This canon is intentionally complete as an operating system while conservative about unknown facts. Teams can plan, brief, prototype, build master templates, organize shoots, and configure measurement now. Dated public export and paid publication remain held until the fact, rights, destination, tracking, and approval gates close.
 
@@ -86,21 +91,25 @@ Every changed fact records value, source, confirmer, confirmation time, timezone
 | `FACT-BRAND-002` | Category | Independent theatrical rock tribute | controlled evergreen | Do not imply official status |
 | `FACT-DATE-001` | Month/day | September 26 | owner-confirmed | Year must accompany it where ambiguity matters |
 | `FACT-TIME-001` | Start time | 7:30 PM | owner-confirmed | Timezone and doors/start distinction must be resolved |
+| `FACT-LOCATION-001` | Event address | 11075 US-31, Interlochen, MI 49643 | owner-confirmed | Include on every marketing creative exactly as controlled here |
+| `FACT-CONTACT-001` | Earl's public phone | 231-276-9091 | owner-confirmed | Include on every marketing creative exactly as controlled here |
+| `FACT-VENUE-001` | Venue name | Cycle Moore Legacy | owner-confirmed | Keep separate from the mandatory address lockup; recheck before release |
+| `FACT-OFFER-001` | Admission/offer | Free show; no ticket required; RSVP appreciated | owner-confirmed | Keep admission and optional RSVP meanings distinct |
+| `FACT-LOGISTICS-001` | Parking/camping | Existing published camping and parking details remain valid | owner-confirmed | Bind exact wording/rates to the current published source and recheck at release |
 | `FACT-LEGAL-001` | Independence | No official affiliation, sponsorship, authorization, or endorsement is implied | controlled evergreen | Keep meaning consistent; use full line where context could confuse |
 
 ### 3.2 Required facts currently held
 
 | ID | Required decision | Why it matters | Owner/approver |
 | --- | --- | --- | --- |
-| `OPEN-001` | Confirm calendar year | Every dated asset, schedule, countdown, and URL | Campaign owner |
 | `OPEN-002` | Confirm timezone and whether 7:30 is doors or performance | Listings, reminders, calendar data, travel | Event owner |
-| `OPEN-003` | Confirm venue, city, full address, and virtual/in-person status | Every announcement, map, local target, event schema | Event + venue owner |
-| `OPEN-004` | Confirm offer: paid/free, price, fees, ticket/RSVP rules, capacity | CTA, conversion, budgets, claims, revenue reporting | Event owner |
+| `OPEN-003` | Confirm virtual/in-person status | Listings, maps, local targeting, event schema | Event + venue owner |
+| `OPEN-004` | Confirm capacity and any qualification or change to the owner-confirmed free/no-ticket/RSVP offer | CTA, conversion, budgets, claims, reporting | Event owner |
 | `OPEN-005` | Select primary CTA and working destination URL | Every ad and measurement plan | Campaign owner |
 | `OPEN-006` | Confirm performer/attraction billing and approved biography | Titles, ads, search copy, press | Performer/owner |
 | `OPEN-007` | Confirm show advisories and access information | Safety, accessibility, conversion pages | Safety/access reviewers |
 | `OPEN-008` | Confirm parking, arrival, camping, weather/cancellation, age policy | Consideration and last-chance content | Venue owner |
-| `OPEN-009` | Confirm public contact and response expectations | Press, accessibility, customer questions | Campaign owner |
+| `OPEN-009` | Confirm response expectations and any public contacts in addition to Earl's confirmed phone | Press, accessibility, customer questions | Campaign owner |
 | `OPEN-010` | Confirm sponsors/partners and logo-use approvals | Co-marketing and visual lockups | Sponsor + rights owners |
 | `OPEN-011` | Select/clear logo, imagery, footage, font, testimonial, and music set | Production and paid use | Rights reviewer |
 | `OPEN-012` | Approve budget, geography, audience exclusions, and account access | Media launch | Media owner |
@@ -108,7 +117,7 @@ Every changed fact records value, source, confirmer, confirmation time, timezone
 
 ### 3.3 Facts explicitly not inherited from July 25
 
-Do not publish Cycle Moore Legacy, Interlochen, 11075 US 31 South, the old phone number, free admission, no-ticket language, RSVP appreciated, camping rates, electrical rates, parking arrangements, or old form/destination behavior until separately confirmed for September 26.
+Do not publish a camping/electrical rate or old form/destination behavior unless its exact current wording is bound and rechecked for September 26. Current owner records confirm Cycle Moore Legacy, the free/no-ticket/RSVP offer, continued validity of published parking/camping details, Interlochen, the exact display address `11075 US-31, Interlochen, MI 49643`, and Earl's phone `231-276-9091`.
 
 ---
 
@@ -237,11 +246,11 @@ These are draftable building blocks, not automatic release approval:
 
 ### 6.4 September 26 copy framework
 
-Until fact lock, use placeholders in design files:
+Until fact lock, use placeholders only for unresolved fields in design files. Every creative must already carry the confirmed date, time, address, and phone:
 
-- Eyebrow: `[VERIFIED OFFER] · SEPTEMBER 26 · [VERIFIED VENUE/CITY] · 7:30 PM [TZ]`
+- Eyebrow: `[VERIFIED OFFER] · SEPTEMBER 26, 2026 · 7:30 PM`
 - Headline family: `SEPTEMBER 26. THE ARENA ARRIVES.`
-- Utility lockup: `SEPTEMBER 26 · 7:30 PM · [VENUE] · [CITY]`
+- Utility lockup: `SEPTEMBER 26, 2026 · 7:30 PM · 11075 US-31 · INTERLOCHEN, MI 49643 · 231-276-9091`
 - CTA: `[PRIMARY CTA]`
 - Destination: `[APPROVED URL]`
 - Disclaimer: `Just One KISS is an independent theatrical rock tribute. No official affiliation, sponsorship, authorization, or endorsement is implied.`
@@ -676,22 +685,21 @@ Expiry/shutdown:
 
 ## 22. Immediate owner decision packet
 
-To unlock production, provide:
+The full date, time, venue, event address, offer, continued parking/camping validity, and Earl's phone are now owner-confirmed. To unlock the remaining production and release gates, provide:
 
-1. Full date including year.
-2. Timezone and whether 7:30 PM is doors or show start.
-3. Venue name, city, full address, in-person/virtual status.
-4. Admission/price/fees/capacity/ticket or RSVP rules.
-5. Primary CTA and canonical registration/details URL.
-6. Performer/attraction billing and approved description.
-7. Parking, arrival, access, age, camping, weather/cancellation, and sensory advisories.
-8. Public email/phone/social and response expectations.
-9. Sponsor/partner list and logo approvals—or explicit “none.”
-10. Approved logo/wordmark and media shortlist with rights evidence.
-11. Authentic testimonials/social proof with permissions—or explicit “none.”
-12. B-roll availability and shoot access.
-13. Music approach and paid-media license.
-14. Campaign budget, target geography, exclusions, platform priority, and account owners.
-15. Primary conversion, privacy/consent policy, tracking stack, attribution, and reporting owner.
+1. Timezone and whether 7:30 PM is doors or show start.
+2. In-person/virtual status.
+3. Capacity and any qualification/change to the confirmed free/no-ticket/RSVP offer.
+4. Primary CTA and canonical registration/details URL.
+5. Performer/attraction billing and approved description.
+6. Parking, arrival, access, age, camping, weather/cancellation, and sensory advisories.
+7. Public email/social, any contact in addition to Earl's confirmed phone, and response expectations.
+8. Sponsor/partner list and logo approvals—or explicit “none.”
+9. Approved logo/wordmark and media shortlist with rights evidence.
+10. Authentic testimonials/social proof with permissions—or explicit “none.”
+11. B-roll availability and shoot access.
+12. Music approach and paid-media license.
+13. Campaign budget, target geography, exclusions, platform priority, and account owners.
+14. Primary conversion, privacy/consent policy, tracking stack, attribution, and reporting owner.
 
 Once these are answered, increment this canon, synchronize `campaign_facts.json`, produce the event fact lock, and then release creative briefs.

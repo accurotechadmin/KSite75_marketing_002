@@ -55,7 +55,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 
 ## Technical inventory and per-image description
 
-### IMG-001 — `Earls/4Earls.png`
+### IMG-001 — `canon/Earls/4Earls.png`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/png; 1448×1086; landscape; 2,103,833 bytes; SHA-256 `02a359381f13a0f12de39aaa095159e8825a1d99f7bf667cd40df89b087dde7e`.
@@ -64,7 +64,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-002 — `Earls/EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg`
+### IMG-002 — `canon/Earls/EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 5,852,877 bytes; SHA-256 `b3d1ac3d62faddfb0ff6788f491e26d82b01661022af4d80153ae96b1bc53b4b`.
@@ -73,7 +73,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity; pair with accurate safety context; do not imply uncontrolled effects.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-003 — `Earls/EARL_FRONT.jpg`
+### IMG-003 — `canon/Earls/EARL_FRONT.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3072×4096; portrait; 6,938,772 bytes; SHA-256 `59b1efee8b582a4ad387c4efac4839a1f17b4f609d724fc26ff916ef214043e4`.
@@ -82,7 +82,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-004 — `Earls/EARL_LEFT.jpg`
+### IMG-004 — `canon/Earls/EARL_LEFT.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3072×4096; portrait; 6,710,150 bytes; SHA-256 `5396afe620e78ebe85e0db4ddeccb35311deaf9072d211246b83d443159a8965`.
@@ -91,7 +91,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-005 — `Earls/EARL_PERFORM_001.jpg`
+### IMG-005 — `canon/Earls/EARL_PERFORM_001.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 6,658,475 bytes; SHA-256 `d8e204ad7ea7332e05fde5e82282eecbba25346a38e913161e797a129a93def7`.
@@ -100,7 +100,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-006 — `Earls/EARL_PERFORM_002.jpg`
+### IMG-006 — `canon/Earls/EARL_PERFORM_002.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 7,004,228 bytes; SHA-256 `043eeb40eeea150f2e78a4db7abe8a64d2ea5b725019bf44595c98b6ad13441d`.
@@ -109,7 +109,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-007 — `Earls/EARL_PERFORM_003.jpg`
+### IMG-007 — `canon/Earls/EARL_PERFORM_003.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 8,015,624 bytes; SHA-256 `340a020882ab0c7aecd95856a28e170721ebfe2b5fb3c0912631510724a7910a`.
@@ -118,7 +118,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-008 — `Earls/EARL_RIGHT.jpg`
+### IMG-008 — `canon/Earls/EARL_RIGHT.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3072×4096; portrait; 7,053,161 bytes; SHA-256 `420f5c20409763c00ebf53b7201c06ed28c0e9e698256b12439deb6da87c0939`.
@@ -127,7 +127,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-009 — `Earls/EARL_SAMMY_PERFORM.jpg`
+### IMG-009 — `canon/Earls/EARL_SAMMY_PERFORM.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 5,751,331 bytes; SHA-256 `baf580af2814e8a5ada25ea4ebf00822e591619a7843e3f625ce2ec15cf679b1`.
@@ -136,7 +136,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-010 — `Earls/EARL_SAMMY_PERFORM_001.jpg`
+### IMG-010 — `canon/Earls/EARL_SAMMY_PERFORM_001.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 7,631,656 bytes; SHA-256 `ab440c42d796b0f8fdbefa90742bdc8896f80e595840ab3f6aa44edf2c5164e7`.
@@ -145,7 +145,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-011 — `Earls/EARL_SAMMY_PERFORM_002.jpg`
+### IMG-011 — `canon/Earls/EARL_SAMMY_PERFORM_002.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 7,627,142 bytes; SHA-256 `e2f5047367cd7560fd10625f200cb1d6aecddde6ef6c4163a9a5c9b879f3cb2f`.
@@ -154,7 +154,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-012 — `Earls/EARL_SWORD_SAMMY_PERFORM_001.jpg`
+### IMG-012 — `canon/Earls/EARL_SWORD_SAMMY_PERFORM_001.jpg`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/jpeg; 3200×2133; landscape; 6,929,206 bytes; SHA-256 `1b3e645fd454365822540bd16779fd30356ed6144176ebe50bb62d573e71a62c`.
@@ -163,7 +163,7 @@ Machine-readable handoff for expert marketing, design, and coding sessions. Ever
 - **Risks:** confirm likeness/performer release; confirm photographer/source license; review trademark, makeup and costume similarity; pair with accurate safety context; do not imply uncontrolled effects.
 - **Accessibility:** Write placement-specific alt text for the communication purpose; do not reuse this engineering description verbatim as alt text.
 
-### IMG-013 — `Earls/earl005.png`
+### IMG-013 — `canon/Earls/earl005.png`
 
 - **Class / status:** `performer_source_or_concept` / `reference_only`
 - **Technical:** image/png; 1024×1536; portrait; 1,253,071 bytes; SHA-256 `bc042a06d14cfbc6de963f91e5f43c34461414985391d0f8917cc4735ebde714`.
