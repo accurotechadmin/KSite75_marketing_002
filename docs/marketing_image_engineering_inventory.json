@@ -69,7 +69,7 @@
   "images": [
     {
       "id": "IMG-001",
-      "path": "Earls/4Earls.png",
+      "path": "canon/Earls/4Earls.png",
       "filename": "4Earls.png",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -97,7 +97,7 @@
     },
     {
       "id": "IMG-002",
-      "path": "Earls/EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg",
+      "path": "canon/Earls/EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg",
       "filename": "EARL_BREATHE_FIRE_SAMMY_PERFORM.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -126,7 +126,7 @@
     },
     {
       "id": "IMG-003",
-      "path": "Earls/EARL_FRONT.jpg",
+      "path": "canon/Earls/EARL_FRONT.jpg",
       "filename": "EARL_FRONT.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -154,7 +154,7 @@
     },
     {
       "id": "IMG-004",
-      "path": "Earls/EARL_LEFT.jpg",
+      "path": "canon/Earls/EARL_LEFT.jpg",
       "filename": "EARL_LEFT.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -182,7 +182,7 @@
     },
     {
       "id": "IMG-005",
-      "path": "Earls/EARL_PERFORM_001.jpg",
+      "path": "canon/Earls/EARL_PERFORM_001.jpg",
       "filename": "EARL_PERFORM_001.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -210,7 +210,7 @@
     },
     {
       "id": "IMG-006",
-      "path": "Earls/EARL_PERFORM_002.jpg",
+      "path": "canon/Earls/EARL_PERFORM_002.jpg",
       "filename": "EARL_PERFORM_002.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -238,7 +238,7 @@
     },
     {
       "id": "IMG-007",
-      "path": "Earls/EARL_PERFORM_003.jpg",
+      "path": "canon/Earls/EARL_PERFORM_003.jpg",
       "filename": "EARL_PERFORM_003.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -266,7 +266,7 @@
     },
     {
       "id": "IMG-008",
-      "path": "Earls/EARL_RIGHT.jpg",
+      "path": "canon/Earls/EARL_RIGHT.jpg",
       "filename": "EARL_RIGHT.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -294,7 +294,7 @@
     },
     {
       "id": "IMG-009",
-      "path": "Earls/EARL_SAMMY_PERFORM.jpg",
+      "path": "canon/Earls/EARL_SAMMY_PERFORM.jpg",
       "filename": "EARL_SAMMY_PERFORM.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -322,7 +322,7 @@
     },
     {
       "id": "IMG-010",
-      "path": "Earls/EARL_SAMMY_PERFORM_001.jpg",
+      "path": "canon/Earls/EARL_SAMMY_PERFORM_001.jpg",
       "filename": "EARL_SAMMY_PERFORM_001.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -350,7 +350,7 @@
     },
     {
       "id": "IMG-011",
-      "path": "Earls/EARL_SAMMY_PERFORM_002.jpg",
+      "path": "canon/Earls/EARL_SAMMY_PERFORM_002.jpg",
       "filename": "EARL_SAMMY_PERFORM_002.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -378,7 +378,7 @@
     },
     {
       "id": "IMG-012",
-      "path": "Earls/EARL_SWORD_SAMMY_PERFORM_001.jpg",
+      "path": "canon/Earls/EARL_SWORD_SAMMY_PERFORM_001.jpg",
       "filename": "EARL_SWORD_SAMMY_PERFORM_001.jpg",
       "category": "performer_source_or_concept",
       "status": "reference_only",
@@ -407,7 +407,7 @@
     },
     {
       "id": "IMG-013",
-      "path": "Earls/earl005.png",
+      "path": "canon/Earls/earl005.png",
       "filename": "earl005.png",
       "category": "performer_source_or_concept",
       "status": "reference_only",

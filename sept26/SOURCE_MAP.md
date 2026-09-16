@@ -50,10 +50,12 @@
 | Just One KISS identity | Inherit | Evergreen controlled brand truth |
 | Independent theatrical rock tribute | Inherit | Evergreen legal/positioning posture |
 | Black/chrome/fire visual system | Inherit | Evergreen brand expression |
-| September 26 | Owner-confirmed | Supplied directly on 2026-09-14 |
-| 7:30 PM | Owner-confirmed | Supplied directly on 2026-09-14 |
+| September 26, 2026 | Owner-confirmed | Supplied directly; reconfirmed with the full year on 2026-09-16 |
+| 7:30 PM | Owner-confirmed | Supplied directly; reconfirmed on 2026-09-16 |
+| 11075 US-31, Interlochen, MI 49643 | Owner-confirmed | Supplied directly as the mandatory event address on 2026-09-16 |
+| 231-276-9091 | Owner-confirmed | Supplied directly as the number to reach Earl on 2026-09-16 |
 | 2026 | Hold for confirmation | Contextually likely, but owner did not state the year |
-| Cycle Moore Legacy / Interlochen | Do not inherit | Venue for the new event was not supplied |
+| Cycle Moore Legacy venue name | Use only at its current recorded state | The 2026-09-16 instruction confirms the Interlochen address, but the venue-name claim remains independently governed |
 | Free / no ticket / RSVP appreciated | Do not inherit | Offer for the new event was not supplied |
 | Old camping, electrical, parking, phone | Do not inherit | Volatile venue/event logistics |
 | Fog/strobe advisory | Conditional | Use only if applicable to the next production; verify effects plan |
